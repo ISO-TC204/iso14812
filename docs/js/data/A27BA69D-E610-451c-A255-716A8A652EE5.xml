@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.1.11:1", "", "functional view terms", "EARoot/EA1/EA11/EA122.htm", "175.png", "11", "0", "", "Logical diagram0","{9E0959EC-D1E0-4450-9AE7-DCE39765DE34}");
+tocTab[tocTab.length] = new Array("0.1.11:2", "", "data flow", "EARoot/EA1/EA11/EA125.htm", "5.png", "E66", "0", "", "Class0","{50C8A31C-608C-491f-BA3F-BA0D389CF013}");
+tocTab[tocTab.length] = new Array("0.1.11:3", "", "process", "EARoot/EA1/EA11/EA126.htm", "5.png", "E65", "0", "", "Class0","{6DD0743F-F44F-4f0e-9817-C766379AD954}");
+tocTab[tocTab.length] = new Array("0.1.11:4", "", "process specification", "EARoot/EA1/EA11/EA127.htm", "5.png", "E67", "0", "", "Class0","{BD61BEDB-615C-4e39-88B4-7D3DC8EBAFEE}");

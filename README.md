@@ -13,8 +13,9 @@ The process used by this effort also conforms to ISO 24156-1:2014, which defines
 
 The material found on this site is work in progress. ISO 14812 is has not yet been sent to ballot and all content is subject to change.
 
-The model can be viewed three ways:
+The model can be viewed four ways:
 
 1. [Viewing the website here](https://ISO-TC204.github.io/iso14812/)
-2. Downloading the 14812.eap file and loading into Enterprise Architect 14
-3. Downloading the 14812.xml file and importing into any tool that supports XMI 2.1
+2. Downloading the 14812.pdf file, which is a draft of the proposed ISO document generated from the script contained in the ESP file coupled with post-processing using a XSLT transformation and conversion from Word to PDF.
+3. Downloading the 14812.eap file and loading into Enterprise Architect 14
+4. Downloading the 14812.xml file and importing into any tool that supports XMI 2.1
