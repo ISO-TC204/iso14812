@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.1.5:1", "", "ITS-S communication service terms", "EARoot/EA1/EA5/EA66.htm", "175.png", "5", "0", "", "Logical diagram0","{9B9E84DA-56A9-4d70-933F-7EF19220C61E}");
+tocTab[tocTab.length] = new Array("0.1.5:2", "", "communication need", "EARoot/EA1/EA5/EA70.htm", "5.png", "E33", "0", "", "Class0","{202B9BA1-EA2F-4bfb-A3D5-BE04ACA3E2D5}");
+tocTab[tocTab.length] = new Array("0.1.5:3", "", "communication process", "EARoot/EA1/EA5/EA71.htm", "5.png", "E30", "0", "", "Class0","{A580A7C5-BB41-41ed-8C31-0B791E57A2A8}");
+tocTab[tocTab.length] = new Array("0.1.5:4", "", "communication service", "EARoot/EA1/EA5/EA72.htm", "5.png", "E31", "0", "", "Class0","{04F387DD-6520-4303-9464-AA4FA280AB16}");
+tocTab[tocTab.length] = new Array("0.1.5:5", "", "communication user", "EARoot/EA1/EA5/EA73.htm", "5.png", "E32", "0", "", "Class0","{1FC1FE8C-6F1A-41a7-AECE-0F7A9C874620}");
