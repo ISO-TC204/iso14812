@@ -10,6 +10,7 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element ref="vocab:package"/>
+                <xs:element ref="vocab:figindex"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -120,5 +121,21 @@
         <xs:annotation>
             <xs:documentation>The img tag to insert into HTML</xs:documentation>
         </xs:annotation>
+    </xs:element>
+    <xs:element name="figindex">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="vocab:entry"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="diagrams" type="xs:string"/>
+    <xs:element name="entry">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="vocab:name"/>
+                <xs:element ref="vocab:diagrams"/>
+            </xs:sequence>
+        </xs:complexType>
     </xs:element>
 </xs:schema>
