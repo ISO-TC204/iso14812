@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.1.9:1", "", "Communication view terms", "EARoot/EA1/EA9/EA99.htm", "175.png", "30", "0", "", "Logical diagram0","{0725AD24-907E-4bfc-95CF-CA9DD55C9654}");
+tocTab[tocTab.length] = new Array("0.1.9:1", "", "Architecture - Communication view terms", "EARoot/EA1/EA9/EA99.htm", "175.png", "30", "0", "", "Logical diagram0","{0725AD24-907E-4bfc-95CF-CA9DD55C9654}");
 tocTab[tocTab.length] = new Array("0.1.9:2", "", "access layer", "EARoot/EA1/EA9/EA102.htm", "5.png", "E352", "0", "", "Class0","{1C96BC3C-DB6E-4594-B726-F1E9DAC6B9E1}");
 tocTab[tocTab.length] = new Array("0.1.9:3", "", "application entity", "EARoot/EA1/EA9/EA103.htm", "5.png", "E359", "0", "", "Class0","{B67D6489-6F69-43cc-9860-8CF4BB934A7D}");
 tocTab[tocTab.length] = new Array("0.1.9:4", "", "data plane", "EARoot/EA1/EA9/EA104.htm", "5.png", "E354", "0", "", "Class0","{13CDCB9D-95E2-4ff1-B8C4-7DDF63A55303}");

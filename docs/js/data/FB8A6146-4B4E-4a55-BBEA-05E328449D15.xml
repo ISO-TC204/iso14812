@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.1.10:1", "", "Enterprise view terms", "EARoot/EA1/EA10/EA109.htm", "175.png", "31", "0", "", "Logical diagram0","{287D30DF-87EC-4464-9A6D-D4B6C4562D16}");
+tocTab[tocTab.length] = new Array("0.1.10:1", "", "Architecture - Enterprise view terms", "EARoot/EA1/EA10/EA109.htm", "175.png", "31", "0", "", "Logical diagram0","{287D30DF-87EC-4464-9A6D-D4B6C4562D16}");
 tocTab[tocTab.length] = new Array("0.1.10:2", "", "document", "EARoot/EA1/EA10/EA112.htm", "5.png", "E368", "0", "", "Class0","{4D42D0BA-0458-4798-BEB7-CFD665901F33}");
 tocTab[tocTab.length] = new Array("0.1.10:3", "", "enterprise object", "EARoot/EA1/EA10/EA113.htm", "5.png", "E360", "0", "", "Class0","{FE675C96-4126-463b-BB0C-AB673DBFF9C7}");
 tocTab[tocTab.length] = new Array("0.1.10:4", "", "extends", "EARoot/EA1/EA10/EA114.htm", "5.png", "E372", "0", "", "Class0","{9D3AD001-60DB-4805-AAAF-AD93BD7CDF54}");

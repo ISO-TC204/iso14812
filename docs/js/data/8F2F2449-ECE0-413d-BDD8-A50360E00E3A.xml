@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.1.15:1", "", "data concept type terms", "EARoot/EA1/EA15/EA155.htm", "175.png", "15", "0", "", "Logical diagram0","{196AC355-D76F-4585-B1EB-C2824F05C466}");
+tocTab[tocTab.length] = new Array("0.1.15:1", "", "Data concept terms - Types", "EARoot/EA1/EA15/EA155.htm", "175.png", "15", "0", "", "Logical diagram0","{196AC355-D76F-4585-B1EB-C2824F05C466}");
 tocTab[tocTab.length] = new Array("0.1.15:2", "", "aggregate domain", "EARoot/EA1/EA15/EA158.htm", "5.png", "E103", "0", "", "Class0","{3885C6F4-DEBA-4ad3-952C-F6E500F10712}");
 tocTab[tocTab.length] = new Array("0.1.15:3", "", "data element", "EARoot/EA1/EA15/EA159.htm", "5.png", "E99", "0", "", "Class0","{6ADFFDA7-618A-4047-AE10-0991CBCE83C7}");
 tocTab[tocTab.length] = new Array("0.1.15:4", "", "interface dialogue", "EARoot/EA1/EA15/EA160.htm", "5.png", "E101", "0", "", "Class0","{A5ED9D41-0EE2-4838-9659-C4C127C6159A}");

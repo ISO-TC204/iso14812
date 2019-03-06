@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.1.13:1", "", "architecture type terms", "EARoot/EA1/EA13/EA137.htm", "175.png", "9", "0", "", "Logical diagram0","{6E649AC2-BE2F-4b09-B4D1-344A2D8AFFAC}");
+tocTab[tocTab.length] = new Array("0.1.13:1", "", "Architecture - Type terms", "EARoot/EA1/EA13/EA137.htm", "175.png", "9", "0", "", "Logical diagram0","{6E649AC2-BE2F-4b09-B4D1-344A2D8AFFAC}");
 tocTab[tocTab.length] = new Array("0.1.13:2", "", "C-ITS reference architecture", "EARoot/EA1/EA13/EA140.htm", "5.png", "E248", "0", "", "Class0","{654FD9AE-16B3-4abd-88DF-C9917F4788EC}");
 tocTab[tocTab.length] = new Array("0.1.13:3", "", "deployment architecture", "EARoot/EA1/EA13/EA141.htm", "5.png", "E54", "0", "", "Class0","{78E77228-80BD-47d7-BEB7-5B27B5842A74}");
 tocTab[tocTab.length] = new Array("0.1.13:4", "", "ITS deployment architecture", "EARoot/EA1/EA13/EA142.htm", "5.png", "E254", "0", "", "Class0","{6EF532F2-3022-4e1a-95F1-6B8825C4A3AE}");
