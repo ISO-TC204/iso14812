@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.2.1:1", "", "Vocab Template", "EARoot/EA2/EA1/EA282.htm", "175.png", "24", "0", "", "Logical diagram0","{65485E7D-E2A9-4cf5-9D80-F6E4C11455B4}");
-tocTab[tocTab.length] = new Array("0.2.1:2", "", "term", "EARoot/EA2/EA1/EA285.htm", "5.png", "E247", "0", "", "Class0","{B3EE2D74-DC95-4f58-B148-AA7668D92958}");
+tocTab[tocTab.length] = new Array("0.1.2.2:1", "", "Vocab Template", "EARoot/EA1/EA2/EA2/EA579.htm", "175.png", "24", "0", "", "Logical diagram0","{65485E7D-E2A9-4cf5-9D80-F6E4C11455B4}");
+tocTab[tocTab.length] = new Array("0.1.2.2:2", "", "term", "EARoot/EA1/EA2/EA2/EA582.htm", "5.png", "E247", "0", "", "Class0","{B3EE2D74-DC95-4f58-B148-AA7668D92958}");

@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.7.4:1", "", "Support system terms", "EARoot/EA7/EA4/EA411.htm", "175.png", "44", "0", "", "Logical diagram0","{9A11F983-86F7-4da9-8117-C62038B7AECB}");
-tocTab[tocTab.length] = new Array("0.7.4:2", "", "cooperative ITS credentials management system", "EARoot/EA7/EA4/EA414.htm", "5.png", "E427", "0", "", "Class0","{9A70178C-1113-48ec-BE74-7E2A10E56E21}");
-tocTab[tocTab.length] = new Array("0.7.4:3", "", "map update system", "EARoot/EA7/EA4/EA415.htm", "5.png", "E264", "0", "", "Class0","{B2AFCEA4-2AC3-4410-BBD8-D0FDE1EB8B5C}");
+tocTab[tocTab.length] = new Array("0.1.1.7.4:1", "", "Support system terms", "EARoot/EA1/EA1/EA7/EA4/EA417.htm", "175.png", "44", "0", "", "Logical diagram0","{9A11F983-86F7-4da9-8117-C62038B7AECB}");
+tocTab[tocTab.length] = new Array("0.1.1.7.4:2", "", "cooperative ITS credentials management system", "EARoot/EA1/EA1/EA7/EA4/EA420.htm", "5.png", "E427", "0", "", "Class0","{9A70178C-1113-48ec-BE74-7E2A10E56E21}");
+tocTab[tocTab.length] = new Array("0.1.1.7.4:3", "", "map update system", "EARoot/EA1/EA1/EA7/EA4/EA421.htm", "5.png", "E264", "0", "", "Class0","{B2AFCEA4-2AC3-4410-BBD8-D0FDE1EB8B5C}");
