@@ -1,3 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.1.3.1", "1", "3.3.1 Roadway component terms", "EARoot/EA1/EA1/EA3/EA1/EA199.htm", "4.png", "", "", "{AB8EC6C3-F0AF-4ca9-B4FB-3CB832FED376}", "Package");
-tocTab[tocTab.length] = new Array("0.1.1.3.2", "1", "3.3.2 Road network terms", "EARoot/EA1/EA1/EA3/EA2/EA218.htm", "4.png", "", "", "{303A90DE-41DD-45d0-8AF2-2ACF3C31A04E}", "Package");
-tocTab[tocTab.length] = new Array("0.1.1.3.3", "1", "3.3.3 Junction terms", "EARoot/EA1/EA1/EA3/EA3/EA233.htm", "4.png", "", "", "{B5DED1E2-D2DF-4b0c-9D11-CA1EDA6E29FE}", "Package");

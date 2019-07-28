@@ -1,5 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.1.1.11:1", "", "Service terms - ITS", "EARoot/EA1/EA1/EA1/EA11/EA129.htm", "175.png", "3", "0", "", "Logical diagram0","{7FBBB7DC-B753-437c-B3C7-0AB8C167B178}");
-tocTab[tocTab.length] = new Array("0.1.1.1.11:2", "", "service", "EARoot/EA1/EA1/EA1/EA11/EA132.htm", "5.png", "E21", "0", "", "Class0","{4D485872-E9EE-414e-9CE1-AB855A03540B}");
-tocTab[tocTab.length] = new Array("0.1.1.1.11:3", "", "service provider", "EARoot/EA1/EA1/EA1/EA11/EA133.htm", "5.png", "E20", "0", "", "Class0","{1ADCFD57-B074-48b8-BEC7-0E96914EBFEE}");
-tocTab[tocTab.length] = new Array("0.1.1.1.11:4", "", "user", "EARoot/EA1/EA1/EA1/EA11/EA134.htm", "5.png", "E19", "0", "", "Class0","{F263D8B8-1E91-4fcf-9B82-87F21A9C2350}");
-tocTab[tocTab.length] = new Array("0.1.1.1.11:5", "", "user need", "EARoot/EA1/EA1/EA1/EA11/EA135.htm", "5.png", "E22", "0", "", "Class0","{C312FB0B-6C11-40db-86F1-58458C5AC4B8}");

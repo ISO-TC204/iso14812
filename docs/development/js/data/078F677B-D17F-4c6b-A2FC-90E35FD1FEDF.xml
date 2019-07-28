@@ -1,5 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.1.7.5:1", "", "Traveller system terms", "EARoot/EA1/EA1/EA7/EA5/EA422.htm", "175.png", "45", "0", "", "Logical diagram0","{4BEEBAA5-B54D-4a3b-8E21-B5E047289EF0}");
-tocTab[tocTab.length] = new Array("0.1.1.7.5:2", "", "external in-vehicle device", "EARoot/EA1/EA1/EA7/EA5/EA425.htm", "5.png", "E125", "0", "", "Class0","{51C1CD32-4275-48d6-A3CA-36D656564FCE}");
-tocTab[tocTab.length] = new Array("0.1.1.7.5:3", "", "nomadic device", "EARoot/EA1/EA1/EA7/EA5/EA426.htm", "5.png", "E261", "0", "", "Class0","{00EBE70F-3F12-41aa-A9CA-37A15B673552}");
-tocTab[tocTab.length] = new Array("0.1.1.7.5:4", "", "personal information device", "EARoot/EA1/EA1/EA7/EA5/EA427.htm", "5.png", "E429", "0", "", "Class0","{3E33A4D7-FC43-41d9-81D2-49AC28E47690}");
-tocTab[tocTab.length] = new Array("0.1.1.7.5:5", "", "public information device", "EARoot/EA1/EA1/EA7/EA5/EA428.htm", "5.png", "E428", "0", "", "Class0","{09AD781A-2EFB-4956-A6DD-EDD0F99E8870}");

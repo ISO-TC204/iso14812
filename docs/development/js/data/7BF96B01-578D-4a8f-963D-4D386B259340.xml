@@ -1,4 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.1.8.7:1", "", "Low-speed vehicles", "EARoot/EA1/EA1/EA8/EA7/EA518.htm", "175.png", "50", "0", "", "Logical diagram0","{B870C334-CF32-4604-B22C-1A0AA094AD58}");
-tocTab[tocTab.length] = new Array("0.1.1.8.7:2", "", "bicycle", "EARoot/EA1/EA1/EA8/EA7/EA521.htm", "5.png", "E438", "0", "", "Class0","{D0C71DAD-4B13-47a2-842D-9E33A387C5DA}");
-tocTab[tocTab.length] = new Array("0.1.1.8.7:3", "", "pedicycle", "EARoot/EA1/EA1/EA8/EA7/EA522.htm", "5.png", "E143", "0", "", "Class0","{29D96083-7EC7-4ef5-A4A1-7023C48287E8}");
-tocTab[tocTab.length] = new Array("0.1.1.8.7:4", "", "tricycle", "EARoot/EA1/EA1/EA8/EA7/EA523.htm", "5.png", "E439", "0", "", "Class0","{9366EAFF-D888-4cb8-9796-91ECA7555B89}");
