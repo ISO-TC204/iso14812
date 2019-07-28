@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.8.4:1", "", "Mid-speed vehicles", "EARoot/EA8/EA4/EA493.htm", "175.png", "57", "0", "", "Logical diagram0","{5EABDAFB-CEE0-4975-B147-9C3B155FAAF4}");
+tocTab[tocTab.length] = new Array("0.8.4:2", "", "high-speed vehicle", "EARoot/EA8/EA4/EA496.htm", "5.png", "E495", "0", "", "Class0","{07F82C0B-70AC-42ea-B17B-D6553486CA6D}");
+tocTab[tocTab.length] = new Array("0.8.4:3", "", "low-speed vehicle", "EARoot/EA8/EA4/EA497.htm", "5.png", "E142", "0", "", "Class0","{49A50B82-38DB-4306-9380-80630FB05EEC}");
+tocTab[tocTab.length] = new Array("0.8.4:4", "", "mid-speed vehicle", "EARoot/EA8/EA4/EA498.htm", "5.png", "E464", "0", "", "Class0","{FD89E730-FE50-4331-A8EE-FE9F633D0A79}");
+tocTab[tocTab.length] = new Array("0.8.4:5", "", "moped", "EARoot/EA8/EA4/EA499.htm", "5.png", "E150", "0", "", "Class0","{922733CB-8864-4a46-B9EC-338BEDABBD45}");
+tocTab[tocTab.length] = new Array("0.8.4:6", "", "motorway-speed vehicle", "EARoot/EA8/EA4/EA500.htm", "5.png", "E492", "0", "", "Class0","{CE09A8DD-6071-4852-9827-E1EA1B60D7B0}");

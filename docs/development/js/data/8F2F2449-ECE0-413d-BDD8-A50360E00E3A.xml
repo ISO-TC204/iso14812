@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("0.1.9:1", "", "Data concept terms - Types", "EARoot/EA1/EA9/EA110.htm", "175.png", "15", "0", "", "Logical diagram0","{196AC355-D76F-4585-B1EB-C2824F05C466}");
+tocTab[tocTab.length] = new Array("0.1.9:2", "", "aggregate domain", "EARoot/EA1/EA9/EA113.htm", "5.png", "E103", "0", "", "Class0","{3885C6F4-DEBA-4ad3-952C-F6E500F10712}");
+tocTab[tocTab.length] = new Array("0.1.9:3", "", "data element", "EARoot/EA1/EA9/EA114.htm", "5.png", "E99", "0", "", "Class0","{6ADFFDA7-618A-4047-AE10-0991CBCE83C7}");
+tocTab[tocTab.length] = new Array("0.1.9:4", "", "interface dialogue", "EARoot/EA1/EA9/EA115.htm", "5.png", "E101", "0", "", "Class0","{A5ED9D41-0EE2-4838-9659-C4C127C6159A}");
+tocTab[tocTab.length] = new Array("0.1.9:5", "", "object class", "EARoot/EA1/EA9/EA116.htm", "5.png", "E105", "0", "", "Class0","{DF674EF5-FB80-49aa-BE03-DC6E5FF03853}");
+tocTab[tocTab.length] = new Array("0.1.9:6", "", "value domain", "EARoot/EA1/EA9/EA117.htm", "5.png", "E102", "0", "", "Class0","{ACC1C171-626D-4047-9E3C-C4C273BEA796}");
+tocTab[tocTab.length] = new Array("0.1.9:7", "", "data frame", "EARoot/EA1/EA9/EA118.htm", "5.png", "E98", "0", "", "Class0","{D0B512E1-030A-4b99-8CB1-3473D336CBFC}");
+tocTab[tocTab.length] = new Array("0.1.9:8", "", "message", "EARoot/EA1/EA9/EA119.htm", "5.png", "E97", "0", "", "Class0","{7E8CF3F6-4328-4ed1-99FE-F6FA0A1FDADC}");
