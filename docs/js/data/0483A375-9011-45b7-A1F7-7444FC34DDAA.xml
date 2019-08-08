@@ -1,7 +1,0 @@
-tocTab[tocTab.length] = new Array("0.7.1", "1", "3.7.1 Physical objects - General terms", "EARoot/EA7/EA1/EA386.htm", "4.png", "", "", "{FD26920C-632A-43f7-9AFC-D69F9E6BCDC1}", "Package");
-tocTab[tocTab.length] = new Array("0.7.2", "1", "3.7.2 Centre terms", "EARoot/EA7/EA2/EA394.htm", "4.png", "", "", "{F863780B-6FFC-4656-81DE-9E6B9BA6B148}", "Package");
-tocTab[tocTab.length] = new Array("0.7.3", "1", "3.7.3 Field system terms", "EARoot/EA7/EA3/EA406.htm", "4.png", "", "", "{87D890B9-DCCC-474f-B20C-02B3FB713C44}", "Package");
-tocTab[tocTab.length] = new Array("0.7.4", "1", "3.7.4 Support system terms", "EARoot/EA7/EA4/EA413.htm", "4.png", "", "", "{259BF6EE-89A1-4cd5-A057-06319BA4AD04}", "Package");
-tocTab[tocTab.length] = new Array("0.7.5", "1", "3.7.5 Traveller system terms", "EARoot/EA7/EA5/EA418.htm", "4.png", "", "", "{078F677B-D17F-4c6b-A2FC-90E35FD1FEDF}", "Package");
-tocTab[tocTab.length] = new Array("0.7.6", "1", "3.7.6 Vehicle system terms", "EARoot/EA7/EA6/EA425.htm", "4.png", "", "", "{ACC6C9D6-1E74-45d6-A561-D5F395DF3332}", "Package");
-tocTab[tocTab.length] = new Array("0.7.7", "1", "3.7.7 ITS station terms", "EARoot/EA7/EA7/EA433.htm", "4.png", "", "", "{376A01BC-DC9A-4b97-8065-8FE559BCD432}", "Package");

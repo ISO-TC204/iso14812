@@ -1,7 +1,0 @@
-tocTab[tocTab.length] = new Array("0.8.2:1", "", "Motor vehicles", "EARoot/EA8/EA2/EA454.htm", "175.png", "38", "0", "", "Logical diagram0","{022136D7-899D-460f-98DF-C502CC10B29F}");
-tocTab[tocTab.length] = new Array("0.8.2:2", "", "bus", "EARoot/EA8/EA2/EA457.htm", "5.png", "E407", "0", "", "Class0","{ADB9CA40-2E85-4b56-8612-1C1202A8AA6A}");
-tocTab[tocTab.length] = new Array("0.8.2:3", "", "goods vehicle", "EARoot/EA8/EA2/EA458.htm", "5.png", "E147", "0", "", "Class0","{5D915587-849B-4355-8A29-C56430F62C03}");
-tocTab[tocTab.length] = new Array("0.8.2:4", "", "motorcycle", "EARoot/EA8/EA2/EA459.htm", "5.png", "E145", "0", "", "Class0","{67B75967-5E17-4226-A527-2E7D8D7F6D93}");
-tocTab[tocTab.length] = new Array("0.8.2:5", "", "passenger car", "EARoot/EA8/EA2/EA460.htm", "5.png", "E148", "0", "", "Class0","{D4A825C9-1955-4002-8C47-0BC2D3E25807}");
-tocTab[tocTab.length] = new Array("0.8.2:6", "", "passenger van", "EARoot/EA8/EA2/EA461.htm", "5.png", "E149", "0", "", "Class0","{64B1872F-39E1-473c-A68A-ED021CB6075F}");
-tocTab[tocTab.length] = new Array("0.8.2:7", "", "passenger vehicle", "EARoot/EA8/EA2/EA462.htm", "5.png", "E128", "0", "", "Class0","{F54BA07F-34F9-47da-9915-6CA6DC279B3B}");

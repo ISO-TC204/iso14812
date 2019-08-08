@@ -1,6 +1,0 @@
-tocTab[tocTab.length] = new Array("0.8.6:1", "", "Vehicle terms - Technology", "EARoot/EA8/EA6/EA482.htm", "175.png", "51", "0", "", "Logical diagram0","{12E6D280-8007-471f-ACF3-ACFCA88D3E63}");
-tocTab[tocTab.length] = new Array("0.8.6:2", "", "automated vehicle", "EARoot/EA8/EA6/EA485.htm", "5.png", "E440", "0", "", "Class0","{A7CF87D9-8568-4ece-B598-79EF59C87184}");
-tocTab[tocTab.length] = new Array("0.8.6:3", "", "conkditionally automated vehicle", "EARoot/EA8/EA6/EA486.htm", "5.png", "E442", "0", "", "Class0","{0D13CFB7-427A-423d-9DBC-082B91FCEE24}");
-tocTab[tocTab.length] = new Array("0.8.6:4", "", "connected vehicle", "EARoot/EA8/EA6/EA487.htm", "5.png", "E122", "0", "", "Class0","{49FF108A-0CA1-40d4-9A43-9CF9BBABA1BB}");
-tocTab[tocTab.length] = new Array("0.8.6:5", "", "fully automated vehicle", "EARoot/EA8/EA6/EA488.htm", "5.png", "E123", "0", "", "Class0","{30D0139B-138E-4279-95A7-169B36C821FA}");
-tocTab[tocTab.length] = new Array("0.8.6:6", "", "highly automated vehicle", "EARoot/EA8/EA6/EA489.htm", "5.png", "E441", "0", "", "Class0","{386BE5C5-F592-4b90-9CE6-0CCEC1EA437C}");

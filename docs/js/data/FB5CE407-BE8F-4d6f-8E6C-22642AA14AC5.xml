@@ -1,8 +1,0 @@
-tocTab[tocTab.length] = new Array("0.5.2:1", "", "Shared mobility - General", "EARoot/EA5/EA2/EA276.htm", "175.png", "33", "0", "", "Logical diagram0","{9F2865FF-DDFD-474d-BD66-4DBD6AEE8FB5}");
-tocTab[tocTab.length] = new Array("0.5.2:2", "", "AV sharing", "EARoot/EA5/EA2/EA279.htm", "5.png", "E404", "0", "", "Class0","{66CDBE2C-CD4E-490f-A0C1-4D980D258EE5}");
-tocTab[tocTab.length] = new Array("0.5.2:3", "", "shared AV service", "EARoot/EA5/EA2/EA280.htm", "5.png", "E392", "0", "", "Class0","{84CD7C20-7A8D-47c2-B45C-B2E6B7F15262}");
-tocTab[tocTab.length] = new Array("0.5.2:4", "", "shared mobility service", "EARoot/EA5/EA2/EA281.htm", "5.png", "E285", "0", "", "Class0","{4522B42E-3788-443c-AE5A-47015FE4D41B}");
-tocTab[tocTab.length] = new Array("0.5.2:5", "", "shared transport service", "EARoot/EA5/EA2/EA282.htm", "5.png", "E390", "0", "", "Class0","{AF252202-FB50-473f-B51E-56F3FBE6932E}");
-tocTab[tocTab.length] = new Array("0.5.2:6", "", "shared vehicle service", "EARoot/EA5/EA2/EA283.htm", "5.png", "E288", "0", "", "Class0","{8C73DE6A-6FCF-4643-AE8C-1A25A4E4C9CF}");
-tocTab[tocTab.length] = new Array("0.5.2:7", "", "transport sharing", "EARoot/EA5/EA2/EA284.htm", "5.png", "E403", "0", "", "Class0","{DA9FEA8E-1917-4f70-A5ED-CEC4EDE9366E}");
-tocTab[tocTab.length] = new Array("0.5.2:8", "", "vehicle sharing", "EARoot/EA5/EA2/EA285.htm", "5.png", "E402", "0", "", "Class0","{02140288-CFE2-4357-9849-576D93051804}");

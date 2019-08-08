@@ -1,6 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.2:1", "", "System terms - Generic", "EARoot/EA1/EA2/EA41.htm", "175.png", "2", "0", "", "Logical diagram0","{982AD384-290A-4922-8923-993D06EB987F}");
-tocTab[tocTab.length] = new Array("0.1.2:2", "", "consumer", "EARoot/EA1/EA2/EA44.htm", "5.png", "E13", "0", "", "Class0","{8B698530-E3B9-46b3-B78C-2E6C58FE87D7}");
-tocTab[tocTab.length] = new Array("0.1.2:3", "", "entity", "EARoot/EA1/EA2/EA45.htm", "5.png", "E18", "0", "", "Class0","{040D6A1B-412A-4cc6-9218-82357A58F747}");
-tocTab[tocTab.length] = new Array("0.1.2:4", "", "need", "EARoot/EA1/EA2/EA46.htm", "5.png", "E15", "0", "", "Class0","{8C060C79-3CE1-4fb8-8B50-E52BD3A3FDE6}");
-tocTab[tocTab.length] = new Array("0.1.2:5", "", "service", "EARoot/EA1/EA2/EA47.htm", "5.png", "E17", "0", "", "Class0","{1C826F4D-C774-4eb7-B8DD-B33EF68A28F5}");
-tocTab[tocTab.length] = new Array("0.1.2:6", "", "service provider", "EARoot/EA1/EA2/EA48.htm", "5.png", "E25", "0", "", "Class0","{8B7ACC49-A9CB-45f1-8C36-34024C5A6318}");

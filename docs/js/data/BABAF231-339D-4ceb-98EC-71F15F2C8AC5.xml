@@ -1,6 +1,0 @@
-tocTab[tocTab.length] = new Array("0.8.5:1", "", "Externally powered vehicles", "EARoot/EA8/EA5/EA473.htm", "175.png", "47", "0", "", "Logical diagram0","{51A3E750-A600-4392-99C2-267F813BEA06}");
-tocTab[tocTab.length] = new Array("0.8.5:2", "", "carriage", "EARoot/EA8/EA5/EA477.htm", "5.png", "E436", "0", "", "Class0","{BECF3586-C41D-41bf-851B-9A482714A9D4}");
-tocTab[tocTab.length] = new Array("0.8.5:3", "", "cart", "EARoot/EA8/EA5/EA478.htm", "5.png", "E137", "0", "", "Class0","{05976B8B-C7A8-4b0e-93DA-8793E35357A0}");
-tocTab[tocTab.length] = new Array("0.8.5:4", "", "maglev vehicle", "EARoot/EA8/EA5/EA479.htm", "5.png", "E144", "0", "", "Class0","{8E43F08C-CF16-4a54-8E9B-0FA81CC092A9}");
-tocTab[tocTab.length] = new Array("0.8.5:5", "", "sidecar", "EARoot/EA8/EA5/EA480.htm", "5.png", "E151", "0", "", "Class0","{944FF274-12BA-46be-B3B0-C9F7D02659E3}");
-tocTab[tocTab.length] = new Array("0.8.5:6", "", "trailer", "EARoot/EA8/EA5/EA481.htm", "5.png", "E133", "0", "", "Class0","{9383B95B-A1E5-4c6c-8880-451B3215F9FC}");
