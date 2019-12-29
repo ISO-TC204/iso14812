@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>extends</title>
+<title>3.1.6 Architecture - Enterprise view::enterprise object</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,8 +34,8 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("extends", " : "))</script> </span>
-	<div class="ObjectDetailsNotes">#lt;enterprise view#gt; &lt;a href=&quot;javascript:top.guidLink(&#39;{15042ADE-65AA-448a-98FF-7ECFA044549B}&#39;)&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;&lt;u&gt;relationship&lt;/u&gt;&lt;/font&gt;&lt;/a&gt; where one &lt;a href=&quot;javascript:top.guidLink(&#39;{55BD7B97-20A4-4728-AE93-ED1F75D7692B}&#39;)&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;&lt;u&gt;resource&lt;/u&gt;&lt;/font&gt;&lt;/a&gt; supplements another resource&lt;br/&gt;</div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("enterprise object", " : "))</script> </span>
+	<div class="ObjectDetailsNotes">&lt;a href=&quot;javascript:top.guidLink(&#39;{A9454DB8-6F4C-47c9-902B-7ABEE2462EA8}&#39;)&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;&lt;u&gt;element&lt;/u&gt;&lt;/font&gt;&lt;/a&gt; within an &lt;a href=&quot;javascript:top.guidLink(&#39;{4C3EDEBD-6786-459a-8343-C1B09B870255}&#39;)&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;&lt;u&gt;enterprise view&lt;/u&gt;&lt;/font&gt;&lt;/a&gt; that represents an organization or individual&lt;br/&gt;</div>
 
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
@@ -48,11 +48,11 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">2/14/2019 4:23:54 PM</td>
+			<td width="85%" class="ObjectDetailsValue">2/13/2019 7:04:49 PM</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">2/14/2019 5:18:59 PM</td>
+			<td class="ObjectDetailsValue">2/13/2019 7:16:07 PM</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Status:</td>
@@ -60,7 +60,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA75.htm">Architecture - Enterprise view terms</a></td>
+			<td class="ObjectDetailsValue"><a href="EA76.htm">Architecture - Enterprise view terms</a></td>
 		</tr>
 	</table>
 	<p>Click on the tabs below for additional information as follows</p>
@@ -71,9 +71,43 @@ function nameClassifier(name, separator)
 		<li>Other Links: Links to other terms that have defined generalization relationships defined.</li>
 	</ul>	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA4/EA60.htm">enterprise view</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink239" onclick="parent.toggleDiv('detailsDIVLink239','DetailsImageLink239')" />Details:
+							<div id="detailsDIVLink239" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
 <div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
@@ -81,25 +115,13 @@ function nameClassifier(name, separator)
 			<td width="50%" class="TableHeading">Value</td>
 		</tr>
 					<tr>
-				<td width="50%" class="TableRow" valign="top">Vocab::example</td>
-				<td width="50%" class="TableRow" valign="top">A functional object might extend the functionality of another functional object.</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario243" onclick="parent.toggleDiv('detailsDIVScenario243','DetailsImageScenario243')" />Details:
-						<div id="detailsDIVScenario243" class="DetailsDiv" >
-						&nbsp;
-						</div>
-					</div>
-				</td>
-			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">Vocab::id</td>
-				<td width="50%" class="TableRow" valign="top">3</td>
+				<td width="50%" class="TableRow" valign="top">1</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario244" onclick="parent.toggleDiv('detailsDIVScenario244','DetailsImageScenario244')" />Details:
-						<div id="detailsDIVScenario244" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario240" onclick="parent.toggleDiv('detailsDIVScenario240','DetailsImageScenario240')" />Details:
+						<div id="detailsDIVScenario240" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -110,8 +132,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario245" onclick="parent.toggleDiv('detailsDIVScenario245','DetailsImageScenario245')" />Details:
-						<div id="detailsDIVScenario245" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario241" onclick="parent.toggleDiv('detailsDIVScenario241','DetailsImageScenario241')" />Details:
+						<div id="detailsDIVScenario241" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -128,9 +150,9 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA85.htm">relationship</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA60.htm">enterprise view</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">Strong</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>

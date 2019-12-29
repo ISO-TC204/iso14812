@@ -1,6 +1,6 @@
-tocTab[tocTab.length] = new Array("0.1.10:1", "", "Data concept terms - management", "EARoot/EA1/EA10/EA114.htm", "175.png", "22", "0", "", "Logical diagram0","{D066733E-63EB-4183-BA67-8B5EC4706E66}");
-tocTab[tocTab.length] = new Array("0.1.10:2", "", "data", "EARoot/EA1/EA10/EA117.htm", "5.png", "E512", "0", "", "Class0","{EEC58F53-9554-49e3-87D6-375D494CB626}");
-tocTab[tocTab.length] = new Array("0.1.10:3", "", "data concept", "EARoot/EA1/EA10/EA118.htm", "5.png", "E225", "0", "", "Class0","{5C989C13-52B1-4d07-BB1E-631FC7D46F8F}");
-tocTab[tocTab.length] = new Array("0.1.10:4", "", "data concept registry", "EARoot/EA1/EA10/EA119.htm", "5.png", "E227", "0", "", "Class0","{8ED0B56A-7A7C-4636-9CAC-281E4716F553}");
-tocTab[tocTab.length] = new Array("0.1.10:5", "", "data dictionary", "EARoot/EA1/EA10/EA120.htm", "5.png", "E226", "0", "", "Class0","{B06371D3-8EFC-48e2-99F5-0E38BFECA3F5}");
-tocTab[tocTab.length] = new Array("0.1.10:6", "", "meta-attribute", "EARoot/EA1/EA10/EA121.htm", "5.png", "E228", "0", "", "Class0","{5E5AB08C-409C-4757-A21F-0C4353B6F6D9}");
+tocTab[tocTab.length] = new Array("0.1.10:1", "", "Data concept terms - management", "EARoot/EA1/EA10/EA115.htm", "175.png", "22", "0", "", "Logical diagram0","{D066733E-63EB-4183-BA67-8B5EC4706E66}");
+tocTab[tocTab.length] = new Array("0.1.10:2", "", "data", "EARoot/EA1/EA10/EA118.htm", "5.png", "E512", "0", "", "Class0","{EEC58F53-9554-49e3-87D6-375D494CB626}");
+tocTab[tocTab.length] = new Array("0.1.10:3", "", "data concept", "EARoot/EA1/EA10/EA119.htm", "5.png", "E225", "0", "", "Class0","{5C989C13-52B1-4d07-BB1E-631FC7D46F8F}");
+tocTab[tocTab.length] = new Array("0.1.10:4", "", "data concept registry", "EARoot/EA1/EA10/EA120.htm", "5.png", "E227", "0", "", "Class0","{8ED0B56A-7A7C-4636-9CAC-281E4716F553}");
+tocTab[tocTab.length] = new Array("0.1.10:5", "", "data dictionary", "EARoot/EA1/EA10/EA121.htm", "5.png", "E226", "0", "", "Class0","{B06371D3-8EFC-48e2-99F5-0E38BFECA3F5}");
+tocTab[tocTab.length] = new Array("0.1.10:6", "", "meta-attribute", "EARoot/EA1/EA10/EA122.htm", "5.png", "E228", "0", "", "Class0","{5E5AB08C-409C-4757-A21F-0C4353B6F6D9}");
