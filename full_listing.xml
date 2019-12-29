@@ -16,7 +16,7 @@
 		<name>entity</name>
 		<definition>concrete or abstract thing that exists, did exist, or might exist, including associations among these things </definition>
 		<status>Proposed</status>
-		<modified>2019-08-06T10:09:01</modified>
+		<modified>2019-11-04T11:01:46</modified>
 		<example>A person, object, event, idea, process, etc.</example>
 		<id>1</id>
 		<source>ISO/TR 17185-1</source>
@@ -25,9 +25,9 @@
 	<entry>
 		<clause>3.1.1.2</clause>
 		<name>immaterial entity</name>
-		<definition>__entity__ that does not occupy three-dimensional space\r\n </definition>
+		<definition>__entity__ that does not occupy three-dimensional space</definition>
 		<status>Proposed</status>
-		<modified>2019-08-07T13:30:55</modified>
+		<modified>2019-12-28T12:20:52</modified>
 		<example>Idea, process, organization, etc.</example>
 		<id>2</id>
 		<WG>1</WG>
@@ -37,7 +37,7 @@
 		<name>material entity</name>
 		<definition>__entity__ that occupies three-dimensional space</definition>
 		<status>Proposed</status>
-		<modified>2019-08-07T21:52:22</modified>
+		<modified>2019-11-04T11:02:05</modified>
 		<id>3</id>
 		<note>All material entities have certain characteristics that can be described and therefore this concept is important for ontology purposes.</note>
 		<WG>1</WG>
@@ -62,16 +62,15 @@
 		<note>Person is capitalized to indicate that it is being utilized as formally defined in the standards and to differentiate it from its day-to-day use.</note>
 		<note>Synonyms for "legal person" include "artificial person", "body corporate", etc., depending on the terminology used in competent jurisdictions.</note>
 		<source>ISO/IEC 14662:2010(en), 3.24, modified to add reference to entity definition</source>
-		<source>ISO/TR 17185-1, adapted to conform to our concept model</source>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.2.5</clause>
+		<clause>3.1.2.6</clause>
 		<name>cooperative ITS</name>
 		<definition>subset of __ITS__ where information is shared among __physical objects__ based on mutual security agreements with a credentialing system  </definition>
 		<status>Proposed</status>
 		<modified>2018-12-07T11:23:11</modified>
-		<id>5</id>
+		<id>6</id>
 		<note></note>
 		<note></note>
 		<preferredTerm>C-ITS</preferredTerm>
@@ -80,13 +79,13 @@
 		<WG>7</WG>
 	</entry>
 	<entry>
-		<clause>3.1.2.4</clause>
+		<clause>3.1.2.5</clause>
 		<name>intelligent transport system</name>
 		<definition>__technology system__ that is designed to benefit a __surface transport system__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-28T09:11:36</modified>
 		<admittedTerm>intelligent transportation system</admittedTerm>
-		<id>4</id>
+		<id>5</id>
 		<index>system:intelligent transport system</index>
 		<note></note>
 		<note>Benefits potentially include, but are not limited to, increased safety, sustainability, efficiency, and comfort. </note>
@@ -98,31 +97,41 @@
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.1.2.2</clause>
+		<clause>3.1.2.3</clause>
 		<name>surface transport system</name>
-		<definition>__transport system__ designed to move physical entities across the surface of the earth</definition>
+		<definition>__transport system__ designed to move physical entities across the surface or near-surface of the earth</definition>
 		<status>Proposed</status>
-		<modified>2018-12-07T11:22:46</modified>
-		<id>2</id>
+		<modified>2019-09-18T19:16:51</modified>
+		<id>3</id>
 		<note>A surface transport system might include tunnels, bridges, and similar elements.</note>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.2.3</clause>
+		<clause>3.1.2.1</clause>
+		<name>system</name>
+		<definition>combination of interacting elements organized to achieve one or more stated purposes </definition>
+		<status>Proposed</status>
+		<modified>2019-09-18T19:14:57</modified>
+		<id>1</id>
+		<source>ISO/IEC/IEEE 15288:2015, 4.1.46</source>
+		<WG>1</WG>
+	</entry>
+	<entry>
+		<clause>3.1.2.4</clause>
 		<name>technology system</name>
 		<definition>__system__ that is comprised of information, communication, sensor, and control technologies</definition>
 		<status>Proposed</status>
 		<modified>2018-12-07T11:22:35</modified>
-		<id>3</id>
+		<id>4</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.2.1</clause>
+		<clause>3.1.2.2</clause>
 		<name>transport system</name>
 		<definition>__system__ of infrastructure elements and optionally __vehicles__ that jointly are designed to move __entities__ from an origin to a destination</definition>
 		<status>Proposed</status>
 		<modified>2019-03-04T21:51:15</modified>
-		<id>1</id>
+		<id>2</id>
 		<note>Transport systems are not necessarily limited to the transport of physical entities; the Internet could be considered a transport system of electronic entities.</note>
 		<WG>1</WG>
 	</entry>
@@ -160,21 +169,21 @@
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.3.4</clause>
+		<clause>3.1.3.9</clause>
 		<name>architecture model</name>
 		<definition>work product representing one or more __architecture views__ and expressed in a format governed by a __model kind__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-28T09:08:51</modified>
-		<id>4</id>
+		<id>9</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.3.5</clause>
+		<clause>3.1.3.7</clause>
 		<name>architecture view</name>
 		<definition>work product expressing the __architecture__ of a system from the perspective of specific system __concerns__ </definition>
 		<status>Proposed</status>
 		<modified>2019-02-28T09:09:21</modified>
-		<id>5</id>
+		<id>7</id>
 		<source>ISO/IEC/IEEE 42010:2011, 3.5</source>
 		<WG>1</WG>
 	</entry>
@@ -189,67 +198,57 @@
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.3.7</clause>
+		<clause>3.1.3.5</clause>
 		<name>concern</name>
 		<definition>&lt;system&gt; interest in a system relevant to one or more of its __stakeholders__ </definition>
 		<status>Proposed</status>
 		<modified>2019-02-13T15:03:41</modified>
-		<id>7</id>
+		<id>5</id>
 		<note>A concern pertains to any influence on a system in its environment, including developmental, technological, business, operational, organizational, political, economic, legal, regulatory, ecological and social influences. </note>
 		<source>ISO/IEC/IEEE 42010:2011, 3.7</source>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.3.8</clause>
+		<clause>3.1.3.10</clause>
 		<name>element</name>
 		<definition>&lt;architecture&gt; component member of an __architecture model__ included in an __architecture view__</definition>
 		<status>Proposed</status>
 		<modified>2019-07-24T16:39:37</modified>
-		<id>8</id>
+		<id>10</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.3.9</clause>
+		<clause>3.1.3.11</clause>
 		<name>environment</name>
 		<definition>&lt;system&gt; context determining the setting and circumstances of all influences upon a system</definition>
 		<status>Proposed</status>
 		<modified>2019-03-04T21:47:34</modified>
-		<id>9</id>
+		<id>11</id>
 		<note>The environment of a system includes developmental, technological, business, operational, organizational, political, economic, legal, regulatory, ecological and social influences.</note>
 		<source>ISO/IEC/IEEE 42010:2011, 3.8</source>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.3.10</clause>
+		<clause>3.1.3.8</clause>
 		<name>model kind</name>
 		<definition>conventions for a type of modelling</definition>
 		<status>Proposed</status>
 		<modified>2019-02-13T15:06:31</modified>
-		<id>10</id>
+		<id>8</id>
 		<note>Examples of model kinds include data flow diagrams, class diagrams, Petri nets, balance sheets, organization charts and state transition models.</note>
 		<source>ISO/IEC/IEEE 42010:2011, 3.9</source>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.3.11</clause>
+		<clause>3.1.3.4</clause>
 		<name>stakeholder</name>
 		<definition>&lt;system&gt; individual, team, organization, or classes thereof, having an interest in a system </definition>
 		<status>Proposed</status>
 		<modified>2019-02-21T13:46:19</modified>
-		<id>11</id>
+		<id>4</id>
 		<source>ISO/IEC/IEEE 42010:2011, 3.10</source>
 		<WG>1</WG>
 		<WG>18</WG>
-	</entry>
-	<entry>
-		<clause>3.1.3.12</clause>
-		<name>system</name>
-		<definition>combination of interacting elements organized to achieve one or more stated purposes </definition>
-		<status>Proposed</status>
-		<modified>2019-02-13T15:07:02</modified>
-		<id>12</id>
-		<source>ISO/IEC/IEEE 15288:2015, 4.1.46</source>
-		<WG>1</WG>
 	</entry>
 	<entry>
 		<clause>3.1.4.1</clause>
@@ -327,130 +326,130 @@
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.5.1</clause>
+		<clause>3.1.5.3</clause>
 		<name>access layer</name>
 		<definition>&lt;ITS-S&gt; part of the __data plane__ that provides the functionality related to the physical and data link layers of the open systems interconnect (OSI) reference model</definition>
 		<status>Proposed</status>
 		<modified>2019-08-07T15:25:46</modified>
 		<admittedTerm>link layer</admittedTerm>
 		<admittedTerm>subnet layer</admittedTerm>
-		<id>1</id>
+		<id>3</id>
 		<note>Within the IETF, the term "link layer" is used to describe the same functionality as the ITS-S reference architecture access layer.</note>
 		<note>Within the US, the NTCIP standards use the term "subnet layer" to describe the same functionality as the ITS-S reference architecture.</note>
 		<WG>18</WG>
 	</entry>
 	<entry>
-		<clause>3.1.5.2</clause>
+		<clause>3.1.5.1</clause>
 		<name>application entity</name>
 		<definition>&lt;ITS-S&gt; part of the __ITS station reference architecture__ that is responsible for providing ITS-related functionality</definition>
 		<status>Proposed</status>
 		<modified>2019-08-07T15:25:40</modified>
 		<deprecatedTerm>information layer</deprecatedTerm>
-		<id>2</id>
+		<id>1</id>
 		<note></note>
 		<WG>18</WG>
 	</entry>
 	<entry>
-		<clause>3.1.5.3</clause>
+		<clause>3.1.5.2</clause>
 		<name>data plane</name>
 		<definition>&lt;ITS-S&gt; part of the __ITS station reference architecture__ that is responsible for handling communications with other __physical objects__</definition>
 		<status>Proposed</status>
 		<modified>2019-08-07T15:26:23</modified>
-		<id>3</id>
+		<id>2</id>
 		<WG>18</WG>
 	</entry>
 	<entry>
-		<clause>3.1.5.4</clause>
+		<clause>3.1.5.5</clause>
 		<name>facilities layer</name>
 		<definition>&lt;ITS-S&gt; part of the __data plane__ that provides the functionality related to the session, presentation, and application layers of the open systems interconnect (OSI) reference model</definition>
 		<status>Proposed</status>
 		<modified>2019-08-07T15:25:55</modified>
 		<deprecatedTerm>application layer</deprecatedTerm>
-		<id>4</id>
+		<id>5</id>
 		<note>Within the US, the NTCIP standards call the facilities layer the "application layer"; however, as this term is easily confused with both the OSI application layer and the application entity, the term should be avoided.</note>
 		<WG>16</WG>
 		<WG>18</WG>
 		<WG>7</WG>
 	</entry>
 	<entry>
-		<clause>3.1.5.5</clause>
+		<clause>3.1.5.6</clause>
 		<name>management entity</name>
 		<definition>&lt;ITS-S&gt; part of the __ITS station reference architecture__ that is responsible for management of communications and configuration information for the local __physical object__ and possibly remote physical objects</definition>
 		<status>Proposed</status>
 		<modified>2019-08-07T15:26:02</modified>
-		<id>5</id>
-		<WG>18</WG>
-	</entry>
-	<entry>
-		<clause>3.1.5.6</clause>
-		<name>security entity</name>
-		<definition>&lt;ITS-S&gt; part of the __ITS station reference architecture__ that is responsible for providing privacy, communication security, and system security</definition>
-		<status>Proposed</status>
-		<modified>2019-08-07T15:26:08</modified>
 		<id>6</id>
 		<WG>18</WG>
 	</entry>
 	<entry>
 		<clause>3.1.5.7</clause>
+		<name>security entity</name>
+		<definition>&lt;ITS-S&gt; part of the __ITS station reference architecture__ that is responsible for providing privacy, communication security, and system security</definition>
+		<status>Proposed</status>
+		<modified>2019-08-07T15:26:08</modified>
+		<id>7</id>
+		<WG>18</WG>
+	</entry>
+	<entry>
+		<clause>3.1.5.4</clause>
 		<name>transnet layer</name>
 		<definition>&lt;ITS-S&gt; part of the __data plane__ that provides the functionality related to the network and transport layers of the open systems interconnect (OSI) reference model</definition>
 		<status>Proposed</status>
 		<modified>2019-08-07T15:26:14</modified>
-		<id>7</id>
+		<id>4</id>
 		<note>The full name of this layer is the networking and transport layer, but the term transnet layer provides a more concise name.</note>
 		<preferredTerm>networking and transport layer</preferredTerm>
 		<WG>16</WG>
 		<WG>18</WG>
 	</entry>
 	<entry>
-		<clause>3.1.6.1</clause>
+		<clause>3.1.6.3</clause>
 		<name>document</name>
 		<definition>uniquely identified unit of information for human use</definition>
 		<status>Proposed</status>
 		<modified>2019-02-14T16:47:02</modified>
 		<example>A report, specification, manual, or book, in printed or electronic form.</example>
-		<id>1</id>
+		<id>3</id>
 		<note>A document can be a single information item, or part of a larger information item.</note>
 		<source>ISO/IEC/IEEE 15289:2017 (en), 3.1.10</source>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.6.2</clause>
+		<clause>3.1.6.1</clause>
 		<name>enterprise object</name>
 		<definition>__element__ within an __enterprise view__ that represents an organization or individual</definition>
 		<status>Proposed</status>
 		<modified>2019-02-13T19:16:07</modified>
-		<id>2</id>
+		<id>1</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.6.3</clause>
+		<clause>3.1.6.10</clause>
 		<name>extends</name>
 		<definition>&lt;enterprise view&gt; __relationship__ where one __resource__ supplements another resource</definition>
 		<status>Proposed</status>
 		<modified>2019-02-14T17:18:59</modified>
 		<example>A functional object might extend the functionality of another functional object.</example>
-		<id>3</id>
+		<id>10</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.6.4</clause>
+		<clause>3.1.6.5</clause>
 		<name>formal coordination</name>
 		<definition>&lt;enterprise view&gt; __interaction__ between two __enterprise objects__ governed by a documented agreement</definition>
 		<status>Proposed</status>
 		<modified>2019-02-14T16:53:41</modified>
 		<example>A roadway operator might enter into formal agreement(s) with the owner of a roadway and the owner(s) of the associated roadway equipment.</example>
-		<id>4</id>
+		<id>5</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.6.5</clause>
+		<clause>3.1.6.9</clause>
 		<name>includes</name>
 		<definition>&lt;enterprise view&gt; __relationship__ where one __resource__ contains another resource</definition>
 		<status>Proposed</status>
 		<modified>2019-02-14T17:19:10</modified>
 		<example>Every ITS component includes one or more functional objects.</example>
-		<id>5</id>
+		<id>9</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
@@ -464,12 +463,12 @@
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.6.7</clause>
+		<clause>3.1.6.4</clause>
 		<name>interaction</name>
 		<definition>&lt;enterprise view&gt; __element__ that represents coordination between two __enterprise objects__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-21T13:47:50</modified>
-		<id>7</id>
+		<id>4</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
@@ -482,22 +481,21 @@
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.6.9</clause>
+		<clause>3.1.6.2</clause>
 		<name>resource</name>
 		<definition>&lt;enterprise view&gt; __element__ that represents an entity that is related to an enterprise object</definition>
 		<status>Proposed</status>
 		<modified>2019-02-14T16:57:45</modified>
-		<id>9</id>
+		<id>2</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.6.10</clause>
+		<clause>3.1.6.7</clause>
 		<name>role</name>
-		<definition>&lt;enterprise view&gt; __element__ that represents the association between an __enterprise object__ and another enterprise view element</definition>
+		<definition>&lt;enterprise view&gt; __element__ that represents the specified responsibilities between an __enterprise object__ and another enterprise view element</definition>
 		<status>Proposed</status>
-		<modified>2019-02-14T17:26:13</modified>
-		<example>A driver operates a vehicle.</example>
-		<id>10</id>
+		<modified>2019-12-11T18:44:56</modified>
+		<id>7</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
@@ -528,63 +526,63 @@
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.8.1</clause>
+		<clause>3.1.8.6</clause>
 		<name>functional object</name>
-		<definition>group of similar system __processes__ from the __functional view__ of the __architecture__ that are jointly assigned to a __physical object__ in the __physical view__. </definition>
+		<definition>group of similar system __processes__ from the __functional view__ of the __architecture__ that are jointly assigned to a __physical object__ in the __physical view__</definition>
 		<status>Proposed</status>
-		<modified>2018-10-09T08:17:08</modified>
+		<modified>2019-12-23T11:55:42</modified>
 		<example>A vehicle OBE might include a "vehicle basic safety" functional object.</example>
-		<id>1</id>
-		<WG>1</WG>
-	</entry>
-	<entry>
-		<clause>3.1.8.2</clause>
-		<name>information flow</name>
-		<definition>information that is exchanged between __physical objects__</definition>
-		<status>Proposed</status>
-		<modified>2019-02-21T13:48:01</modified>
-		<id>2</id>
-		<WG>1</WG>
-	</entry>
-	<entry>
-		<clause>3.1.8.3</clause>
-		<name>information transfer</name>
-		<definition>__information flow__ from a __physical object__ acting as an information source and sent to another __physical object__ acting as an information sink</definition>
-		<status>Proposed</status>
-		<modified>2019-08-07T17:56:09</modified>
-		<admittedTerm>information flow triple</admittedTerm>
-		<admittedTerm>triple</admittedTerm>
-		<id>3</id>
+		<id>6</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
 		<clause>3.1.8.4</clause>
-		<name>ITS component</name>
-		<definition>__physical object__ that has been assigned one or more ITS __functional objects__</definition>
+		<name>information flow</name>
+		<definition>information that is exchanged between __physical objects__</definition>
 		<status>Proposed</status>
-		<modified>2019-02-21T13:48:54</modified>
+		<modified>2019-02-21T13:48:01</modified>
 		<id>4</id>
-		<note>Physical objects are ITS components if they are an integral part of the system; otherwise they are terminators.</note>
 		<WG>1</WG>
 	</entry>
 	<entry>
 		<clause>3.1.8.5</clause>
+		<name>information transfer</name>
+		<definition>__information flow__ from a __physical object__ acting as an information provider and sent to another __physical object__ acting as an information consumer</definition>
+		<status>Proposed</status>
+		<modified>2019-08-28T10:54:58</modified>
+		<admittedTerm>information flow triple</admittedTerm>
+		<admittedTerm>triple</admittedTerm>
+		<id>5</id>
+		<WG>1</WG>
+	</entry>
+	<entry>
+		<clause>3.1.8.2</clause>
+		<name>ITS component</name>
+		<definition>__physical object__ that has been assigned one or more ITS __functional objects__</definition>
+		<status>Proposed</status>
+		<modified>2019-02-21T13:48:54</modified>
+		<id>2</id>
+		<note>Physical objects are ITS components if they are an integral part of the system; otherwise they are terminators.</note>
+		<WG>1</WG>
+	</entry>
+	<entry>
+		<clause>3.1.8.1</clause>
 		<name>physical object</name>
 		<definition>material entity that interacts with other material entities in the provision of __ITS services__</definition>
 		<status>Proposed</status>
 		<modified>2019-08-07T17:53:25</modified>
-		<id>5</id>
+		<id>1</id>
 		<note>Physical objects are represented as elements within the physical view of an ITS architecture. </note>
-		<note>WIthin many ITS reference architectures, physical objects are placed into one of five categories: centre, support, field, vehicle, or traveller.</note>
+		<note>Within many ITS reference architectures, physical objects are placed into one of five categories: centre, support, field, vehicle, or traveller.</note>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.8.6</clause>
+		<clause>3.1.8.3</clause>
 		<name>terminator</name>
 		<definition>__physical object__ that has not been assigned any ITS functional objects within the scope of the ITS service being considered</definition>
 		<status>Proposed</status>
 		<modified>2019-07-27T09:52:55</modified>
-		<id>6</id>
+		<id>3</id>
 		<note>A terminator may be a user external to ITS.</note>
 		<WG>1</WG>
 	</entry>
@@ -643,7 +641,7 @@
 		<modified>2019-08-07T22:13:06</modified>
 		<id>4</id>
 		<note></note>
-		<note>The ITS-S reference architecture is defined in IAO 21217.</note>
+		<note>The ITS-S reference architecture is defined in ISO 21217.</note>
 		<WG>1</WG>
 	</entry>
 	<entry>
@@ -666,7 +664,6 @@
 		<modified>2019-07-27T14:39:11</modified>
 		<id>1</id>
 		<note>Interface standards are based on a reference architecture, which should be explicitly described.</note>
-		<source>Wikipedia the free encyclopedia - definition of reference architecture [Internet]. [cited 2018 Jul 17]; Available from: http://en.wikipedia.org/wiki/reference_architecture</source>
 		<WG>1</WG>
 	</entry>
 	<entry>
@@ -684,7 +681,7 @@
 		<name>data concept</name>
 		<definition>__immaterial entity__ that defines data using, at a minimum, an unambiguous identifier, a term, and a definition</definition>
 		<status>Proposed</status>
-		<modified>2019-08-07T22:19:39</modified>
+		<modified>2019-09-18T19:30:15</modified>
 		<id>1</id>
 		<note>Data concepts can be classified into the following types: object class, value domain, data element, aggregate domain, data frame, message, interface dialogue, dictionary document, or module</note>
 		<source>ISO 8000-2:2018, 3.6.1, modified to fit the ISO14812 concept model</source>
@@ -717,26 +714,26 @@
 		<name>meta-attribute</name>
 		<definition>documenting characteristic of a data concept that is stored in a data dictionary</definition>
 		<status>Proposed</status>
-		<modified>2019-03-04T21:58:05</modified>
+		<modified>2019-09-18T19:30:13</modified>
 		<id>2</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.11.1</clause>
+		<clause>3.1.11.4</clause>
 		<name>aggregate domain</name>
 		<definition>__data concept__ that defines a grouping of __data elements__ and/or __data frames__ </definition>
 		<status>Proposed</status>
 		<modified>2019-02-21T13:50:01</modified>
-		<id>1</id>
+		<id>4</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.11.2</clause>
+		<clause>3.1.11.1</clause>
 		<name>data element</name>
-		<definition>__data concept__ represented by a specific __value domain__ and that describes a single atomic property about an __object class__. </definition>
+		<definition>__data concept__ represented by a specific __value domain__ and that describes a single atomic property about an __object class__</definition>
 		<status>Proposed</status>
-		<modified>2018-10-11T12:39:22</modified>
-		<id>2</id>
+		<modified>2019-10-05T13:44:35</modified>
+		<id>1</id>
 		<note>A data element is composed of an object class, a property of the represented object class and a value domain.</note>
 		<WG>1</WG>
 		<WG>18</WG>
@@ -746,57 +743,57 @@
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.1.11.3</clause>
+		<clause>3.1.11.5</clause>
 		<name>data frame</name>
 		<definition>__data concept__ represented by a specific __aggregate domain__ and that describes information of interest through a useful grouping of more atomic properties about one or more __object classes__. </definition>
 		<status>Proposed</status>
 		<modified>2018-10-11T12:39:47</modified>
-		<id>3</id>
+		<id>5</id>
 		<note>The grouping may be a set, sequence, or a choice.</note>
 		<WG>1</WG>
 		<WG>18</WG>
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.1.11.4</clause>
+		<clause>3.1.11.7</clause>
 		<name>interface dialogue</name>
 		<definition>__data concept__ that defines bi-directional communication sequence between two parties in accordance with predetermined protocols</definition>
 		<status>Proposed</status>
 		<modified>2019-03-04T10:15:02</modified>
 		<admittedTerm>dialog</admittedTerm>
 		<admittedTerm>dialogue</admittedTerm>
-		<id>4</id>
+		<id>7</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.11.5</clause>
+		<clause>3.1.11.6</clause>
 		<name>message</name>
 		<definition>__data concept__ that is a grouping of __data elements__, __data frames__, or __data elements__ and __data frames__ that is used to convey a complete set of information </definition>
 		<status>Proposed</status>
 		<modified>2018-10-09T09:13:55</modified>
-		<id>5</id>
+		<id>6</id>
 		<WG>1</WG>
 		<WG>10</WG>
 		<WG>8</WG>
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.1.11.6</clause>
+		<clause>3.1.11.2</clause>
 		<name>object class</name>
 		<definition>description of a set of objects that share the same properties, relationships, and semantics</definition>
 		<status>Proposed</status>
 		<modified>2019-02-28T09:16:05</modified>
-		<id>6</id>
+		<id>2</id>
 		<note>Adapted from ISO/IEC 11179-1:2013; an object class is conceptually similar to an ISO/IEC 11179 object, but it does not include operations or methods and ISO/IEC 11179 "attributes" are called "properties" in this International Standard.</note>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.1.11.7</clause>
+		<clause>3.1.11.3</clause>
 		<name>value domain</name>
 		<definition>__data concept__ that defines a set of permissible values</definition>
 		<status>Proposed</status>
 		<modified>2019-02-21T13:45:23</modified>
-		<id>7</id>
+		<id>3</id>
 		<WG>1</WG>
 		<WG>9</WG>
 	</entry>
@@ -825,31 +822,31 @@
 	<entry>
 		<clause>3.2.1.1</clause>
 		<name>centre system</name>
-		<definition>__ITS component__ that provides application, management, and/or administrative functions from a centralized location (i.e., not at the __roadside__)</definition>
+		<definition>&lt;ITS&gt; __ITS component__ that provides application, management, and/or administrative functions from a centralized location (i.e., not at the __roadside__)</definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T14:31:54</modified>
+		<modified>2019-11-09T19:08:13</modified>
 		<id>1</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
 		<clause>3.2.1.2</clause>
 		<name>field system</name>
-		<definition>__ITS component__ that performs localized surveillance, traffic control, information provision, payment transaction, wireless communication services between mobile elements and fixed infrastructure, and/or other services. </definition>
+		<definition>&lt;ITS&gt; __ITS component__ located outside of a data centre that is designed to provide local processing or routing services while stationary </definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T14:59:54</modified>
+		<modified>2019-11-09T19:08:19</modified>
 		<example>traffic detector, camera, signal controller, message sign, tolling station</example>
 		<id>2</id>
 		<note>Typically, field systems are located along the roadside.</note>
-		<note>Typically, the operation of field systems are governed by management functions running in centre systems. </note>
+		<note>Typically, the operation of a field system is governed by management functions running in a centre system. </note>
 		<WG>1</WG>
 		<WG>9</WG>
 	</entry>
 	<entry>
 		<clause>3.2.1.3</clause>
 		<name>personal system</name>
-		<definition>__ITS component__, other than a __vehicle system__, that is used by a person in relation to a past, current, or upcoming journey</definition>
+		<definition>&lt;ITS&gt; __ITS component__, other than a __vehicle system__, that is used by a person in relation to a past, current, or upcoming journey</definition>
 		<status>Proposed</status>
-		<modified>2019-08-07T22:50:33</modified>
+		<modified>2019-11-09T19:08:26</modified>
 		<id>3</id>
 		<preferredTerm>traveller system</preferredTerm>
 		<WG>1</WG>
@@ -857,27 +854,27 @@
 	<entry>
 		<clause>3.2.1.4</clause>
 		<name>support system</name>
-		<definition>__ITS component__ that provides support services for one or more other ITS components</definition>
+		<definition>&lt;ITS&gt; __ITS component__ that provides support services for one or more other ITS components</definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T15:00:16</modified>
+		<modified>2019-11-09T19:08:33</modified>
 		<id>4</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
 		<clause>3.2.1.5</clause>
 		<name>vehicle system</name>
-		<definition>__ITS component__ that is installed as a component of a __vehicle__</definition>
+		<definition>&lt;ITS&gt; __ITS component__ that is installed as a component of a __vehicle__</definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T15:00:52</modified>
+		<modified>2019-11-09T19:08:42</modified>
 		<id>5</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
 		<clause>3.2.2.1</clause>
 		<name>emergency management system</name>
-		<definition>__centre system__ that allows an entity to manage and respond to crashes, events, disasters, evacuation orders, and other incidents</definition>
+		<definition>&lt;ITS&gt; __centre system__ that allows an entity to manage and respond to crashes, events, disasters, evacuation orders, and other incidents</definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T14:48:39</modified>
+		<modified>2019-11-09T19:08:58</modified>
 		<id>1</id>
 		<WG>1</WG>
 		<WG>8</WG>
@@ -885,9 +882,9 @@
 	<entry>
 		<clause>3.2.2.2</clause>
 		<name>fleet and freight management system</name>
-		<definition>__centre system__ that allows a fleet or freight operator to manage and control its personnel, equipment,  and/or freight</definition>
+		<definition>&lt;ITS&gt; __centre system__ that allows a fleet or freight operator to manage and control its personnel, equipment,  and/or freight</definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T14:46:43</modified>
+		<modified>2019-11-09T19:09:04</modified>
 		<id>2</id>
 		<WG>1</WG>
 		<WG>7</WG>
@@ -895,9 +892,9 @@
 	<entry>
 		<clause>3.2.2.3</clause>
 		<name>maintenance and construction management system</name>
-		<definition>__centre system__ that allows an entity to monitor and manage the construction and maintenance of roadway infrastructure</definition>
+		<definition>&lt;ITS&gt; __centre system__ that allows an entity to monitor and manage the construction and maintenance of roadway infrastructure</definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T14:52:10</modified>
+		<modified>2019-11-09T19:09:09</modified>
 		<id>3</id>
 		<WG>1</WG>
 		<WG>9</WG>
@@ -905,9 +902,9 @@
 	<entry>
 		<clause>3.2.2.4</clause>
 		<name>payment administration system</name>
-		<definition>__centre system__ that allows an entity to manage financial transactions related to transportation, especially the electronic transfer of funds </definition>
+		<definition>&lt;ITS&gt; __centre system__ that allows an entity to manage financial transactions related to transportation, especially the electronic transfer of funds </definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T14:54:22</modified>
+		<modified>2019-11-09T19:09:14</modified>
 		<id>4</id>
 		<WG>1</WG>
 		<WG>5</WG>
@@ -915,9 +912,9 @@
 	<entry>
 		<clause>3.2.2.5</clause>
 		<name>public transport system</name>
-		<definition>__centre system__ that allows an entity to manage the activities of a public transport agency </definition>
+		<definition>&lt;ITS&gt; __centre system__ that allows an entity to manage the activities of a public transport agency </definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T14:55:21</modified>
+		<modified>2019-11-09T19:09:19</modified>
 		<id>5</id>
 		<WG>1</WG>
 		<WG>8</WG>
@@ -925,9 +922,9 @@
 	<entry>
 		<clause>3.2.2.6</clause>
 		<name>traffic management system</name>
-		<definition>__centre system__ that monitors and controls traffic and the road network</definition>
+		<definition>&lt;ITS&gt; __centre system__ that monitors and controls traffic and the road network</definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T12:53:37</modified>
+		<modified>2019-11-09T19:09:25</modified>
 		<id>6</id>
 		<WG>1</WG>
 		<WG>9</WG>
@@ -935,9 +932,9 @@
 	<entry>
 		<clause>3.2.2.7</clause>
 		<name>traffic regulatory system</name>
-		<definition>__centre system__ that officially records traffic regulations in electronic form so that they can be distributed to other systems </definition>
+		<definition>&lt;ITS&gt; __centre system__ that officially records traffic regulations in electronic form so that they can be distributed to other systems </definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T14:58:17</modified>
+		<modified>2019-11-09T19:09:31</modified>
 		<id>7</id>
 		<WG>1</WG>
 		<WG>19</WG>
@@ -945,19 +942,40 @@
 	<entry>
 		<clause>3.2.2.8</clause>
 		<name>transport information system</name>
-		<definition>__centre system__ that provides information of interest to the travelling public</definition>
+		<definition>&lt;ITS&gt; __centre system__ that provides information of interest to the travelling public</definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T14:59:28</modified>
+		<modified>2019-11-09T19:09:36</modified>
 		<id>8</id>
 		<WG>1</WG>
 		<WG>10</WG>
 	</entry>
 	<entry>
+		<clause>3.2.3.6</clause>
+		<name>connected</name>
+		<definition>&lt;ITS&gt; characteristic of an __material entity__ that is equipped with enabled (i.e., on) and operational electronic, __wireless __communication technologies to support ITS services, including the means to send and receive data to and from other connected entities</definition>
+		<status>Proposed</status>
+		<modified>2019-12-27T19:11:41</modified>
+		<id>6</id>
+		<note>The equipment is active when the basic vehicle safety application processes are running.</note>
+		<note>The term connected vehicle does not imply support for any specific communications interface or ITS-S application process.</note>
+		<WG>1</WG>
+		<WG>16</WG>
+		<WG>18</WG>
+	</entry>
+	<entry>
+		<clause>3.2.3.5</clause>
+		<name>connected unit</name>
+		<definition>&lt;ITS&gt; electronic device that is __connected__ using one or more communication media</definition>
+		<status>Proposed</status>
+		<modified>2019-11-09T18:54:46</modified>
+		<id>5</id>
+	</entry>
+	<entry>
 		<clause>3.2.3.1</clause>
 		<name>field support equipment</name>
-		<definition>portable __field system__ used by field personnel to locally troubleshoot, initialize, reprogram, and test infrastructure equipment</definition>
+		<definition>&lt;ITS&gt; portable __field system__ used by field personnel to locally troubleshoot, initialize, reprogram, and test infrastructure equipment</definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T15:09:15</modified>
+		<modified>2019-11-09T19:09:54</modified>
 		<id>1</id>
 		<WG>1</WG>
 		<WG>9</WG>
@@ -965,9 +983,9 @@
 	<entry>
 		<clause>3.2.3.2</clause>
 		<name>ITS roadway equipment</name>
-		<definition>__field system__ that performs localized surveillance, traffic control, information provision, and/or payment transaction services</definition>
+		<definition>&lt;ITS&gt; __field system__ that performs localized surveillance, traffic control, information provision, and/or payment transaction services</definition>
 		<status>Proposed</status>
-		<modified>2019-02-12T12:47:31</modified>
+		<modified>2019-11-09T19:10:01</modified>
 		<id>2</id>
 		<WG>1</WG>
 		<WG>8</WG>
@@ -976,11 +994,12 @@
 	<entry>
 		<clause>3.2.3.3</clause>
 		<name>roadside equipment</name>
-		<definition>__field system__ used to send electronic messages to and receive messages from nearby __vehicle systems__ and __traveller systems__ via wireless technologies</definition>
+		<definition>&lt;ITS&gt; __field system__ used to send electronic messages to and receive messages from nearby __vehicle systems__ and __traveller systems__ via wireless technologies</definition>
 		<status>Proposed</status>
-		<modified>2019-02-12T12:48:36</modified>
+		<modified>2019-11-09T19:10:07</modified>
 		<deprecatedTerm>roadside ITS station</deprecatedTerm>
 		<id>3</id>
+		<note>RSEs typically provide ITS functionality but the term includes field systems that only provide routing services.</note>
 		<preferredTerm>RSE</preferredTerm>
 		<WG>1</WG>
 		<WG>16</WG>
@@ -993,9 +1012,9 @@
 	<entry>
 		<clause>3.2.3.4</clause>
 		<name>roadside unit</name>
-		<definition>component of __roadside equipment__ that performs the logical control functions</definition>
+		<definition>&lt;ITS&gt; __connected unit__ that is a part of a __roadside equipment__ entity</definition>
 		<status>Proposed</status>
-		<modified>2019-02-12T12:48:45</modified>
+		<modified>2019-11-09T19:10:13</modified>
 		<id>4</id>
 		<preferredTerm>RSU</preferredTerm>
 		<WG>1</WG>
@@ -1005,9 +1024,9 @@
 	<entry>
 		<clause>3.2.4.1</clause>
 		<name>external in-vehicle device</name>
-		<definition>__personal system____ consisting of GNSS and/or cellular modules that are connected to a vehicle during a trip__</definition>
+		<definition>&lt;ITS&gt; __personal system____ consisting of GNSS and/or cellular modules that are connected to a vehicle during a trip__</definition>
 		<status>Proposed</status>
-		<modified>2019-08-07T22:55:50</modified>
+		<modified>2019-11-09T19:10:24</modified>
 		<id>1</id>
 		<WG>1</WG>
 		<WG>17</WG>
@@ -1015,9 +1034,9 @@
 	<entry>
 		<clause>3.2.4.3</clause>
 		<name>nomadic device</name>
-		<definition>__personal information device__ that is taken with and can be accessed by the traveller during a journey</definition>
+		<definition>&lt;ITS&gt; __personal information device__ that is taken with and can be accessed by the traveller during a journey</definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T15:24:45</modified>
+		<modified>2019-11-09T19:10:30</modified>
 		<id>3</id>
 		<WG>1</WG>
 		<WG>17</WG>
@@ -1025,9 +1044,9 @@
 	<entry>
 		<clause>3.2.4.2</clause>
 		<name>personal information device</name>
-		<definition>__personal system__ that enables personal access to traveller information</definition>
+		<definition>&lt;ITS&gt; __personal system__ that enables personal access to traveller information</definition>
 		<status>Proposed</status>
-		<modified>2019-08-07T22:56:12</modified>
+		<modified>2019-11-09T19:10:37</modified>
 		<example>personal computer</example>
 		<id>2</id>
 		<WG>1</WG>
@@ -1036,41 +1055,41 @@
 	<entry>
 		<clause>3.2.4.4</clause>
 		<name>public information device</name>
-		<definition>__personal system__ that provides public access to traveller information</definition>
+		<definition>&lt;ITS&gt; __personal system__ that provides public access to traveller information</definition>
 		<status>Proposed</status>
-		<modified>2019-08-07T22:56:18</modified>
+		<modified>2019-11-09T19:10:43</modified>
 		<example>kiosk</example>
 		<id>4</id>
 		<WG>1</WG>
 		<WG>10</WG>
 	</entry>
 	<entry>
-		<clause>3.2.5.2</clause>
+		<clause>3.2.5.1</clause>
 		<name>cooperative ITS credentials management system</name>
-		<definition>__support system__ that enables trusted communications among ITS components and protects data from unauthorized access</definition>
+		<definition>&lt;ITS&gt; __support system__ that enables trusted communications among ITS components and protects data from unauthorized access</definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T15:15:10</modified>
-		<id>2</id>
+		<modified>2019-11-09T19:10:51</modified>
+		<id>1</id>
 		<preferredTerm>CCMS</preferredTerm>
 		<WG>1</WG>
 		<WG>18</WG>
 	</entry>
 	<entry>
-		<clause>3.2.5.1</clause>
+		<clause>3.2.5.2</clause>
 		<name>map update system</name>
-		<definition>__support system__ that provides map databases used to support __ITS services__</definition>
+		<definition>&lt;ITS&gt; __support system__ that provides map databases used to support __ITS services__</definition>
 		<status>Proposed</status>
-		<modified>2019-02-12T12:48:06</modified>
-		<id>1</id>
+		<modified>2019-11-09T19:10:57</modified>
+		<id>2</id>
 		<WG>1</WG>
 		<WG>3</WG>
 	</entry>
 	<entry>
 		<clause>3.2.6.3</clause>
 		<name>commercial vehicle OBE</name>
-		<definition>__vehicle OBE__ that provides functionality related to commercial vehicle operations</definition>
+		<definition>&lt;ITS&gt; __vehicle OBE__ that provides functionality related to commercial vehicle operations</definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T15:38:43</modified>
+		<modified>2019-11-09T19:11:03</modified>
 		<id>3</id>
 		<WG>1</WG>
 		<WG>7</WG>
@@ -1078,9 +1097,9 @@
 	<entry>
 		<clause>3.2.6.4</clause>
 		<name>emergency vehicle OBE</name>
-		<definition>__vehicle OBE__ that provides functionality related to emergency vehicle operations</definition>
+		<definition>&lt;ITS&gt; __vehicle OBE__ that provides functionality related to emergency vehicle operations</definition>
 		<status>Proposed</status>
-		<modified>2019-02-21T13:57:32</modified>
+		<modified>2019-11-09T19:11:09</modified>
 		<id>4</id>
 		<WG>1</WG>
 		<WG>8</WG>
@@ -1088,9 +1107,9 @@
 	<entry>
 		<clause>3.2.6.5</clause>
 		<name>public transport vehicle OBE</name>
-		<definition>__vehicle OBE__ that provides functionality related to public transport vehicle operations</definition>
+		<definition>&lt;ITS&gt; __vehicle OBE__ that provides functionality related to public transport vehicle operations</definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T15:39:03</modified>
+		<modified>2019-11-09T19:11:15</modified>
 		<id>5</id>
 		<WG>1</WG>
 		<WG>8</WG>
@@ -1098,15 +1117,15 @@
 	<entry>
 		<clause>3.2.6.1</clause>
 		<name>vehicle onboard equipment</name>
-		<definition>__vehicle system__ that provides the onboard functions necessary to support the ITS services supported by the vehicle</definition>
+		<definition>&lt;ITS&gt; __vehicle system__ that provides ITS functionality onboard the __vehicle__</definition>
 		<status>Proposed</status>
-		<modified>2019-07-27T10:51:03</modified>
+		<modified>2019-11-09T19:11:21</modified>
 		<admittedTerm>OBE</admittedTerm>
 		<admittedTerm>onboard equipment</admittedTerm>
 		<id>1</id>
 		<note>It is preferred to include the word "vehicle" in the term so that it is sufficiently well distinguished from the specialized types of OBEs.</note>
 		<note>The vehicle onboard equipment may also perform other functions.</note>
-		<preferredTerm>vehicle onboard equipment</preferredTerm>
+		<preferredTerm>vehicle OBE</preferredTerm>
 		<WG>1</WG>
 		<WG>14</WG>
 		<WG>16</WG>
@@ -1119,10 +1138,13 @@
 	<entry>
 		<clause>3.2.6.2</clause>
 		<name>vehicle onboard unit</name>
-		<definition>component of __vehicle onboard equipment__ that performs the logical control functions</definition>
+		<definition>&lt;ITS&gt; __connected unit__ that is a part of a __vehicle onboard equipment__ entity</definition>
 		<status>Proposed</status>
-		<modified>2019-02-18T15:30:46</modified>
+		<modified>2019-11-09T19:11:31</modified>
+		<admittedTerm>OBU</admittedTerm>
+		<admittedTerm>onboard unit</admittedTerm>
 		<id>2</id>
+		<preferredTerm>vehicle OBU</preferredTerm>
 		<WG>1</WG>
 		<WG>16</WG>
 		<WG>4</WG>
@@ -1131,13 +1153,24 @@
 		<WG>8</WG>
 	</entry>
 	<entry>
-		<clause>3.2.7.2</clause>
-		<name>ITS station</name>
-		<definition>portion of an __ITS component__ that provides a __bounded secured managed domain__ and conforms to the __ITS-S reference architecture__</definition>
+		<clause>3.2.7.1</clause>
+		<name>bounded secured managed domain</name>
+		<definition>abstract entity representing a managed processing and memory environment that provides protection from code and data that has not been determined to meet established security requirements</definition>
 		<status>Proposed</status>
-		<modified>2019-08-07T22:45:27</modified>
-		<id>2</id>
-		<note>The ITS station architecture is defined in ISO 21217.</note>
+		<modified>2019-09-21T16:59:05</modified>
+		<id>1</id>
+		<preferredTerm>BSMD</preferredTerm>
+		<WG>1</WG>
+		<WG>18</WG>
+	</entry>
+	<entry>
+		<clause>3.2.7.3</clause>
+		<name>ITS station</name>
+		<definition>__bounded secured managed domain__ that is able to meet requirements of the __ITS trust domain__ within which it wishes to participate</definition>
+		<status>Proposed</status>
+		<modified>2019-09-18T19:03:10</modified>
+		<id>3</id>
+		<note>The ITS station reference architecture is defined in ISO 21217.</note>
 		<preferredTerm>ITS-S</preferredTerm>
 		<WG>1</WG>
 		<WG>16</WG>
@@ -1146,23 +1179,76 @@
 		<WG>7</WG>
 	</entry>
 	<entry>
-		<clause>3.2.7.3</clause>
-		<name>ITS-S unit</name>
-		<definition>instantiation of an __ITS station__</definition>
+		<clause>3.2.7.2</clause>
+		<name>ITS trust domain</name>
+		<definition>set of __bounded secured managed domains__ that meet a defined set of ITS industry security requirements</definition>
 		<status>Proposed</status>
-		<modified>2019-08-07T18:20:11</modified>
-		<id>3</id>
+		<modified>2019-09-18T19:03:56</modified>
+		<id>2</id>
+		<WG>1</WG>
+		<WG>16</WG>
+		<WG>17</WG>
+		<WG>18</WG>
+		<WG>7</WG>
+	</entry>
+	<entry>
+		<clause>3.2.7.5</clause>
+		<name>ITS-S communication unit</name>
+		<definition>physical unit in an __ITS-SU__ containing part or all of the functionality of an __ITS-S__</definition>
+		<status>Proposed</status>
+		<modified>2019-09-18T19:10:27</modified>
+		<id>5</id>
+		<preferredTerm>ITS-SCU</preferredTerm>
+		<WG>1</WG>
+		<WG>16</WG>
+		<WG>17</WG>
+		<WG>18</WG>
+		<WG>7</WG>
+	</entry>
+	<entry>
+		<clause>3.2.7.6</clause>
+		<name>ITS-S host</name>
+		<definition>__ITS-S__ that supports at least one __ITS-S application__</definition>
+		<status>Proposed</status>
+		<modified>2019-09-18T18:57:24</modified>
+		<id>6</id>
 		<WG>1</WG>
 		<WG>16</WG>
 		<WG>18</WG>
 	</entry>
 	<entry>
-		<clause>3.2.8.6</clause>
+		<clause>3.2.7.7</clause>
+		<name>ITS-S router</name>
+		<definition>__ITS-S__ capable of using OSI Network Layer logic to forward ITS-S __transnet layer__ PDUs across different ITS-S __access layers__</definition>
+		<status>Proposed</status>
+		<modified>2019-09-18T19:00:20</modified>
+		<id>7</id>
+		<note>An ITS-S router typically includes ITS-S application processes within the security and management entities of the ITS-S reference architecture.</note>
+		<WG>1</WG>
+		<WG>16</WG>
+		<WG>18</WG>
+	</entry>
+	<entry>
+		<clause>3.2.7.4</clause>
+		<name>ITS-S unit</name>
+		<definition>instantiation of an __ITS station__</definition>
+		<status>Proposed</status>
+		<modified>2019-08-07T18:20:11</modified>
+		<id>4</id>
+		<preferredTerm>ITS-SU</preferredTerm>
+		<WG>1</WG>
+		<WG>16</WG>
+		<WG>17</WG>
+		<WG>18</WG>
+		<WG>7</WG>
+	</entry>
+	<entry>
+		<clause>3.2.8.4</clause>
 		<name>application template</name>
 		<definition>&lt;ITS&gt; executable technical pattern of an __ITS application specification__</definition>
 		<status>Proposed</status>
 		<modified>2018-12-10T11:10:02</modified>
-		<id>6</id>
+		<id>4</id>
 		<WG>18</WG>
 		<WG>8</WG>
 	</entry>
@@ -1201,58 +1287,58 @@
 		<WG>8</WG>
 	</entry>
 	<entry>
-		<clause>3.2.8.5</clause>
+		<clause>3.2.8.6</clause>
 		<name>ITS deployment</name>
 		<definition>installation capable of implementing one or more __ITS applications__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-21T13:52:15</modified>
-		<id>5</id>
+		<id>6</id>
 		<note>An ITS deployment typically refers to the support, central and roadside ITS stations coupled with a tacit acknowledgement of the mobile ITS stations that will communicate with the support, central, or roadside ITS stations. </note>
 		<WG>1</WG>
 		<WG>18</WG>
 	</entry>
 	<entry>
-		<clause>3.2.8.4</clause>
+		<clause>3.2.8.5</clause>
 		<name>ITS implementation</name>
 		<definition>integration of each __physical object__ necessary to implement one or more __ITS applications__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-17T14:45:18</modified>
-		<id>4</id>
+		<id>5</id>
 		<note></note>
 		<note>An ITS implementation is typically used for a laboratory or other experimental environment prior to a full-scale deployment.</note>
 		<WG>1</WG>
 		<WG>18</WG>
 	</entry>
 	<entry>
-		<clause>3.2.9.9</clause>
+		<clause>3.2.9.1</clause>
 		<name>ITS application role</name>
 		<definition>__ITS-S user need__ expressed as a formal set of interoperability requirements that need to be fulfilled to satisfy a portion of functionality of an __ITS application__</definition>
 		<status>Proposed</status>
 		<modified>2019-08-08T11:37:27</modified>
-		<id>9</id>
+		<id>1</id>
 		<WG>1</WG>
 		<WG>16</WG>
 		<WG>18</WG>
 	</entry>
 	<entry>
-		<clause>3.2.9.5</clause>
+		<clause>3.2.9.3</clause>
 		<name>ITS-S application</name>
 		<definition>__ITS-S application process__ residing in the __application entity__</definition>
 		<status>Proposed</status>
 		<modified>2019-08-07T15:29:26</modified>
-		<id>5</id>
+		<id>3</id>
 		<WG>14</WG>
 		<WG>16</WG>
 		<WG>17</WG>
 		<WG>18</WG>
 	</entry>
 	<entry>
-		<clause>3.2.9.6</clause>
+		<clause>3.2.9.5</clause>
 		<name>ITS-S application implementation</name>
 		<definition>__ITS-S application process implementation__ within the __application entity__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-17T14:54:23</modified>
-		<id>6</id>
+		<id>5</id>
 		<WG>18</WG>
 	</entry>
 	<entry>
@@ -1265,22 +1351,22 @@
 		<WG>18</WG>
 	</entry>
 	<entry>
-		<clause>3.2.9.8</clause>
+		<clause>3.2.9.9</clause>
 		<name>ITS-S application instance</name>
 		<definition>__ITS-S application process instance__ within the __application entity__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-28T09:12:01</modified>
-		<id>8</id>
+		<id>9</id>
 		<WG>18</WG>
 		<WG>8</WG>
 	</entry>
 	<entry>
-		<clause>3.2.9.1</clause>
+		<clause>3.2.9.2</clause>
 		<name>ITS-S application process</name>
 		<definition>element in an __ITS station__ that performs information processing for an __ITS-S service__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-21T13:52:30</modified>
-		<id>1</id>
+		<id>2</id>
 		<WG>1</WG>
 		<WG>14</WG>
 		<WG>16</WG>
@@ -1288,230 +1374,240 @@
 		<WG>18</WG>
 	</entry>
 	<entry>
-		<clause>3.2.9.2</clause>
+		<clause>3.2.9.4</clause>
 		<name>ITS-S application process implementation</name>
 		<definition>implementation of an __ITS-S application process__</definition>
 		<status>Proposed</status>
 		<modified>2018-10-11T12:20:30</modified>
-		<id>2</id>
+		<id>4</id>
 		<note>A unique implementation is typically associated with an implementation name, a version, and release number.</note>
 		<WG>18</WG>
 	</entry>
 	<entry>
-		<clause>3.2.9.3</clause>
+		<clause>3.2.9.6</clause>
 		<name>ITS-S application process installation</name>
 		<definition>installation of an __ITS-S application process implementation__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-21T13:52:37</modified>
-		<id>3</id>
+		<id>6</id>
 		<note>A unique installation is typically associated with a specific license code or serial number. </note>
 		<WG>18</WG>
 	</entry>
 	<entry>
-		<clause>3.2.9.4</clause>
+		<clause>3.2.9.8</clause>
 		<name>ITS-S application process instance</name>
 		<definition>run-time instance of an __ITS-S application process installation__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-21T13:52:55</modified>
-		<id>4</id>
+		<id>8</id>
 		<WG>1</WG>
 		<WG>18</WG>
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.3.1.6</clause>
+		<clause>3.3.1.7</clause>
 		<name>carriageway</name>
 		<definition>contiguous width of __roadway__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-14T18:14:47</modified>
-		<id>6</id>
-		<note>A carriageway is comprised of one or more travel lanes (i.e., the travelled way) and may include shoulders and lay-bys.</note>
-		<note>When looking at a cross-section of the right-of-way, the roadway consists of all of the carriageways and carriageways are separated by physical barriers.</note>
+		<id>7</id>
+		<note>A carriageway is comprised of one or more travel lanes (i.e., the travelled way) and might include shoulders and lay-bys.</note>
+		<note>When looking at a cross-section of the right-of-way, the roadway consists of all of the carriageways and carriageways are separated by separation barriers.</note>
 		<WG>9</WG>
 	</entry>
 	<entry>
 		<clause>3.3.1.1</clause>
+		<name>cross-section</name>
+		<definition>transverse view of road geometry</definition>
+		<status>Proposed</status>
+		<modified>2019-12-27T12:44:04</modified>
+		<id>1</id>
+		<source>ISO 12353-1:2002, 4.2.12</source>
+	</entry>
+	<entry>
+		<clause>3.3.1.17</clause>
 		<name>cycle lane</name>
 		<definition>__lane__ designed for the through movement of human-powered __vehicles__ </definition>
 		<status>Proposed</status>
 		<modified>2019-07-24T17:31:28</modified>
-		<id>1</id>
+		<id>17</id>
 		<note>Cycle lanes are typically much narrower than travel lanes.</note>
 		<note>Cycle lanes may also allow and be designed for motorized vehicles (e.g., e-scooters, mopeds, etc.) with similar performance characteristics as human-powered cycles, subject to local regulations.</note>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.3.1.4</clause>
+		<clause>3.3.1.5</clause>
 		<name>dual carriageway</name>
 		<definition>__roadway__ comprised of exactly two __carriageways__ </definition>
 		<status>Proposed</status>
 		<modified>2018-10-11T12:44:52</modified>
 		<admittedTerm>divided highway</admittedTerm>
-		<id>4</id>
+		<id>5</id>
 		<note>The two carriageways are typically designed for travel in opposite directions. </note>
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.3.1.1</clause>
+		<clause>3.3.1.2</clause>
 		<name>easement</name>
-		<definition>stretch of land reserved for transportation purposes</definition>
+		<definition>land reserved for transportation purposes</definition>
 		<status>Proposed</status>
-		<modified>2018-10-11T12:45:50</modified>
+		<modified>2019-12-11T21:08:26</modified>
 		<deprecatedTerm>right-of-way</deprecatedTerm>
-		<id>1</id>
+		<id>2</id>
 		<note>The easement includes all carriageways as well as a significant width to allow for roadside devices, clearance zones, sidewalks, drainage facilities, sound walls, etc.</note>
 		<note>This concept is sometimes referred to as "right-of-way"; however, the preferred meaning of "right-of-way" is to identify which vehicle has the legal authority to access a portion of roadway.</note>
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.3.1.1</clause>
+		<clause>3.3.1.19</clause>
 		<name>footway</name>
 		<definition>__lane__ designed for the through movement of pedestrians</definition>
 		<status>Proposed</status>
 		<modified>2019-07-24T17:31:46</modified>
-		<id>1</id>
+		<id>19</id>
 		<note>Other modes of transport may also use footways, subject to local regulations.</note>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.3.1.8</clause>
-		<name>lane</name>
-		<definition>portion of __easement __intended for a specific purpose along its length with adequate clearance for its purpose</definition>
+		<clause>3.3.1.16</clause>
+		<name>hard shoulder</name>
+		<definition>__shoulder__ with a surface that is suitable for driving</definition>
 		<status>Proposed</status>
-		<modified>2019-02-14T18:22:46</modified>
+		<modified>2019-11-04T10:45:44</modified>
+		<id>16</id>
+		<note>While a hard shoulder has a surface that is suitable for driving; driving on a hard shoulder is typically prohibited, perhaps with exceptions for emergency, construction, etc.</note>
+	</entry>
+	<entry>
+		<clause>3.3.1.11</clause>
+		<name>lane</name>
+		<definition>portion of __easement __intended for a specific purpose along its length</definition>
+		<status>Proposed</status>
+		<modified>2019-11-03T18:46:22</modified>
 		<example>shoulder</example>
-		<id>8</id>
+		<id>11</id>
 		<note>Lanes are often bounded by lane markings.</note>
 		<note>Lanes may be significantly wider than the normal vehicle width to allow variance in lane position of the vehicle as well as for various vehicle dimensions.</note>
 		<note>The "lane" nomenclature typically refers to motor vehicle usage, but can also refer to other purposes, such as sidewalks.</note>
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.3.1.10</clause>
+		<clause>3.3.1.18</clause>
 		<name>lay-by</name>
-		<definition>short __lane__ at the edge of a __carriageway__ designed to allow a __motor vehicle__ to temporarily stop while traffic in other __lanes__ proceed</definition>
+		<definition>short __lane__ at the edge of a __carriageway__ designed to allow a __vehicle__ to draw out of the travel lanes and stop temporarily</definition>
 		<status>Proposed</status>
-		<modified>2018-10-11T12:52:33</modified>
-		<id>10</id>
+		<modified>2019-10-05T18:32:22</modified>
+		<id>18</id>
 		<note>Lay-bys might be used for emergency situations, picking up/dropping off passengers, etc.</note>
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.3.1.5</clause>
+		<clause>3.3.1.6</clause>
 		<name>multi-carriageway</name>
 		<definition>__roadway__ comprised of more than two __carriageways__</definition>
 		<status>Proposed</status>
 		<modified>2018-10-11T12:53:03</modified>
-		<id>5</id>
+		<id>6</id>
 		<note>The separate carriageways are typically designed for separate traffic for (often multiple) specific operational reasons, such as direction of travel, category of vehicle (e.g., high occupancy vehicle), local versus through travel, etc.</note>
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.3.1.12</clause>
+		<clause>3.3.1.13</clause>
 		<name>reserved lane</name>
-		<definition>__travel lane__ restricted to a specific subset of __motor vehicles__</definition>
+		<definition>__travel lane__ restricted to a specific subset of __road vehicles__</definition>
 		<status>Proposed</status>
-		<modified>2018-10-11T12:54:01</modified>
+		<modified>2019-12-11T21:27:44</modified>
 		<example>Bus lane</example>
 		<example>High-occupancy vehicle lane</example>
-		<id>12</id>
+		<id>13</id>
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.3.1.14</clause>
+		<clause>3.3.1.10</clause>
 		<name>roadside</name>
-		<definition>portion between one edge of the __easement__ and the closest edge of a __carriageway__</definition>
+		<definition>portion of the easement between one edge of the __easement__ and the closest edge of a __carriageway__</definition>
 		<status>Proposed</status>
-		<modified>2019-02-14T18:22:59</modified>
-		<id>14</id>
-		<WG>9</WG>
-	</entry>
-	<entry>
-		<clause>3.3.1.2</clause>
-		<name>roadway</name>
-		<definition>part of the __easement__ designed for use by __motor vehicles__</definition>
-		<status>Proposed</status>
-		<modified>2018-10-11T12:55:22</modified>
-		<id>2</id>
-		<note>Roadway relates to a cross-section of a road facility (i.e., zero length). See "road", "road section", "road segment", and "road link" for different types of stretches of roadway.</note>
-		<WG>9</WG>
-	</entry>
-	<entry>
-		<clause>3.3.1.7</clause>
-		<name>separation barrier</name>
-		<definition>barrier that separates __carriageways__</definition>
-		<status>Proposed</status>
-		<modified>2018-10-09T10:50:37</modified>
-		<id>7</id>
-		<WG>9</WG>
-	</entry>
-	<entry>
-		<clause>3.3.1.11</clause>
-		<name>shoulder</name>
-		<definition>__lane__ between the edge of a __carriageway__ and any slope or edge of __right-of-way__</definition>
-		<status>Proposed</status>
-		<modified>2018-10-11T12:56:16</modified>
-		<id>11</id>
-		<note>The shoulder might be used for emergency stops or other purposes in addition to providing a clear zone and to promote ground stability at the edge of the carriageway.</note>
+		<modified>2019-11-04T12:33:08</modified>
+		<id>10</id>
 		<WG>9</WG>
 	</entry>
 	<entry>
 		<clause>3.3.1.3</clause>
+		<name>roadway</name>
+		<definition>part of the __easement__ designed for the movement of motorized, land-based, wheeled __vehicles__ meeting local regulations</definition>
+		<status>Proposed</status>
+		<modified>2019-12-11T21:35:06</modified>
+		<id>3</id>
+		<note></note>
+		<note>Local regulations typically account for vehicle widths up to 2 or 2.5 metres.</note>
+		<note>Roadway relates to a cross-section of a road facility (i.e., zero length). See "road", "road section", "road segment", and "road link" for different types of stretches of roadway.</note>
+		<note>While the roadway is designed with certain vehicle characteristics in mind, local regulations typically allow a wider set of vehicles to use the road.</note>
+		<WG>9</WG>
+	</entry>
+	<entry>
+		<clause>3.3.1.8</clause>
+		<name>separation barrier</name>
+		<definition>barrier that separates __carriageways__</definition>
+		<status>Proposed</status>
+		<modified>2018-10-09T10:50:37</modified>
+		<id>8</id>
+		<WG>9</WG>
+	</entry>
+	<entry>
+		<clause>3.3.1.14</clause>
+		<name>shoulder</name>
+		<definition>__lane__ at the edge of a __carriageway__ that provides lateral support to the carriageway </definition>
+		<status>Proposed</status>
+		<modified>2019-11-04T10:32:09</modified>
+		<id>14</id>
+		<note>A hard shoulder is paved, and a soft shoulder is unpaved.</note>
+		<note>In some jurisdictions, a shoulder can be used for emergency stops and/or other purposes in addition to providing a clear zone for safety purposes.</note>
+		<WG>9</WG>
+	</entry>
+	<entry>
+		<clause>3.3.1.4</clause>
 		<name>single carriageway</name>
 		<definition>__roadway__ comprised of exactly one __carriageway__</definition>
 		<status>Proposed</status>
 		<modified>2018-10-11T12:59:09</modified>
 		<admittedTerm>undivided highway</admittedTerm>
-		<id>3</id>
+		<id>4</id>
+		<note>A single carriageway might have multiple lanes and might allow travel in opposite directions</note>
+		<WG>9</WG>
+	</entry>
+	<entry>
+		<clause>3.3.1.15</clause>
+		<name>soft shoulder</name>
+		<definition>__shoulder__ with a surface that is not suitable for driving </definition>
+		<status>Proposed</status>
+		<modified>2019-11-04T10:45:19</modified>
+		<id>15</id>
+		<note>Soft shoulders often have a grass or gravel surface.</note>
+	</entry>
+	<entry>
+		<clause>3.3.1.12</clause>
+		<name>travel lane</name>
+		<definition>__lane__ designed for the through movement of __road vehicles__ </definition>
+		<status>Proposed</status>
+		<modified>2019-12-11T21:27:05</modified>
+		<id>12</id>
 		<WG>9</WG>
 	</entry>
 	<entry>
 		<clause>3.3.1.9</clause>
-		<name>travel lane</name>
-		<definition>__lane__ designed for the through movement of __motor vehicles__ </definition>
+		<name>traveled way</name>
+		<definition>collection of all __travel lanes__ of a __carriageway__</definition>
 		<status>Proposed</status>
-		<modified>2019-07-24T17:32:34</modified>
+		<modified>2019-12-11T21:26:27</modified>
 		<id>9</id>
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.3.1.13</clause>
-		<name>traveled way</name>
-		<definition>collection of all travel lanes of a carriageway</definition>
-		<status>Proposed</status>
-		<modified>2018-08-29T18:10:40</modified>
-		<id>13</id>
-		<WG>9</WG>
-	</entry>
-	<entry>
-		<clause>3.3.2.3</clause>
+		<clause>3.3.2.9</clause>
 		<name>lane link</name>
-		<definition>__lane__ with starting and ending points that correspond to the starting and ending points of a __road link__</definition>
+		<definition>__link__ that represents a lane of a __road link__</definition>
 		<status>Proposed</status>
-		<modified>2018-10-09T10:14:32</modified>
-		<id>3</id>
-		<WG>3</WG>
-		<WG>8</WG>
-		<WG>9</WG>
-	</entry>
-	<entry>
-		<clause>3.3.2.4</clause>
-		<name>lane section</name>
-		<definition>complete sequential series of __lane segments__ within a __road section__</definition>
-		<status>Proposed</status>
-		<modified>2018-10-10T10:49:50</modified>
-		<id>4</id>
-		<WG>3</WG>
-		<WG>8</WG>
-		<WG>9</WG>
-	</entry>
-	<entry>
-		<clause>3.3.2.5</clause>
-		<name>lane segment</name>
-		<definition>complete sequential series of __lane links__ within a __road segment__ </definition>
-		<status>Proposed</status>
-		<modified>2019-02-14T18:59:46</modified>
-		<id>5</id>
+		<modified>2019-11-04T12:15:42</modified>
+		<id>9</id>
 		<note>A lane segment might start or end at locations other than the start or end of the corresponding road segment (e.g., a lane may start mid-block).</note>
 		<note>A lane segment only includes the sequential lane links, it does not include lane links from adjacent lanes.</note>
 		<WG>3</WG>
@@ -1519,72 +1615,116 @@
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.3.2.2</clause>
-		<name>path link</name>
-		<definition>collection of all __lane links__ of the same __road link__ and __carriageway__ designed for travel in the same direction</definition>
+		<clause>3.3.2.10</clause>
+		<name>lane segment</name>
+		<definition>__link__ that represents a contiguous length of a __lane link__ characterized by the same physical characteristics</definition>
 		<status>Proposed</status>
-		<modified>2019-08-07T23:03:21</modified>
-		<id>2</id>
-		<WG>3</WG>
-		<WG>9</WG>
-	</entry>
-	<entry>
-		<clause>3.3.2.6</clause>
-		<name>road</name>
-		<definition>contiguous curvilinear length of the __road network__ that shares the same name</definition>
-		<status>Proposed</status>
-		<modified>2019-02-14T18:30:40</modified>
-		<id>6</id>
-		<note>A length of the road network may be referenced by multiple names (e.g., Main Street and Route 7). In this case, there would be two "roads" that share the same set of "carriageways".</note>
-		<note>A road may turn at a junction.</note>
+		<modified>2019-11-04T12:19:04</modified>
+		<id>10</id>
 		<WG>3</WG>
 		<WG>8</WG>
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.3.2.7</clause>
-		<name>road link</name>
-		<definition>contiguous length of a __road segment__ that is described by the same set of physical characteristics</definition>
+		<clause>3.3.2.5</clause>
+		<name>link</name>
+		<definition>&lt;road network&gt; component of a __road model__ that represents a connection between two __nodes__</definition>
 		<status>Proposed</status>
-		<modified>2019-02-14T18:58:31</modified>
-		<id>7</id>
+		<modified>2019-11-04T11:39:48</modified>
+		<id>5</id>
+		<note>A link might be curvilinear and might have various attributes such as width.</note>
+		<WG>1</WG>
+		<WG>18</WG>
+		<WG>3</WG>
+		<WG>8</WG>
+		<WG>9</WG>
+	</entry>
+	<entry>
+		<clause>3.3.2.4</clause>
+		<name>node</name>
+		<definition>&lt;road network&gt; component of a __road model__ representing a point location of interest</definition>
+		<status>Proposed</status>
+		<modified>2019-11-04T11:55:48</modified>
+		<id>4</id>
+		<note>The point location typically represents a point along the road which might be used to designate the location of a junction, public transport stop, jurisdictional boundary, termination point, etc.</note>
+		<WG>1</WG>
+		<WG>18</WG>
+		<WG>3</WG>
+		<WG>8</WG>
+		<WG>9</WG>
+	</entry>
+	<entry>
+		<clause>3.3.2.1</clause>
+		<name>road</name>
+		<definition>contiguous curvilinear length of __roadway__ that shares the same name</definition>
+		<status>Proposed</status>
+		<modified>2019-11-04T09:10:41</modified>
+		<id>1</id>
+		<note>A length of the road network may be referenced by multiple names (e.g., Main Street and Route 7). In this case, there would be two "roads" that share the same set of "carriageways".</note>
+		<note>A road may change directions at a junction.</note>
+		<WG>3</WG>
+		<WG>8</WG>
+		<WG>9</WG>
+	</entry>
+	<entry>
+		<clause>3.3.2.6</clause>
+		<name>road link</name>
+		<definition>__link__ representing a contiguous length of a __road__ between two __nodes__ of operational or managerial significance</definition>
+		<status>Proposed</status>
+		<modified>2019-11-04T12:04:00</modified>
+		<id>6</id>
 		<note></note>
 		<WG>3</WG>
 		<WG>8</WG>
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.3.2.8</clause>
+		<clause>3.3.2.3</clause>
+		<name>road model</name>
+		<definition>representation of a __road network__</definition>
+		<status>Proposed</status>
+		<modified>2019-11-04T11:28:27</modified>
+		<id>3</id>
+		<note></note>
+		<WG>1</WG>
+		<WG>18</WG>
+		<WG>3</WG>
+		<WG>8</WG>
+		<WG>9</WG>
+	</entry>
+	<entry>
+		<clause>3.3.2.2</clause>
 		<name>road network</name>
-		<definition>interconnected collection of non-rail routes designed for the movement of motorized, land-based, wheeled vehicles up to 2.5 metres in width</definition>
+		<definition>interconnected collection of __roads__</definition>
 		<status>Proposed</status>
-		<modified>2019-03-03T23:14:48</modified>
-		<id>8</id>
-		<note>Other vehicles might be allowed to use the road network, perhaps with additional regulations, but the roads are designed based on these characteristics.</note>
-		<note>Portions of the road network might impose additional restrictions through the use of signs or other notices.</note>
+		<modified>2019-11-04T09:09:28</modified>
+		<id>2</id>
+		<WG>18</WG>
 		<WG>3</WG>
 		<WG>8</WG>
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.3.2.9</clause>
+		<clause>3.3.2.7</clause>
 		<name>road section</name>
-		<definition>contiguous length of a __road__ that shares the same management and operational characteristics</definition>
+		<definition>aggregation of one or more __road links__ that represents a contiguous length of a __road__ that shares the same management and operational strategies</definition>
 		<status>Proposed</status>
-		<modified>2019-02-14T18:55:30</modified>
+		<modified>2019-11-04T12:11:18</modified>
 		<example>A traffic signal timing plan is applied to one road section.</example>
-		<id>9</id>
+		<id>7</id>
+		<note>Different road models might divide the same road into different road sections.</note>
 		<WG>3</WG>
 		<WG>8</WG>
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.3.2.10</clause>
+		<clause>3.3.2.8</clause>
 		<name>road segment</name>
-		<definition>contiguous length of a __road section__ bounded by a __junction__, a jurisdictional boundary, a road section boundary, or a termination point at both ends</definition>
+		<definition>__link__ that represents a contiguous length of a __road link__ characterized by the same physical characteristics</definition>
 		<status>Proposed</status>
-		<modified>2019-02-14T18:57:36</modified>
-		<id>10</id>
+		<modified>2019-11-04T12:18:02</modified>
+		<id>8</id>
+		<note></note>
 		<WG>3</WG>
 		<WG>8</WG>
 		<WG>9</WG>
@@ -1634,7 +1774,7 @@
 		<example>A diamond interchange has two intersections.</example>
 		<id>3</id>
 		<note> The concept of an interchange includes all movements at the junction, which may include multiple intersections.</note>
-		<note>The grade separation allows travelers on the link to pass unimpeded through the junction when congestion is not present.</note>
+		<note>The grade separation allows travellers on the link to pass unimpeded through the junction when congestion is not present.</note>
 		<WG>9</WG>
 	</entry>
 	<entry>
@@ -1659,51 +1799,71 @@
 	</entry>
 	<entry>
 		<clause>3.3.3.6</clause>
-		<name>maneuver</name>
+		<name>manoeuvre</name>
 		<definition>movement from an __ingress lane__ to an __egress lane__</definition>
 		<status>Proposed</status>
-		<modified>2019-02-15T11:58:53</modified>
+		<modified>2019-09-18T17:37:07</modified>
 		<id>6</id>
+		<preferredTerm>maneuver</preferredTerm>
 		<WG>9</WG>
 	</entry>
 	<entry>
-		<clause>3.4.1.4</clause>
+		<clause>3.4.1.6</clause>
 		<name>area location</name>
-		<definition>__location__ that has a two-dimensional character</definition>
+		<definition>&lt;ITS&gt; __location__ that has a two-dimensional character</definition>
 		<status>Proposed</status>
-		<modified>2019-02-21T13:54:39</modified>
-		<id>4</id>
+		<modified>2019-11-04T13:43:05</modified>
+		<id>6</id>
 		<WG>3</WG>
 	</entry>
 	<entry>
-		<clause>3.4.1.3</clause>
+		<clause>3.4.1.4</clause>
+		<name>geolocation</name>
+		<definition>&lt;ITS&gt; __point location__ within an earth-centric frame of reference</definition>
+		<status>Proposed</status>
+		<modified>2019-11-04T16:13:36</modified>
+		<id>4</id>
+		<source>ISO/IEC/IEEE 8802-11:2018, 3.2.81, adapted to the ISO 14812 concept model</source>
+	</entry>
+	<entry>
+		<clause>3.4.1.5</clause>
 		<name>linear location</name>
 		<definition>location that has a one-dimensional character</definition>
 		<status>Proposed</status>
 		<modified>2019-03-04T21:58:25</modified>
-		<id>3</id>
+		<id>5</id>
 		<source>ISO 17572-1:2015(en), 2.1.19</source>
 		<WG>3</WG>
 	</entry>
 	<entry>
 		<clause>3.4.1.1</clause>
 		<name>location</name>
-		<definition>identifiable place within a three-dimensional space</definition>
+		<definition>particular place or position</definition>
 		<status>Proposed</status>
-		<modified>2019-03-04T21:58:31</modified>
+		<modified>2019-11-04T13:21:21</modified>
 		<id>1</id>
-		<note>Within ITS, locations are typically locations on or near the surface of the earth.</note>
-		<WG>10</WG>
+		<source>ISO 19112:2019, 3.1.3 modified to remove note and example</source>
 		<WG>3</WG>
 	</entry>
 	<entry>
-		<clause>3.4.1.2</clause>
+		<clause>3.4.1.3</clause>
 		<name>point location</name>
 		<definition>location that has a zero-dimensional character</definition>
 		<status>Proposed</status>
 		<modified>2019-03-04T21:58:42</modified>
-		<id>2</id>
+		<id>3</id>
 		<source>ISO 17572-1:2015(en), 2.1.33</source>
+		<WG>3</WG>
+	</entry>
+	<entry>
+		<clause>3.4.1.2</clause>
+		<name>spatial location</name>
+		<definition>&lt;ITS&gt; __location__ within three-dimensional space</definition>
+		<status>Proposed</status>
+		<modified>2019-11-04T13:42:33</modified>
+		<id>2</id>
+		<note>Within ITS, locations are typically locations on or near the surface of the earth.</note>
+		<WG>10</WG>
 		<WG>3</WG>
 	</entry>
 	<entry>
@@ -1718,6 +1878,16 @@
 		<WG>3</WG>
 	</entry>
 	<entry>
+		<clause>3.4.2.7</clause>
+		<name>gazetteer</name>
+		<definition>&lt;ITS&gt; register of __location references__</definition>
+		<status>Proposed</status>
+		<modified>2019-11-04T16:47:50</modified>
+		<admittedTerm>location table</admittedTerm>
+		<id>7</id>
+		<WG>3</WG>
+	</entry>
+	<entry>
 		<clause>3.4.2.5</clause>
 		<name>link location</name>
 		<definition>pre-coded location reference defined within the road network database </definition>
@@ -1729,22 +1899,25 @@
 	</entry>
 	<entry>
 		<clause>3.4.2.6</clause>
-		<name>location code</name>
-		<definition>identifier assigned to a location reference</definition>
+		<name>location identifier</name>
+		<definition>&lt;ITS&gt; reference in the form of a label or code used by a __location reference__</definition>
 		<status>Proposed</status>
-		<modified>2019-03-04T21:59:10</modified>
+		<modified>2019-11-04T16:35:23</modified>
+		<admittedTerm>location code</admittedTerm>
+		<example>"Spain" is an example of a label (country name); "SW1P 3AD" is an example of a code (postcode).</example>
 		<id>6</id>
-		<note>A location code is often a numeric or alphanumeric identifier, but could be a textual name, symbol, or any other type of identifier.</note>
+		<note>The term "location code" has been used previously in ISOTC204 standards, but "location identifier" is preferred to be more consistent with ISOTC211 work.</note>
 		<WG>10</WG>
 		<WG>3</WG>
 	</entry>
 	<entry>
 		<clause>3.4.2.2</clause>
 		<name>location reference</name>
-		<definition>specification of a location according to a specific set of rules</definition>
+		<definition>&lt;ITS&gt; specification of a __location__ according to a specific set of rules</definition>
 		<status>Proposed</status>
-		<modified>2019-03-04T21:59:16</modified>
+		<modified>2019-11-04T16:35:29</modified>
 		<id>2</id>
+		<note>The rules need not be formal coordinates but could be descriptive.</note>
 		<WG>10</WG>
 		<WG>18</WG>
 		<WG>3</WG>
@@ -1752,20 +1925,10 @@
 	<entry>
 		<clause>3.4.2.1</clause>
 		<name>location referencing</name>
-		<definition>method for referencing locations to facilitate the exchange of location related information between different systems</definition>
+		<definition>&lt;ITS&gt; process used to develop a __location reference__</definition>
 		<status>Proposed</status>
-		<modified>2019-03-04T21:59:21</modified>
+		<modified>2019-11-04T16:35:16</modified>
 		<id>1</id>
-		<source>ISO/TS 18234-4:2006(en), 3.4</source>
-		<WG>3</WG>
-	</entry>
-	<entry>
-		<clause>3.4.2.7</clause>
-		<name>location table</name>
-		<definition>table of one or more entries that unambiguously defines a location according to a known set of conventions</definition>
-		<status>Proposed</status>
-		<modified>2019-03-04T21:59:27</modified>
-		<id>7</id>
 		<WG>3</WG>
 	</entry>
 	<entry>
@@ -1831,15 +1994,6 @@
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.5.2.3</clause>
-		<name>consumer</name>
-		<definition>&lt;transport&gt; __consumer__ that has a __transport need__ to be fulfilled</definition>
-		<status>Proposed</status>
-		<modified>2019-02-21T13:55:42</modified>
-		<id>3</id>
-		<WG>1</WG>
-	</entry>
-	<entry>
 		<clause>3.5.2.5</clause>
 		<name>item</name>
 		<definition>&lt;transport&gt; __material entity__ that has been, is being, or will be transported</definition>
@@ -1849,32 +2003,44 @@
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.5.2.4</clause>
-		<name>need</name>
-		<definition>&lt;transport&gt; __need__ to transport one or more transport items to a different location</definition>
-		<status>Proposed</status>
-		<modified>2019-02-16T16:01:21</modified>
-		<id>4</id>
-		<WG>1</WG>
-	</entry>
-	<entry>
 		<clause>3.5.2.1</clause>
-		<name>provider</name>
-		<definition>&lt;transport&gt; __entity__ that delivers one or more __transport services__</definition>
-		<status>Proposed</status>
-		<modified>2019-02-28T09:08:07</modified>
-		<id>1</id>
-		<WG>1</WG>
-		<WG>8</WG>
-	</entry>
-	<entry>
-		<clause>3.5.2.2</clause>
 		<name>service</name>
 		<definition>&lt;transport&gt; __service__ that delivers item(s) from one location to another on behalf of a __transport consumer__ to satisfy a __need__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-16T16:04:23</modified>
-		<id>2</id>
+		<id>1</id>
 		<note>The item(s) delivered might be people and/or goods.</note>
+		<WG>1</WG>
+	</entry>
+	<entry>
+		<clause>3.5.2.2</clause>
+		<name>service provider</name>
+		<definition>&lt;transport&gt; __entity__ that delivers one or more __transport services__</definition>
+		<status>Proposed</status>
+		<modified>2019-09-21T16:15:30</modified>
+		<id>2</id>
+		<preferredTerm>provider</preferredTerm>
+		<WG>1</WG>
+		<WG>8</WG>
+	</entry>
+	<entry>
+		<clause>3.5.2.3</clause>
+		<name>user</name>
+		<definition>&lt;transport&gt; __consumer__ that has a __transport need__ to be fulfilled</definition>
+		<status>Proposed</status>
+		<modified>2019-09-21T16:14:32</modified>
+		<id>3</id>
+		<preferredTerm>consumer</preferredTerm>
+		<WG>1</WG>
+	</entry>
+	<entry>
+		<clause>3.5.2.4</clause>
+		<name>user need</name>
+		<definition>&lt;transport&gt; __need__ to transport one or more transport items to a different location</definition>
+		<status>Proposed</status>
+		<modified>2019-09-21T16:16:32</modified>
+		<id>4</id>
+		<preferredTerm>need</preferredTerm>
 		<WG>1</WG>
 	</entry>
 	<entry>
@@ -1919,17 +2085,6 @@
 		<id>4</id>
 		<preferredTerm>need</preferredTerm>
 		<WG>1</WG>
-	</entry>
-	<entry>
-		<clause>3.5.4.5</clause>
-		<name>bounded, secured, managed domain</name>
-		<definition>controlled processing environment that adheres to a minimum set of management and security principles and procedures so as to establish a level of trust between itself and other similar __ITS stations__ with which it might communicate</definition>
-		<status>Proposed</status>
-		<modified>2019-03-04T10:04:13</modified>
-		<id>5</id>
-		<preferredTerm>BSMD</preferredTerm>
-		<WG>1</WG>
-		<WG>18</WG>
 	</entry>
 	<entry>
 		<clause>3.5.4.1</clause>
@@ -1979,21 +2134,21 @@
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.5.5.2</clause>
+		<clause>3.5.5.1</clause>
 		<name>communication process</name>
 		<definition>&lt;ITS-S&gt; __entity__ that delivers one or more __ITS-S communication services__</definition>
 		<status>Proposed</status>
 		<modified>2018-10-08T15:23:29</modified>
-		<id>2</id>
+		<id>1</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.5.5.1</clause>
+		<clause>3.5.5.2</clause>
 		<name>communication service</name>
 		<definition>&lt;ITS-S&gt; performance of one or more tasks to fulfil an __ITS-S communication need__ for an __ITS-S communication user__</definition>
 		<status>Proposed</status>
 		<modified>2019-07-27T15:07:05</modified>
-		<id>1</id>
+		<id>2</id>
 		<WG>1</WG>
 		<WG>16</WG>
 		<WG>17</WG>
@@ -2007,24 +2162,6 @@
 		<modified>2019-07-27T15:11:11</modified>
 		<id>3</id>
 		<WG>1</WG>
-	</entry>
-	<entry>
-		<clause>3.5.6.7</clause>
-		<name>AV sharing</name>
-		<definition>using a __shared AV service__</definition>
-		<status>Proposed</status>
-		<modified>2019-02-17T11:35:22</modified>
-		<id>7</id>
-		<WG>19</WG>
-	</entry>
-	<entry>
-		<clause>3.5.6.4</clause>
-		<name>shared AV service</name>
-		<definition>__shared mobility service__ where the on-board logic within the vehicle has the primary responsibility for the operation of the __vehicle__</definition>
-		<status>Proposed</status>
-		<modified>2019-02-17T11:32:26</modified>
-		<id>4</id>
-		<WG>19</WG>
 	</entry>
 	<entry>
 		<clause>3.5.6.1</clause>
@@ -2057,26 +2194,27 @@
 		<modified>2019-02-17T11:32:18</modified>
 		<id>3</id>
 		<note>As there should only be one operator of a vehicle at any time, a shared vehicle service should use a sequential operational model.</note>
-		<note>This term can be specialized by replacing "vehicle" with any defined vehicle type; however, in some cases the the preferred form is to consolidate terms (e.g., "carsharing" rather than "passenger car sharing").</note>
+		<note>This term can be specialized by replacing "vehicle" with any defined vehicle type (e.g., "automated vehicle sharing").</note>
 		<WG>19</WG>
 		<WG>8</WG>
 	</entry>
 	<entry>
-		<clause>3.5.6.5</clause>
+		<clause>3.5.6.4</clause>
 		<name>transport sharing</name>
 		<definition>using a __shared transport service__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-17T11:35:03</modified>
-		<id>5</id>
+		<id>4</id>
 		<WG>19</WG>
 	</entry>
 	<entry>
-		<clause>3.5.6.6</clause>
+		<clause>3.5.6.5</clause>
 		<name>vehicle sharing</name>
 		<definition>using a __shared vehicle service__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-17T11:35:12</modified>
-		<id>6</id>
+		<id>5</id>
+		<note>This term can be specialized by replacing "vehicle" with any defined vehicle type; however, in some cases the preferred form is to consolidate terms (e.g., "carsharing" rather than "passenger car sharing").</note>
 		<WG>19</WG>
 	</entry>
 	<entry>
@@ -2127,7 +2265,7 @@
 		<modified>2019-02-16T17:55:02</modified>
 		<example>ridesourcing</example>
 		<id>5</id>
-		<note>The two individuals may connect and/or contract through a thrid party service.</note>
+		<note>The two individuals may connect and/or contract through a third-party service.</note>
 		<WG>19</WG>
 	</entry>
 	<entry>
@@ -2168,21 +2306,21 @@
 		<WG>19</WG>
 	</entry>
 	<entry>
-		<clause>3.5.8.7</clause>
+		<clause>3.5.8.8</clause>
 		<name>membership modifier</name>
-		<definition>&lt;shared mobility&gt; characteristic of a __financial model__ that indicates whether __transport consumers__ are required to enter into a agreement prior to receiving __transport services__</definition>
+		<definition>&lt;shared mobility&gt; characteristic of a __financial model__ that indicates whether __transport consumers__ are required to enter into an agreement prior to receiving __transport services__</definition>
 		<status>Proposed</status>
-		<modified>2019-02-16T18:14:39</modified>
-		<id>7</id>
+		<modified>2019-12-28T10:41:56</modified>
+		<id>8</id>
 		<WG>19</WG>
 	</entry>
 	<entry>
-		<clause>3.5.8.8</clause>
+		<clause>3.5.8.9</clause>
 		<name>membership-based</name>
-		<definition>&lt;shared mobility&gt; characteristic of a __financial model__ that requires __transport consumers__ to enter into a agreement prior to receiving __transport services__</definition>
+		<definition>&lt;shared mobility&gt; characteristic of a __financial model__ that requires __transport consumers__ to enter into an agreement prior to receiving __transport services__</definition>
 		<status>Proposed</status>
-		<modified>2019-02-16T18:14:30</modified>
-		<id>8</id>
+		<modified>2019-12-28T10:47:53</modified>
+		<id>9</id>
 		<note>The agreement might be associated with fees.</note>
 		<note>The agreement might be minimal, such as collecting user information for business purposes.</note>
 		<note>The membership may be granted as a part of a broader agreement. For example, a university bus system might restrict access to students and faculty.</note>
@@ -2198,23 +2336,23 @@
 		<WG>19</WG>
 	</entry>
 	<entry>
-		<clause>3.5.8.9</clause>
+		<clause>3.5.8.10</clause>
 		<name>open-access</name>
 		<definition>&lt;shared mobility&gt; characteristic of a __financial model__ that does not require membership within an organization to receive __transport services__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-16T18:22:14</modified>
-		<id>9</id>
+		<id>10</id>
 		<note>This includes models where membership is optional and might provide extra benefits.</note>
 		<WG>19</WG>
 	</entry>
 	<entry>
-		<clause>3.5.8.1</clause>
+		<clause>3.5.8.7</clause>
 		<name>private</name>
 		<definition>&lt;shared mobility&gt; __financial model__ where __transport services__ are provided to members of the owning organization without usage fees</definition>
 		<status>Proposed</status>
 		<modified>2019-07-25T15:45:06</modified>
 		<example>Fleet vehicles of an employer</example>
-		<id>1</id>
+		<id>7</id>
 		<WG>19</WG>
 	</entry>
 	<entry>
@@ -2328,68 +2466,51 @@
 		<WG>19</WG>
 	</entry>
 	<entry>
-		<clause>3.5.11.6</clause>
-		<name>carpool service</name>
-		<definition>__rideshare service__ that uses a __passenger car__ for transport</definition>
-		<status>Proposed</status>
-		<modified>2019-02-17T13:58:54</modified>
-		<id>6</id>
-		<WG>19</WG>
-	</entry>
-	<entry>
-		<clause>3.5.11.10</clause>
+		<clause>3.5.11.7</clause>
 		<name>courier network service</name>
 		<definition>__commercial__, __peer-to-peer__ __shared transport service__ that transports goods</definition>
 		<status>Proposed</status>
 		<modified>2019-02-17T14:02:30</modified>
-		<id>10</id>
+		<id>7</id>
 		<note>The goods are typically small packages, letters, food, etc.</note>
 		<WG>19</WG>
 	</entry>
 	<entry>
-		<clause>3.5.11.3</clause>
-		<name>pedicab sevice</name>
-		<definition>__taxi service__ that uses a __pedicycle__ to provide transport</definition>
-		<status>Proposed</status>
-		<modified>2019-02-17T13:27:35</modified>
-		<id>3</id>
-		<WG>19</WG>
-	</entry>
-	<entry>
-		<clause>3.5.11.11</clause>
+		<clause>3.5.11.8</clause>
 		<name>public transport service</name>
-		<definition></definition>
+		<definition>__shared transport service__ that transports passengers and is based on a __public__ financial model</definition>
 		<status>Proposed</status>
-		<modified>2019-02-28T09:16:51</modified>
-		<id>11</id>
+		<modified>2019-09-20T18:56:17</modified>
+		<example>city buses, trolleybuses, trams (or light rail), passenger trains, rapid transit (metro/subways/undergrounds, etc.), and ferries</example>
+		<id>8</id>
 		<WG>19</WG>
 		<WG>8</WG>
 	</entry>
 	<entry>
-		<clause>3.5.11.5</clause>
+		<clause>3.5.11.4</clause>
 		<name>rideshare service</name>
 		<definition>__cooperative__ __shared transport service__ that transports passengers __concurrently__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-17T13:30:53</modified>
-		<id>5</id>
+		<id>4</id>
 		<WG>19</WG>
 	</entry>
 	<entry>
-		<clause>3.5.11.8</clause>
+		<clause>3.5.11.5</clause>
 		<name>ridesourced service</name>
 		<definition>__commercial__, __peer-to-peer__ __shared transport service__ that transports passengers</definition>
 		<status>Proposed</status>
 		<modified>2019-02-17T14:03:00</modified>
-		<id>8</id>
+		<id>5</id>
 		<WG>19</WG>
 	</entry>
 	<entry>
-		<clause>3.5.11.9</clause>
+		<clause>3.5.11.6</clause>
 		<name>ridesplit service</name>
 		<definition>__ridesourced service__ that serves passengers __concurrently__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-17T14:04:21</modified>
-		<id>9</id>
+		<id>6</id>
 		<WG>19</WG>
 	</entry>
 	<entry>
@@ -2413,21 +2534,12 @@
 		<WG>19</WG>
 	</entry>
 	<entry>
-		<clause>3.5.11.4</clause>
+		<clause>3.5.11.3</clause>
 		<name>taxi share service</name>
 		<definition>__commercial__ __shared transport service__ that transports passengers __concurrently__</definition>
 		<status>Proposed</status>
 		<modified>2019-02-17T13:29:28</modified>
-		<id>4</id>
-		<WG>19</WG>
-	</entry>
-	<entry>
-		<clause>3.5.11.7</clause>
-		<name>vanpool service</name>
-		<definition>__rideshare service__ that uses a __passenger van__ for transport</definition>
-		<status>Proposed</status>
-		<modified>2019-02-17T13:59:17</modified>
-		<id>7</id>
+		<id>3</id>
 		<WG>19</WG>
 	</entry>
 	<entry>
@@ -2504,7 +2616,7 @@
 		<status>Proposed</status>
 		<modified>2019-02-17T15:17:37</modified>
 		<id>7</id>
-		<note>A public tranport app might include features such as viewing maps, searching routes and schedules, real-time arrival information, ticketing, electronic boarding pass, etc.</note>
+		<note>A public transport app might include features such as viewing maps, searching routes and schedules, real-time arrival information, ticketing, electronic boarding pass, etc.</note>
 		<WG>19</WG>
 		<WG>8</WG>
 	</entry>
@@ -2576,18 +2688,18 @@
 	<entry>
 		<clause>3.6.1.3</clause>
 		<name>vulnerable road user</name>
-		<definition>__road user__ other than an occupant of a __motor vehicle__</definition>
+		<definition>__road user__ other than an occupant of a __road vehicle__</definition>
 		<status>Proposed</status>
-		<modified>2019-03-03T22:36:15</modified>
+		<modified>2019-12-28T12:37:34</modified>
 		<id>3</id>
 		<WG>1</WG>
 	</entry>
 	<entry>
 		<clause>3.6.2.4</clause>
 		<name>conventional driver</name>
-		<definition>__person__ performing the role of the __driver__ using the vehicle's __built-in input devices__ to control the longitudinal and lateral movement of the vehicle</definition>
+		<definition>__driver__ that performs the __dynamic driving task__ using the vehicle's __built-in input devices__ to control the longitudinal and lateral movement of the vehicle</definition>
 		<status>Proposed</status>
-		<modified>2019-08-08T10:25:00</modified>
+		<modified>2019-09-18T18:32:18</modified>
 		<id>4</id>
 		<WG>1</WG>
 		<WG>14</WG>
@@ -2595,11 +2707,11 @@
 	<entry>
 		<clause>3.6.2.3</clause>
 		<name>driver</name>
-		<definition>role that represents the __entity__ that is currently responsible for the __dynamic driving task__ for the __vehicle__</definition>
+		<definition>__person__ that is currently responsible for the __dynamic driving task__ for the __vehicle__</definition>
 		<status>Proposed</status>
-		<modified>2019-08-08T10:33:34</modified>
+		<modified>2019-09-18T18:30:47</modified>
 		<id>3</id>
-		<note>The driver is typically onboard the vehicle, but could be remote from the vehicle or automated logic.</note>
+		<note>The driver is typically onboard the vehicle but could be remote from the vehicle or automated logic.</note>
 		<WG>1</WG>
 		<WG>7</WG>
 	</entry>
@@ -2615,20 +2727,20 @@
 	<entry>
 		<clause>3.6.2.5</clause>
 		<name>remote driver</name>
-		<definition>__person__ performing the role of the __driver__ without using the vehicle's __built-in input devices__ to control the longitudinal and lateral movement of the vehicle</definition>
+		<definition>__driver__ that performs the __dynamic driving task__ without using the vehicle's __built-in input devices__ to control the longitudinal and lateral movement of the vehicle</definition>
 		<status>Proposed</status>
-		<modified>2019-08-08T10:30:11</modified>
+		<modified>2019-09-18T18:31:52</modified>
 		<id>5</id>
-		<note>A remote driver may use a variety of physical input devces, but not any that are built into the vehicle.</note>
+		<note>A remote driver may use a variety of physical input devices, but not any that are built into the vehicle.</note>
 		<WG>1</WG>
 		<WG>14</WG>
 	</entry>
 	<entry>
 		<clause>3.6.2.2</clause>
 		<name>vehicle occupant</name>
-		<definition>__person__ in a __vehicle__</definition>
+		<definition>__person__ in or on a __vehicle__</definition>
 		<status>Proposed</status>
-		<modified>2019-02-17T16:04:18</modified>
+		<modified>2019-09-18T18:33:37</modified>
 		<id>2</id>
 		<note>A vehicle occupant in a stationary vehicle is not necessarily a traveller.</note>
 		<WG>1</WG>
@@ -2667,9 +2779,9 @@
 	<entry>
 		<clause>3.7.1.6</clause>
 		<name>nomadic input device</name>
-		<definition>__input device__ designed to be carried into, or in near proximity of, a __vehicle__ and connected as desired \r\n </definition>
+		<definition>__input device__ designed to be carried into, or in near proximity of, a __vehicle__ and connected as desired </definition>
 		<status>Proposed</status>
-		<modified>2019-08-06T15:13:05</modified>
+		<modified>2019-12-28T12:21:18</modified>
 		<example>A smartphone connected to a vehicle (via USB or Bluetooth) to control the vehicle's audio system</example>
 		<id>6</id>
 		<note>Nomadic devices are often more closely associated with a person than they are with the vehicle.</note>
@@ -2711,17 +2823,19 @@
 		<definition>maximum speed at which a vehicle is intended to operate for a sustained period of time</definition>
 		<status>Proposed</status>
 		<modified>2019-08-06T16:17:53</modified>
+		<admittedTerm>top speed</admittedTerm>
 		<id>1</id>
+		<note>Top speed is defined in SAE J3194:2019 in relation to powered micromobility vehicles and is considered to be semantically equivalent to design speed.</note>
 		<WG>1</WG>
 	</entry>
 	<entry>
-		<clause>3.7.3.6</clause>
+		<clause>3.7.3.9</clause>
 		<name>ADS</name>
 		<definition>__driving automation system__ that is able to perform the entire __DDT__ on a sustained basis</definition>
 		<status>Proposed</status>
 		<modified>2019-05-02T19:21:19</modified>
-		<id>6</id>
-		<note>The abbreviated form (“ADS") is preferred and the alternate form uses initial capitals to avoid confusion with the more general term “driving automation system”.</note>
+		<id>9</id>
+		<note>The abbreviated form ("ADS") is preferred and the alternate form uses initial capitals to avoid confusion with the more general term “driving automation system”.</note>
 		<preferredTerm>Automated Driving System</preferredTerm>
 		<WG>14</WG>
 	</entry>
@@ -2735,7 +2849,7 @@
 		<WG>14</WG>
 	</entry>
 	<entry>
-		<clause>3.7.3.13</clause>
+		<clause>3.7.3.14</clause>
 		<name>ADS-equipped vehicle</name>
 		<definition>__vehicle__ integrated with an __ADS__</definition>
 		<status>Proposed</status>
@@ -2743,7 +2857,7 @@
 		<admittedTerm>automated vehicle</admittedTerm>
 		<admittedTerm>AV</admittedTerm>
 		<deprecatedTerm>autonomous vehicle</deprecatedTerm>
-		<id>13</id>
+		<id>14</id>
 		<note></note>
 		<note></note>
 		<note></note>
@@ -2752,31 +2866,31 @@
 		<WG>14</WG>
 	</entry>
 	<entry>
-		<clause>3.7.3.14</clause>
+		<clause>3.7.3.13</clause>
 		<name>conventional vehicle</name>
 		<definition>&lt;driving automation&gt; __vehicle__ designed to be operated by a __person__ during part or all of every trip.</definition>
 		<status>Proposed</status>
 		<modified>2019-08-08T10:42:41</modified>
-		<id>14</id>
+		<id>13</id>
 		<WG>14</WG>
 	</entry>
 	<entry>
-		<clause>3.7.3.4</clause>
+		<clause>3.7.3.7</clause>
 		<name>driver assistance</name>
 		<definition>__driving automation system__ that provides either sustained lateral or sustained longitudinal vehicle motion control within a specific __operational design domain__ with the expectation that a __conventional driver__ completes the dynamic driving task</definition>
 		<status>Proposed</status>
 		<modified>2019-07-25T17:31:14</modified>
 		<admittedTerm>level 1 driving automation</admittedTerm>
-		<id>4</id>
+		<id>7</id>
 		<WG>14</WG>
 	</entry>
 	<entry>
-		<clause>3.7.3.3</clause>
+		<clause>3.7.3.6</clause>
 		<name>driving automation system</name>
 		<definition>hardware and software __system__ that is able to perform part or all of the __DDT__ on a sustained basis</definition>
 		<status>Proposed</status>
 		<modified>2019-07-25T18:18:48</modified>
-		<id>3</id>
+		<id>6</id>
 		<note></note>
 		<note>This term is used generically to describe any system capable of level 1-5 driving automation.</note>
 		<WG>14</WG>
@@ -2803,30 +2917,30 @@
 		<WG>14</WG>
 	</entry>
 	<entry>
-		<clause>3.7.3.11</clause>
+		<clause>3.7.3.3</clause>
 		<name>fallback</name>
 		<definition>&lt;driving automation&gt; response by an __ADS__ to achieve a minimal risk condition upon exit from the defined __operational design domain__ or in response to a __system failure__</definition>
 		<status>Proposed</status>
 		<modified>2019-07-25T17:53:46</modified>
-		<id>11</id>
+		<id>3</id>
+		<WG>14</WG>
+	</entry>
+	<entry>
+		<clause>3.7.3.4</clause>
+		<name>fallback-ready user</name>
+		<definition>&lt;DDT&gt; __person__ who is able to operate the vehicle if the __ADS__ issues a request to intervene or if s/he otherwise identifies a condition that requires intervention to perform the __DDT__</definition>
+		<status>Proposed</status>
+		<modified>2019-09-18T18:36:00</modified>
+		<id>4</id>
 		<WG>14</WG>
 	</entry>
 	<entry>
 		<clause>3.7.3.10</clause>
-		<name>fallback-ready user</name>
-		<definition>&lt;DDT&gt; human __driver__ who is able to operate the vehicle if the __ADS__ issues a request to intervene or if the human driver otherwise identifies a condition that requires intervention to perform the __DDT__</definition>
-		<status>Proposed</status>
-		<modified>2019-07-25T17:33:37</modified>
-		<id>10</id>
-		<WG>14</WG>
-	</entry>
-	<entry>
-		<clause>3.7.3.7</clause>
 		<name>level 3 ADS</name>
 		<definition>__ADS__ designed with the expectation that the __fallback-ready user__ is available to intervene</definition>
 		<status>Proposed</status>
 		<modified>2019-05-02T21:07:01</modified>
-		<id>7</id>
+		<id>10</id>
 		<note>Level 3 ADSs are typically restricted to operating within a specific ODD.</note>
 		<note>The user might need to intervene due to an ADS-issued request, a DDT performance-relevant system failure, or other reasons.</note>
 		<preferredTerm>level 3 Automated Driving System</preferredTerm>
@@ -2834,23 +2948,23 @@
 		<WG>14</WG>
 	</entry>
 	<entry>
-		<clause>3.7.3.8</clause>
+		<clause>3.7.3.11</clause>
 		<name>level 4 ADS</name>
 		<definition>__ADS__ that is capable of operating within a specific __ODD__ and providing its own __fallback__, without any expectation that a human __driver__ will respond to a request to intervene</definition>
 		<status>Proposed</status>
-		<modified>2019-07-25T17:34:33</modified>
-		<id>8</id>
+		<modified>2019-10-05T18:36:53</modified>
+		<id>11</id>
 		<preferredTerm>level 4 Automated Driving System</preferredTerm>
 		<WG>1</WG>
 		<WG>14</WG>
 	</entry>
 	<entry>
-		<clause>3.7.3.9</clause>
+		<clause>3.7.3.12</clause>
 		<name>level 5 ADS</name>
 		<definition>__ADS__ that is capable of unconditional (i.e., not __ODD__-specific) operation and providing its own __fallback__, without any expectation that a human __driver__ will respond to a request to intervene</definition>
 		<status>Proposed</status>
-		<modified>2019-07-25T17:35:02</modified>
-		<id>9</id>
+		<modified>2019-10-05T18:37:22</modified>
+		<id>12</id>
 		<preferredTerm>level 5 Automated Driving System</preferredTerm>
 		<WG>1</WG>
 		<WG>14</WG>
@@ -2861,9 +2975,8 @@
 		<definition>set of operating conditions under which a given __driving automation system__ or feature thereof is specifically designed to function</definition>
 		<status>Proposed</status>
 		<modified>2019-05-02T19:33:12</modified>
-		<example></example>
-		<example>An ADS feature is designed to operate a vehicle only on fully access-controlled freeways in low-speed traffic, under fair weather conditions and optimal road maintenance conditions (e.g., good lane markings and not under construction).</example>
-		<example>An ADS-dedicated vehicle is designed to operate only within a geographically-defined military base, and only during daylight at speeds not to exceed 25 mph.</example>
+		<example>ADS feature designed to operate a vehicle only on fully access-controlled freeways in low-speed traffic, under fair weather conditions and optimal road maintenance conditions (e.g., good lane markings and not under construction).</example>
+		<example>ADS-dedicated vehicle designed to operate only within a geographically-defined area, and only during daylight at speeds not to exceed 25 mph.</example>
 		<id>2</id>
 		<note>The conditions might include environmental, geographical, time-of-day, and/or other restrictions.</note>
 		<note>The conditions might require the presence or absence of certain traffic or roadway characteristics.</note>
@@ -2871,142 +2984,168 @@
 		<WG>14</WG>
 	</entry>
 	<entry>
-		<clause>3.7.3.5</clause>
+		<clause>3.7.3.8</clause>
 		<name>partial driving automation</name>
 		<definition>__driving automation system__ that provides sustained lateral and longitudinal vehicle motion control within a specific __operational design domain__ with the expectation that a __conventional driver__ completes the object and event detection and response</definition>
 		<status>Proposed</status>
 		<modified>2019-07-25T17:31:42</modified>
 		<admittedTerm>level 2 driving automation</admittedTerm>
-		<id>5</id>
+		<id>8</id>
 		<WG>14</WG>
 	</entry>
 	<entry>
-		<clause>3.7.3.12</clause>
+		<clause>3.7.3.5</clause>
 		<name>system failure</name>
 		<definition>&lt;driving automation&gt; malfunction in a vehicle system that prevents the __driving automation system__ from reliably performing its responsibilities on a sustained basis</definition>
 		<status>Proposed</status>
 		<modified>2019-07-25T17:57:20</modified>
-		<id>12</id>
+		<id>5</id>
 		<note>The malfunction may be internal to the driving automation system or part of another vehicle system.</note>
 		<WG>14</WG>
 	</entry>
 	<entry>
-		<clause>3.7.4.1</clause>
-		<name>connected vehicle</name>
-		<definition>__vehicle____ that is equipped with ____vehicle onboard equipment__ that is active and operational</definition>
+		<clause>3.7.4.3</clause>
+		<name>disconnected</name>
+		<definition>&lt;ITS&gt; characteristic of a __material entity__ that is__ or was equipped with communications equipment __that is sufficiently physically disconnected such that the vehicle is no longer able to send data to or receive data from __connected__ entities</definition>
 		<status>Proposed</status>
-		<modified>2019-08-08T11:16:00</modified>
-		<id>1</id>
-		<note>The equipment is active when the basic vehicle safety application processes are running.</note>
-		<note>The term connected vehicle does not imply support for any specific communications interface or ITS-S application process.</note>
-		<WG>1</WG>
-		<WG>16</WG>
-		<WG>18</WG>
-	</entry>
-	<entry>
-		<clause>3.7.4.4</clause>
-		<name>disconnected vehicle</name>
-		<definition>__off-grid vehicle____ that is or was equipped with ____vehicle onboard equipment__ that is sufficiently physically disconnected such that the vehicle no longer sends or receives any connected vehicle communications</definition>
-		<status>Proposed</status>
-		<modified>2019-08-08T11:11:58</modified>
-		<id>4</id>
+		<modified>2019-12-27T19:15:40</modified>
+		<id>3</id>
 		<note>The vehicle on-board equipment might still be present in the vehicle and might even be partially connected, but not in any operational sense.</note>
 		<WG>1</WG>
 		<WG>16</WG>
 		<WG>18</WG>
 	</entry>
 	<entry>
+		<clause>3.7.4.1</clause>
+		<name>off-grid</name>
+		<definition>&lt;ITS&gt; characteristic of an __material entity__ that is__ currently unable to __send data to or receive data from __connected__ entities</definition>
+		<status>Proposed</status>
+		<modified>2019-12-27T19:15:21</modified>
+		<id>1</id>
+		<WG>1</WG>
+		<WG>16</WG>
+		<WG>18</WG>
+	</entry>
+	<entry>
 		<clause>3.7.4.2</clause>
-		<name>off-grid vehicle</name>
-		<definition>__vehicle____ that is currently unable to __send or receive any connected vehicle communications</definition>
+		<name>unconnected</name>
+		<definition>&lt;ITS&gt; characteristic of an __material entity__ that is__ equipped with communications equipment __that is not active or is otherwise unable to send data to or receive data from __connected__ entities</definition>
 		<status>Proposed</status>
-		<modified>2019-08-08T11:09:46</modified>
+		<modified>2019-12-28T12:21:32</modified>
 		<id>2</id>
 		<WG>1</WG>
 		<WG>16</WG>
 		<WG>18</WG>
 	</entry>
 	<entry>
-		<clause>3.7.4.3</clause>
-		<name>unconnected vehicle</name>
-		<definition>__off-grid vehicle____ that is equipped with ____vehicle onboard equipment__ that is not active or is otherwise unable to send or receive any connected vehicle communications\r\n </definition>
+		<clause>3.7.4.4</clause>
+		<name>unequipped</name>
+		<definition>&lt;ITS&gt; characteristic of an __material entity__ that is__ not and has never been equipped with communications equipment for sending data to or receiving data from ____connected____ __entities</definition>
 		<status>Proposed</status>
-		<modified>2019-08-08T11:11:43</modified>
-		<id>3</id>
-		<note>The equipment may be off or disconnected resulting in a condition where the vehicle appears to be off-grid.</note>
+		<modified>2019-12-27T19:15:55</modified>
+		<id>4</id>
 		<WG>1</WG>
 		<WG>16</WG>
 		<WG>18</WG>
-	</entry>
-	<entry>
-		<clause>3.7.4.5</clause>
-		<name>unequipped vehicle</name>
-		<definition>__off-grid vehicle____ that is not and has never been equipped with ____vehicle onboard equipment__</definition>
-		<status>Proposed</status>
-		<modified>2019-08-08T11:12:25</modified>
-		<id>5</id>
-		<WG>1</WG>
-		<WG>16</WG>
-		<WG>18</WG>
-	</entry>
-	<entry>
-		<clause>3.7.5.2</clause>
-		<name>cycle-speed vehicle</name>
-		<definition>__vehicle__ with a maximum design speed that exceeds pedestrian speeds but does not greatly exceed those for human-powered cycles</definition>
-		<status>Proposed</status>
-		<modified>2019-08-06T15:57:28</modified>
-		<id>2</id>
-		<note>Local regulations vary but but conceptually, this represents a maximum design speed of roughly 25 kph.</note>
-		<WG>1</WG>
 	</entry>
 	<entry>
 		<clause>3.7.5.6</clause>
 		<name>high-speed vehicle</name>
-		<definition>__vehicle__ with a maximum design speed that greatly exceeds motorway speeds\r\n </definition>
+		<definition>__vehicle__ with a __design speed__ that greatly exceeds motorway speeds</definition>
 		<status>Proposed</status>
-		<modified>2019-08-06T16:04:51</modified>
+		<modified>2019-12-28T12:21:46</modified>
 		<id>6</id>
-		<note>Local regulations vary but but conceptually, this represents a maximum design speed in excess of 200 kph.</note>
+		<note>Local regulations for the exact speed range vary; conceptually, this represents a vehicle with a design speed in excess of 198 km/h.</note>
+		<WG>1</WG>
+	</entry>
+	<entry>
+		<clause>3.7.5.2</clause>
+		<name>low-speed vehicle</name>
+		<definition>__vehicle__ with a __design speed__ that exceeds pedestrian speeds and is more typical of human-powered cycles</definition>
+		<status>Proposed</status>
+		<modified>2019-12-11T17:56:47</modified>
+		<admittedTerm>cycle-speed vehicle</admittedTerm>
+		<id>2</id>
+		<note>Local regulations for the exact speed range vary; SAEJ3194:2019 associates this term with a vehicle with a top speed in the range between 13 km/h and 32 km/h.</note>
+		<WG>1</WG>
+	</entry>
+	<entry>
+		<clause>3.7.5.3</clause>
+		<name>medium-speed vehicle</name>
+		<definition>__vehicle__ with a __design speed__ that exceeds speeds typical of human-powered cycles but does not greatly exceed those considered safe for residential neighbourhoods </definition>
+		<status>Proposed</status>
+		<modified>2019-12-11T18:00:04</modified>
+		<admittedTerm>residential-speed vehicle</admittedTerm>
+		<id>3</id>
+		<note>Local regulations for the exact speed range vary; SAEJ3194:2019 associates this term with a vehicle with a top speed in the range between 32 km/h and 48 km/h.</note>
 		<WG>1</WG>
 	</entry>
 	<entry>
 		<clause>3.7.5.5</clause>
 		<name>motorway-speed vehicle</name>
-		<definition>__vehicle__ with a maximum design speed that exceeds urban speeds but does not greatly exceed those for motorways </definition>
+		<definition>__vehicle__ with a __design speed__ that is typical of vehicles allowed to operate on motorways </definition>
 		<status>Proposed</status>
-		<modified>2019-08-06T16:04:24</modified>
+		<modified>2019-12-11T18:17:27</modified>
 		<id>5</id>
-		<note>Local regulations vary but but conceptually, this represents a maximum design speed of roughly 200 kph.</note>
+		<note>Local regulations for the exact speed range vary; conceptually, this represents a vehicle with a design speed in the range of 87 km/h and 198 km/h.</note>
 		<WG>1</WG>
 	</entry>
 	<entry>
 		<clause>3.7.5.1</clause>
-		<name>pedestrian-speed vehicle</name>
-		<definition>__vehicle__ with a maximum design speed that does not greatly exceed typical pedestrian speeds</definition>
+		<name>ultra-low-speed vehicle</name>
+		<definition>__vehicle__ with a __design speed__ that does not greatly exceed typical pedestrian speeds</definition>
 		<status>Proposed</status>
-		<modified>2019-08-06T15:43:19</modified>
+		<modified>2019-12-28T11:03:50</modified>
+		<admittedTerm>pedestrian-speed vehicle</admittedTerm>
 		<id>1</id>
-		<note>Local regulations vary but but conceptually, this represents a maximum design speed of roughly 5 kph.</note>
-		<WG>1</WG>
-	</entry>
-	<entry>
-		<clause>3.7.5.3</clause>
-		<name>residential-speed vehicle</name>
-		<definition>__vehicle__ with a maximum design speed that exceeds cycle speeds but does not greatly exceed those considered safe for residential neighbourhoods </definition>
-		<status>Proposed</status>
-		<modified>2019-08-06T16:03:20</modified>
-		<id>3</id>
-		<note>Local regulations vary but but conceptually, this represents a maximum design speed of roughly 50 kph.</note>
+		<note>Local regulations for the exact speed range vary; SAEJ3194:2019 associates this term with a vehicle with a top speed of less than 13 km/h.</note>
 		<WG>1</WG>
 	</entry>
 	<entry>
 		<clause>3.7.5.4</clause>
 		<name>urban-speed vehicle</name>
-		<definition>__vehicle__ with a maximum design speed that exceeds residential speeds but does not greatly exceed those considered safe for all urban roads not meeting motorway standards </definition>
+		<definition>__vehicle__ with a __design speed__ that exceeds those of medium-speed vehicles but does not greatly exceed those considered safe for urban roads not meeting motorway standards </definition>
 		<status>Proposed</status>
-		<modified>2019-08-06T16:03:48</modified>
+		<modified>2019-12-11T18:03:01</modified>
 		<id>4</id>
-		<note>Local regulations vary but but conceptually, this represents a maximum design speed of roughly 100 kph.</note>
+		<note>Local regulations for the exact speed range vary; conceptually, this represents a vehicle with a design speed in the range of 48 km/h and  87 km/h.</note>
+		<WG>1</WG>
+	</entry>
+	<entry>
+		<clause>3.7.6.4</clause>
+		<name>off-road cycle</name>
+		<definition>human-powered __vehicle__ not meeting the legal requirements to be driven in __cycle lanes__</definition>
+		<status>Proposed</status>
+		<modified>2019-07-24T17:43:11</modified>
+		<id>4</id>
+		<WG>1</WG>
+	</entry>
+	<entry>
+		<clause>3.7.6.3</clause>
+		<name>off-road vehicle</name>
+		<definition>motorized __vehicle__ not meeting the legal requirements to be driven in __travel lanes__ or __cycle lanes__ of a __road network__</definition>
+		<status>Proposed</status>
+		<modified>2019-07-24T17:42:58</modified>
+		<id>3</id>
+		<WG>1</WG>
+	</entry>
+	<entry>
+		<clause>3.7.6.2</clause>
+		<name>road cycle</name>
+		<definition>__vehicle__ meeting the legal requirements to operate in __cycle lanes__</definition>
+		<status>Proposed</status>
+		<modified>2019-07-24T17:42:45</modified>
+		<id>2</id>
+		<WG>1</WG>
+	</entry>
+	<entry>
+		<clause>3.7.6.1</clause>
+		<name>road vehicle</name>
+		<definition>__vehicle__ meeting the legal requirements to operate on a __roadway__</definition>
+		<status>Proposed</status>
+		<modified>2019-12-11T21:33:45</modified>
+		<id>1</id>
+		<note></note>
 		<WG>1</WG>
 	</entry>
 </full_listing>
