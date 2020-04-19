@@ -5,37 +5,25 @@
 <title>14812 - Vocabulary</title>
 <link href="css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="js/displayToc.js" type="text/javascript"></script>
+<script type="text/javascript">
+	function lastModified() {
+		var modiDate = new Date(document.lastModified);
+		var showAs = modiDate.toUTCString();
+		return showAs;
+	}
+
+	function showTimestamp() {
+		document.getElementById("docdate").innerHTML=lastModified();
+	}
+</script>
 </head>
-<body onload="initLoad(this,'toc.htm','blank.htm')" onresize="resizePage()">
+<body onload="initLoad(this,'toc.htm','blank.htm'); showTimestamp();" onresize="resizePage()">
 <div class="IndexHeader" id="IndexHeader">
 	<table style="width:100%;">
 		<tr>
 			<td style="font-size: 20px; font-weight: bold;">14812 - Vocabulary </td>
 			<td style="font-size: 20px; font-weight: bold; text-align: center; color: #990000; font-style: italic;">Development Branch<br />
-				<span style="font-size: 12px;" id="docdate"><script type="text/javascript">
-					function lastModified() {
-						var modiDate = new Date(document.lastModified);
-						var showAs = modiDate.getDate() + "-" + (modiDate.getMonth() + 1) + "-" + modiDate.getFullYear();
-						return showAs
-					}
-
-					function GetTime() {
-						var modiDate = new Date();
-						var Seconds
-
-    					if (modiDate.getSeconds() < 10) {
-							Seconds = "0" + modiDate.getSeconds();
-						} else {
-							Seconds = modiDate.getSeconds();
-						}
-
-    					var modiDate = new Date();
-						var CurTime = modiDate.getHours() + ":" + modiDate.getMinutes() + ":" + Seconds
-						return CurTime
-					}
-					
-					document.write(lastModified() + " @ " GetTime());
-				</script></span>
+				<span style="font-size: 12px;" id="docdate"><script type="text/javascript">showTimestamp();</script></span>
 			</td>
 			<td style="font-size: 15px; font-weight: bold; text-align: center;"><a href="http://trevilon.com/search.html">Search for term</a></td>
 			<td style="font-size: 15px; font-weight: bold; text-align: right;">Go to <a href="https://github.com/ISO-TC204/iso14812/tree/development">repository</a> (development branch)<br />
