@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <? 
-$string = trim($_GET['search']) ;
+$string = trim($_POST['search']) ;
 $output = "";
 $searched = "";
 
