@@ -13,10 +13,31 @@
 			<td style="font-size: 20px; font-weight: bold;">14812 - Vocabulary </td>
 			<td style="font-size: 20px; font-weight: bold; text-align: center; color: #990000; font-style: italic;">Development Branch<br />
 				<span style="font-size: 12px;" id="docdate"><script type="text/javascript">
-					docdate = new Date(document.lastModified);
-					document.write(docdate.toUTCString());
+					function lastModified() {
+						var modiDate = new Date(document.lastModified);
+						var showAs = modiDate.getDate() + "-" + (modiDate.getMonth() + 1) + "-" + modiDate.getFullYear();
+						return showAs
+					}
+
+					function GetTime() {
+						var modiDate = new Date();
+						var Seconds
+
+    					if (modiDate.getSeconds() < 10) {
+							Seconds = "0" + modiDate.getSeconds();
+						} else {
+							Seconds = modiDate.getSeconds();
+						}
+
+    					var modiDate = new Date();
+						var CurTime = modiDate.getHours() + ":" + modiDate.getMinutes() + ":" + Seconds
+						return CurTime
+					}
+					
+					document.write(lastModified() + " @ " GetTime());
 				</script></span>
 			</td>
+			<td style="font-size: 15px; font-weight: bold; text-align: center;"><a href="http://trevilon.com/search.html">Search for term</a></td>
 			<td style="font-size: 15px; font-weight: bold; text-align: right;">Go to <a href="https://github.com/ISO-TC204/iso14812/tree/development">repository</a> (development branch)<br />
 			    Go to <a href="https://iso-tc204.github.io/iso14812/">approved model</a></td>
 			<td width="135px"><img src="images/ea.gif" align="right" alt="Enterprise Architect" /></td>
