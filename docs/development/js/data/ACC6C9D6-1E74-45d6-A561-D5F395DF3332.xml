@@ -1,6 +1,3 @@
-tocTab[tocTab.length] = new Array("0.2.6:1", "", "Vehicle system terms", "EARoot/EA2/EA6/EA202.htm", "175.png", "46", "0", "", "Logical diagram0","{CF6B6F10-D91E-41a9-88BA-DB1008F2422B}");
-tocTab[tocTab.length] = new Array("0.2.6:2", "", "commercial vehicle OBE", "EARoot/EA2/EA6/EA205.htm", "5.png", "E430", "0", "", "Class0","{A7D339E6-259B-406d-8C44-D2EDE880649A}");
-tocTab[tocTab.length] = new Array("0.2.6:3", "", "emergency vehicle OBE", "EARoot/EA2/EA6/EA206.htm", "5.png", "E431", "0", "", "Class0","{AD97628E-E7CC-47b6-8E59-FC93D655E87A}");
-tocTab[tocTab.length] = new Array("0.2.6:4", "", "public transport vehicle OBE", "EARoot/EA2/EA6/EA207.htm", "5.png", "E432", "0", "", "Class0","{1E648E7F-EAF2-43fb-9696-B9102C15D218}");
-tocTab[tocTab.length] = new Array("0.2.6:5", "", "vehicle onboard equipment", "EARoot/EA2/EA6/EA208.htm", "5.png", "E89", "0", "", "Class0","{19370BF7-9EB8-4485-AEAD-2DDF5F784F2F}");
-tocTab[tocTab.length] = new Array("0.2.6:6", "", "vehicle onboard unit", "EARoot/EA2/EA6/EA209.htm", "5.png", "E236", "0", "", "Class0","{E1D193F1-7654-409c-A350-D9BECAAB4943}");
+tocTab[tocTab.length] = new Array("0.2.6:1", "", "Vehicle system terms", "EARoot/EA2/EA6/EA209.htm", "175.png", "46", "0", "", "Logical diagram0","{CF6B6F10-D91E-41a9-88BA-DB1008F2422B}");
+tocTab[tocTab.length] = new Array("0.2.6:2", "", "onboard equipment", "EARoot/EA2/EA6/EA212.htm", "5.png", "E89", "0", "", "Class0","{19370BF7-9EB8-4485-AEAD-2DDF5F784F2F}");
+tocTab[tocTab.length] = new Array("0.2.6:3", "", "onboard unit", "EARoot/EA2/EA6/EA213.htm", "5.png", "E236", "0", "", "Class0","{E1D193F1-7654-409c-A350-D9BECAAB4943}");

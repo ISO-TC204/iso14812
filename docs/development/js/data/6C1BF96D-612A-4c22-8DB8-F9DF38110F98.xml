@@ -1,5 +1,5 @@
-tocTab[tocTab.length] = new Array("0.7.4:1", "", "Vehicle connectivity", "EARoot/EA7/EA4/EA524.htm", "175.png", "60", "0", "", "Logical diagram0","{62F6D52D-A9A6-4a31-AE74-5FC165246081}");
-tocTab[tocTab.length] = new Array("0.7.4:2", "", "disconnected", "EARoot/EA7/EA4/EA528.htm", "5.png", "E535", "0", "", "Class0","{ECBC2177-3446-4e89-9D38-FA98BFFAA0CA}");
-tocTab[tocTab.length] = new Array("0.7.4:3", "", "off-grid", "EARoot/EA7/EA4/EA529.htm", "5.png", "E536", "0", "", "Class0","{0C0D2DA7-A26C-43fc-BEAC-24AC7BDED09F}");
-tocTab[tocTab.length] = new Array("0.7.4:4", "", "unconnected", "EARoot/EA7/EA4/EA530.htm", "5.png", "E510", "0", "", "Class0","{5B51D4C4-1BE9-488c-9612-B4CDC5293E6D}");
-tocTab[tocTab.length] = new Array("0.7.4:5", "", "unequipped", "EARoot/EA7/EA4/EA531.htm", "5.png", "E509", "0", "", "Class0","{18CAB48C-E932-40e7-B21D-BC8E87F7AAFE}");
+tocTab[tocTab.length] = new Array("0.7.4:1", "", "Vehicle connectivity", "EARoot/EA7/EA4/EA557.htm", "175.png", "60", "0", "", "Logical diagram0","{62F6D52D-A9A6-4a31-AE74-5FC165246081}");
+tocTab[tocTab.length] = new Array("0.7.4:2", "", "disconnected", "EARoot/EA7/EA4/EA561.htm", "5.png", "E535", "0", "", "Class0","{ECBC2177-3446-4e89-9D38-FA98BFFAA0CA}");
+tocTab[tocTab.length] = new Array("0.7.4:3", "", "off-grid", "EARoot/EA7/EA4/EA562.htm", "5.png", "E536", "0", "", "Class0","{0C0D2DA7-A26C-43fc-BEAC-24AC7BDED09F}");
+tocTab[tocTab.length] = new Array("0.7.4:4", "", "unconnected", "EARoot/EA7/EA4/EA563.htm", "5.png", "E510", "0", "", "Class0","{5B51D4C4-1BE9-488c-9612-B4CDC5293E6D}");
+tocTab[tocTab.length] = new Array("0.7.4:5", "", "unequipped", "EARoot/EA7/EA4/EA564.htm", "5.png", "E509", "0", "", "Class0","{18CAB48C-E932-40e7-B21D-BC8E87F7AAFE}");

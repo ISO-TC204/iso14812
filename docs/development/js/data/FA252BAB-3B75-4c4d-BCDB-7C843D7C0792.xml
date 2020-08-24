@@ -1,8 +1,8 @@
-tocTab[tocTab.length] = new Array("0.7.1:1", "", "Vehicle components", "EARoot/EA7/EA1/EA491.htm", "175.png", "58", "0", "", "Logical diagram0","{75F0162A-A701-4aa2-A497-9F6A90795095}");
-tocTab[tocTab.length] = new Array("0.7.1:2", "", "built-in input device", "EARoot/EA7/EA1/EA494.htm", "5.png", "E524", "0", "", "Class0","{9FA5E7B9-6F34-461b-AF17-E2FB61512F95}");
-tocTab[tocTab.length] = new Array("0.7.1:3", "", "input device", "EARoot/EA7/EA1/EA495.htm", "5.png", "E518", "0", "", "Class0","{D912A677-3D21-4e72-BEC8-5F0D9A4529FA}");
-tocTab[tocTab.length] = new Array("0.7.1:4", "", "motor", "EARoot/EA7/EA1/EA496.htm", "5.png", "E478", "0", "", "Class0","{18EE658E-3F31-414d-AF08-33D8A5C59E71}");
-tocTab[tocTab.length] = new Array("0.7.1:5", "", "nomadic input device", "EARoot/EA7/EA1/EA497.htm", "5.png", "E525", "0", "", "Class0","{53209295-20C8-4795-9627-74CA1AE62ADF}");
-tocTab[tocTab.length] = new Array("0.7.1:6", "", "remote input device", "EARoot/EA7/EA1/EA498.htm", "5.png", "E526", "0", "", "Class0","{FB41FE5F-F45C-435b-97CE-1FB66D420246}");
-tocTab[tocTab.length] = new Array("0.7.1:7", "", "vehicle", "EARoot/EA7/EA1/EA499.htm", "5.png", "E118", "0", "", "Class0","{555BFAB2-A747-457f-B01D-99511FDE885A}");
-tocTab[tocTab.length] = new Array("0.7.1:8", "", "wheel", "EARoot/EA7/EA1/EA500.htm", "5.png", "E477", "0", "", "Class0","{7CD69563-ACF2-4580-9598-06412A0AD339}");
+tocTab[tocTab.length] = new Array("0.7.1:1", "", "Vehicle components", "EARoot/EA7/EA1/EA524.htm", "175.png", "58", "0", "", "Logical diagram0","{75F0162A-A701-4aa2-A497-9F6A90795095}");
+tocTab[tocTab.length] = new Array("0.7.1:2", "", "built-in input device", "EARoot/EA7/EA1/EA527.htm", "5.png", "E524", "0", "", "Class0","{9FA5E7B9-6F34-461b-AF17-E2FB61512F95}");
+tocTab[tocTab.length] = new Array("0.7.1:3", "", "input device", "EARoot/EA7/EA1/EA528.htm", "5.png", "E518", "0", "", "Class0","{D912A677-3D21-4e72-BEC8-5F0D9A4529FA}");
+tocTab[tocTab.length] = new Array("0.7.1:4", "", "motor", "EARoot/EA7/EA1/EA529.htm", "5.png", "E478", "0", "", "Class0","{18EE658E-3F31-414d-AF08-33D8A5C59E71}");
+tocTab[tocTab.length] = new Array("0.7.1:5", "", "nomadic input device", "EARoot/EA7/EA1/EA530.htm", "5.png", "E525", "0", "", "Class0","{53209295-20C8-4795-9627-74CA1AE62ADF}");
+tocTab[tocTab.length] = new Array("0.7.1:6", "", "remote input device", "EARoot/EA7/EA1/EA531.htm", "5.png", "E526", "0", "", "Class0","{FB41FE5F-F45C-435b-97CE-1FB66D420246}");
+tocTab[tocTab.length] = new Array("0.7.1:7", "", "vehicle", "EARoot/EA7/EA1/EA532.htm", "5.png", "E118", "0", "", "Class0","{555BFAB2-A747-457f-B01D-99511FDE885A}");
+tocTab[tocTab.length] = new Array("0.7.1:8", "", "wheel", "EARoot/EA7/EA1/EA533.htm", "5.png", "E477", "0", "", "Class0","{7CD69563-ACF2-4580-9598-06412A0AD339}");

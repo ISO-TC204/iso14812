@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.7.2:1", "", "Vehicle attributes", "EARoot/EA7/EA2/EA501.htm", "175.png", "62", "0", "", "Logical diagram0","{980E5E40-35EB-4411-8B5E-487D40BA5A28}");
-tocTab[tocTab.length] = new Array("0.7.2:2", "", "design speed", "EARoot/EA7/EA2/EA504.htm", "5.png", "E530", "0", "", "Class0","{94141E56-EA29-4dfb-8212-E7FA5553D1F6}");
+tocTab[tocTab.length] = new Array("0.7.2:1", "", "Vehicle attributes", "EARoot/EA7/EA2/EA534.htm", "175.png", "62", "0", "", "Logical diagram0","{980E5E40-35EB-4411-8B5E-487D40BA5A28}");
+tocTab[tocTab.length] = new Array("0.7.2:2", "", "design speed", "EARoot/EA7/EA2/EA537.htm", "5.png", "E530", "0", "", "Class0","{94141E56-EA29-4dfb-8212-E7FA5553D1F6}");

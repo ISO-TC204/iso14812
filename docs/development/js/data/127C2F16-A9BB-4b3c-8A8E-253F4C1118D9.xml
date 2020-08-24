@@ -1,3 +1,6 @@
-tocTab[tocTab.length] = new Array("0.2.10:1", "", "OBU and RSU", "EARoot/EA2/EA10/EA241.htm", "175.png", "64", "0", "", "Logical diagram0","{76A38830-8F7A-40fd-A3B8-E9F4609C5155}");
-tocTab[tocTab.length] = new Array("0.2.10:2", "", "roadside ITS-S", "EARoot/EA2/EA10/EA244.htm", "5.png", "E561", "0", "", "Class0","{A34C9299-A3D8-443e-BBB7-C9FF867FEA5E}");
-tocTab[tocTab.length] = new Array("0.2.10:3", "", "vehicle ITS-S", "EARoot/EA2/EA10/EA245.htm", "5.png", "E560", "0", "", "Class0","{A3B4BC91-BED0-48c3-BFFD-A0D8E9B3051A}");
+tocTab[tocTab.length] = new Array("0.2.10:1", "", "OBU and RSU", "EARoot/EA2/EA10/EA245.htm", "175.png", "64", "0", "", "Logical diagram0","{76A38830-8F7A-40fd-A3B8-E9F4609C5155}");
+tocTab[tocTab.length] = new Array("0.2.10:2", "", "commercial vehicle OBE", "EARoot/EA2/EA10/EA248.htm", "5.png", "E430", "0", "", "Class0","{A7D339E6-259B-406d-8C44-D2EDE880649A}");
+tocTab[tocTab.length] = new Array("0.2.10:3", "", "emergency vehicle OBE", "EARoot/EA2/EA10/EA249.htm", "5.png", "E431", "0", "", "Class0","{AD97628E-E7CC-47b6-8E59-FC93D655E87A}");
+tocTab[tocTab.length] = new Array("0.2.10:4", "", "public transport vehicle OBE", "EARoot/EA2/EA10/EA250.htm", "5.png", "E432", "0", "", "Class0","{1E648E7F-EAF2-43fb-9696-B9102C15D218}");
+tocTab[tocTab.length] = new Array("0.2.10:5", "", "roadside ITS-S", "EARoot/EA2/EA10/EA251.htm", "5.png", "E561", "0", "", "Class0","{A34C9299-A3D8-443e-BBB7-C9FF867FEA5E}");
+tocTab[tocTab.length] = new Array("0.2.10:6", "", "vehicle ITS-S", "EARoot/EA2/EA10/EA252.htm", "5.png", "E560", "0", "", "Class0","{A3B4BC91-BED0-48c3-BFFD-A0D8E9B3051A}");

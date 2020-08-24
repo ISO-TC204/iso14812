@@ -1,3 +1,6 @@
-tocTab[tocTab.length] = new Array("0.3.1", "1", "3.3.1 Roadway components", "EARoot/EA3/EA1/EA270.htm", "4.png", "", "", "{AB8EC6C3-F0AF-4ca9-B4FB-3CB832FED376}", "Package");
-tocTab[tocTab.length] = new Array("0.3.2", "1", "3.3.2 Road network", "EARoot/EA3/EA2/EA293.htm", "4.png", "", "", "{303A90DE-41DD-45d0-8AF2-2ACF3C31A04E}", "Package");
-tocTab[tocTab.length] = new Array("0.3.3", "1", "3.3.3 Junction", "EARoot/EA3/EA3/EA306.htm", "4.png", "", "", "{B5DED1E2-D2DF-4b0c-9D11-CA1EDA6E29FE}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1", "1", "3.3.1 Road reservation components", "EARoot/EA3/EA1/EA282.htm", "4.png", "", "", "{AB8EC6C3-F0AF-4ca9-B4FB-3CB832FED376}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2", "1", "3.3.2 Physical traffic separators", "EARoot/EA3/EA2/EA305.htm", "4.png", "", "", "{613E12C7-72E1-4bb7-8BF5-5DEB2DA0D742}", "Package");
+tocTab[tocTab.length] = new Array("0.3.3", "1", "3.3.3 Alternate mode infrastructure components", "EARoot/EA3/EA3/EA313.htm", "4.png", "", "", "{7A4A1C26-E04B-45eb-BA53-F04319EC05F4}", "Package");
+tocTab[tocTab.length] = new Array("0.3.4", "1", "3.3.4 Infrastructure operating modes", "EARoot/EA3/EA4/EA321.htm", "4.png", "", "", "{09B7B23D-6C7F-47c7-A711-B3A5CE8AF0D8}", "Package");
+tocTab[tocTab.length] = new Array("0.3.5", "1", "3.3.5 Road network", "EARoot/EA3/EA5/EA326.htm", "4.png", "", "", "{303A90DE-41DD-45d0-8AF2-2ACF3C31A04E}", "Package");
+tocTab[tocTab.length] = new Array("0.3.6", "1", "3.3.6 Junction", "EARoot/EA3/EA6/EA339.htm", "4.png", "", "", "{B5DED1E2-D2DF-4b0c-9D11-CA1EDA6E29FE}", "Package");

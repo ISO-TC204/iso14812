@@ -1,7 +1,7 @@
-tocTab[tocTab.length] = new Array("0.1.1:1", "", "Entity terms", "EARoot/EA1/EA1/EA23.htm", "175.png", "61", "0", "", "Logical diagram0","{5D1B33FC-6817-43bc-9832-6EE35AD680FC}");
-tocTab[tocTab.length] = new Array("0.1.1:2", "", "biological entity", "EARoot/EA1/EA1/EA26.htm", "5.png", "E531", "0", "", "Class0","{BFF7F454-2399-4d21-BDE8-FD5BEE09F6FD}");
-tocTab[tocTab.length] = new Array("0.1.1:3", "", "entity", "EARoot/EA1/EA1/EA27.htm", "5.png", "E18", "0", "", "Class0","{040D6A1B-412A-4cc6-9218-82357A58F747}");
-tocTab[tocTab.length] = new Array("0.1.1:4", "", "immaterial entity", "EARoot/EA1/EA1/EA28.htm", "5.png", "E513", "0", "", "Class0","{8E6626F2-59FF-4ef1-A8E4-195531916E8F}");
-tocTab[tocTab.length] = new Array("0.1.1:5", "", "material entity", "EARoot/EA1/EA1/EA29.htm", "5.png", "E491", "0", "", "Class0","{C941C5B1-4FFB-4aec-AA18-427AF3D1435A}");
-tocTab[tocTab.length] = new Array("0.1.1:6", "", "non-biological entity", "EARoot/EA1/EA1/EA30.htm", "5.png", "E532", "0", "", "Class0","{193CCF36-3F68-4119-A252-E03C0513E1B9}");
-tocTab[tocTab.length] = new Array("0.1.1:7", "", "person", "EARoot/EA1/EA1/EA31.htm", "5.png", "E397", "0", "", "Class0","{A195A591-3A44-427f-9643-6DF49EAAC159}");
+tocTab[tocTab.length] = new Array("0.1.1:1", "", "Entity terms", "EARoot/EA1/EA1/EA24.htm", "175.png", "61", "0", "", "Logical diagram0","{5D1B33FC-6817-43bc-9832-6EE35AD680FC}");
+tocTab[tocTab.length] = new Array("0.1.1:2", "", "biological entity", "EARoot/EA1/EA1/EA27.htm", "5.png", "E531", "0", "", "Class0","{BFF7F454-2399-4d21-BDE8-FD5BEE09F6FD}");
+tocTab[tocTab.length] = new Array("0.1.1:3", "", "entity", "EARoot/EA1/EA1/EA28.htm", "5.png", "E18", "0", "", "Class0","{040D6A1B-412A-4cc6-9218-82357A58F747}");
+tocTab[tocTab.length] = new Array("0.1.1:4", "", "immaterial entity", "EARoot/EA1/EA1/EA29.htm", "5.png", "E513", "0", "", "Class0","{8E6626F2-59FF-4ef1-A8E4-195531916E8F}");
+tocTab[tocTab.length] = new Array("0.1.1:5", "", "material entity", "EARoot/EA1/EA1/EA30.htm", "5.png", "E491", "0", "", "Class0","{C941C5B1-4FFB-4aec-AA18-427AF3D1435A}");
+tocTab[tocTab.length] = new Array("0.1.1:6", "", "non-biological entity", "EARoot/EA1/EA1/EA31.htm", "5.png", "E532", "0", "", "Class0","{193CCF36-3F68-4119-A252-E03C0513E1B9}");
+tocTab[tocTab.length] = new Array("0.1.1:7", "", "person", "EARoot/EA1/EA1/EA32.htm", "5.png", "E397", "0", "", "Class0","{A195A591-3A44-427f-9643-6DF49EAAC159}");

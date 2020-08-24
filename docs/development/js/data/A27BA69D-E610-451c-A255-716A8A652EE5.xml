@@ -1,4 +1,6 @@
 tocTab[tocTab.length] = new Array("0.1.7:1", "", "Architecture - Functional view terms", "EARoot/EA1/EA7/EA89.htm", "175.png", "11", "0", "", "Logical diagram0","{9E0959EC-D1E0-4450-9AE7-DCE39765DE34}");
 tocTab[tocTab.length] = new Array("0.1.7:2", "", "data flow", "EARoot/EA1/EA7/EA92.htm", "5.png", "E66", "0", "", "Class0","{50C8A31C-608C-491f-BA3F-BA0D389CF013}");
-tocTab[tocTab.length] = new Array("0.1.7:3", "", "process", "EARoot/EA1/EA7/EA93.htm", "5.png", "E65", "0", "", "Class0","{6DD0743F-F44F-4f0e-9817-C766379AD954}");
-tocTab[tocTab.length] = new Array("0.1.7:4", "", "process specification", "EARoot/EA1/EA7/EA94.htm", "5.png", "E67", "0", "", "Class0","{BD61BEDB-615C-4e39-88B4-7D3DC8EBAFEE}");
+tocTab[tocTab.length] = new Array("0.1.7:3", "", "function", "EARoot/EA1/EA7/EA93.htm", "5.png", "E657", "0", "", "Class0","{5F9BFC5D-EFF7-48df-88B4-D6F471C1D8CD}");
+tocTab[tocTab.length] = new Array("0.1.7:4", "", "process", "EARoot/EA1/EA7/EA94.htm", "5.png", "E65", "0", "", "Class0","{6DD0743F-F44F-4f0e-9817-C766379AD954}");
+tocTab[tocTab.length] = new Array("0.1.7:5", "", "process specification", "EARoot/EA1/EA7/EA95.htm", "5.png", "E67", "0", "", "Class0","{BD61BEDB-615C-4e39-88B4-7D3DC8EBAFEE}");
+tocTab[tocTab.length] = new Array("0.1.7:6", "", "Signal1", "EARoot/EA1/EA7/EA96.htm", "196.png", "E658", "0", "", "Signal0","{B96078B8-0493-4a03-85D3-E6498E3053D6}");
