@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.1.2:1", "", "System terms - General", "EARoot/EA1/EA2/EA33.htm", "175.png", "1", "0", "", "Logical diagram0","{A60D2314-434C-4134-A26B-14FFBD47BCF5}");
+tocTab[tocTab.length] = new Array("0.1.2:1", "", "General system terms", "EARoot/EA1/EA2/EA33.htm", "175.png", "1", "0", "", "Logical diagram0","{A60D2314-434C-4134-A26B-14FFBD47BCF5}");
 tocTab[tocTab.length] = new Array("0.1.2:2", "", "cooperative ITS", "EARoot/EA1/EA2/EA36.htm", "5.png", "E10", "0", "", "Class0","{55FDBF6D-3EA7-4b36-8E50-B20C362B2627}");
 tocTab[tocTab.length] = new Array("0.1.2:3", "", "surface transport system", "EARoot/EA1/EA2/EA37.htm", "5.png", "E8", "0", "", "Class0","{261629D5-8D7B-439b-8DAE-5905D2EEF4D5}");
 tocTab[tocTab.length] = new Array("0.1.2:4", "", "system", "EARoot/EA1/EA2/EA38.htm", "5.png", "E6", "0", "", "Class0","{9F9DE402-82B8-4b8a-AD4F-618C7836F09E}");
