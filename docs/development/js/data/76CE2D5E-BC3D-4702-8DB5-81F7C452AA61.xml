@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.1.4:1", "", "Architecture view terms", "EARoot/EA1/EA4/EA55.htm", "175.png", "10", "0", "", "Logical diagram0","{2F972E90-1AA2-49c8-9973-8A8B3BED7355}");
+tocTab[tocTab.length] = new Array("0.1.4:2", "", "communications view", "EARoot/EA1/EA4/EA58.htm", "5.png", "E62", "0", "", "Class0","{A55DFAE6-A359-4f3f-9DCE-94FACB4B44AC}");
+tocTab[tocTab.length] = new Array("0.1.4:3", "", "communications viewpoint", "EARoot/EA1/EA4/EA59.htm", "5.png", "E223", "0", "", "Class0","{FA802A0C-4732-48fc-9F50-178DD38C56D8}");
+tocTab[tocTab.length] = new Array("0.1.4:4", "", "enterprise view", "EARoot/EA1/EA4/EA60.htm", "5.png", "E364", "0", "", "Class0","{4C3EDEBD-6786-459a-8343-C1B09B870255}");
+tocTab[tocTab.length] = new Array("0.1.4:5", "", "enterprise viewpoint", "EARoot/EA1/EA4/EA61.htm", "5.png", "E375", "0", "", "Class0","{F107015E-8840-48de-AC7C-651CBC4B8420}");
+tocTab[tocTab.length] = new Array("0.1.4:6", "", "functional view", "EARoot/EA1/EA4/EA62.htm", "5.png", "E61", "0", "", "Class0","{9835C11F-D8C0-4296-807C-2D9A60453679}");
+tocTab[tocTab.length] = new Array("0.1.4:7", "", "functional viewpoint", "EARoot/EA1/EA4/EA63.htm", "5.png", "E222", "0", "", "Class0","{44BCE17E-4D7F-4e10-AEBD-A4BEA9679B0E}");
+tocTab[tocTab.length] = new Array("0.1.4:8", "", "physical view", "EARoot/EA1/EA4/EA64.htm", "5.png", "E60", "0", "", "Class0","{B34FD020-963F-4c85-BD26-10D158A905D2}");
+tocTab[tocTab.length] = new Array("0.1.4:9", "", "physical viewpoint", "EARoot/EA1/EA4/EA65.htm", "5.png", "E218", "0", "", "Class0","{AB704983-9C6D-4f60-BC74-72FCFED26DB4}");
