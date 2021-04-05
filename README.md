@@ -7,7 +7,6 @@ The model can be viewed a few different ways from this website. Approved version
 |-------|-------------------|------------|-----------------|
 |EAP    |The complete UML model stored in Enterprise Architect 14 file format| N/A |[14812.eap](https://github.com/ISO-TC204/iso14812/blob/development/14812.eap)
 |HTML   |An HTML site that allows the user to interact with the UML model and see all meta-data using any web browser|N/A| [website](https://ISO-TC204.github.io/iso14812/development/)
-|PDF    |A tradiational ISO document format provided as an Adobe PDF|N/A|[14812_draft.pdf](https://github.com/ISO-TC204/iso14812/blob/development/14812_draft.pdf)|
 |Wiki|The Wiki tab of this Github site includes pages that list the terms and definitions that each working group is most likely to be interested in|N/A|[Wiki](https://github.com/ISO-TC204/iso14812/wiki)
 |XMI    |The UML model exported to XMI 2.1 format, which can be imported into most UML modelling tools|N/A|[14812.xml](https://github.com/ISO-TC204/iso14812/blob/development/14812.xml)
 |XML    |A generic listing of every term in XML, which can be useful for identifying changes between versions by performing a diff using a simple text diff tool|N/A|[full_listing.xml](https://github.com/ISO-TC204/iso14812/blob/development/full_listing.xml)
