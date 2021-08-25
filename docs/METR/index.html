@@ -5,7 +5,7 @@
 <style>
 .first {
   float: left;
-  width: 220px;
+  width: 200px;
   background-color: #f1f1f1;
   padding-top: 0px;
   padding-left: 10px;
@@ -21,21 +21,60 @@
   margin-left: auto;
   margin-right: auto;
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -400%;
+  left: 150%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #555 transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 </style>
 </head>
 <body>
 <h1 id="universal-electronic-availability-of-rules-of-the-road">Universal Electronic Availability of Rules of the Road</h1>
-<h2 id="concept-of-operations-development-call-for-input-from-transport-professionals-and-safety-advocates">Concept of Operations Development: Call for Input from Transport Professionals and Safety Advocates</h2>
-<p>ISO/TC 204/WG 19  is developing standards  that facilitate the delivery of trustworthy, machine interpretable rules of the road as authorized by respective jurisdictions. These standards will allow jurisdictions to better inform transportation system users of current official information (e.g., speed limits) and thus further promote a safe and effective transport system that:</p>
+<h2 id="concept-of-operations-development-call-for-input-from-transport-professionals-and-safety-advocates">Concept of Operations Development: Call for Input from Transport Professionals, Safety Advocates, and Other Interested Stakeholders</h2>
+<button onclick="window.location.href='#Workshops'" style="background-color: MediumSeaGreen; font-size: 16px;">List of Workshops</button>
+<p><div class="tooltip">ISO/TC 204/WG 19<span class="tooltiptext">The International Organization for Standardization (ISO) Technical Committee (TC) 204 develops standards for intelligent transport systems (ITS). Working Group (WG) 19 is tasked with developing standards for integrated mobility, which includes the cross-cutting work of providing transport regulations to user systems.</span></div>  is developing <div class="tooltip">standards<span class="tooltiptext" style="left: 210%;">These standards will be part of the ISO 24315 series, which currently has a working title of Management for Electronic Traffic Regulations (METR). Current efforts are focused on Part 1, which will establish the Operational Concept (ConOps) for the system. Future parts are expected to heavily leverage existing interface standards.</span></div> that facilitate the delivery of trustworthy, machine interpretable rules of the road as authorized by respective jurisdictions. These standards will allow jurisdictions to better inform transportation system users of current official information (e.g., speed limits) and thus further promote a safe and effective transport system that:</p>
 <ul>
 <li>provides authoritative information to driver assist systems (e.g., so that they can present trustworthy in-vehicle signage);</li>
 <li>enables driving automation systems (e.g., road vehicles, sidewalk delivery robots) to have information related to the driving task that is sufficiently trustworthy for safety-related uses as well as for enforcement; and</li>
 <li>conveys authoritative information to pedestrians, micromobility, and other transport users.</li>
 </ul>
 <div class="first">
-  	<h3 style="margin-bottom: 5px; margin-top: 5px;">Links</h3>
-  	<p style="margin-bottom: 5px; margin-top: 5px;"><a href="METROverview.pdf">METR Overview Presentation</a><br />
-  	<a href="METRVision.pdf">METR Vision Document</a></p>
+  	<h3 style="margin-bottom: 5px; margin-top: 5px;">Read Ahead Materials</h3>
+  	<p style="margin-bottom: 5px; margin-top: 5px;"><a href="METROverview.pdf">Overview Presentation</a><br />
+  	<a href="METRVision.pdf">Vision Document</a></p>
 </div>
 <p>As illustrated below, these standards will include the provision of both static (stable) information (e.g., as contained in the vehicle code, posted on permanent signs, or marked on roadways) and dynamic information (e.g., variable speed limits). The scope of this standards effort focuses on the pipeline that will deliver rules of the road; cover virtually all modes of surface transport; and create and develop standards for information accuracy, reliability, timeliness, authentication, and traceability back to the authorizing agency. To the extent possible, the standard will be compatible with existing data definitions.</p>
 <div class="image">  	
@@ -55,7 +94,7 @@
 <li>Advocates, including safety, environmental, equity, and disability rights advocates</li>
 </ul>
 <p>To facilitate input from these various groups, ISO/TC 204/WG 19 has scheduled the following public workshops for the indicated topics. Each workshop is scheduled for 2 hours and will be held twice, once at 1400 UTC and once at 2200 UTC (NOTE: daylight saving / summer time changes might impact the start time in your local time zone). Participants are required to register for their required workshops before signing in.</p>
-<table border="1" width="90%" class="center">
+<table id="Workshops" border="1" width="90%" class="center">
 <thead>
 <tr>
 <th>Date</th>
@@ -135,7 +174,7 @@
 	<td rowspan="2">9 November</td>
 	<td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Campus+Governance+1400+UTC+Session&iso=20211109T14&p1=1440&ah=2">1400 UTC</a></td>
 	<td><a href="https://iso.zoom.us/meeting/register/tJYocOGppzMqGtIS0beKsNxl9SV6WLBJkr0R">Register</a></td>
-	<td rowspan="2"><b>Campus governance:</b> focused on authorization, requirements, and responsibilities for universities, shopping centres, hospitals, and similar facilities.</td>
+	<td rowspan="2"><b>Campus governance:</b> focused on authorization, requirements, and responsibilities for universities, shopping centres, hospitals, and similar facilities</td>
 	<td rowspan="2" style="text-align: center;"><a href="Workshop7.html">Details</a></td>
 </tr>
 <tr>
@@ -146,7 +185,7 @@
 	<td rowspan="2">16 November</td>
 	<td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Campus+Regulations+1400+UTC+Session&iso=20211116T14&p1=1440&ah=2">1400 UTC</a></td>
 	<td><a href="https://iso.zoom.us/meeting/register/tJYsdeGtqzksGtKw-YJ7MpLWgCHqI6RILE44">Register</a></td>
-	<td rowspan="2"><b>Campus regulations:</b> focused on regulatory processes, parking regulations, legality and enforcement for universities, shopping centres, hospitals, and similar facilities.</td>
+	<td rowspan="2"><b>Campus regulations:</b> focused on regulatory processes, parking regulations, legality and enforcement for universities, shopping centres, hospitals, and similar facilities</td>
 	<td rowspan="2" style="text-align: center;"><a href="Workshop8.html">Details</a></td>
 </tr>
 <tr>
@@ -190,7 +229,7 @@
 	<td rowspan="2">14 December</td>
 	<td><a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=METR+Deployment+II+1400+UTC+Session&iso=20211214T14&p1=1440&ah=2">1400 UTC</a></td>
 	<td><a href="https://iso.zoom.us/meeting/register/tJUlduqrrDsjEtYEZe_XIH-28gsmZ3utczvO">Register</a></td>
-	<td rowspan="2"><b>METR deployment II:</b> focused on needs for the transition to METR, archiving, recovery, and oversight.</td>
+	<td rowspan="2"><b>METR deployment II:</b> focused on needs for the transition to METR, archiving, recovery, and oversight</td>
 	<td rowspan="2" style="text-align: center;"><a href="Workshop12.html">Details</a></td>
 </tr>
 <tr>
@@ -199,6 +238,6 @@
 </tr>
 </tbody>
 </table>
-<p>Please register for each workshop by clicking on the date of the workshop. The links allow registrants to choose the topic areas most closely aligned with their roles and expertise.</p>
+<p>The links allow registrants to choose the topic areas most closely aligned with their roles and expertise; and to listen into other areas that might be of interest. Registrants can opt to join multiple workshops. For those workshops that are of greatest interest and/or prove to need more time, we may offer additional sessions at the end of this series. </p>
 </body>
 </html>
