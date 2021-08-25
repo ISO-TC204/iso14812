@@ -2,13 +2,54 @@
 <html>
 <head>
 <title>Questions for METR Workshop 6: Vehicle Information Needs</title>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -200%;
+  left: 130%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #555 transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+
 </head>
 <body>
 	<h1>Questions for METR Workshop 6: Vehicle Information Needs</h1>
 	<p>The sixth METR workshop will include focus on the following questions:</p>
 	<ul>
 		<li>What data does a vehicle need from METR to properly handle a static ODD boundary?</li>
-		<li>What is the operational scenario associated with a vehicle approaching a static ODD boundary that limits the vehicle’s operation? </li>
+		<li>What is the operational scenario associated with a vehicle approaching a static <div class="tooltip">operational design domain (ODD)<span class="tooltiptext">An ODD defines the set of operating conditions under which a given driving automation system or feature thereof is specifically designed to function</span></div> boundary that limits the vehicle’s operation? </li>
 		<li>What additional information needs to be conveyed by METR to enable a vehicle to properly handle a dynamic ODD boundary?</li>
 		<li>What is the operational scenario associated with a vehicle encountering a dynamic ODD boundary that limits the vehicle’s operation?</li>
 		<li>How should a METR (esp. an automated) vehicle behave in a region with only partial METR support, should this be a part of the ODD definition?</li>
