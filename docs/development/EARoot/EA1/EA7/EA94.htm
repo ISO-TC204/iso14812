@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>3.1.7 Architecture - Functional view::process</title>
+<title>process</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -74,6 +74,7 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 		<div class="ItemBody" id="AssociationsToTable">
@@ -99,8 +100,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink313" onclick="parent.toggleDiv('detailsDIVLink313','DetailsImageLink313')" />Details:
-							<div id="detailsDIVLink313" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink306" onclick="parent.toggleDiv('detailsDIVLink306','DetailsImageLink306')" />Details:
+							<div id="detailsDIVLink306" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -108,7 +109,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA8/EA102.htm">module</a><br />
+						<a href="../EA8/EA99.htm">functional object</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -122,8 +123,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink314" onclick="parent.toggleDiv('detailsDIVLink314','DetailsImageLink314')" />Details:
-							<div id="detailsDIVLink314" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink307" onclick="parent.toggleDiv('detailsDIVLink307','DetailsImageLink307')" />Details:
+							<div id="detailsDIVLink307" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -155,8 +156,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink315" onclick="parent.toggleDiv('detailsDIVLink315','DetailsImageLink315')" />Details:
-							<div id="detailsDIVLink315" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink308" onclick="parent.toggleDiv('detailsDIVLink308','DetailsImageLink308')" />Details:
+							<div id="detailsDIVLink308" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -177,8 +178,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario316" onclick="parent.toggleDiv('detailsDIVScenario316','DetailsImageScenario316')" />Details:
-						<div id="detailsDIVScenario316" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario309" onclick="parent.toggleDiv('detailsDIVScenario309','DetailsImageScenario309')" />Details:
+						<div id="detailsDIVScenario309" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -189,8 +190,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario317" onclick="parent.toggleDiv('detailsDIVScenario317','DetailsImageScenario317')" />Details:
-						<div id="detailsDIVScenario317" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario310" onclick="parent.toggleDiv('detailsDIVScenario310','DetailsImageScenario310')" />Details:
+						<div id="detailsDIVScenario310" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -201,15 +202,28 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario318" onclick="parent.toggleDiv('detailsDIVScenario318','DetailsImageScenario318')" />Details:
-						<div id="detailsDIVScenario318" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario311" onclick="parent.toggleDiv('detailsDIVScenario311','DetailsImageScenario311')" />Details:
+						<div id="detailsDIVScenario311" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
 				</td>
 			</tr>
 	</table>
-</div>		<div class="ItemBody" id="LinksTable">
+</div>		<div class="ItemBody" id="CustomPropertiesTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>3.3.1 Road reservation components::driving space</title>
+<title>dual carriageway road segment</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,8 +34,8 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("driving space", " : "))</script> </span>
-	<div class="ObjectDetailsNotes">part of the &lt;a href=&quot;javascript:top.guidLink(&#39;{F9F0ACCE-2D49-434a-803C-0D87211F753A}&#39;)&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;&lt;u&gt;road reservation&lt;/u&gt;&lt;/font&gt;&lt;/a&gt; primarily designed for the movement of motor vehicles, including any contiguous hard shoulders, hardstanding, and reserved lanes&lt;br/&gt;</div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("dual carriageway road segment", " : "))</script> </span>
+	<div class="ObjectDetailsNotes">&lt;a href=&quot;javascript:top.guidLink(&#39;{3F880EDE-BFE8-4014-A43B-46167936F4B1}&#39;)&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;&lt;u&gt;roadway&lt;/u&gt;&lt;/font&gt;&lt;/a&gt; comprised of exactly two &lt;a href=&quot;javascript:top.guidLink(&#39;{855CC715-739D-462e-9790-E893914D8768}&#39;)&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;&lt;u&gt;carriageways&lt;/u&gt;&lt;/font&gt;&lt;/a&gt; &lt;br/&gt;</div>
 
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
@@ -48,11 +48,11 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">8/30/2018 1:54:37 PM</td>
+			<td width="85%" class="ObjectDetailsValue">8/24/2018 3:22:06 PM</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">8/19/2020 10:55:06 AM</td>
+			<td class="ObjectDetailsValue">9/6/2021 12:05:59 PM</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Status:</td>
@@ -60,7 +60,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Appears In:</td>
-			<td class="ObjectDetailsValue">Annex Example, <a href="EA279.htm">Road reservation component terms</a>, Presentation1</td>
+			<td class="ObjectDetailsValue"><a href="EA278.htm">Road reservation component terms</a>, Presentation1</td>
 		</tr>
 	</table>
 	<p>Click on the tabs below for additional information as follows</p>
@@ -74,6 +74,7 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 		<div class="ItemBody" id="AssociationsToTable">
@@ -85,7 +86,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA294.htm">road reservation</a><br />
+						<a href="../EA2/EA308.htm">physical traffic separator</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -99,8 +100,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink901" onclick="parent.toggleDiv('detailsDIVLink901','DetailsImageLink901')" />Details:
-							<div id="detailsDIVLink901" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink893" onclick="parent.toggleDiv('detailsDIVLink893','DetailsImageLink893')" />Details:
+							<div id="detailsDIVLink893" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -118,7 +119,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA7/EA6/EA588.htm">road vehicle</a><br />
+						<a href="EA283.htm">carriageway</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -132,8 +133,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink902" onclick="parent.toggleDiv('detailsDIVLink902','DetailsImageLink902')" />Details:
-							<div id="detailsDIVLink902" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink894" onclick="parent.toggleDiv('detailsDIVLink894','DetailsImageLink894')" />Details:
+							<div id="detailsDIVLink894" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -149,37 +150,73 @@ function nameClassifier(name, separator)
 			<td width="50%" class="TableHeading">Value</td>
 		</tr>
 					<tr>
-				<td width="50%" class="TableRow" valign="top">Vocab::id</td>
-				<td width="50%" class="TableRow" valign="top">3</td>
+				<td width="50%" class="TableRow" valign="top">Vocab::admittedTerm</td>
+				<td width="50%" class="TableRow" valign="top">dual carriageway</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario903" onclick="parent.toggleDiv('detailsDIVScenario903','DetailsImageScenario903')" />Details:
-						<div id="detailsDIVScenario903" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario895" onclick="parent.toggleDiv('detailsDIVScenario895','DetailsImageScenario895')" />Details:
+						<div id="detailsDIVScenario895" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Vocab::admittedTerm</td>
+				<td width="50%" class="TableRow" valign="top">divided highway</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario896" onclick="parent.toggleDiv('detailsDIVScenario896','DetailsImageScenario896')" />Details:
+						<div id="detailsDIVScenario896" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Vocab::id</td>
+				<td width="50%" class="TableRow" valign="top">8</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario897" onclick="parent.toggleDiv('detailsDIVScenario897','DetailsImageScenario897')" />Details:
+						<div id="detailsDIVScenario897" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">Vocab::note</td>
-				<td width="50%" class="TableRow" valign="top">While the driving space is designed with certain vehicle characteristics in mind, local regulations typically allow a wider set of vehicles to use the road.</td>
+				<td width="50%" class="TableRow" valign="top">The term &quot;divided highway&quot; is the equivalent American English term.</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario904" onclick="parent.toggleDiv('detailsDIVScenario904','DetailsImageScenario904')" />Details:
-						<div id="detailsDIVScenario904" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario898" onclick="parent.toggleDiv('detailsDIVScenario898','DetailsImageScenario898')" />Details:
+						<div id="detailsDIVScenario898" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Vocab::note</td>
+				<td width="50%" class="TableRow" valign="top">The two carriageways are typically designed for travel in opposite directions. </td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario899" onclick="parent.toggleDiv('detailsDIVScenario899','DetailsImageScenario899')" />Details:
+						<div id="detailsDIVScenario899" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">Vocab::preferredTerm</td>
-				<td width="50%" class="TableRow" valign="top">roadway</td>
+				<td width="50%" class="TableRow" valign="top">dual carriageway road</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario905" onclick="parent.toggleDiv('detailsDIVScenario905','DetailsImageScenario905')" />Details:
-						<div id="detailsDIVScenario905" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario900" onclick="parent.toggleDiv('detailsDIVScenario900','DetailsImageScenario900')" />Details:
+						<div id="detailsDIVScenario900" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -190,15 +227,28 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario906" onclick="parent.toggleDiv('detailsDIVScenario906','DetailsImageScenario906')" />Details:
-						<div id="detailsDIVScenario906" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario901" onclick="parent.toggleDiv('detailsDIVScenario901','DetailsImageScenario901')" />Details:
+						<div id="detailsDIVScenario901" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
 				</td>
 			</tr>
 	</table>
-</div>		<div class="ItemBody" id="LinksTable">
+</div>		<div class="ItemBody" id="CustomPropertiesTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
@@ -208,31 +258,17 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA294.htm">road reservation</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA283.htm">carriageway</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Strong</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA295.htm">roadway</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA297.htm">single carriageway road segment</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA287.htm">dual carriageway road segment</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA292.htm">multiple carriageway road segment</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

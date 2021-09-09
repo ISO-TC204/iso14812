@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.3.7:1", "", "3.3.x Additional Concepts", "EARoot/EA3/EA7/EA350.htm", "175.png", "92", "0", "", "Logical diagram0","{BF8360B0-065E-4a6b-9075-BB78B0F95981}");
+tocTab[tocTab.length] = new Array("0.3.7:2", "", "micromobility reservation", "EARoot/EA3/EA7/EA353.htm", "5.png", "E759", "0", "", "Class0","{37D285F4-D367-4a0f-A2B3-255AF37793C4}");
+tocTab[tocTab.length] = new Array("0.3.7:3", "", "micromobility way", "EARoot/EA3/EA7/EA354.htm", "5.png", "E756", "0", "", "Class0","{DDED5C45-DF34-438a-96B2-E255EC61D373}");
+tocTab[tocTab.length] = new Array("0.3.7:4", "", "shared-use way", "EARoot/EA3/EA7/EA355.htm", "5.png", "E667", "0", "", "Class0","{64D9B041-8D34-4f38-BBF0-7C92F85D6C87}");
+tocTab[tocTab.length] = new Array("0.3.7:5", "", "transport hub", "EARoot/EA3/EA7/EA356.htm", "5.png", "E758", "0", "", "Class0","{D4F7142D-3399-407d-AC06-A668D7810DF6}");
+tocTab[tocTab.length] = new Array("0.3.7:6", "", "transport infrastructure", "EARoot/EA3/EA7/EA357.htm", "5.png", "E753", "0", "", "Class0","{C247FC2F-9FD9-429e-8F2A-EC95E491B3A0}");
+tocTab[tocTab.length] = new Array("0.3.7:7", "", "transport reservation", "EARoot/EA3/EA7/EA358.htm", "5.png", "E757", "0", "", "Class0","{EBDC287A-01E0-4c44-B3D5-3DDADEAFBF6E}");
