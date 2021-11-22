@@ -1,5 +1,5 @@
-tocTab[tocTab.length] = new Array("0.5.5:1", "", "ITS-S communication service terms", "EARoot/EA5/EA5/EA423.htm", "175.png", "5", "0", "", "Logical diagram0","{9B9E84DA-56A9-4d70-933F-7EF19220C61E}");
-tocTab[tocTab.length] = new Array("0.5.5:2", "", "ITS-S communication need", "EARoot/EA5/EA5/EA426.htm", "5.png", "E33", "0", "", "Class0","{202B9BA1-EA2F-4bfb-A3D5-BE04ACA3E2D5}");
-tocTab[tocTab.length] = new Array("0.5.5:3", "", "ITS-S communication process", "EARoot/EA5/EA5/EA427.htm", "5.png", "E30", "0", "", "Class0","{A580A7C5-BB41-41ed-8C31-0B791E57A2A8}");
-tocTab[tocTab.length] = new Array("0.5.5:4", "", "ITS-S communication service", "EARoot/EA5/EA5/EA428.htm", "5.png", "E31", "0", "", "Class0","{04F387DD-6520-4303-9464-AA4FA280AB16}");
-tocTab[tocTab.length] = new Array("0.5.5:5", "", "ITS-S communication user", "EARoot/EA5/EA5/EA429.htm", "5.png", "E32", "0", "", "Class0","{1FC1FE8C-6F1A-41a7-AECE-0F7A9C874620}");
+tocTab[tocTab.length] = new Array("0.5.5:1", "", "ITS-S communication service terms", "EARoot/EA5/EA5/EA424.htm", "175.png", "5", "0", "", "Logical diagram0","{9B9E84DA-56A9-4d70-933F-7EF19220C61E}");
+tocTab[tocTab.length] = new Array("0.5.5:2", "", "ITS-S communication need", "EARoot/EA5/EA5/EA427.htm", "5.png", "E33", "0", "", "Class0","{202B9BA1-EA2F-4bfb-A3D5-BE04ACA3E2D5}");
+tocTab[tocTab.length] = new Array("0.5.5:3", "", "ITS-S communication process", "EARoot/EA5/EA5/EA428.htm", "5.png", "E30", "0", "", "Class0","{A580A7C5-BB41-41ed-8C31-0B791E57A2A8}");
+tocTab[tocTab.length] = new Array("0.5.5:4", "", "ITS-S communication service", "EARoot/EA5/EA5/EA429.htm", "5.png", "E31", "0", "", "Class0","{04F387DD-6520-4303-9464-AA4FA280AB16}");
+tocTab[tocTab.length] = new Array("0.5.5:5", "", "ITS-S communication user", "EARoot/EA5/EA5/EA430.htm", "5.png", "E32", "0", "", "Class0","{1FC1FE8C-6F1A-41a7-AECE-0F7A9C874620}");
