@@ -1,0 +1,2987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wg_vocab xmlns="https://www.iso.org/tc204/wg1/wg_vocab"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://www.iso.org/tc204/wg1/wg_vocab wg_vocab.xsd">
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.1.5</clause>
+		<name>biological entity</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>material entity</u></font></i> that was or is a living organism]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.1.1</clause>
+		<name>entity</name>
+		<definition><![CDATA[concrete or abstract thing that exists, did exist, or might exist, including associations among these things ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.1.2</clause>
+		<name>immaterial entity</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>entity</u></font></i> that does not occupy three-dimensional space]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.1.3</clause>
+		<name>material entity</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>entity</u></font></i> that occupies three-dimensional space]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.1.4</clause>
+		<name>non-biological entity</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>material entity</u></font></i> that is not and has never been a living organism]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.1.6</clause>
+		<name>person</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>biological entity</u></font></i> that is a human being]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.2.5</clause>
+		<name>cooperative ITS</name>
+		<definition><![CDATA[subset of <i><font color="#0000ff"><u>ITS</u></font></i> where information is shared among <i><font color="#0000ff"><u>ITS stations</u></font></i> in a manner that enables its use by multiple <i><font color="#0000ff"><u>ITS services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.1.2.5</clause>
+		<name>cooperative ITS</name>
+		<definition><![CDATA[subset of <i><font color="#0000ff"><u>ITS</u></font></i> where information is shared among <i><font color="#0000ff"><u>ITS stations</u></font></i> in a manner that enables its use by multiple <i><font color="#0000ff"><u>ITS services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>7</wg>
+		<clause>3.1.2.5</clause>
+		<name>cooperative ITS</name>
+		<definition><![CDATA[subset of <i><font color="#0000ff"><u>ITS</u></font></i> where information is shared among <i><font color="#0000ff"><u>ITS stations</u></font></i> in a manner that enables its use by multiple <i><font color="#0000ff"><u>ITS services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.2.4</clause>
+		<name>intelligent transport system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>system</u></font></i> comprised of information, communication, sensor, and control technologies and that is designed to benefit a <i><font color="#0000ff"><u>surface transport system</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.1.2.4</clause>
+		<name>intelligent transport system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>system</u></font></i> comprised of information, communication, sensor, and control technologies and that is designed to benefit a <i><font color="#0000ff"><u>surface transport system</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.1.2.4</clause>
+		<name>intelligent transport system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>system</u></font></i> comprised of information, communication, sensor, and control technologies and that is designed to benefit a <i><font color="#0000ff"><u>surface transport system</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.1.2.4</clause>
+		<name>intelligent transport system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>system</u></font></i> comprised of information, communication, sensor, and control technologies and that is designed to benefit a <i><font color="#0000ff"><u>surface transport system</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.2.3</clause>
+		<name>surface transport system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>transport system</u></font></i> designed to move <i><font color="#0000ff"><u>material entities</u></font></i> across the surface or near-surface of the Earth]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.2.1</clause>
+		<name>system</name>
+		<definition><![CDATA[combination of interacting elements organized to achieve one or more stated purposes ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.2.2</clause>
+		<name>transport system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>system</u></font></i> of infrastructure elements and optionally <i><font color="#0000ff"><u>vehicles</u></font></i> that jointly are designed to move <i><font color="#0000ff"><u>material entities</u></font></i> from an origin to a destination]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.3.1</clause>
+		<name>architecture</name>
+		<definition><![CDATA[&lt;system&gt; fundamental concepts or properties of a system in its <i><font color="#0000ff"><u>environment</u></font></i> embodied in its <i><font color="#0000ff"><u>elements</u></font></i>, relationships, and in the principles of its design and evolution ]]></definition>
+	</entry>
+	<entry>
+		<wg>7</wg>
+		<clause>3.1.3.1</clause>
+		<name>architecture</name>
+		<definition><![CDATA[&lt;system&gt; fundamental concepts or properties of a system in its <i><font color="#0000ff"><u>environment</u></font></i> embodied in its <i><font color="#0000ff"><u>elements</u></font></i>, relationships, and in the principles of its design and evolution ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.3.2</clause>
+		<name>architecture description</name>
+		<definition><![CDATA[work product used to express an <i><font color="#0000ff"><u>architecture</u></font></i> ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.3.3</clause>
+		<name>architecture framework</name>
+		<definition><![CDATA[conventions, principles and practices for the description of <i><font color="#0000ff"><u>architectures</u></font></i> established within a specific domain of application and/or community of stakeholders ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.3.9</clause>
+		<name>architecture model</name>
+		<definition><![CDATA[work product representing one or more <i><font color="#0000ff"><u>architecture views</u></font></i> and expressed in a format governed by a <i><font color="#0000ff"><u>model kind</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.3.7</clause>
+		<name>architecture view</name>
+		<definition><![CDATA[work product expressing the <i><font color="#0000ff"><u>architecture</u></font></i> of a <i><font color="#0000ff"><u>system</u></font></i> from the perspective of specific system <i><font color="#0000ff"><u>concerns</u></font></i> ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.3.6</clause>
+		<name>architecture viewpoint</name>
+		<definition><![CDATA[work product establishing the conventions for the construction, interpretation and use of <i><font color="#0000ff"><u>architecture views</u></font></i> to frame specific system <i><font color="#0000ff"><u>concerns</u></font></i> ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.3.5</clause>
+		<name>concern</name>
+		<definition><![CDATA[&lt;system&gt; interest in a <i><font color="#0000ff"><u>system</u></font></i> relevant to one or more of its <i><font color="#0000ff"><u>stakeholders</u></font></i> ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.3.10</clause>
+		<name>element</name>
+		<definition><![CDATA[&lt;architecture&gt; component member of an <i><font color="#0000ff"><u>architecture model</u></font></i> included in an <i><font color="#0000ff"><u>architecture view</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.3.11</clause>
+		<name>environment</name>
+		<definition><![CDATA[&lt;system&gt; context determining the setting and circumstances of all influences upon a <i><font color="#0000ff"><u>system</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.3.8</clause>
+		<name>model kind</name>
+		<definition><![CDATA[conventions for a type of modelling]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.3.4</clause>
+		<name>stakeholder</name>
+		<definition><![CDATA[&lt;system&gt; individual, team, organization, or classes thereof, having an interest in a <i><font color="#0000ff"><u>system</u></font></i> ]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.1.3.4</clause>
+		<name>stakeholder</name>
+		<definition><![CDATA[&lt;system&gt; individual, team, organization, or classes thereof, having an interest in a <i><font color="#0000ff"><u>system</u></font></i> ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.4.1</clause>
+		<name>communications view</name>
+		<definition><![CDATA[<i><font color="#0000ff">architecture view</font></i> from the <i><font color="#0000ff">communications viewpoint</font></i> ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.4.2</clause>
+		<name>communications viewpoint</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>architecture viewpoint</u></font></i> used to frame concerns related to all layers of the OSI stack and related management and security issues]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.4.3</clause>
+		<name>enterprise view</name>
+		<definition><![CDATA[<i><font color="#0000ff">architecture view</font></i> from the <i><font color="#0000ff">enterprise viewpoint</font></i> ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.4.4</clause>
+		<name>enterprise viewpoint</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>architecture viewpoint</u></font></i> used to frame the policies, funding incentives, working arrangements, and jurisdictional structure that support the technical layers of the architecture]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.4.5</clause>
+		<name>functional view</name>
+		<definition><![CDATA[<i><font color="#0000ff">architecture view</font></i> from the <i><font color="#0000ff">functional viewpoint</font></i> ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.4.6</clause>
+		<name>functional viewpoint</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>architecture viewpoint</u></font></i> used to frame concerns related to the definition of processes that perform surface transport functions and data flows shared between these processes]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.4.7</clause>
+		<name>physical view</name>
+		<definition><![CDATA[<i><font color="#0000ff">architecture view</font></i> from the <i><font color="#0000ff">physical viewpoint</font></i> ]]></definition>
+	</entry>
+	<entry>
+		<wg>4</wg>
+		<clause>3.1.4.7</clause>
+		<name>physical view</name>
+		<definition><![CDATA[<i><font color="#0000ff">architecture view</font></i> from the <i><font color="#0000ff">physical viewpoint</font></i> ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.4.8</clause>
+		<name>physical viewpoint</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>architecture viewpoint</u></font></i> used to frame concerns related to the assignment of functionality to <i><font color="#0000ff"><u>physical objects</u></font></i> and the interfaces among these physical objects]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.1.5.2</clause>
+		<name>access layer</name>
+		<definition><![CDATA[protocol layer that contains the open systems interconnect (OSI) physical and data link layer protocols]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.1.5.1</clause>
+		<name>application entity</name>
+		<definition><![CDATA[&lt;ITS-S&gt; part of the <i><font color="#0000ff"><u>ITS station reference architecture</u></font></i> that is responsible for providing ITS-related functionality]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.1.5.5</clause>
+		<name>facilities layer</name>
+		<definition><![CDATA[&lt;ITS-S&gt; protocol layer in the <i><font color="#0000ff"><u>ITS station reference architecture</u></font></i> containing the open systems interconnect (OSI) session, presentation, and application layer protocols]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.1.5.5</clause>
+		<name>facilities layer</name>
+		<definition><![CDATA[&lt;ITS-S&gt; protocol layer in the <i><font color="#0000ff"><u>ITS station reference architecture</u></font></i> containing the open systems interconnect (OSI) session, presentation, and application layer protocols]]></definition>
+	</entry>
+	<entry>
+		<wg>7</wg>
+		<clause>3.1.5.5</clause>
+		<name>facilities layer</name>
+		<definition><![CDATA[&lt;ITS-S&gt; protocol layer in the <i><font color="#0000ff"><u>ITS station reference architecture</u></font></i> containing the open systems interconnect (OSI) session, presentation, and application layer protocols]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.1.5.3</clause>
+		<name>ITS-S access layer</name>
+		<definition><![CDATA[&lt;ITS-S&gt; protocol layer in the <i><font color="#0000ff"><u>ITS station reference architecture</u></font></i> containing the open systems interconnect (OSI) physical and data link layer protocols for ITS communications]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.1.5.6</clause>
+		<name>management entity</name>
+		<definition><![CDATA[&lt;ITS-S&gt; part of the <i><font color="#0000ff"><u>ITS station reference architecture</u></font></i> that is responsible for management of communications and configuration information for the local <i><font color="#0000ff"><u>physical object</u></font></i> and possibly remote physical objects]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.1.5.7</clause>
+		<name>security entity</name>
+		<definition><![CDATA[&lt;ITS-S&gt; part of the <i><font color="#0000ff"><u>ITS station reference architecture</u></font></i> that is responsible for providing privacy, communication security, and system security]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.1.5.4</clause>
+		<name>transnet layer</name>
+		<definition><![CDATA[&lt;ITS-S&gt; protocol layer in the <i><font color="#0000ff"><u>ITS station reference architecture</u></font></i> containing the open systems interconnect (OSI) network and transport layer protocols]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.1.5.4</clause>
+		<name>transnet layer</name>
+		<definition><![CDATA[&lt;ITS-S&gt; protocol layer in the <i><font color="#0000ff"><u>ITS station reference architecture</u></font></i> containing the open systems interconnect (OSI) network and transport layer protocols]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.6.3</clause>
+		<name>document</name>
+		<definition><![CDATA[uniquely identified unit of information for human use]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.6.1</clause>
+		<name>enterprise object</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>element</u></font></i> within an <i><font color="#0000ff"><u>enterprise view</u></font></i> that represents an organization or individual]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.6.10</clause>
+		<name>extends</name>
+		<definition><![CDATA[&lt;enterprise view&gt; <i><font color="#0000ff"><u>relationship</u></font></i> where one <i><font color="#0000ff"><u>resource</u></font></i> supplements another resource]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.6.5</clause>
+		<name>formal coordination</name>
+		<definition><![CDATA[&lt;enterprise view&gt; <i><font color="#0000ff"><u>interaction</u></font></i> between two <i><font color="#0000ff"><u>enterprise objects</u></font></i> governed by a documented agreement]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.6.9</clause>
+		<name>includes</name>
+		<definition><![CDATA[&lt;enterprise view&gt; <i><font color="#0000ff"><u>relationship</u></font></i> where one <i><font color="#0000ff"><u>resource</u></font></i> contains another resource]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.6.6</clause>
+		<name>informal coordination</name>
+		<definition><![CDATA[&lt;enterprise view&gt; <i><font color="#0000ff"><u>interaction</u></font></i> between two <i><font color="#0000ff"><u>enterprise objects</u></font></i> governed by an understanding that is not documented in a formal agreement between the two parties]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.6.4</clause>
+		<name>interaction</name>
+		<definition><![CDATA[&lt;enterprise view&gt; <i><font color="#0000ff"><u>element</u></font></i> that represents coordination between two <i><font color="#0000ff"><u>enterprise objects</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.6.8</clause>
+		<name>relationship</name>
+		<definition><![CDATA[&lt;enterprise view&gt; <i><font color="#0000ff"><u>element</u></font></i> that represents an association between two <i><font color="#0000ff"><u>resources</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.6.2</clause>
+		<name>resource</name>
+		<definition><![CDATA[&lt;enterprise view&gt; <i><font color="#0000ff"><u>element</u></font></i> that represents an entity that is managed, operated, referenced, and/or used to develop and provide ITS]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.6.7</clause>
+		<name>role</name>
+		<definition><![CDATA[&lt;enterprise view&gt; <i><font color="#0000ff"><u>element</u></font></i> that represents the specified responsibilities between an <i><font color="#0000ff"><u>enterprise object</u></font></i> and another enterprise view element]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.7.1</clause>
+		<name>data flow</name>
+		<definition><![CDATA[representation of data flowing between two <i><font color="#0000ff">processes</font></i> or between a process and a <i><font color="#0000ff">terminator</font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.7.3</clause>
+		<name>function</name>
+		<definition><![CDATA[&lt;functional view&gt; series of actions or activities performed by some object to achieve a goal]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.7.2</clause>
+		<name>process</name>
+		<definition><![CDATA[&lt;functional view&gt; series of one or more functions in support of an <i><font color="#0000ff"><u>ITS service</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.7.4</clause>
+		<name>process specification</name>
+		<definition><![CDATA[<i><u>document</u></i> that defines a lowest-level <i><u>process</u></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.8.6</clause>
+		<name>functional object</name>
+		<definition><![CDATA[set of related <i><font color="#0000ff"><u>processes</u></font></i> that are performed by a <i><font color="#0000ff"><u>physical object</u></font></i> to fulfil aspects of an <i><font color="#0000ff"><u>ITS service</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.8.4</clause>
+		<name>information flow</name>
+		<definition><![CDATA[information that is exchanged between <i><font color="#0000ff"><u>physical objects</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.8.5</clause>
+		<name>information transfer</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>information flow</u></font></i> from a <i><font color="#0000ff"><u>physical object</u></font></i> acting as an information provider and sent to another <i><font color="#0000ff"><u>physical object</u></font></i> acting as an information consumer]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.8.2</clause>
+		<name>ITS component</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>physical object</u></font></i> that has been assigned one or more <i><font color="#0000ff"><u>functional objects</u></font></i> in the provision of one or more <i><font color="#0000ff"><u>ITS services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.8.1</clause>
+		<name>physical object</name>
+		<definition><![CDATA[&lt;physical view&gt; abstraction of a <i><font color="#0000ff"><u>material entity</u></font></i> that interacts with other abstract material entities in the provision of <i><font color="#0000ff"><u>ITS services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.8.3</clause>
+		<name>terminator</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>entity</u></font></i> that is external to the <i><font color="#0000ff"><u>ITS service</u></font></i> implementation but with which the implementation communicates either to obtain inputs or to which it can send outputs]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.9.3</clause>
+		<name>deployment architecture</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>architecture</u></font></i> that provides a vision of a specific deployment of a system within a geographic area]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.9.7</clause>
+		<name>ITS deployment architecture</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>deployment architecture</u></font></i> for one or more <i><font color="#0000ff"><u>ITS services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.9.6</clause>
+		<name>ITS planning architecture</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>planning architecture</u></font></i> for one or more <i><font color="#0000ff"><u>ITS services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.9.5</clause>
+		<name>ITS reference architecture</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>reference architecture</u></font></i> for one or more <i><font color="#0000ff"><u>ITS services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.9.4</clause>
+		<name>ITS-S reference architecture</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>reference architecture</u></font></i> for handling communications within a <i><font color="#0000ff"><u>physical object</u></font></i> as defined in ISO 21217]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.9.2</clause>
+		<name>planning architecture</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>architecture</u></font></i> that provides a long-term vision of <i><font color="#0000ff"><u>system elements</u></font></i> that may be deployed and managed by different projects and/or entities within a geographic area]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.9.1</clause>
+		<name>reference architecture</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>architecture</u></font></i> that provides a template solution for <i><font color="#0000ff"><u>planning</u></font></i> and <i><font color="#0000ff"><u>deployment architectures</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.10.1</clause>
+		<name>data concept</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>data element</u></font></i>, <i><font color="#0000ff"><u>class</u></font></i>, <i><font color="#0000ff"><u>value domain</u></font></i>, <i><font color="#0000ff"><u>data frame</u></font></i>, <i><font color="#0000ff"><u>message</u></font></i>, <i><font color="#0000ff"><u>interface dialogue</u></font></i>, or <i><font color="#0000ff"><u>data dictionary</u></font></i> defined, at a minimum, with an unambiguous identifier and a definition]]></definition>
+	</entry>
+	<entry>
+		<wg>7</wg>
+		<clause>3.1.10.1</clause>
+		<name>data concept</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>data element</u></font></i>, <i><font color="#0000ff"><u>class</u></font></i>, <i><font color="#0000ff"><u>value domain</u></font></i>, <i><font color="#0000ff"><u>data frame</u></font></i>, <i><font color="#0000ff"><u>message</u></font></i>, <i><font color="#0000ff"><u>interface dialogue</u></font></i>, or <i><font color="#0000ff"><u>data dictionary</u></font></i> defined, at a minimum, with an unambiguous identifier and a definition]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.1.10.1</clause>
+		<name>data concept</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>data element</u></font></i>, <i><font color="#0000ff"><u>class</u></font></i>, <i><font color="#0000ff"><u>value domain</u></font></i>, <i><font color="#0000ff"><u>data frame</u></font></i>, <i><font color="#0000ff"><u>message</u></font></i>, <i><font color="#0000ff"><u>interface dialogue</u></font></i>, or <i><font color="#0000ff"><u>data dictionary</u></font></i> defined, at a minimum, with an unambiguous identifier and a definition]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.10.4</clause>
+		<name>data concept registry</name>
+		<definition><![CDATA[electronic <i><font color="#0000ff"><u>data dictionary</u></font></i> that follows precise documented rules for the registration and management of stored <i><font color="#0000ff"><u>data concepts</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.10.3</clause>
+		<name>data dictionary</name>
+		<definition><![CDATA[collection of <i><font color="#0000ff"><u>data concept</u></font></i> that allows lookup by <i><font color="#0000ff"><u>entity</u></font></i> identifier]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.10.2</clause>
+		<name>meta-attribute</name>
+		<definition><![CDATA[documenting characteristic of a <i><font color="#0000ff"><u>data concept</u></font></i> that is stored in a <i><font color="#0000ff"><u>data dictionary</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.11.2</clause>
+		<name>class</name>
+		<definition><![CDATA[set of ideas, abstractions or things in the real world that are identified with explicit boundaries and meaning and whose properties and behaviour follow the same rules]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.11.1</clause>
+		<name>data element</name>
+		<definition><![CDATA[unit of data that is considered in context to be indivisible and which includes an unambiguous representational form]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.1.11.1</clause>
+		<name>data element</name>
+		<definition><![CDATA[unit of data that is considered in context to be indivisible and which includes an unambiguous representational form]]></definition>
+	</entry>
+	<entry>
+		<wg>5</wg>
+		<clause>3.1.11.1</clause>
+		<name>data element</name>
+		<definition><![CDATA[unit of data that is considered in context to be indivisible and which includes an unambiguous representational form]]></definition>
+	</entry>
+	<entry>
+		<wg>7</wg>
+		<clause>3.1.11.1</clause>
+		<name>data element</name>
+		<definition><![CDATA[unit of data that is considered in context to be indivisible and which includes an unambiguous representational form]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.1.11.1</clause>
+		<name>data element</name>
+		<definition><![CDATA[unit of data that is considered in context to be indivisible and which includes an unambiguous representational form]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.1.11.1</clause>
+		<name>data element</name>
+		<definition><![CDATA[unit of data that is considered in context to be indivisible and which includes an unambiguous representational form]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.11.4</clause>
+		<name>data frame</name>
+		<definition><![CDATA[specific grouping of <i><font color="#0000ff"><u>data elements</u></font></i> that describes information of interest through a useful grouping of more atomic properties about one or more <i><font color="#0000ff"><u>classes</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.1.11.4</clause>
+		<name>data frame</name>
+		<definition><![CDATA[specific grouping of <i><font color="#0000ff"><u>data elements</u></font></i> that describes information of interest through a useful grouping of more atomic properties about one or more <i><font color="#0000ff"><u>classes</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.1.11.4</clause>
+		<name>data frame</name>
+		<definition><![CDATA[specific grouping of <i><font color="#0000ff"><u>data elements</u></font></i> that describes information of interest through a useful grouping of more atomic properties about one or more <i><font color="#0000ff"><u>classes</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.11.6</clause>
+		<name>interface dialogue</name>
+		<definition><![CDATA[bi-directional communication sequence between two parties in accordance with predetermined protocols]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.11.5</clause>
+		<name>message</name>
+		<definition><![CDATA[grouping of <i><font color="#0000ff"><u>data elements</u></font></i>, <i><font color="#0000ff"><u>data frames</u></font></i>, or <i><font color="#0000ff"><u>data elements</u></font></i> and <i><font color="#0000ff"><u>data frames</u></font></i><b> </b>that is used to convey a complete set of information ]]></definition>
+	</entry>
+	<entry>
+		<wg>10</wg>
+		<clause>3.1.11.5</clause>
+		<name>message</name>
+		<definition><![CDATA[grouping of <i><font color="#0000ff"><u>data elements</u></font></i>, <i><font color="#0000ff"><u>data frames</u></font></i>, or <i><font color="#0000ff"><u>data elements</u></font></i> and <i><font color="#0000ff"><u>data frames</u></font></i><b> </b>that is used to convey a complete set of information ]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.1.11.5</clause>
+		<name>message</name>
+		<definition><![CDATA[grouping of <i><font color="#0000ff"><u>data elements</u></font></i>, <i><font color="#0000ff"><u>data frames</u></font></i>, or <i><font color="#0000ff"><u>data elements</u></font></i> and <i><font color="#0000ff"><u>data frames</u></font></i><b> </b>that is used to convey a complete set of information ]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.1.11.5</clause>
+		<name>message</name>
+		<definition><![CDATA[grouping of <i><font color="#0000ff"><u>data elements</u></font></i>, <i><font color="#0000ff"><u>data frames</u></font></i>, or <i><font color="#0000ff"><u>data elements</u></font></i> and <i><font color="#0000ff"><u>data frames</u></font></i><b> </b>that is used to convey a complete set of information ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.11.3</clause>
+		<name>value domain</name>
+		<definition><![CDATA[a set of permissible values]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.1.11.3</clause>
+		<name>value domain</name>
+		<definition><![CDATA[a set of permissible values]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.12.3</clause>
+		<name>role</name>
+		<definition><![CDATA[specified responsibilities]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.12.2</clause>
+		<name>scenario</name>
+		<definition><![CDATA[&lt;use case&gt; a description of the sequence of events from the user's perspective to perform a task in a specified context]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.1.12.2</clause>
+		<name>scenario</name>
+		<definition><![CDATA[&lt;use case&gt; a description of the sequence of events from the user's perspective to perform a task in a specified context]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.12.1</clause>
+		<name>use case</name>
+		<definition><![CDATA[description of the behavioural requirements of a system and its interaction with a user]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.1.12.1</clause>
+		<name>use case</name>
+		<definition><![CDATA[description of the behavioural requirements of a system and its interaction with a user]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.13.2</clause>
+		<name>duration</name>
+		<definition><![CDATA[time between two <i><font color="#0000ff"><u>instants</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.1.13.1</clause>
+		<name>instant</name>
+		<definition><![CDATA[zero-dimensional geographic primitive representing position in time]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.1.1</clause>
+		<name>central system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS component</u></font></i> that provides application, management, and/or administrative functions from a centralized location (i.e., not at the <i><font color="#0000ff"><u>roadside</u></font></i>)]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.1.2</clause>
+		<name>field system</name>
+		<definition><![CDATA[infrastructure-based <i><font color="#0000ff"><u>ITS component</u></font></i> located outside of a data centre that is designed to provide local processing or routing services while stationary ]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.2.1.2</clause>
+		<name>field system</name>
+		<definition><![CDATA[infrastructure-based <i><font color="#0000ff"><u>ITS component</u></font></i> located outside of a data centre that is designed to provide local processing or routing services while stationary ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.1.3</clause>
+		<name>personal system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS component</u></font></i>, other than a <i><font color="#0000ff"><u>vehicle system</u></font></i>, that is used by a person in relation to a past, current, or upcoming journey]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.1.4</clause>
+		<name>support system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS component</u></font></i> that provides services in support of one or more other ITS components]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.1.5</clause>
+		<name>vehicle system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS component</u></font></i> that is installed as a component of a <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.2.1</clause>
+		<name>emergency management central system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>central system</u></font></i> that allows an entity to manage and respond to crashes, events, disasters, evacuation orders, and other incidents]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.2.2.1</clause>
+		<name>emergency management central system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>central system</u></font></i> that allows an entity to manage and respond to crashes, events, disasters, evacuation orders, and other incidents]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.2.2</clause>
+		<name>fleet and freight management central system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>central system</u></font></i> that allows a fleet or freight operator to manage and control its personnel, equipment,  and/or freight]]></definition>
+	</entry>
+	<entry>
+		<wg>7</wg>
+		<clause>3.2.2.2</clause>
+		<name>fleet and freight management central system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>central system</u></font></i> that allows a fleet or freight operator to manage and control its personnel, equipment,  and/or freight]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.2.3</clause>
+		<name>maintenance and construction central management system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>central system</u></font></i> that allows an entity to monitor and manage the construction and maintenance of road infrastructure]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.2.2.3</clause>
+		<name>maintenance and construction central management system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>central system</u></font></i> that allows an entity to monitor and manage the construction and maintenance of road infrastructure]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.2.4</clause>
+		<name>payment administration central system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>central system</u></font></i> that allows an entity to manage financial transactions related to transportation, especially the electronic transfer of funds ]]></definition>
+	</entry>
+	<entry>
+		<wg>5</wg>
+		<clause>3.2.2.4</clause>
+		<name>payment administration central system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>central system</u></font></i> that allows an entity to manage financial transactions related to transportation, especially the electronic transfer of funds ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.2.5</clause>
+		<name>public transport central management system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>central system</u></font></i> that allows an entity to manage the activities of a public transport agency ]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.2.2.5</clause>
+		<name>public transport central management system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>central system</u></font></i> that allows an entity to manage the activities of a public transport agency ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.2.6</clause>
+		<name>traffic management central system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>central system</u></font></i> that monitors and controls traffic and the road network]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.2.2.6</clause>
+		<name>traffic management central system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>central system</u></font></i> that monitors and controls traffic and the road network]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.2.7</clause>
+		<name>traffic regulation central system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>central system</u></font></i> that officially records traffic regulations in electronic form so that they can be distributed to other systems ]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.2.2.7</clause>
+		<name>traffic regulation central system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>central system</u></font></i> that officially records traffic regulations in electronic form so that they can be distributed to other systems ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.2.8</clause>
+		<name>transport information central system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>central system</u></font></i> that provides information of interest to the travelling public]]></definition>
+	</entry>
+	<entry>
+		<wg>10</wg>
+		<clause>3.2.2.8</clause>
+		<name>transport information central system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>central system</u></font></i> that provides information of interest to the travelling public]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.3.6</clause>
+		<name>connected</name>
+		<definition><![CDATA[characteristic of a <i><font color="#0000ff"><u>material entity</u></font></i> that is equipped with enabled (i.e., on) and operational electronic communication technologies to support ITS services, including the means to send and receive data to and from other connected entities]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.2.3.6</clause>
+		<name>connected</name>
+		<definition><![CDATA[characteristic of a <i><font color="#0000ff"><u>material entity</u></font></i> that is equipped with enabled (i.e., on) and operational electronic communication technologies to support ITS services, including the means to send and receive data to and from other connected entities]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.3.6</clause>
+		<name>connected</name>
+		<definition><![CDATA[characteristic of a <i><font color="#0000ff"><u>material entity</u></font></i> that is equipped with enabled (i.e., on) and operational electronic communication technologies to support ITS services, including the means to send and receive data to and from other connected entities]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.3.3</clause>
+		<name>connected roadside equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS roadside equipment</u></font></i> that performs <i><font color="#0000ff"><u>ITS services</u></font></i> by exchanging electronic messages with nearby <i><font color="#0000ff"><u>vehicle systems</u></font></i> and/or <i><font color="#0000ff"><u>personal systems</u></font></i> via short-range wireless technologies]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.2.3.3</clause>
+		<name>connected roadside equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS roadside equipment</u></font></i> that performs <i><font color="#0000ff"><u>ITS services</u></font></i> by exchanging electronic messages with nearby <i><font color="#0000ff"><u>vehicle systems</u></font></i> and/or <i><font color="#0000ff"><u>personal systems</u></font></i> via short-range wireless technologies]]></definition>
+	</entry>
+	<entry>
+		<wg>17</wg>
+		<clause>3.2.3.3</clause>
+		<name>connected roadside equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS roadside equipment</u></font></i> that performs <i><font color="#0000ff"><u>ITS services</u></font></i> by exchanging electronic messages with nearby <i><font color="#0000ff"><u>vehicle systems</u></font></i> and/or <i><font color="#0000ff"><u>personal systems</u></font></i> via short-range wireless technologies]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.3.3</clause>
+		<name>connected roadside equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS roadside equipment</u></font></i> that performs <i><font color="#0000ff"><u>ITS services</u></font></i> by exchanging electronic messages with nearby <i><font color="#0000ff"><u>vehicle systems</u></font></i> and/or <i><font color="#0000ff"><u>personal systems</u></font></i> via short-range wireless technologies]]></definition>
+	</entry>
+	<entry>
+		<wg>4</wg>
+		<clause>3.2.3.3</clause>
+		<name>connected roadside equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS roadside equipment</u></font></i> that performs <i><font color="#0000ff"><u>ITS services</u></font></i> by exchanging electronic messages with nearby <i><font color="#0000ff"><u>vehicle systems</u></font></i> and/or <i><font color="#0000ff"><u>personal systems</u></font></i> via short-range wireless technologies]]></definition>
+	</entry>
+	<entry>
+		<wg>5</wg>
+		<clause>3.2.3.3</clause>
+		<name>connected roadside equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS roadside equipment</u></font></i> that performs <i><font color="#0000ff"><u>ITS services</u></font></i> by exchanging electronic messages with nearby <i><font color="#0000ff"><u>vehicle systems</u></font></i> and/or <i><font color="#0000ff"><u>personal systems</u></font></i> via short-range wireless technologies]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.2.3.3</clause>
+		<name>connected roadside equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS roadside equipment</u></font></i> that performs <i><font color="#0000ff"><u>ITS services</u></font></i> by exchanging electronic messages with nearby <i><font color="#0000ff"><u>vehicle systems</u></font></i> and/or <i><font color="#0000ff"><u>personal systems</u></font></i> via short-range wireless technologies]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.3.1</clause>
+		<name>field support equipment</name>
+		<definition><![CDATA[portable <i><font color="#0000ff"><u>field system</u></font></i> used by field personnel to locally troubleshoot, initialize, reprogram, and test infrastructure equipment]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.2.3.1</clause>
+		<name>field support equipment</name>
+		<definition><![CDATA[portable <i><font color="#0000ff"><u>field system</u></font></i> used by field personnel to locally troubleshoot, initialize, reprogram, and test infrastructure equipment]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.3.2</clause>
+		<name>ITS roadside equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>field system</u></font></i> that performs localized <i><font color="#0000ff"><u>ITS services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.2.3.2</clause>
+		<name>ITS roadside equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>field system</u></font></i> that performs localized <i><font color="#0000ff"><u>ITS services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.2.3.2</clause>
+		<name>ITS roadside equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>field system</u></font></i> that performs localized <i><font color="#0000ff"><u>ITS services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.3.4</clause>
+		<name>roadside unit</name>
+		<definition><![CDATA[part of <i><font color="#0000ff"><u>ITS connected roadside equipment</u></font></i> that provides wireless connectivity to <i><font color="#0000ff"><u>vehicle systems</u></font></i> and/or <i><font color="#0000ff"><u>personal systems</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.3.4</clause>
+		<name>roadside unit</name>
+		<definition><![CDATA[part of <i><font color="#0000ff"><u>ITS connected roadside equipment</u></font></i> that provides wireless connectivity to <i><font color="#0000ff"><u>vehicle systems</u></font></i> and/or <i><font color="#0000ff"><u>personal systems</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.2.3.4</clause>
+		<name>roadside unit</name>
+		<definition><![CDATA[part of <i><font color="#0000ff"><u>ITS connected roadside equipment</u></font></i> that provides wireless connectivity to <i><font color="#0000ff"><u>vehicle systems</u></font></i> and/or <i><font color="#0000ff"><u>personal systems</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.4.3</clause>
+		<name>nomadic device</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>personal information device</u></font></i> that is taken with and can be accessed by the traveller during a journey]]></definition>
+	</entry>
+	<entry>
+		<wg>17</wg>
+		<clause>3.2.4.3</clause>
+		<name>nomadic device</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>personal information device</u></font></i> that is taken with and can be accessed by the traveller during a journey]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.4.1</clause>
+		<name>nomadic vehicle device</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>personal system</u></font></i><font color="#313131"> consisting of global navigation satellite system (GNSS) receiver and/or wireless modules that are connected to a vehicle during a trip</font>]]></definition>
+	</entry>
+	<entry>
+		<wg>17</wg>
+		<clause>3.2.4.1</clause>
+		<name>nomadic vehicle device</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>personal system</u></font></i><font color="#313131"> consisting of global navigation satellite system (GNSS) receiver and/or wireless modules that are connected to a vehicle during a trip</font>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.4.2</clause>
+		<name>personal information device</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>personal system</u></font></i> that enables personal access to traveller information]]></definition>
+	</entry>
+	<entry>
+		<wg>17</wg>
+		<clause>3.2.4.2</clause>
+		<name>personal information device</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>personal system</u></font></i> that enables personal access to traveller information]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.4.4</clause>
+		<name>public information device</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>personal system</u></font></i> that provides public access to traveller information]]></definition>
+	</entry>
+	<entry>
+		<wg>10</wg>
+		<clause>3.2.4.4</clause>
+		<name>public information device</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>personal system</u></font></i> that provides public access to traveller information]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.5.1</clause>
+		<name>cooperative ITS credentials management system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>support system</u></font></i> that enables trusted communications among ITS components and protects data from unauthorized access]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.5.1</clause>
+		<name>cooperative ITS credentials management system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>support system</u></font></i> that enables trusted communications among ITS components and protects data from unauthorized access]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.5.2</clause>
+		<name>map provision system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>support system</u></font></i> that provides map databases used to support <i><font color="#0000ff"><u>ITS services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.2.5.2</clause>
+		<name>map provision system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>support system</u></font></i> that provides map databases used to support <i><font color="#0000ff"><u>ITS services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.6.1</clause>
+		<name>ITS on-board equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle system</u></font></i> that provides all ITS functionality on-board the <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.2.6.1</clause>
+		<name>ITS on-board equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle system</u></font></i> that provides all ITS functionality on-board the <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.2.6.1</clause>
+		<name>ITS on-board equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle system</u></font></i> that provides all ITS functionality on-board the <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.6.1</clause>
+		<name>ITS on-board equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle system</u></font></i> that provides all ITS functionality on-board the <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>4</wg>
+		<clause>3.2.6.1</clause>
+		<name>ITS on-board equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle system</u></font></i> that provides all ITS functionality on-board the <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>5</wg>
+		<clause>3.2.6.1</clause>
+		<name>ITS on-board equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle system</u></font></i> that provides all ITS functionality on-board the <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>7</wg>
+		<clause>3.2.6.1</clause>
+		<name>ITS on-board equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle system</u></font></i> that provides all ITS functionality on-board the <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.2.6.1</clause>
+		<name>ITS on-board equipment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle system</u></font></i> that provides all ITS functionality on-board the <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.6.2</clause>
+		<name>ITS on-board unit</name>
+		<definition><![CDATA[part of <i><font color="#0000ff"><u>on-board equipment</u></font></i> that provides wireless connectivity to other <i><font color="#0000ff"><u>ITS components</u></font></i> external to the <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.2.6.2</clause>
+		<name>ITS on-board unit</name>
+		<definition><![CDATA[part of <i><font color="#0000ff"><u>on-board equipment</u></font></i> that provides wireless connectivity to other <i><font color="#0000ff"><u>ITS components</u></font></i> external to the <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>4</wg>
+		<clause>3.2.6.2</clause>
+		<name>ITS on-board unit</name>
+		<definition><![CDATA[part of <i><font color="#0000ff"><u>on-board equipment</u></font></i> that provides wireless connectivity to other <i><font color="#0000ff"><u>ITS components</u></font></i> external to the <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>5</wg>
+		<clause>3.2.6.2</clause>
+		<name>ITS on-board unit</name>
+		<definition><![CDATA[part of <i><font color="#0000ff"><u>on-board equipment</u></font></i> that provides wireless connectivity to other <i><font color="#0000ff"><u>ITS components</u></font></i> external to the <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>7</wg>
+		<clause>3.2.6.2</clause>
+		<name>ITS on-board unit</name>
+		<definition><![CDATA[part of <i><font color="#0000ff"><u>on-board equipment</u></font></i> that provides wireless connectivity to other <i><font color="#0000ff"><u>ITS components</u></font></i> external to the <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.2.6.2</clause>
+		<name>ITS on-board unit</name>
+		<definition><![CDATA[part of <i><font color="#0000ff"><u>on-board equipment</u></font></i> that provides wireless connectivity to other <i><font color="#0000ff"><u>ITS components</u></font></i> external to the <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.7.1</clause>
+		<name>bounded secured managed domain</name>
+		<definition><![CDATA[abstract entity representing a managed processing and memory environment that provides protection from code and data that has not been determined to meet established security requirements]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.7.1</clause>
+		<name>bounded secured managed domain</name>
+		<definition><![CDATA[abstract entity representing a managed processing and memory environment that provides protection from code and data that has not been determined to meet established security requirements]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.7.9</clause>
+		<name>functionality</name>
+		<definition><![CDATA[&lt;normal English meaning&gt;]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.7.9</clause>
+		<name>functionality</name>
+		<definition><![CDATA[&lt;normal English meaning&gt;]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.7.3</clause>
+		<name>ITS station</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>bounded secured managed domain</u></font></i> that is able to meet requirements of the <i><font color="#0000ff"><u>ITS trust domain</u></font></i> within which it wishes to participate]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.2.7.3</clause>
+		<name>ITS station</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>bounded secured managed domain</u></font></i> that is able to meet requirements of the <i><font color="#0000ff"><u>ITS trust domain</u></font></i> within which it wishes to participate]]></definition>
+	</entry>
+	<entry>
+		<wg>17</wg>
+		<clause>3.2.7.3</clause>
+		<name>ITS station</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>bounded secured managed domain</u></font></i> that is able to meet requirements of the <i><font color="#0000ff"><u>ITS trust domain</u></font></i> within which it wishes to participate]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.7.3</clause>
+		<name>ITS station</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>bounded secured managed domain</u></font></i> that is able to meet requirements of the <i><font color="#0000ff"><u>ITS trust domain</u></font></i> within which it wishes to participate]]></definition>
+	</entry>
+	<entry>
+		<wg>7</wg>
+		<clause>3.2.7.3</clause>
+		<name>ITS station</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>bounded secured managed domain</u></font></i> that is able to meet requirements of the <i><font color="#0000ff"><u>ITS trust domain</u></font></i> within which it wishes to participate]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.7.2</clause>
+		<name>ITS trust domain</name>
+		<definition><![CDATA[set of <i><font color="#0000ff"><u>bounded secured managed domains</u></font></i> that meet a defined set of ITS industry security requirements]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.2.7.2</clause>
+		<name>ITS trust domain</name>
+		<definition><![CDATA[set of <i><font color="#0000ff"><u>bounded secured managed domains</u></font></i> that meet a defined set of ITS industry security requirements]]></definition>
+	</entry>
+	<entry>
+		<wg>17</wg>
+		<clause>3.2.7.2</clause>
+		<name>ITS trust domain</name>
+		<definition><![CDATA[set of <i><font color="#0000ff"><u>bounded secured managed domains</u></font></i> that meet a defined set of ITS industry security requirements]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.7.2</clause>
+		<name>ITS trust domain</name>
+		<definition><![CDATA[set of <i><font color="#0000ff"><u>bounded secured managed domains</u></font></i> that meet a defined set of ITS industry security requirements]]></definition>
+	</entry>
+	<entry>
+		<wg>7</wg>
+		<clause>3.2.7.2</clause>
+		<name>ITS trust domain</name>
+		<definition><![CDATA[set of <i><font color="#0000ff"><u>bounded secured managed domains</u></font></i> that meet a defined set of ITS industry security requirements]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.7.5</clause>
+		<name>ITS-S communication unit</name>
+		<definition><![CDATA[physical unit in an <i><font color="#0000ff"><u>ITS-SU</u></font></i> containing part or all of the functionality of an <i><font color="#0000ff"><u>ITS-S</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.2.7.5</clause>
+		<name>ITS-S communication unit</name>
+		<definition><![CDATA[physical unit in an <i><font color="#0000ff"><u>ITS-SU</u></font></i> containing part or all of the functionality of an <i><font color="#0000ff"><u>ITS-S</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>17</wg>
+		<clause>3.2.7.5</clause>
+		<name>ITS-S communication unit</name>
+		<definition><![CDATA[physical unit in an <i><font color="#0000ff"><u>ITS-SU</u></font></i> containing part or all of the functionality of an <i><font color="#0000ff"><u>ITS-S</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.7.5</clause>
+		<name>ITS-S communication unit</name>
+		<definition><![CDATA[physical unit in an <i><font color="#0000ff"><u>ITS-SU</u></font></i> containing part or all of the functionality of an <i><font color="#0000ff"><u>ITS-S</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>7</wg>
+		<clause>3.2.7.5</clause>
+		<name>ITS-S communication unit</name>
+		<definition><![CDATA[physical unit in an <i><font color="#0000ff"><u>ITS-SU</u></font></i> containing part or all of the functionality of an <i><font color="#0000ff"><u>ITS-S</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.7.6</clause>
+		<name>ITS-S host</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>functionalities</u></font></i> in an <i><font color="#0000ff"><u>ITS-S node</u></font></i> other than the functionalities of an <i><font color="#0000ff"><u>ITS-S router</u></font></i>, ITS-S border router, ITS-S mobile router, or an ITS-S gateway]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.2.7.6</clause>
+		<name>ITS-S host</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>functionalities</u></font></i> in an <i><font color="#0000ff"><u>ITS-S node</u></font></i> other than the functionalities of an <i><font color="#0000ff"><u>ITS-S router</u></font></i>, ITS-S border router, ITS-S mobile router, or an ITS-S gateway]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.7.6</clause>
+		<name>ITS-S host</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>functionalities</u></font></i> in an <i><font color="#0000ff"><u>ITS-S node</u></font></i> other than the functionalities of an <i><font color="#0000ff"><u>ITS-S router</u></font></i>, ITS-S border router, ITS-S mobile router, or an ITS-S gateway]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.7.8</clause>
+		<name>ITS-S node</name>
+		<definition><![CDATA[node comprised of a set of functionalities in an <i><font color="#0000ff"><u>ITS-S unit</u></font></i> that is connected to the <i><font color="#0000ff"><u>ITS station</u></font></i> internal network or comprises an entire ITS-S unit]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.7.8</clause>
+		<name>ITS-S node</name>
+		<definition><![CDATA[node comprised of a set of functionalities in an <i><font color="#0000ff"><u>ITS-S unit</u></font></i> that is connected to the <i><font color="#0000ff"><u>ITS station</u></font></i> internal network or comprises an entire ITS-S unit]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.7.7</clause>
+		<name>ITS-S router</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>functionalities</u></font></i> in an <i><font color="#0000ff"><u>ITS-S node</u></font></i> that enable connecting two networks and forwarding packets not explicitly addressed to the ITS-S node]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.2.7.7</clause>
+		<name>ITS-S router</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>functionalities</u></font></i> in an <i><font color="#0000ff"><u>ITS-S node</u></font></i> that enable connecting two networks and forwarding packets not explicitly addressed to the ITS-S node]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.7.7</clause>
+		<name>ITS-S router</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>functionalities</u></font></i> in an <i><font color="#0000ff"><u>ITS-S node</u></font></i> that enable connecting two networks and forwarding packets not explicitly addressed to the ITS-S node]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.7.4</clause>
+		<name>ITS-S unit</name>
+		<definition><![CDATA[instantiation of an <i><font color="#0000ff"><u>ITS station</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.2.7.4</clause>
+		<name>ITS-S unit</name>
+		<definition><![CDATA[instantiation of an <i><font color="#0000ff"><u>ITS station</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>17</wg>
+		<clause>3.2.7.4</clause>
+		<name>ITS-S unit</name>
+		<definition><![CDATA[instantiation of an <i><font color="#0000ff"><u>ITS station</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.7.4</clause>
+		<name>ITS-S unit</name>
+		<definition><![CDATA[instantiation of an <i><font color="#0000ff"><u>ITS station</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>7</wg>
+		<clause>3.2.7.4</clause>
+		<name>ITS-S unit</name>
+		<definition><![CDATA[instantiation of an <i><font color="#0000ff"><u>ITS station</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.8.2</clause>
+		<name>interoperability design</name>
+		<definition><![CDATA[characteristics necessary to fully define how various <i><font color="#0000ff"><u>physical objects</u></font></i> interoperate to provide a <i><font color="#0000ff"><u>service</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.8.1</clause>
+		<name>ITS application</name>
+		<definition><![CDATA[realization of an <i><font color="#0000ff"><u>ITS service</u></font></i> that involves an association of two or more complementary <i><font color="#0000ff"><u>ITS-S application processes</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.2.8.1</clause>
+		<name>ITS application</name>
+		<definition><![CDATA[realization of an <i><font color="#0000ff"><u>ITS service</u></font></i> that involves an association of two or more complementary <i><font color="#0000ff"><u>ITS-S application processes</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.2.8.1</clause>
+		<name>ITS application</name>
+		<definition><![CDATA[realization of an <i><font color="#0000ff"><u>ITS service</u></font></i> that involves an association of two or more complementary <i><font color="#0000ff"><u>ITS-S application processes</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.8.1</clause>
+		<name>ITS application</name>
+		<definition><![CDATA[realization of an <i><font color="#0000ff"><u>ITS service</u></font></i> that involves an association of two or more complementary <i><font color="#0000ff"><u>ITS-S application processes</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.8.3</clause>
+		<name>ITS application specification</name>
+		<definition><![CDATA[one or more documents that detail the <i><font color="#0000ff"><u>interoperability design</u></font></i> for an <i><font color="#0000ff"><u>ITS application</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.2.8.3</clause>
+		<name>ITS application specification</name>
+		<definition><![CDATA[one or more documents that detail the <i><font color="#0000ff"><u>interoperability design</u></font></i> for an <i><font color="#0000ff"><u>ITS application</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.8.4</clause>
+		<name>ITS application template</name>
+		<definition><![CDATA[defined annotated outline for an <i><font color="#0000ff"><u>ITS application specification</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.2.8.4</clause>
+		<name>ITS application template</name>
+		<definition><![CDATA[defined annotated outline for an <i><font color="#0000ff"><u>ITS application specification</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.8.6</clause>
+		<name>ITS deployment</name>
+		<definition><![CDATA[installation capable of performing one or more <i><font color="#0000ff"><u>ITS applications</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.8.6</clause>
+		<name>ITS deployment</name>
+		<definition><![CDATA[installation capable of performing one or more <i><font color="#0000ff"><u>ITS applications</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.8.5</clause>
+		<name>ITS implementation</name>
+		<definition><![CDATA[integration of each <i><font color="#0000ff"><u>physical object</u></font></i> necessary to implement one or more <i><font color="#0000ff"><u>ITS applications</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.8.5</clause>
+		<name>ITS implementation</name>
+		<definition><![CDATA[integration of each <i><font color="#0000ff"><u>physical object</u></font></i> necessary to implement one or more <i><font color="#0000ff"><u>ITS applications</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.9.1</clause>
+		<name>ITS application role</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS-S user need</u></font></i> expressed as a formal set of interoperability requirements that need to be fulfilled to satisfy a portion of functionality of an <i><font color="#0000ff"><u>ITS application</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.2.9.1</clause>
+		<name>ITS application role</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS-S user need</u></font></i> expressed as a formal set of interoperability requirements that need to be fulfilled to satisfy a portion of functionality of an <i><font color="#0000ff"><u>ITS application</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.9.1</clause>
+		<name>ITS application role</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS-S user need</u></font></i> expressed as a formal set of interoperability requirements that need to be fulfilled to satisfy a portion of functionality of an <i><font color="#0000ff"><u>ITS application</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.2.9.3</clause>
+		<name>ITS-S application</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS-S application process</u></font></i> residing in the <i><font color="#0000ff"><u>application entity</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.2.9.3</clause>
+		<name>ITS-S application</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS-S application process</u></font></i> residing in the <i><font color="#0000ff"><u>application entity</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>17</wg>
+		<clause>3.2.9.3</clause>
+		<name>ITS-S application</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS-S application process</u></font></i> residing in the <i><font color="#0000ff"><u>application entity</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.9.3</clause>
+		<name>ITS-S application</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS-S application process</u></font></i> residing in the <i><font color="#0000ff"><u>application entity</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.9.4</clause>
+		<name>ITS-S application implementation</name>
+		<definition><![CDATA[implementation of an <i><font color="#0000ff"><u>ITS-S application process</u></font></i> within the <i><font color="#0000ff"><u>application entity</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.9.6</clause>
+		<name>ITS-S application installation</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS-S application process installation</u></font></i> within the <i><font color="#0000ff"><u>application entity</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.2.9.2</clause>
+		<name>ITS-S application process</name>
+		<definition><![CDATA[element in an <i><font color="#0000ff"><u>ITS station</u></font></i> that performs information processing for an <i><font color="#0000ff"><u>ITS-S service</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.2.9.2</clause>
+		<name>ITS-S application process</name>
+		<definition><![CDATA[element in an <i><font color="#0000ff"><u>ITS station</u></font></i> that performs information processing for an <i><font color="#0000ff"><u>ITS-S service</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.2.9.2</clause>
+		<name>ITS-S application process</name>
+		<definition><![CDATA[element in an <i><font color="#0000ff"><u>ITS station</u></font></i> that performs information processing for an <i><font color="#0000ff"><u>ITS-S service</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>17</wg>
+		<clause>3.2.9.2</clause>
+		<name>ITS-S application process</name>
+		<definition><![CDATA[element in an <i><font color="#0000ff"><u>ITS station</u></font></i> that performs information processing for an <i><font color="#0000ff"><u>ITS-S service</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.9.2</clause>
+		<name>ITS-S application process</name>
+		<definition><![CDATA[element in an <i><font color="#0000ff"><u>ITS station</u></font></i> that performs information processing for an <i><font color="#0000ff"><u>ITS-S service</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.2.9.5</clause>
+		<name>ITS-S application process installation</name>
+		<definition><![CDATA[installation of an implementation of an <i><font color="#0000ff"><u>ITS-S application process</u></font></i> on an <i><font color="#0000ff"><u>ITS station</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.1.5</clause>
+		<name>carriageway</name>
+		<definition><![CDATA[contiguous area of <i><font color="#0000ff"><u>roadway</u></font></i> along a <i><font color="#0000ff"><u>road segment</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.3.1.4</clause>
+		<name>driving space</name>
+		<definition><![CDATA[area above the <i><font color="#0000ff"><u>roadway</u></font></i> that is primarily intended for the movement of <i><font color="#0000ff"><u>vehicles</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.1.8</clause>
+		<name>dual carriageway road segment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>roadway</u></font></i> comprised of exactly two <i><font color="#0000ff"><u>carriageways</u></font></i> ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.3.1.17</clause>
+		<name>hardstanding</name>
+		<definition><![CDATA[part of a paved carriageway that is not a traffic lane, hard shoulder, or lay-by.]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.1.12</clause>
+		<name>lane</name>
+		<definition><![CDATA[&lt;generic&gt; portion of the <i><font color="#0000ff"><u>road reservation</u></font></i> designed to accommodate a single line of moving <i><font color="#0000ff"><u>material entities</u></font></i> along its length]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.1.16</clause>
+		<name>lay-by</name>
+		<definition><![CDATA[short length of paved <i><font color="#0000ff"><u>carriageway</u></font></i> at its edge designed to allow a <i><font color="#0000ff"><u>vehicle</u></font></i> to draw out of the travel lanes and stop temporarily]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.1.9</clause>
+		<name>multiple carriageway road segment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>roadway</u></font></i> comprised of more than two <i><font color="#0000ff"><u>carriageways</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.1.14</clause>
+		<name>reserved lane</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>traffic lane</u></font></i> restricted to a specific subset of <i><font color="#0000ff"><u>road vehicles</u></font></i> or user categories]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.1.2</clause>
+		<name>road reservation</name>
+		<definition><![CDATA[area legally reserved for road transport purposes and support]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.1.10</clause>
+		<name>roadside</name>
+		<definition><![CDATA[portion of the <i><font color="#0000ff"><u>road reservation</u></font></i> excluding all <i><font color="#0000ff"><u>roadways</u></font></i> and <i><font color="#0000ff"><u>driving spaces</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.1.3</clause>
+		<name>roadway</name>
+		<definition><![CDATA[part of the surface of the <i><font color="#0000ff"><u>road reservation</u></font></i> primarily designed for the movement of <i><font color="#0000ff"><u>vehicles</u></font></i> that comply with a specified set of requirements]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.1.18</clause>
+		<name>shoulder</name>
+		<definition><![CDATA[either a <i><font color="#0000ff"><u>hard shoulder</u></font></i> or a <i><font color="#0000ff"><u>soft shoulder</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.1.7</clause>
+		<name>single carriageway road segment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>roadway</u></font></i> comprised of exactly one <i><font color="#0000ff"><u>carriageway</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.1.13</clause>
+		<name>traffic lane</name>
+		<definition><![CDATA[portion of <i><font color="#0000ff"><u>carriageway</u></font></i> designed to accommodate a single line of moving <i><font color="#0000ff"><u>road vehicles</u></font></i> ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.3.1.6</clause>
+		<name>travelled way</name>
+		<definition><![CDATA[part of the roadway that is currently intended for transport purposes]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.1.6</clause>
+		<name>travelled way</name>
+		<definition><![CDATA[part of the roadway that is currently intended for transport purposes]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.1.15</clause>
+		<name>usable width</name>
+		<definition><![CDATA[all <i><font color="#0000ff"><u>traffic lanes</u></font></i> of a <i><font color="#0000ff"><u>carriageway</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.3.1.11</clause>
+		<name>verge</name>
+		<definition><![CDATA[unpaved part of the <i><font color="#0000ff"><u>roadside</u></font></i> designed for travel safety purposes]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.3.2.3</clause>
+		<name>Jersey barrier</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>physical traffic separator</u></font></i> that consists of a wall with a wide, sloped base designed to divert vehicles back into their <i><font color="#0000ff"><u>traffic lane</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.2.1</clause>
+		<name>physical traffic separator</name>
+		<definition><![CDATA[mechanism used to physically separate <i><font color="#0000ff"><u>carriageways</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.3.3.1</clause>
+		<name>cycle lane</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>lane</u></font></i> designed for the through movement of cycles]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.3.3.2</clause>
+		<name>cycleway</name>
+		<definition><![CDATA[infrastructure primarily designed for the use of cycles and separate from a <i><font color="#0000ff"><u>carriageway</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.3.3.3</clause>
+		<name>footway</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>lane</u></font></i> primarily designed for the movement of pedestrians]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.3.4.1</clause>
+		<name>hard shoulder for emergency use</name>
+		<definition><![CDATA[operating mode of a hard shoulder that allows operation of emergency, construction, maintenance, or other special use vehicles or for emergency stopping and is prohibited for other vehicle usage]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.3.4.2</clause>
+		<name>hard shoulder running</name>
+		<definition><![CDATA[operating mode of a hard shoulder that allows operation of general-purpose vehicles as an extra lane]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.5.9</clause>
+		<name>lane link</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>link</u></font></i> that represents a lane of a <i><font color="#0000ff"><u>road link</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.3.5.9</clause>
+		<name>lane link</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>link</u></font></i> that represents a lane of a <i><font color="#0000ff"><u>road link</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.5.9</clause>
+		<name>lane link</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>link</u></font></i> that represents a lane of a <i><font color="#0000ff"><u>road link</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.5.10</clause>
+		<name>lane segment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>link</u></font></i> that represents a contiguous length of a <i><font color="#0000ff"><u>lane link</u></font></i> characterized by the same physical characteristics]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.3.5.10</clause>
+		<name>lane segment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>link</u></font></i> that represents a contiguous length of a <i><font color="#0000ff"><u>lane link</u></font></i> characterized by the same physical characteristics]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.5.10</clause>
+		<name>lane segment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>link</u></font></i> that represents a contiguous length of a <i><font color="#0000ff"><u>lane link</u></font></i> characterized by the same physical characteristics]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.3.5.5</clause>
+		<name>link</name>
+		<definition><![CDATA[&lt;road network&gt; component of a <i><font color="#0000ff"><u>road model</u></font></i> that represents a connection between two <i><font color="#0000ff"><u>nodes</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.3.5.5</clause>
+		<name>link</name>
+		<definition><![CDATA[&lt;road network&gt; component of a <i><font color="#0000ff"><u>road model</u></font></i> that represents a connection between two <i><font color="#0000ff"><u>nodes</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.5.5</clause>
+		<name>link</name>
+		<definition><![CDATA[&lt;road network&gt; component of a <i><font color="#0000ff"><u>road model</u></font></i> that represents a connection between two <i><font color="#0000ff"><u>nodes</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.3.5.5</clause>
+		<name>link</name>
+		<definition><![CDATA[&lt;road network&gt; component of a <i><font color="#0000ff"><u>road model</u></font></i> that represents a connection between two <i><font color="#0000ff"><u>nodes</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.5.5</clause>
+		<name>link</name>
+		<definition><![CDATA[&lt;road network&gt; component of a <i><font color="#0000ff"><u>road model</u></font></i> that represents a connection between two <i><font color="#0000ff"><u>nodes</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.3.5.4</clause>
+		<name>node</name>
+		<definition><![CDATA[&lt;road network&gt; component of a <i><font color="#0000ff"><u>road model</u></font></i> representing a point location of the road network graph]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.3.5.4</clause>
+		<name>node</name>
+		<definition><![CDATA[&lt;road network&gt; component of a <i><font color="#0000ff"><u>road model</u></font></i> representing a point location of the road network graph]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.5.4</clause>
+		<name>node</name>
+		<definition><![CDATA[&lt;road network&gt; component of a <i><font color="#0000ff"><u>road model</u></font></i> representing a point location of the road network graph]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.3.5.4</clause>
+		<name>node</name>
+		<definition><![CDATA[&lt;road network&gt; component of a <i><font color="#0000ff"><u>road model</u></font></i> representing a point location of the road network graph]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.5.4</clause>
+		<name>node</name>
+		<definition><![CDATA[&lt;road network&gt; component of a <i><font color="#0000ff"><u>road model</u></font></i> representing a point location of the road network graph]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.5.1</clause>
+		<name>road</name>
+		<definition><![CDATA[curvilinear length of <i><font color="#0000ff"><u>roadway</u></font></i> that shares the same identification]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.3.5.1</clause>
+		<name>road</name>
+		<definition><![CDATA[curvilinear length of <i><font color="#0000ff"><u>roadway</u></font></i> that shares the same identification]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.5.1</clause>
+		<name>road</name>
+		<definition><![CDATA[curvilinear length of <i><font color="#0000ff"><u>roadway</u></font></i> that shares the same identification]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.5.6</clause>
+		<name>road link</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>link</u></font></i> representing a contiguous length of a <i><font color="#0000ff"><u>road</u></font></i> between two <i><font color="#0000ff"><u>nodes</u></font></i> of operational or managerial significance]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.3.5.6</clause>
+		<name>road link</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>link</u></font></i> representing a contiguous length of a <i><font color="#0000ff"><u>road</u></font></i> between two <i><font color="#0000ff"><u>nodes</u></font></i> of operational or managerial significance]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.5.6</clause>
+		<name>road link</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>link</u></font></i> representing a contiguous length of a <i><font color="#0000ff"><u>road</u></font></i> between two <i><font color="#0000ff"><u>nodes</u></font></i> of operational or managerial significance]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.3.5.3</clause>
+		<name>road model</name>
+		<definition><![CDATA[representation of a <i><font color="#0000ff"><u>road network</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.3.5.3</clause>
+		<name>road model</name>
+		<definition><![CDATA[representation of a <i><font color="#0000ff"><u>road network</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.5.3</clause>
+		<name>road model</name>
+		<definition><![CDATA[representation of a <i><font color="#0000ff"><u>road network</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.3.5.3</clause>
+		<name>road model</name>
+		<definition><![CDATA[representation of a <i><font color="#0000ff"><u>road network</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.5.3</clause>
+		<name>road model</name>
+		<definition><![CDATA[representation of a <i><font color="#0000ff"><u>road network</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.3.5.2</clause>
+		<name>road network</name>
+		<definition><![CDATA[interconnected collection of <i><font color="#0000ff"><u>roads</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.5.2</clause>
+		<name>road network</name>
+		<definition><![CDATA[interconnected collection of <i><font color="#0000ff"><u>roads</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.3.5.2</clause>
+		<name>road network</name>
+		<definition><![CDATA[interconnected collection of <i><font color="#0000ff"><u>roads</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.5.2</clause>
+		<name>road network</name>
+		<definition><![CDATA[interconnected collection of <i><font color="#0000ff"><u>roads</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.5.7</clause>
+		<name>road section</name>
+		<definition><![CDATA[aggregation of one or more <i><font color="#0000ff"><u>road links</u></font></i> that represents a contiguous length of a <i><font color="#0000ff"><u>road</u></font></i> that shares the same management and operational strategies]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.3.5.7</clause>
+		<name>road section</name>
+		<definition><![CDATA[aggregation of one or more <i><font color="#0000ff"><u>road links</u></font></i> that represents a contiguous length of a <i><font color="#0000ff"><u>road</u></font></i> that shares the same management and operational strategies]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.5.7</clause>
+		<name>road section</name>
+		<definition><![CDATA[aggregation of one or more <i><font color="#0000ff"><u>road links</u></font></i> that represents a contiguous length of a <i><font color="#0000ff"><u>road</u></font></i> that shares the same management and operational strategies]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.5.8</clause>
+		<name>road segment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>link</u></font></i> that represents a contiguous length of a <i><font color="#0000ff"><u>road link</u></font></i> characterized by the same physical characteristics]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.3.5.8</clause>
+		<name>road segment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>link</u></font></i> that represents a contiguous length of a <i><font color="#0000ff"><u>road link</u></font></i> characterized by the same physical characteristics]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.5.8</clause>
+		<name>road segment</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>link</u></font></i> that represents a contiguous length of a <i><font color="#0000ff"><u>road link</u></font></i> characterized by the same physical characteristics]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.6.5</clause>
+		<name>egress lane</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>traffic lane</u></font></i> designed for exiting a <i><font color="#0000ff"><u>junction</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.6.6</clause>
+		<name>egress link</name>
+		<definition><![CDATA[all <i><font color="#0000ff"><u>egress lanes</u></font></i> on a <i><font color="#0000ff"><u>road link</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.3.6.10</clause>
+		<name>grade separated manoeuvre</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>manoeuvre</u></font></i> that is vertically separated from one or more manoeuvres that cross its two-dimensional path ]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.6.3</clause>
+		<name>ingress lane</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>traffic lane</u></font></i> designed for entering a <i><font color="#0000ff"><u>junction</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.6.3</clause>
+		<name>ingress lane</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>traffic lane</u></font></i> designed for entering a <i><font color="#0000ff"><u>junction</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.6.4</clause>
+		<name>ingress link</name>
+		<definition><![CDATA[all <i><font color="#0000ff"><u>ingress lanes</u></font></i> on a <i><font color="#0000ff"><u>road link</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.6.9</clause>
+		<name>interchange</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>junction</u></font></i> with at least one <i><font color="#0000ff"><u>grade separated manoeuvre</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.6.1</clause>
+		<name>intersection</name>
+		<definition><![CDATA[space where two or more <i><font color="#0000ff"><u>roads</u></font></i> meet or cross]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.6.7</clause>
+		<name>intersection manoeuvre</name>
+		<definition><![CDATA[&lt;junction&gt; movement from an <i><font color="#0000ff"><u>ingress lane</u></font></i> to an <i><font color="#0000ff"><u>egress lane</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>9</wg>
+		<clause>3.3.6.7</clause>
+		<name>intersection manoeuvre</name>
+		<definition><![CDATA[&lt;junction&gt; movement from an <i><font color="#0000ff"><u>ingress lane</u></font></i> to an <i><font color="#0000ff"><u>egress lane</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.3.6.2</clause>
+		<name>junction</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>intersection</u></font></i> that allows travellers to change <i><font color="#0000ff"><u>roads</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.3.6.8</clause>
+		<name>junction at-grade</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>junction</u></font></i> without any <i><font color="#0000ff"><u>grade separated manoeuvres</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.4.1.6</clause>
+		<name>area location</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>spatial location</u></font></i> enclosed within two-dimensional boundary/boundaries across a defined surface]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.4.1.5</clause>
+		<name>linear location</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>spatial location</u></font></i> that extends between two <i><font color="#0000ff"><u>point locations</u></font></i> along a defined path]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.4.1.1</clause>
+		<name>location</name>
+		<definition><![CDATA[particular place or position]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.4.1.3</clause>
+		<name>point location</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>spatial location</u></font></i> with no length in any of the spatial dimensions]]></definition>
+	</entry>
+	<entry>
+		<wg>10</wg>
+		<clause>3.4.1.2</clause>
+		<name>spatial location</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>location</u></font></i> within three-dimensional space]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.4.1.2</clause>
+		<name>spatial location</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>location</u></font></i> within three-dimensional space]]></definition>
+	</entry>
+	<entry>
+		<wg>10</wg>
+		<clause>3.4.2.3</clause>
+		<name>dynamic spatial reference</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>spatial reference</u></font></i> generated on-the-fly based on geographic properties in a digital map database]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.4.2.3</clause>
+		<name>dynamic spatial reference</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>spatial reference</u></font></i> generated on-the-fly based on geographic properties in a digital map database]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.4.2.7</clause>
+		<name>gazetteer</name>
+		<definition><![CDATA[register of <i><font color="#0000ff"><u>spatial references</u></font></i> of one or more location sub-types containing some information regarding position]]></definition>
+	</entry>
+	<entry>
+		<wg>10</wg>
+		<clause>3.4.2.6</clause>
+		<name>geographic identifier</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>spatial reference</u></font></i> in the form of a label or code]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.4.2.6</clause>
+		<name>geographic identifier</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>spatial reference</u></font></i> in the form of a label or code]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.4.2.5</clause>
+		<name>link location</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>pre-coded spatial reference</u></font></i> defined within the <i><font color="#0000ff"><u>road network</u></font></i> database ]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.4.2.1</clause>
+		<name>location referencing</name>
+		<definition><![CDATA[process used to develop a <i><font color="#0000ff"><u>spatial reference</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>10</wg>
+		<clause>3.4.2.4</clause>
+		<name>pre-coded spatial reference</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>spatial reference</u></font></i> using a unique identifier that is agreed upon in both sender and receiver system to select a <i><font color="#0000ff"><u>location</u></font></i> from a set of pre-coded locations]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.4.2.4</clause>
+		<name>pre-coded spatial reference</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>spatial reference</u></font></i> using a unique identifier that is agreed upon in both sender and receiver system to select a <i><font color="#0000ff"><u>location</u></font></i> from a set of pre-coded locations]]></definition>
+	</entry>
+	<entry>
+		<wg>10</wg>
+		<clause>3.4.2.2</clause>
+		<name>spatial reference</name>
+		<definition><![CDATA[description of a <i><font color="#0000ff"><u>spatial location</u></font></i> in the real world according to a defined reference system]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.4.2.2</clause>
+		<name>spatial reference</name>
+		<definition><![CDATA[description of a <i><font color="#0000ff"><u>spatial location</u></font></i> in the real world according to a defined reference system]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.4.2.2</clause>
+		<name>spatial reference</name>
+		<definition><![CDATA[description of a <i><font color="#0000ff"><u>spatial location</u></font></i> in the real world according to a defined reference system]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.1.1</clause>
+		<name>service</name>
+		<definition><![CDATA[provision of one or more capabilities, functionalities, or facilities to enable one or more tasks to fulfil a <i><font color="#0000ff"><u>need</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>10</wg>
+		<clause>3.5.1.1</clause>
+		<name>service</name>
+		<definition><![CDATA[provision of one or more capabilities, functionalities, or facilities to enable one or more tasks to fulfil a <i><font color="#0000ff"><u>need</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>3</wg>
+		<clause>3.5.1.1</clause>
+		<name>service</name>
+		<definition><![CDATA[provision of one or more capabilities, functionalities, or facilities to enable one or more tasks to fulfil a <i><font color="#0000ff"><u>need</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>4</wg>
+		<clause>3.5.1.1</clause>
+		<name>service</name>
+		<definition><![CDATA[provision of one or more capabilities, functionalities, or facilities to enable one or more tasks to fulfil a <i><font color="#0000ff"><u>need</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>5</wg>
+		<clause>3.5.1.1</clause>
+		<name>service</name>
+		<definition><![CDATA[provision of one or more capabilities, functionalities, or facilities to enable one or more tasks to fulfil a <i><font color="#0000ff"><u>need</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.1.2</clause>
+		<name>service provider</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>entity</u></font></i> that delivers one or more <i><font color="#0000ff"><u>services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>10</wg>
+		<clause>3.5.1.2</clause>
+		<name>service provider</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>entity</u></font></i> that delivers one or more <i><font color="#0000ff"><u>services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.5.1.2</clause>
+		<name>service provider</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>entity</u></font></i> that delivers one or more <i><font color="#0000ff"><u>services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>4</wg>
+		<clause>3.5.1.2</clause>
+		<name>service provider</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>entity</u></font></i> that delivers one or more <i><font color="#0000ff"><u>services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>7</wg>
+		<clause>3.5.1.2</clause>
+		<name>service provider</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>entity</u></font></i> that delivers one or more <i><font color="#0000ff"><u>services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.1.3</clause>
+		<name>user</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>entity</u></font></i> that has a <i><font color="#0000ff"><u>need</u></font></i> to be fulfilled]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.5.1.3</clause>
+		<name>user</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>entity</u></font></i> that has a <i><font color="#0000ff"><u>need</u></font></i> to be fulfilled]]></definition>
+	</entry>
+	<entry>
+		<wg>4</wg>
+		<clause>3.5.1.3</clause>
+		<name>user</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>entity</u></font></i> that has a <i><font color="#0000ff"><u>need</u></font></i> to be fulfilled]]></definition>
+	</entry>
+	<entry>
+		<wg>5</wg>
+		<clause>3.5.1.3</clause>
+		<name>user</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>entity</u></font></i> that has a <i><font color="#0000ff"><u>need</u></font></i> to be fulfilled]]></definition>
+	</entry>
+	<entry>
+		<wg>7</wg>
+		<clause>3.5.1.3</clause>
+		<name>user</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>entity</u></font></i> that has a <i><font color="#0000ff"><u>need</u></font></i> to be fulfilled]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.1.4</clause>
+		<name>user need</name>
+		<definition><![CDATA[factor or condition necessary to achieve desired results within a specified context of use]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.2.4</clause>
+		<name>transport need</name>
+		<definition><![CDATA[&lt;transport&gt;<b> </b><i><font color="#0000ff"><u>need</u></font></i> to transport one or more transport items to a different location]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.2.2</clause>
+		<name>transport provider</name>
+		<definition><![CDATA[&lt;transport&gt; <i><font color="#0000ff"><u>entity</u></font></i> that delivers one or more <i><font color="#0000ff"><u>transport services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.5.2.2</clause>
+		<name>transport provider</name>
+		<definition><![CDATA[&lt;transport&gt; <i><font color="#0000ff"><u>entity</u></font></i> that delivers one or more <i><font color="#0000ff"><u>transport services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.2.1</clause>
+		<name>transport service</name>
+		<definition><![CDATA[&lt;transport&gt; <i><font color="#0000ff"><u>service</u></font></i> that delivers one or more <i><font color="#0000ff"><u>material entities</u></font></i> from one location to another to satisfy a <i><font color="#0000ff"><u>transport need</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.2.3</clause>
+		<name>transport user</name>
+		<definition><![CDATA[&lt;transport&gt; <i><font color="#0000ff"><u>consumer</u></font></i> that has a <i><font color="#0000ff"><u>transport need</u></font></i> to be fulfilled]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.3.1</clause>
+		<name>ITS service</name>
+		<definition><![CDATA[functionality that fulfils one or more <i><font color="#0000ff"><u>ITS user needs</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.5.3.1</clause>
+		<name>ITS service</name>
+		<definition><![CDATA[functionality that fulfils one or more <i><font color="#0000ff"><u>ITS user needs</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.5.3.1</clause>
+		<name>ITS service</name>
+		<definition><![CDATA[functionality that fulfils one or more <i><font color="#0000ff"><u>ITS user needs</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>17</wg>
+		<clause>3.5.3.1</clause>
+		<name>ITS service</name>
+		<definition><![CDATA[functionality that fulfils one or more <i><font color="#0000ff"><u>ITS user needs</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.5.3.1</clause>
+		<name>ITS service</name>
+		<definition><![CDATA[functionality that fulfils one or more <i><font color="#0000ff"><u>ITS user needs</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>7</wg>
+		<clause>3.5.3.1</clause>
+		<name>ITS service</name>
+		<definition><![CDATA[functionality that fulfils one or more <i><font color="#0000ff"><u>ITS user needs</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.3.2</clause>
+		<name>ITS service provider</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>entity</u></font></i> that delivers one or more <i><font color="#0000ff"><u>ITS services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.3.3</clause>
+		<name>ITS user</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>entity</u></font></i> that has an <i><font color="#0000ff"><u>ITS user need</u></font></i> to be fulfilled]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.3.4</clause>
+		<name>ITS user need</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>need</u></font></i> of an entity external to the intelligent transport system for a <i><font color="#0000ff"><u>surface transport system</u></font></i> benefit that can be met with the use of information, communication, sensor, and/or control technologies]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.4.1</clause>
+		<name>ITS-S service</name>
+		<definition><![CDATA[&lt;ITS-S&gt; performance of one or more tasks<b> </b>to fulfil an <i><font color="#0000ff"><u>ITS-S user need</u></font></i> for an<b> </b><i><font color="#0000ff"><u>ITS-S user</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.5.4.1</clause>
+		<name>ITS-S service</name>
+		<definition><![CDATA[&lt;ITS-S&gt; performance of one or more tasks<b> </b>to fulfil an <i><font color="#0000ff"><u>ITS-S user need</u></font></i> for an<b> </b><i><font color="#0000ff"><u>ITS-S user</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.4.2</clause>
+		<name>ITS-S service provider</name>
+		<definition><![CDATA[&lt;ITS-S&gt; <i><font color="#0000ff"><u>ITS-S</u></font></i> that delivers one or more <i><font color="#0000ff"><u>ITS-S services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.4.3</clause>
+		<name>ITS-S user</name>
+		<definition><![CDATA[&lt;ITS-S&gt; <i><font color="#0000ff"><u>entity</u></font></i> that has an <i><font color="#0000ff"><u>ITS-S user need</u></font></i> to be fulfilled]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.4.4</clause>
+		<name>ITS-S user need</name>
+		<definition><![CDATA[&lt;ITS-S&gt; <i><font color="#0000ff"><u>need</u></font></i> for processing within a <i><font color="#0000ff"><u>bounded, secure, managed domain</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.5.4</clause>
+		<name>ITS-S communication need</name>
+		<definition><![CDATA[&lt;ITS-S&gt; <i><font color="#0000ff"><u>need</u></font></i> for communication functionality that connects an <i><font color="#0000ff"><u>ITS-S</u></font></i> to other nodes]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.5.1</clause>
+		<name>ITS-S communication process</name>
+		<definition><![CDATA[&lt;ITS-S&gt; <i><font color="#0000ff"><u>entity</u></font></i> that delivers one or more<b> </b><i><font color="#0000ff"><u>ITS-S communication services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.5.2</clause>
+		<name>ITS-S communication service</name>
+		<definition><![CDATA[&lt;ITS-S&gt;<b> </b>performance of one or more tasks<b> </b>to fulfil an <i><font color="#0000ff"><u>ITS-S communication need</u></font></i> for an <i><font color="#0000ff"><u>ITS-S communication user</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.5.5.2</clause>
+		<name>ITS-S communication service</name>
+		<definition><![CDATA[&lt;ITS-S&gt;<b> </b>performance of one or more tasks<b> </b>to fulfil an <i><font color="#0000ff"><u>ITS-S communication need</u></font></i> for an <i><font color="#0000ff"><u>ITS-S communication user</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>17</wg>
+		<clause>3.5.5.2</clause>
+		<name>ITS-S communication service</name>
+		<definition><![CDATA[&lt;ITS-S&gt;<b> </b>performance of one or more tasks<b> </b>to fulfil an <i><font color="#0000ff"><u>ITS-S communication need</u></font></i> for an <i><font color="#0000ff"><u>ITS-S communication user</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.5.5.2</clause>
+		<name>ITS-S communication service</name>
+		<definition><![CDATA[&lt;ITS-S&gt;<b> </b>performance of one or more tasks<b> </b>to fulfil an <i><font color="#0000ff"><u>ITS-S communication need</u></font></i> for an <i><font color="#0000ff"><u>ITS-S communication user</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.5.5.3</clause>
+		<name>ITS-S communication user</name>
+		<definition><![CDATA[&lt;ITS-S&gt; <i><font color="#0000ff"><u>entity</u></font></i> that has an <i><font color="#0000ff"><u>ITS-S communication need</u></font></i> to be fulfilled]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.6.1</clause>
+		<name>public transport</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>transport service</u></font></i> that is publicly accessible enabling the movement of one or more <i><font color="#0000ff"><u>persons</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.5.6.1</clause>
+		<name>public transport</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>transport service</u></font></i> that is publicly accessible enabling the movement of one or more <i><font color="#0000ff"><u>persons</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.6.2</clause>
+		<name>shared transport service</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>transport service</u></font></i> that relies upon the same resources to fulfil the <i><font color="#0000ff"><u>transport needs</u></font></i> of multiple unrelated <i><font color="#0000ff"><u>transport users</u></font></i> and where the <i><font color="#0000ff"><u>transport provider</u></font></i> has the primary responsibility for the operation of the transport mode]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.5.6.2</clause>
+		<name>shared transport service</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>transport service</u></font></i> that relies upon the same resources to fulfil the <i><font color="#0000ff"><u>transport needs</u></font></i> of multiple unrelated <i><font color="#0000ff"><u>transport users</u></font></i> and where the <i><font color="#0000ff"><u>transport provider</u></font></i> has the primary responsibility for the operation of the transport mode]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.6.3</clause>
+		<name>shared vehicle service</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>transport service</u></font></i> that sequentially provides the same <i><font color="#0000ff"><u>vehicles</u></font></i> to multiple unrelated <i><font color="#0000ff"><u>transport users</u></font></i> and where the transport user has the primary responsibility for the operation of the vehicle]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.5.6.3</clause>
+		<name>shared vehicle service</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>transport service</u></font></i> that sequentially provides the same <i><font color="#0000ff"><u>vehicles</u></font></i> to multiple unrelated <i><font color="#0000ff"><u>transport users</u></font></i> and where the transport user has the primary responsibility for the operation of the vehicle]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.6.4</clause>
+		<name>transport sharing</name>
+		<definition><![CDATA[using a <i><font color="#0000ff"><u>shared transport service</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.6.5</clause>
+		<name>vehicle sharing</name>
+		<definition><![CDATA[using a <i><font color="#0000ff"><u>shared vehicle service</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.7.1</clause>
+		<name>contractual model</name>
+		<definition><![CDATA[legal framework for the agreement between a <i><font color="#0000ff"><u>service provider</u></font></i> and a <i><font color="#0000ff"><u>user</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.7.2</clause>
+		<name>corporate customer model</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>contractual model</u></font></i> where the <i><font color="#0000ff"><u>user</u></font></i> is a commercial entity]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.7.4</clause>
+		<name>government customer model</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>contractual model</u></font></i> where the <i><font color="#0000ff"><u>user</u></font></i> is a governmental entity]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.7.5</clause>
+		<name>peer-to-peer model</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>private customer model</u></font></i> where the <i><font color="#0000ff"><u>service provider</u></font></i> is an individual]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.7.3</clause>
+		<name>private customer model</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>contractual model</u></font></i> where the <i><font color="#0000ff"><u>user</u></font></i> is an individual]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.8.2</clause>
+		<name>commercial</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>financial model</u></font></i> where <i><font color="#0000ff"><u>services</u></font></i> are provided with a profit motive]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.8.4</clause>
+		<name>cooperative</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>financial model</u></font></i> where <i><font color="#0000ff"><u>users</u></font></i> partner to defray the costs of a <i><font color="#0000ff"><u>service</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.8.1</clause>
+		<name>financial model</name>
+		<definition><![CDATA[economic framework for the agreement between a <i><font color="#0000ff"><u>service provider</u></font></i> and a <i><font color="#0000ff"><u>user</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.8.6</clause>
+		<name>fractional ownership</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>cooperative</u></font></i> financial model where <i><font color="#0000ff"><u>users</u></font></i> partner to support the purchase, maintenance, and overhead costs associated with a <i><font color="#0000ff"><u>service</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.8.8</clause>
+		<name>membership-based</name>
+		<definition><![CDATA[characteristic of a <i><font color="#0000ff"><u>financial model</u></font></i> that requires <i><font color="#0000ff"><u>users</u></font></i> to enter into an agreement prior to receiving <i><font color="#0000ff"><u>services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.8.5</clause>
+		<name>mutual benefit</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>cooperative</u></font></i> financial model where <i><font color="#0000ff"><u>users</u></font></i> partner on a per-use basis]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.8.9</clause>
+		<name>open-access</name>
+		<definition><![CDATA[characteristic of a <i><font color="#0000ff"><u>financial model</u></font></i> that does not require membership within an organization to receive <i><font color="#0000ff"><u>services</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.8.7</clause>
+		<name>private</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>financial model</u></font></i> where <i><font color="#0000ff"><u>services</u></font></i> are provided to members of the owning organization without usage fees]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.8.3</clause>
+		<name>public</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>financial model</u></font></i> where <i><font color="#0000ff"><u>services</u></font></i> are provided by an administrative authority in an attempt to better serve societal interests]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.9.3</clause>
+		<name>concurrent</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>operational model</u></font></i> where <i><font color="#0000ff"><u>services</u></font></i> might be provided to multiple <i><font color="#0000ff"><u>users</u></font></i> at any one time]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.9.5</clause>
+		<name>dynamic route</name>
+		<definition><![CDATA[&lt;transport service&gt; <i><font color="#0000ff"><u>concurrent</u></font></i> operation where transported items can only be received or delivered at stopping points within a pre-defined service corridor]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.9.4</clause>
+		<name>fixed route</name>
+		<definition><![CDATA[&lt;transport service&gt; <i><font color="#0000ff"><u>concurrent</u></font></i> operation where transported items can only be received or delivered at stopping points contained in a pre-defined sequence]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.9.1</clause>
+		<name>operational model</name>
+		<definition><![CDATA[logistical framework for the agreement between a <i><font color="#0000ff"><u>service provider</u></font></i> and a <i><font color="#0000ff"><u>user</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.9.6</clause>
+		<name>paired on-demand</name>
+		<definition><![CDATA[&lt;transport service&gt; <i><font color="#0000ff"><u>concurrent</u></font></i> operation where the <i><font color="#0000ff"><u>transport provider</u></font></i> may choose to divert from its path to service a new request from another <i><font color="#0000ff"><u>transport user</u></font></i> while servicing an earlier transport consumer]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.9.2</clause>
+		<name>sequential</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>operational model</u></font></i> where <i><font color="#0000ff"><u>services</u></font></i> are provided to a single <i><font color="#0000ff"><u>user</u></font></i> at any one time]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.10.4</clause>
+		<name>free-floating</name>
+		<definition><![CDATA[&lt;transport service&gt; <i><font color="#0000ff"><u>network model</u></font></i> where the <i><font color="#0000ff"><u>transport service</u></font></i> may be initiated and terminated at any location meeting basic criteria]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.10.1</clause>
+		<name>network model</name>
+		<definition><![CDATA[infrastructure framework for the agreement between a <i><font color="#0000ff"><u>service provider</u></font></i> and a <i><font color="#0000ff"><u>user</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.10.3</clause>
+		<name>station-based one-way</name>
+		<definition><![CDATA[&lt;transport service&gt; <i><font color="#0000ff"><u>operational mode</u></font></i> where the <i><font color="#0000ff"><u>transport service</u></font></i> is initiated and terminated at two different facilities managed by the <i><font color="#0000ff"><u>transport provider</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.10.2</clause>
+		<name>station-based roundtrip</name>
+		<definition><![CDATA[&lt;transport service&gt; <i><font color="#0000ff"><u>operational mode</u></font></i> where the <i><font color="#0000ff"><u>transport service</u></font></i> is initiated and terminated at the same facility managed by the <i><font color="#0000ff"><u>transport provider</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.11.7</clause>
+		<name>courier network service</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>commercial</u></font></i>, <i><font color="#0000ff"><u>peer-to-peer</u></font></i> <i><font color="#0000ff"><u>shared transport service</u></font></i> that transports goods]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.11.4</clause>
+		<name>rideshare service</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>cooperative</u></font></i> <i><font color="#0000ff"><u>shared transport service</u></font></i> that transports passengers <i><font color="#0000ff"><u>concurrently</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.11.5</clause>
+		<name>ridesourced service</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>commercial</u></font></i>, <i><font color="#0000ff"><u>peer-to-peer</u></font></i> <i><font color="#0000ff"><u>shared transport service</u></font></i> that transports passengers]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.11.6</clause>
+		<name>ridesplit service</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ridesourced service</u></font></i> that serves passengers <i><font color="#0000ff"><u>concurrently</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.11.1</clause>
+		<name>shuttle service</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>shared transport service</u></font></i> that transports passengers between two specified <i><font color="#0000ff"><u>locations</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.5.11.1</clause>
+		<name>shuttle service</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>shared transport service</u></font></i> that transports passengers between two specified <i><font color="#0000ff"><u>locations</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.11.2</clause>
+		<name>taxi service</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>commercial</u></font></i> <i><font color="#0000ff"><u>shared transport service</u></font></i> that transports passengers <i><font color="#0000ff"><u>sequentially</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.11.3</clause>
+		<name>taxi-share service</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>commercial</u></font></i> <i><font color="#0000ff"><u>shared transport service</u></font></i> that transports passengers <i><font color="#0000ff"><u>concurrently</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.12.1</clause>
+		<name>bikesharing service</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>shared vehicle service</u></font></i> that shares bicycles]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.12.2</clause>
+		<name>carsharing service</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>shared vehicle service</u></font></i> that shares passenger cars]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.13.2</clause>
+		<name>B2C mobility sharing app</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>mobility app</u></font></i> that assists a <i><font color="#0000ff"><u>transport user</u></font></i> in acquiring a <i><font color="#0000ff"><u>transport service</u></font></i> from a specific business]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.13.1</clause>
+		<name>mobility app</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ITS-S application implementation</u></font></i> designed to assist an individual transport consumer in understanding transport-related information, making decisions, and/or acting upon decisions]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.13.4</clause>
+		<name>navigation app</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>mobility app</u></font></i> that assists a <i><font color="#0000ff"><u>transport user</u></font></i> to determine the best route to a destination ]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.13.5</clause>
+		<name>P2P mobility sharing app</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>mobility app</u></font></i> that assists a <i><font color="#0000ff"><u>transport user</u></font></i> in acquiring a <i><font color="#0000ff"><u>transport service</u></font></i> from an individual that participates in the mobility app's network]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.13.7</clause>
+		<name>public transport app</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>mobility app</u></font></i> that assists a <i><font color="#0000ff"><u>transport user</u></font></i> in using a <i><font color="#0000ff"><u>public transport</u></font></i> system ]]></definition>
+	</entry>
+	<entry>
+		<wg>8</wg>
+		<clause>3.5.13.7</clause>
+		<name>public transport app</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>mobility app</u></font></i> that assists a <i><font color="#0000ff"><u>transport user</u></font></i> in using a <i><font color="#0000ff"><u>public transport</u></font></i> system ]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.13.8</clause>
+		<name>real-time traveller information app</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>mobility app</u></font></i> that provides information about current travel conditions to a <i><font color="#0000ff"><u>transport user</u></font></i> ]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.13.6</clause>
+		<name>ridesourcing app</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>P2P mobility sharing app</u></font></i> for acquiring a <i><font color="#0000ff"><u>ridesourced service</u></font></i> ]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.13.9</clause>
+		<name>taxi hailing app</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>mobility app</u></font></i> that assists a <i><font color="#0000ff"><u>transport user</u></font></i> in electronically requesting a taxi ]]></definition>
+	</entry>
+	<entry>
+		<wg>19</wg>
+		<clause>3.5.13.10</clause>
+		<name>trip aggregator app</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>mobility app</u></font></i> that assists a <i><font color="#0000ff"><u>transport user</u></font></i> in planning trips that may span multiple vehicle modes or transport providers]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.6.1.4</clause>
+		<name>pedestrian</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>person</u></font></i> who is travelling on foot]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.6.1.2</clause>
+		<name>road user</name>
+		<definition><![CDATA[mobile <i><font color="#0000ff"><u>material entity</u></font></i> within the <i><font color="#0000ff"><u>road reservation</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.6.1.1</clause>
+		<name>traveller</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>person</u></font></i>, in the role of a <i><font color="#0000ff"><u>transport item</u></font></i>, who is headed to a destination]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.6.2.3</clause>
+		<name>driver</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>person</u></font></i> that is currently responsible for the <i><font color="#0000ff"><u>dynamic driving task</u></font></i> for the <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>7</wg>
+		<clause>3.6.2.3</clause>
+		<name>driver</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>person</u></font></i> that is currently responsible for the <i><font color="#0000ff"><u>dynamic driving task</u></font></i> for the <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.6.2.4</clause>
+		<name>in-vehicle driver</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>driver</u></font></i> that performs the <i><font color="#0000ff"><u>dynamic driving task</u></font></i> using the vehicle's <i><font color="#0000ff"><u>built-in input devices</u></font></i> to control the longitudinal and lateral movement of the vehicle]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.6.2.4</clause>
+		<name>in-vehicle driver</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>driver</u></font></i> that performs the <i><font color="#0000ff"><u>dynamic driving task</u></font></i> using the vehicle's <i><font color="#0000ff"><u>built-in input devices</u></font></i> to control the longitudinal and lateral movement of the vehicle]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.6.2.1</clause>
+		<name>passenger</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>person</u></font></i> who has a reservation to travel or is travelling in a <i><font color="#0000ff"><u>vehicle</u></font></i> except for any crew, staff, or drivers]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.6.2.5</clause>
+		<name>remote driver</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>driver</u></font></i> that performs the <i><font color="#0000ff"><u>dynamic driving task</u></font></i> without using the vehicle's <i><font color="#0000ff"><u>built-in input devices</u></font></i> to control the longitudinal and lateral movement of the vehicle]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.6.2.5</clause>
+		<name>remote driver</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>driver</u></font></i> that performs the <i><font color="#0000ff"><u>dynamic driving task</u></font></i> without using the vehicle's <i><font color="#0000ff"><u>built-in input devices</u></font></i> to control the longitudinal and lateral movement of the vehicle]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.6.2.2</clause>
+		<name>vehicle occupant</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>person</u></font></i> in or on a <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.1.5</clause>
+		<name>built-in vehicle input device</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>input device</u></font></i> designed to be physically connected to a <i><font color="#0000ff"><u>vehicle</u></font></i> and to remain connected even when the vehicle is not in use]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.1.4</clause>
+		<name>input device</name>
+		<definition><![CDATA[&lt;vehicle&gt; <i><font color="#0000ff"><u>material entity</u></font></i> that can affect the <i><font color="#0000ff"><u>vehicle's</u></font></i> operation]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.1.2</clause>
+		<name>motor</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>material entity</u></font></i> that converts energy into mechanical motion]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.1.6</clause>
+		<name>nomadic vehicle input device</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>input device</u></font></i> capable to be carried into, or in near proximity of, a <i><font color="#0000ff"><u>vehicle</u></font></i> and connected as desired ]]></definition>
+	</entry>
+	<entry>
+		<wg>17</wg>
+		<clause>3.7.1.6</clause>
+		<name>nomadic vehicle input device</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>input device</u></font></i> capable to be carried into, or in near proximity of, a <i><font color="#0000ff"><u>vehicle</u></font></i> and connected as desired ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.1.7</clause>
+		<name>remote vehicle input device</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>input device</u></font></i> designed to be electronically connected to a <i><font color="#0000ff"><u>vehicle</u></font></i> even when the vehicle is not in close proximity]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.1.1</clause>
+		<name>vehicle</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>material entity</u></font></i><font color="#042655"> designed to transport people or physical goods by changing its physical position</font>]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.7.1.1</clause>
+		<name>vehicle</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>material entity</u></font></i><font color="#042655"> designed to transport people or physical goods by changing its physical position</font>]]></definition>
+	</entry>
+	<entry>
+		<wg>7</wg>
+		<clause>3.7.1.1</clause>
+		<name>vehicle</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>material entity</u></font></i><font color="#042655"> designed to transport people or physical goods by changing its physical position</font>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.1.3</clause>
+		<name>wheel</name>
+		<definition><![CDATA[circular <i><font color="#0000ff"><u>material entity</u></font></i> that rotates about an axle to facilitate movement of the <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.2.2</clause>
+		<name>design speed</name>
+		<definition><![CDATA[&lt;vehicle&gt; maximum <i><font color="#0000ff"><u>speed</u></font></i> at which a <i><font color="#0000ff"><u>vehicle</u></font></i> is intended to operate for a sustained period of time]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.2.1</clause>
+		<name>speed</name>
+		<definition><![CDATA[rate of change of a <i><font color="#0000ff"><u>material entities</u></font></i> position with respect to a frame of reference ]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.7.2.1</clause>
+		<name>speed</name>
+		<definition><![CDATA[rate of change of a <i><font color="#0000ff"><u>material entities</u></font></i> position with respect to a frame of reference ]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.7.3.10</clause>
+		<name>ADS</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>driving automation system</u></font></i> that is able to perform the entire <i><font color="#0000ff"><u>DDT</u></font></i> on a sustained basis]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.7.3.17</clause>
+		<name>ADS-dedicated vehicle</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ADS-equipped vehicle</u></font></i> designed for only <i>driverless operation </i>for complete <i>trips</i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.3.15</clause>
+		<name>ADS-equipped vehicle</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle</u></font></i> integrated with an <i><font color="#0000ff"><u>ADS</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.7.3.15</clause>
+		<name>ADS-equipped vehicle</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle</u></font></i> integrated with an <i><font color="#0000ff"><u>ADS</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.7.3.14</clause>
+		<name>conventional vehicle</name>
+		<definition><![CDATA[&lt;driving automation&gt; <i><font color="#0000ff"><u>vehicle</u></font></i><i> </i>designed to be operated by a <i><font color="#0000ff"><u>person</u></font></i> during part or all of every <i>trip</i>.]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.7.3.5</clause>
+		<name>DDT performance-relevant system failure</name>
+		<definition><![CDATA[malfunction in a vehicle system that prevents the <i><font color="#0000ff"><u>driving automation system</u></font></i> from reliably performing its portion of the <i><font color="#0000ff"><u>DDT</u></font></i> on a sustained basis]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.7.3.7</clause>
+		<name>driver spport system</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>driving automation system</u></font></i> that is only able to perform part of the <i><font color="#0000ff"><u>DDT</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.7.3.6</clause>
+		<name>driving automation system</name>
+		<definition><![CDATA[hardware and software <i><font color="#0000ff"><u>system</u></font></i> that is able to perform part or all of the <i><font color="#0000ff"><u>DDT</u></font></i> on a sustained basis]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.7.3.16</clause>
+		<name>dual-mode vehicle</name>
+		<definition><![CDATA[&lt;driving automation&gt;<i> </i><i><font color="#0000ff"><u>ADS-equipped vehicle</u></font></i> designed for both <i>driverless operation </i>and operation by a <i><font color="#0000ff"><u>conventional driver</u></font></i><i> </i>for complete <i>trips</i>]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.7.3.1</clause>
+		<name>dynamic driving task</name>
+		<definition><![CDATA[all real-time operational and tactical functions required to operate a <i><font color="#0000ff"><u>vehicle</u></font></i> in on-road traffic]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.7.3.3</clause>
+		<name>fallback</name>
+		<definition><![CDATA[&lt;driving automation&gt; response by a <i><font color="#0000ff"><u>person</u></font></i> to perform the <i><font color="#0000ff"><u>DDT</u></font></i> or by an <i><font color="#0000ff"><u>ADS</u></font></i> to achieve a minimal risk condition when the response is triggered upon violation of the defined <i><font color="#0000ff"><u>operational design domain</u></font></i> constraints or in response to a <i><font color="#0000ff"><u>DDT performance-relevant driving automation system failure</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.7.3.4</clause>
+		<name>fallback-ready user</name>
+		<definition><![CDATA[&lt;driving automation&gt; <i><font color="#0000ff"><u>person</u></font></i> who is able to operate the vehicle if the <i><font color="#0000ff"><u>Level 3 ADS</u></font></i> issues a request to intervene or if s/he otherwise identifies a condition that requires intervention to perform the <i><font color="#0000ff"><u>DDT</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.7.3.8</clause>
+		<name>level 1 driving automation</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>driver support system</u></font></i> that provides either sustained lateral or sustained longitudinal vehicle motion control within a specific <i><font color="#0000ff"><u>operational design domain</u></font></i> with the expectation that a <i><font color="#0000ff"><u>conventional driver</u></font></i> completes the dynamic driving task]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.7.3.9</clause>
+		<name>level 2 driving automation</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>driver support system</u></font></i> that provides sustained lateral and longitudinal vehicle motion control within a specific <i><font color="#0000ff"><u>operational design domain</u></font></i> with the expectation that a <i><font color="#0000ff"><u>conventional driver</u></font></i> completes the object and event detection and response]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.3.11</clause>
+		<name>level 3 ADS</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ADS</u></font></i> designed with the expectation that the <i><font color="#0000ff"><u>fallback-ready user</u></font></i> is available to intervene]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.7.3.11</clause>
+		<name>level 3 ADS</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ADS</u></font></i> designed with the expectation that the <i><font color="#0000ff"><u>fallback-ready user</u></font></i> is available to intervene]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.3.12</clause>
+		<name>level 4 ADS</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ADS</u></font></i> that is capable of operating within a specific <i><font color="#0000ff"><u>ODD</u></font></i> and providing its own <i><font color="#0000ff"><u>fallback</u></font></i>, without any expectation that a human <i><font color="#0000ff"><u>driver</u></font></i> will respond to a request to intervene]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.7.3.12</clause>
+		<name>level 4 ADS</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ADS</u></font></i> that is capable of operating within a specific <i><font color="#0000ff"><u>ODD</u></font></i> and providing its own <i><font color="#0000ff"><u>fallback</u></font></i>, without any expectation that a human <i><font color="#0000ff"><u>driver</u></font></i> will respond to a request to intervene]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.3.13</clause>
+		<name>level 5 ADS</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ADS</u></font></i> that is capable of unconditional (i.e., not <i><font color="#0000ff"><u>ODD</u></font></i>-specific) operation and providing its own <i><font color="#0000ff"><u>fallback</u></font></i>, without any expectation that a human <i><font color="#0000ff"><u>driver</u></font></i> will respond to a request to intervene]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.7.3.13</clause>
+		<name>level 5 ADS</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>ADS</u></font></i> that is capable of unconditional (i.e., not <i><font color="#0000ff"><u>ODD</u></font></i>-specific) operation and providing its own <i><font color="#0000ff"><u>fallback</u></font></i>, without any expectation that a human <i><font color="#0000ff"><u>driver</u></font></i> will respond to a request to intervene]]></definition>
+	</entry>
+	<entry>
+		<wg>14</wg>
+		<clause>3.7.3.2</clause>
+		<name>operational design domain</name>
+		<definition><![CDATA[set of operating conditions under which a given <i><font color="#0000ff"><u>driving automation system</u></font></i> or feature thereof is specifically designed to function]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.4.3</clause>
+		<name>disconnected</name>
+		<definition><![CDATA[characteristic of a <i><font color="#0000ff"><u>material entity</u></font></i> that is<font color="#313131"> or was equipped with communications equipment </font>that is sufficiently physically disconnected such that the vehicle is no longer able to send data to or receive data from <i><font color="#0000ff"><u>connected</u></font></i> entities]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.7.4.3</clause>
+		<name>disconnected</name>
+		<definition><![CDATA[characteristic of a <i><font color="#0000ff"><u>material entity</u></font></i> that is<font color="#313131"> or was equipped with communications equipment </font>that is sufficiently physically disconnected such that the vehicle is no longer able to send data to or receive data from <i><font color="#0000ff"><u>connected</u></font></i> entities]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.7.4.3</clause>
+		<name>disconnected</name>
+		<definition><![CDATA[characteristic of a <i><font color="#0000ff"><u>material entity</u></font></i> that is<font color="#313131"> or was equipped with communications equipment </font>that is sufficiently physically disconnected such that the vehicle is no longer able to send data to or receive data from <i><font color="#0000ff"><u>connected</u></font></i> entities]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.4.1</clause>
+		<name>off-grid</name>
+		<definition><![CDATA[characteristic of a <i><font color="#0000ff"><u>material entity</u></font></i> that is<font color="#313131"> currently unable to </font>send data to or receive data from <i><font color="#0000ff"><u>connected</u></font></i> entities]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.7.4.1</clause>
+		<name>off-grid</name>
+		<definition><![CDATA[characteristic of a <i><font color="#0000ff"><u>material entity</u></font></i> that is<font color="#313131"> currently unable to </font>send data to or receive data from <i><font color="#0000ff"><u>connected</u></font></i> entities]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.7.4.1</clause>
+		<name>off-grid</name>
+		<definition><![CDATA[characteristic of a <i><font color="#0000ff"><u>material entity</u></font></i> that is<font color="#313131"> currently unable to </font>send data to or receive data from <i><font color="#0000ff"><u>connected</u></font></i> entities]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.4.2</clause>
+		<name>unconnected</name>
+		<definition><![CDATA[characteristic of a <i><font color="#0000ff"><u>material entity</u></font></i> that is<font color="#313131"> equipped with communications equipment </font>that is not active or is otherwise unable to send data to or receive data from <i><font color="#0000ff"><u>connected</u></font></i> entities]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.7.4.2</clause>
+		<name>unconnected</name>
+		<definition><![CDATA[characteristic of a <i><font color="#0000ff"><u>material entity</u></font></i> that is<font color="#313131"> equipped with communications equipment </font>that is not active or is otherwise unable to send data to or receive data from <i><font color="#0000ff"><u>connected</u></font></i> entities]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.7.4.2</clause>
+		<name>unconnected</name>
+		<definition><![CDATA[characteristic of a <i><font color="#0000ff"><u>material entity</u></font></i> that is<font color="#313131"> equipped with communications equipment </font>that is not active or is otherwise unable to send data to or receive data from <i><font color="#0000ff"><u>connected</u></font></i> entities]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.4.4</clause>
+		<name>unequipped</name>
+		<definition><![CDATA[characteristic of a <i><font color="#0000ff"><u>material entity</u></font></i> that is<font color="#313131"> not and has never been equipped with communications equipment for sending data to or receiving data from </font><i><font color="#0000ff"><u>connected</u></font></i><font color="#313131"> </font>entities]]></definition>
+	</entry>
+	<entry>
+		<wg>16</wg>
+		<clause>3.7.4.4</clause>
+		<name>unequipped</name>
+		<definition><![CDATA[characteristic of a <i><font color="#0000ff"><u>material entity</u></font></i> that is<font color="#313131"> not and has never been equipped with communications equipment for sending data to or receiving data from </font><i><font color="#0000ff"><u>connected</u></font></i><font color="#313131"> </font>entities]]></definition>
+	</entry>
+	<entry>
+		<wg>18</wg>
+		<clause>3.7.4.4</clause>
+		<name>unequipped</name>
+		<definition><![CDATA[characteristic of a <i><font color="#0000ff"><u>material entity</u></font></i> that is<font color="#313131"> not and has never been equipped with communications equipment for sending data to or receiving data from </font><i><font color="#0000ff"><u>connected</u></font></i><font color="#313131"> </font>entities]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.5.12</clause>
+		<name>high vehicle speed</name>
+		<definition><![CDATA[speed of a <i><font color="#0000ff"><u>vehicle</u></font></i> that exceeds free flow motorway speeds by a factor of two or more]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.5.6</clause>
+		<name>high-speed vehicle</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle</u></font></i> with a <i><font color="#0000ff"><u>design speed</u></font></i> in the range of <i><font color="#0000ff"><u>high vehicle speeds</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.5.8</clause>
+		<name>low vehicle speed</name>
+		<definition><![CDATA[speed of a <i><font color="#0000ff"><u>vehicle</u></font></i> that exceeds pedestrian speeds and is more typical of pedal cycles]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.5.2</clause>
+		<name>low-speed vehicle</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle</u></font></i> with a <i><font color="#0000ff"><u>design speed</u></font></i> in the range of <i><font color="#0000ff"><u>low vehicle speeds</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.5.10</clause>
+		<name>moderate vehicle speed </name>
+		<definition><![CDATA[speed of a <i><font color="#0000ff"><u>vehicle</u></font></i> that exceeds <i><font color="#0000ff"><u>moderately-low vehicle speeds</u></font></i> but does not reach free-flow motorway speeds]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.5.11</clause>
+		<name>moderately high vehicle speed</name>
+		<definition><![CDATA[speed of a <i><font color="#0000ff"><u>vehicle</u></font></i> that is typical of free-flow motorway speeds to twice that speed]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.5.5</clause>
+		<name>moderately high-speed vehicle</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle</u></font></i> with a <i><font color="#0000ff"><u>design speed</u></font></i> in the range of <i><font color="#0000ff"><u>moderately-high vehicle speeds</u></font></i> ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.5.9</clause>
+		<name>moderately low vehicle speed</name>
+		<definition><![CDATA[speed of a <i><font color="#0000ff"><u>vehicle</u></font></i> that exceeds speeds typical of pedal cycles but can be reached on performance pedal cycles in short bursts or by performance riders ]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.5.3</clause>
+		<name>moderately low-speed vehicle</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle</u></font></i> with a <i><font color="#0000ff"><u>design speed</u></font></i> in the range of <i><font color="#0000ff"><u>moderately-low vehicle speeds</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.5.4</clause>
+		<name>moderate-speed vehicle</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle</u></font></i> with a <i><font color="#0000ff"><u>design speed</u></font></i> in the range of <i><font color="#0000ff"><u>moderate vehicle speeds</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.5.7</clause>
+		<name>ultra-low vehicle speed</name>
+		<definition><![CDATA[speed of a <i><font color="#0000ff"><u>vehicle</u></font></i> that does not greatly exceed typical pedestrian speeds]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.5.1</clause>
+		<name>ultra-low-speed vehicle</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle</u></font></i> with a <i><font color="#0000ff"><u>design speed</u></font></i> that does not exceed <i><font color="#0000ff"><u>ultra-low vehicle speeds</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.6.3</clause>
+		<name>motor vehicle</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>motorized</u></font></i> <i><font color="#0000ff"><u>road vehicle</u></font></i> allowed to operate in the same driving spaces as motorized passenger cars]]></definition>
+	</entry>
+	<entry>
+		<wg>10</wg>
+		<clause>3.7.6.3</clause>
+		<name>motor vehicle</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>motorized</u></font></i> <i><font color="#0000ff"><u>road vehicle</u></font></i> allowed to operate in the same driving spaces as motorized passenger cars]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.6.2</clause>
+		<name>motorized vehicle</name>
+		<definition><![CDATA[self-propelled <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>10</wg>
+		<clause>3.7.6.2</clause>
+		<name>motorized vehicle</name>
+		<definition><![CDATA[self-propelled <i><font color="#0000ff"><u>vehicle</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.6.6</clause>
+		<name>non-road cycle</name>
+		<definition><![CDATA[human-powered <i><font color="#0000ff"><u>vehicle</u></font></i> not meeting the legal requirements to be driven in <i><font color="#0000ff"><u>cycle lanes</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>10</wg>
+		<clause>3.7.6.6</clause>
+		<name>non-road cycle</name>
+		<definition><![CDATA[human-powered <i><font color="#0000ff"><u>vehicle</u></font></i> not meeting the legal requirements to be driven in <i><font color="#0000ff"><u>cycle lanes</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.6.4</clause>
+		<name>non-road vehicle</name>
+		<definition><![CDATA[vehicle not meeting the legal requirements to be driven in <i><font color="#0000ff"><u>traffic lanes</u></font></i> or <i><font color="#0000ff"><u>cycle lanes</u></font></i> of a <i><font color="#0000ff"><u>road network</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>10</wg>
+		<clause>3.7.6.4</clause>
+		<name>non-road vehicle</name>
+		<definition><![CDATA[vehicle not meeting the legal requirements to be driven in <i><font color="#0000ff"><u>traffic lanes</u></font></i> or <i><font color="#0000ff"><u>cycle lanes</u></font></i> of a <i><font color="#0000ff"><u>road network</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.6.5</clause>
+		<name>road cycle</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle</u></font></i> meeting the legal requirements to operate in <i><font color="#0000ff"><u>cycle lanes</u></font></i> and <i><font color="#0000ff"><u>cycleways</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>10</wg>
+		<clause>3.7.6.5</clause>
+		<name>road cycle</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle</u></font></i> meeting the legal requirements to operate in <i><font color="#0000ff"><u>cycle lanes</u></font></i> and <i><font color="#0000ff"><u>cycleways</u></font></i>]]></definition>
+	</entry>
+	<entry>
+		<wg>1</wg>
+		<clause>3.7.6.1</clause>
+		<name>road vehicle</name>
+		<definition><![CDATA[<i><font color="#0000ff"><u>vehicle</u></font></i> meeting the requirements to operate within the <i><font color="#0000ff"><u>driving space</u></font></i> of a <i><font color="#0000ff"><u>road</u></font></i>]]></definition>
+	</entry>
+</wg_vocab>

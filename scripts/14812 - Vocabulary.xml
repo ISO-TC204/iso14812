@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vocabulary xmlns="https://www.iso.org/tc204/wg1/vocabulary"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://www.iso.org/tc204/wg1/vocabulary iso_vocabulary.xsd">
+	<package>
+		<id>3</id>
+		<clause>3</clause>
+		<name>14812 - Vocabulary</name>
+		<package>
+			<id>1</id>
+			<clause>3.1</clause>
+			<name>3.1 Core terms</name>
+			<package>
+				<id>1</id>
+				<clause>3.1.1</clause>
+				<name>3.1.1 Entity terms</name>
+				<note>See Figure A-1</note>
+				<figure>
+					<guid>id5D1B33FC681743bc98326EE35AD680FC</guid>
+					<name>Entity terms</name>
