@@ -1,0 +1,18 @@
+// Diagram for motor vehicle
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"motor vehicle" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">motor vehicle</TD></TR></TABLE>> URL="../classes/itsVocabulary__motor vehicle.md" margin=0]
+	}
+	motorizedVehicle [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">motorized vehicle</TD></TR></TABLE>> URL="../motorized vehicle/" margin=0 target=_top]
+	roadVehicle [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">road vehicle</TD></TR></TABLE>> URL="../road vehicle/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	"motor vehicle" -> motorizedVehicle [arrowhead=onormal style=solid]
+	"motor vehicle" -> roadVehicle [arrowhead=onormal style=solid]
+}

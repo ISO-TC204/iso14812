@@ -1,0 +1,23 @@
+// Diagram for interoperability design
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"interoperability design" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">interoperability design</TD></TR></TABLE>> URL="../classes/itsVocabulary__interoperability design.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		physicalObject [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">physical object</TD></TR></TABLE>> URL="../physical object/" margin=0 target=_top]
+		service [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">service</TD></TR></TABLE>> URL="../service/" margin=0 target=_top]
+	}
+	"interoperability design" -> Invis [style=invis]
+	Invis -> physicalObject [style=invis]
+	physicalObject -> service [style=invis]
+	"interoperability design" -> service [label=" definesHowToProvide 
+ «some»  " arrowhead=normal style=solid]
+	"interoperability design" -> physicalObject [label=" using 
+ «some»  " arrowhead=normal style=solid]
+}

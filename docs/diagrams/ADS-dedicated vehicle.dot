@@ -1,0 +1,16 @@
+// Diagram for ADS-dedicated vehicle
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"ADS-dedicated vehicle" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">ADS-dedicated vehicle</TD></TR></TABLE>> URL="../classes/itsVocabulary__ADS-dedicated vehicle.md" margin=0]
+	}
+	"ads-equippedVehicle" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ADS-equipped vehicle</TD></TR></TABLE>> URL="../ADS-equipped vehicle/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	"ADS-dedicated vehicle" -> "ads-equippedVehicle" [arrowhead=onormal style=solid]
+}

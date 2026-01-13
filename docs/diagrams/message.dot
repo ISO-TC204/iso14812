@@ -1,0 +1,25 @@
+// Diagram for message
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		message [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">message</TD></TR></TABLE>> URL="../classes/itsVocabulary__message.md" margin=0]
+	}
+	dataConcept [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">data concept</TD></TR></TABLE>> URL="../data concept/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		dataElement [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">data element</TD></TR></TABLE>> URL="../data element/" margin=0 target=_top]
+		dataFrame [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">data frame</TD></TR></TABLE>> URL="../data frame/" margin=0 target=_top]
+	}
+	message -> dataConcept [arrowhead=onormal style=solid]
+	message -> Invis [style=invis]
+	Invis -> dataElement [style=invis]
+	dataElement -> dataFrame [style=invis]
+	message -> dataFrame [label=" contains 
+ «min 0»  " arrowhead=normal style=solid]
+	message -> dataElement [label=" contains 
+ «min 0»  " arrowhead=normal style=solid]
+}

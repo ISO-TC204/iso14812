@@ -1,0 +1,27 @@
+// Diagram for system
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		system [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">system</TD></TR></TABLE>> URL="../classes/itsVocabulary__system.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		architecture [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">architecture</TD></TR></TABLE>> URL="../architecture/" margin=0 target=_top]
+		environment [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">environment</TD></TR></TABLE>> URL="../environment/" margin=0 target=_top]
+		user [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">user</TD></TR></TABLE>> URL="../user/" margin=0 target=_top]
+	}
+	system -> Invis [style=invis]
+	Invis -> architecture [style=invis]
+	architecture -> environment [style=invis]
+	environment -> user [style=invis]
+	system -> environment [label=" situatedIn 
+ «some»  " arrowhead=normal style=solid]
+	system -> architecture [label=" exhibits 
+ «some»  " arrowhead=normal style=solid]
+	system -> user [label=" designedFor 
+ «some»  " arrowhead=normal style=solid]
+}

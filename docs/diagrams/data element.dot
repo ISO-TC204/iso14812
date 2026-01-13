@@ -1,0 +1,25 @@
+// Diagram for data element
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"data element" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">data element</TD></TR></TABLE>> URL="../classes/itsVocabulary__data element.md" margin=0]
+	}
+	dataConcept [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">data concept</TD></TR></TABLE>> URL="../data concept/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		class [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">class</TD></TR></TABLE>> URL="../class/" margin=0 target=_top]
+		valueDomain [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">value domain</TD></TR></TABLE>> URL="../value domain/" margin=0 target=_top]
+	}
+	"data element" -> dataConcept [arrowhead=onormal style=solid]
+	"data element" -> Invis [style=invis]
+	Invis -> class [style=invis]
+	class -> valueDomain [style=invis]
+	"data element" -> class [label=" onProperty: describes 
+ «exactly 1»  " arrowhead=normal style=dashed]
+	"data element" -> valueDomain [label=" representedBy 
+ «exactly 1»  " arrowhead=normal style=solid]
+}

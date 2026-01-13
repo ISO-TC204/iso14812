@@ -1,8 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.8:1", "", "Architecture - Physical view terms", "EARoot/EA1/EA8/EA96.htm", "175.png", "12", "0", "", "Logical diagram0","{5E38D7EC-0399-4f79-95C9-9A25F917274A}");
-tocTab[tocTab.length] = new Array("0.1.8:2", "", "functional object", "EARoot/EA1/EA8/EA99.htm", "5.png", "E64", "0", "", "Class0","{EC65B14A-2BF8-45de-BCC4-8632F635C9FF}");
-tocTab[tocTab.length] = new Array("0.1.8:3", "", "information flow", "EARoot/EA1/EA8/EA100.htm", "5.png", "E69", "0", "", "Class0","{752D601C-79B5-4677-BF47-786D7FA84DBF}");
-tocTab[tocTab.length] = new Array("0.1.8:4", "", "information transfer", "EARoot/EA1/EA8/EA101.htm", "5.png", "E63", "0", "", "Class0","{9680D3ED-B969-47e2-9754-41B520E3CFE4}");
-tocTab[tocTab.length] = new Array("0.1.8:5", "", "ITS component", "EARoot/EA1/EA8/EA102.htm", "5.png", "E70", "0", "", "Class0","{3783095C-41E0-41c8-B0CC-1813CBCAEE44}");
-tocTab[tocTab.length] = new Array("0.1.8:6", "", "module", "EARoot/EA1/EA8/EA103.htm", "5.png", "E761", "0", "", "Class0","{DC08094B-EC94-4621-8B5A-D52EA2198889}");
-tocTab[tocTab.length] = new Array("0.1.8:7", "", "physical object", "EARoot/EA1/EA8/EA104.htm", "5.png", "E59", "0", "", "Class0","{8EA65F2D-6F63-47bf-8FF4-C5CD35C61C68}");
-tocTab[tocTab.length] = new Array("0.1.8:8", "", "terminator", "EARoot/EA1/EA8/EA105.htm", "5.png", "E68", "0", "", "Class0","{98ACC203-E1E3-4474-AF1A-04245619E6BF}");

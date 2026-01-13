@@ -1,0 +1,41 @@
+// Diagram for enterprise view
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"enterprise view" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">enterprise view</TD></TR></TABLE>> URL="../classes/itsVocabulary__enterprise view.md" margin=0]
+	}
+	architectureView [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">architecture view</TD></TR></TABLE>> URL="../architecture view/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		enterpriseObject [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">enterprise object</TD></TR></TABLE>> URL="../enterprise object/" margin=0 target=_top]
+		informationFlow [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">information flow</TD></TR></TABLE>> URL="../information flow/" margin=0 target=_top]
+		interaction [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">interaction</TD></TR></TABLE>> URL="../interaction/" margin=0 target=_top]
+		relationship [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">relationship</TD></TR></TABLE>> URL="../relationship/" margin=0 target=_top]
+		resource [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">resource</TD></TR></TABLE>> URL="../resource/" margin=0 target=_top]
+		role [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">role</TD></TR></TABLE>> URL="../role/" margin=0 target=_top]
+	}
+	"enterprise view" -> architectureView [arrowhead=onormal style=solid]
+	"enterprise view" -> Invis [style=invis]
+	Invis -> enterpriseObject [style=invis]
+	enterpriseObject -> informationFlow [style=invis]
+	informationFlow -> interaction [style=invis]
+	interaction -> relationship [style=invis]
+	relationship -> resource [style=invis]
+	resource -> role [style=invis]
+	"enterprise view" -> enterpriseObject [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	"enterprise view" -> resource [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	"enterprise view" -> informationFlow [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	"enterprise view" -> interaction [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	"enterprise view" -> role [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	"enterprise view" -> relationship [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+}
