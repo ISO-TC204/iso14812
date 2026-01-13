@@ -4,6 +4,7 @@ site_description: A vocabulary defined for Intelligent Transport Systems and doc
 repo_url: https://github.com/ISO-TC204/iso14812
 nav:
 - Home: index.md
+- Alphabetical Listing: concept_registry.md
 - core Terms:
   - architecture Communication View Terms:
     - access layer: access layer.md
