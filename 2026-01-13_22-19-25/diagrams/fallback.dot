@@ -1,0 +1,23 @@
+// Diagram for fallback
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		fallback [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">fallback</TD></TR></TABLE>> URL="../classes/itsVocabulary__fallback.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		"ddtPerformance-relevantSystemFailure" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">DDT performance-relevant system failure</TD></TR></TABLE>> URL="../DDT performance-relevant system failure/" margin=0 target=_top]
+		operationalDesignDomain [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">operational design domain</TD></TR></TABLE>> URL="../operational design domain/" margin=0 target=_top]
+	}
+	fallback -> Invis [style=invis]
+	Invis -> "ddtPerformance-relevantSystemFailure" [style=invis]
+	"ddtPerformance-relevantSystemFailure" -> operationalDesignDomain [style=invis]
+	fallback -> "ddtPerformance-relevantSystemFailure" [label=" mayBeCausedBy 
+ «some»  " arrowhead=normal style=solid]
+	fallback -> operationalDesignDomain [label=" mayBeCausedByAViolationOf 
+ «some»  " arrowhead=normal style=solid]
+}

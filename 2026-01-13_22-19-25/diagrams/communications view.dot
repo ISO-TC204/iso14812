@@ -1,0 +1,21 @@
+// Diagram for communications view
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"communications view" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">communications view</TD></TR></TABLE>> URL="../classes/itsVocabulary__communications view.md" margin=0]
+	}
+	architectureView [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">architecture view</TD></TR></TABLE>> URL="../architecture view/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		"its-sReferenceArchitecture" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ITS-S reference architecture</TD></TR></TABLE>> URL="../ITS-S reference architecture/" margin=0 target=_top]
+	}
+	"communications view" -> architectureView [arrowhead=onormal style=solid]
+	"communications view" -> Invis [style=invis]
+	Invis -> "its-sReferenceArchitecture" [style=invis]
+	"communications view" -> "its-sReferenceArchitecture" [label=" basedOn 
+ «some»  " arrowhead=normal style=solid]
+}

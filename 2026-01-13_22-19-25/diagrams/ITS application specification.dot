@@ -1,0 +1,23 @@
+// Diagram for ITS application specification
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"ITS application specification" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">ITS application specification</TD></TR></TABLE>> URL="../classes/itsVocabulary__ITS application specification.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		interoperabilityDesign [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">interoperability design</TD></TR></TABLE>> URL="../interoperability design/" margin=0 target=_top]
+		itsApplication [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ITS application</TD></TR></TABLE>> URL="../ITS application/" margin=0 target=_top]
+	}
+	"ITS application specification" -> Invis [style=invis]
+	Invis -> interoperabilityDesign [style=invis]
+	interoperabilityDesign -> itsApplication [style=invis]
+	"ITS application specification" -> interoperabilityDesign [label=" details 
+ «some»  " arrowhead=normal style=solid]
+	"ITS application specification" -> itsApplication [label=" for 
+ «some»  " arrowhead=normal style=solid]
+}

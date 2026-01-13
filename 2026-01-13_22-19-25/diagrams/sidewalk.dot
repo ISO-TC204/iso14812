@@ -1,0 +1,23 @@
+// Diagram for sidewalk
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		sidewalk [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">sidewalk</TD></TR></TABLE>> URL="../classes/itsVocabulary__sidewalk.md" margin=0]
+	}
+	footpath [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">footpath</TD></TR></TABLE>> URL="../footpath/" margin=0 target=_top]
+	lane [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">lane</TD></TR></TABLE>> URL="../lane/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		roadside [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">roadside</TD></TR></TABLE>> URL="../roadside/" margin=0 target=_top]
+	}
+	sidewalk -> footpath [arrowhead=onormal style=solid]
+	sidewalk -> lane [arrowhead=onormal style=solid]
+	sidewalk -> Invis [style=invis]
+	Invis -> roadside [style=invis]
+	sidewalk -> roadside [label=" along 
+ «some»  " arrowhead=normal style=solid]
+}

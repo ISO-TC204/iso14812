@@ -1,0 +1,19 @@
+// Diagram for process
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		process [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">process</TD></TR></TABLE>> URL="../classes/itsVocabulary__process.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		function [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">function</TD></TR></TABLE>> URL="../function/" margin=0 target=_top]
+	}
+	process -> Invis [style=invis]
+	Invis -> function [style=invis]
+	process -> function [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+}
