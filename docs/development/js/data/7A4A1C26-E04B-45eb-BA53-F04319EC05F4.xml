@@ -1,7 +1,0 @@
-tocTab[tocTab.length] = new Array("0.3.3:1", "", "Alternate mode graphic", "EARoot/EA3/EA3/EA310.htm", "175.png", "83", "0", "", "Logical diagram0","{EFABC2C8-C516-4ee1-9898-5E86E5B5BF32}");
-tocTab[tocTab.length] = new Array("0.3.3:2", "", "Alternate mode infrastructure component terms", "EARoot/EA3/EA3/EA312.htm", "175.png", "80", "0", "", "Logical diagram0","{269DD58C-7917-4020-8059-285EB7131FE3}");
-tocTab[tocTab.length] = new Array("0.3.3:3", "", "«Image» 14812ed1figA-27.png", "EARoot/EA3/EA3/EA315.htm", "82.png", "E778", "0", "", "Artifact0","{2B9C301F-7B86-4ec3-BC25-FE66CC2E125D}");
-tocTab[tocTab.length] = new Array("0.3.3:4", "", "cycle lane", "EARoot/EA3/EA3/EA316.htm", "5.png", "E497", "0", "", "Class0","{BE5E40CD-EC88-46b4-9D1C-E99547F20B51}");
-tocTab[tocTab.length] = new Array("0.3.3:5", "", "cycleway", "EARoot/EA3/EA3/EA317.htm", "5.png", "E666", "0", "", "Class0","{C2EE18B8-A32D-48a0-AA25-7E98F7AED48E}");
-tocTab[tocTab.length] = new Array("0.3.3:6", "", "footway", "EARoot/EA3/EA3/EA318.htm", "5.png", "E498", "0", "", "Class0","{5B3BE81C-F43C-4c4b-A8E9-EEF5E12EDA6C}");
-tocTab[tocTab.length] = new Array("0.3.3:7", "", "sidewalk", "EARoot/EA3/EA3/EA319.htm", "5.png", "E770", "0", "", "Class0","{88C46F31-5F1F-425b-B98D-F0484C6D2C64}");

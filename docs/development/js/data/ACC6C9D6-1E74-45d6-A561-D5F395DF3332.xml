@@ -1,3 +1,0 @@
-tocTab[tocTab.length] = new Array("0.2.6:1", "", "Vehicle physical object terms", "EARoot/EA2/EA6/EA207.htm", "175.png", "46", "0", "", "Logical diagram0","{CF6B6F10-D91E-41a9-88BA-DB1008F2422B}");
-tocTab[tocTab.length] = new Array("0.2.6:2", "", "ITS on-board equipment", "EARoot/EA2/EA6/EA210.htm", "5.png", "E89", "0", "", "Class0","{19370BF7-9EB8-4485-AEAD-2DDF5F784F2F}");
-tocTab[tocTab.length] = new Array("0.2.6:3", "", "ITS on-board unit", "EARoot/EA2/EA6/EA211.htm", "5.png", "E236", "0", "", "Class0","{E1D193F1-7654-409c-A350-D9BECAAB4943}");

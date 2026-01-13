@@ -1,0 +1,21 @@
+// Diagram for interface dialogue
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"interface dialogue" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">interface dialogue</TD></TR></TABLE>> URL="../classes/itsVocabulary__interface dialogue.md" margin=0]
+	}
+	dataConcept [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">data concept</TD></TR></TABLE>> URL="../data concept/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		message [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">message</TD></TR></TABLE>> URL="../message/" margin=0 target=_top]
+	}
+	"interface dialogue" -> dataConcept [arrowhead=onormal style=solid]
+	"interface dialogue" -> Invis [style=invis]
+	Invis -> message [style=invis]
+	"interface dialogue" -> message [label=" uses 
+ «some»  " arrowhead=normal style=solid]
+}

@@ -1,0 +1,29 @@
+// Diagram for physical view
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"physical view" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">physical view</TD></TR></TABLE>> URL="../classes/itsVocabulary__physical view.md" margin=0]
+	}
+	architectureView [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">architecture view</TD></TR></TABLE>> URL="../architecture view/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		functionalObject [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">functional object</TD></TR></TABLE>> URL="../functional object/" margin=0 target=_top]
+		informationTransfer [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">information transfer</TD></TR></TABLE>> URL="../information transfer/" margin=0 target=_top]
+		physicalObject [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">physical object</TD></TR></TABLE>> URL="../physical object/" margin=0 target=_top]
+	}
+	"physical view" -> architectureView [arrowhead=onormal style=solid]
+	"physical view" -> Invis [style=invis]
+	Invis -> functionalObject [style=invis]
+	functionalObject -> informationTransfer [style=invis]
+	informationTransfer -> physicalObject [style=invis]
+	"physical view" -> physicalObject [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	"physical view" -> informationTransfer [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	"physical view" -> functionalObject [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+}
