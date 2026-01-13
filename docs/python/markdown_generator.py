@@ -195,7 +195,8 @@ def update_mkdocs_nav(mkdocs_path: str, global_patterns: dict, errors: list, cla
         log.error(error_msg)
         raise
 
-    new_nav = [{"Home": "index.md"}]
+    new_nav = [{"Home": "index.md", "Alphabetical Listing": "concept_registry.md"}]
+    new_nav.extend(top_level_items)
     
     file_path = input_file
     ontology_name = ontology_info[file_path]["ontology_name"]
