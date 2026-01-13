@@ -1,0 +1,19 @@
+// Diagram for vehicle identifier
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"vehicle identifier" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">vehicle identifier</TD></TR></TABLE>> URL="../classes/itsVocabulary__vehicle identifier.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		vehicle [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">vehicle</TD></TR></TABLE>> URL="../vehicle/" margin=0 target=_top]
+	}
+	"vehicle identifier" -> Invis [style=invis]
+	Invis -> vehicle [style=invis]
+	"vehicle identifier" -> vehicle [label=" globallyUniqueIdentifierFor 
+ «exactly 1»  " arrowhead=normal style=solid]
+}

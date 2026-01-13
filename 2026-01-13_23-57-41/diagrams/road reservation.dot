@@ -1,0 +1,27 @@
+// Diagram for road reservation
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"road reservation" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">road reservation</TD></TR></TABLE>> URL="../classes/itsVocabulary__road reservation.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		lane [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">lane</TD></TR></TABLE>> URL="../lane/" margin=0 target=_top]
+		roadside [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">roadside</TD></TR></TABLE>> URL="../roadside/" margin=0 target=_top]
+		roadway [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">roadway</TD></TR></TABLE>> URL="../roadway/" margin=0 target=_top]
+	}
+	"road reservation" -> Invis [style=invis]
+	Invis -> lane [style=invis]
+	lane -> roadside [style=invis]
+	roadside -> roadway [style=invis]
+	"road reservation" -> roadside [label=" comprises 
+ «some»  " arrowhead=normal style=solid]
+	"road reservation" -> lane [label=" comprises 
+ «some»  " arrowhead=normal style=solid]
+	"road reservation" -> roadway [label=" comprises 
+ «some»  " arrowhead=normal style=solid]
+}

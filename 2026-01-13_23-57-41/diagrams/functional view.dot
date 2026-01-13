@@ -1,0 +1,33 @@
+// Diagram for functional view
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"functional view" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">functional view</TD></TR></TABLE>> URL="../classes/itsVocabulary__functional view.md" margin=0]
+	}
+	architectureView [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">architecture view</TD></TR></TABLE>> URL="../architecture view/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		dataFlow [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">data flow</TD></TR></TABLE>> URL="../data flow/" margin=0 target=_top]
+		process [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">process</TD></TR></TABLE>> URL="../process/" margin=0 target=_top]
+		processSpecification [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">process specification</TD></TR></TABLE>> URL="../process specification/" margin=0 target=_top]
+		terminator [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">terminator</TD></TR></TABLE>> URL="../terminator/" margin=0 target=_top]
+	}
+	"functional view" -> architectureView [arrowhead=onormal style=solid]
+	"functional view" -> Invis [style=invis]
+	Invis -> dataFlow [style=invis]
+	dataFlow -> process [style=invis]
+	process -> processSpecification [style=invis]
+	processSpecification -> terminator [style=invis]
+	"functional view" -> process [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	"functional view" -> dataFlow [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	"functional view" -> processSpecification [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	"functional view" -> terminator [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+}

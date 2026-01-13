@@ -1,0 +1,25 @@
+// Diagram for ADS
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		ADS [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">ADS</TD></TR></TABLE>> URL="../classes/itsVocabulary__ADS.md" margin=0]
+	}
+	drivingAutomationSystem [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">driving automation system</TD></TR></TABLE>> URL="../driving automation system/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		"ads-equippedVehicle" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ADS-equipped vehicle</TD></TR></TABLE>> URL="../ADS-equipped vehicle/" margin=0 target=_top]
+		dynamicDrivingTask [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">dynamic driving task</TD></TR></TABLE>> URL="../dynamic driving task/" margin=0 target=_top]
+	}
+	ADS -> drivingAutomationSystem [arrowhead=onormal style=solid]
+	ADS -> Invis [style=invis]
+	Invis -> "ads-equippedVehicle" [style=invis]
+	"ads-equippedVehicle" -> dynamicDrivingTask [style=invis]
+	ADS -> dynamicDrivingTask [label=" performsAllOf 
+ «some»  " arrowhead=normal style=solid]
+	ADS -> "ads-equippedVehicle" [label=" canControl 
+ «some»  " arrowhead=normal style=solid]
+}

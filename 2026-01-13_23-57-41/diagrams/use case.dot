@@ -1,0 +1,19 @@
+// Diagram for use case
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"use case" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">use case</TD></TR></TABLE>> URL="../classes/itsVocabulary__use case.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		scenario [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">scenario</TD></TR></TABLE>> URL="../scenario/" margin=0 target=_top]
+	}
+	"use case" -> Invis [style=invis]
+	Invis -> scenario [style=invis]
+	"use case" -> scenario [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+}

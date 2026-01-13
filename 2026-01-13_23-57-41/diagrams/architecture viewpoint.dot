@@ -1,0 +1,27 @@
+// Diagram for architecture viewpoint
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"architecture viewpoint" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">architecture viewpoint</TD></TR></TABLE>> URL="../classes/itsVocabulary__architecture viewpoint.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		architectureView [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">architecture view</TD></TR></TABLE>> URL="../architecture view/" margin=0 target=_top]
+		concern [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">concern</TD></TR></TABLE>> URL="../concern/" margin=0 target=_top]
+		modelKind [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">model kind</TD></TR></TABLE>> URL="../model kind/" margin=0 target=_top]
+	}
+	"architecture viewpoint" -> Invis [style=invis]
+	Invis -> architectureView [style=invis]
+	architectureView -> concern [style=invis]
+	concern -> modelKind [style=invis]
+	"architecture viewpoint" -> modelKind [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	"architecture viewpoint" -> concern [label=" frames 
+ «some»  " arrowhead=normal style=solid]
+	"architecture viewpoint" -> architectureView [label=" governs 
+ «some»  " arrowhead=normal style=solid]
+}

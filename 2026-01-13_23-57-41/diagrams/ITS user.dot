@@ -1,0 +1,21 @@
+// Diagram for ITS user
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"ITS user" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">ITS user</TD></TR></TABLE>> URL="../classes/itsVocabulary__ITS user.md" margin=0]
+	}
+	user [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">user</TD></TR></TABLE>> URL="../user/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		surfaceTransportSystem [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">surface transport system</TD></TR></TABLE>> URL="../surface transport system/" margin=0 target=_top]
+	}
+	"ITS user" -> user [arrowhead=onormal style=solid]
+	"ITS user" -> Invis [style=invis]
+	Invis -> surfaceTransportSystem [style=invis]
+	"ITS user" -> surfaceTransportSystem [label=" uses 
+ «some»  " arrowhead=normal style=solid]
+}

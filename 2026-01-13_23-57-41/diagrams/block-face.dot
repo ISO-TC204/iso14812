@@ -1,0 +1,25 @@
+// Diagram for block-face
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"block-face" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">block-face</TD></TR></TABLE>> URL="../classes/itsVocabulary__block-face.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		intersection [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">intersection</TD></TR></TABLE>> URL="../intersection/" margin=0 target=_top]
+		sidewalk [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">sidewalk</TD></TR></TABLE>> URL="../sidewalk/" margin=0 target=_top]
+	}
+	"block-face" -> Invis [style=invis]
+	Invis -> intersection [style=invis]
+	intersection -> sidewalk [style=invis]
+	"block-face" -> sidewalk [label=" extentOf 
+ «some»  " arrowhead=normal style=solid]
+	"block-face" -> intersection [label=" startsAt 
+ «some»  " arrowhead=normal style=solid]
+	"block-face" -> intersection [label=" endsAt 
+ «some»  " arrowhead=normal style=solid]
+}

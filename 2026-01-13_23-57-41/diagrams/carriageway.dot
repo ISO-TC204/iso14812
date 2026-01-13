@@ -1,0 +1,31 @@
+// Diagram for carriageway
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		carriageway [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">carriageway</TD></TR></TABLE>> URL="../classes/itsVocabulary__carriageway.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		hardshoulder [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">hardshoulder</TD></TR></TABLE>> margin=0 target=_top]
+		hardstanding [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">hardstanding</TD></TR></TABLE>> URL="../hardstanding/" margin=0 target=_top]
+		"lay-by" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">lay-by</TD></TR></TABLE>> URL="../lay-by/" margin=0 target=_top]
+		usableWidth [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">usable width</TD></TR></TABLE>> URL="../usable width/" margin=0 target=_top]
+	}
+	carriageway -> Invis [style=invis]
+	Invis -> hardshoulder [style=invis]
+	hardshoulder -> hardstanding [style=invis]
+	hardstanding -> "lay-by" [style=invis]
+	"lay-by" -> usableWidth [style=invis]
+	carriageway -> "lay-by" [label=" comprises 
+ «min 0»  " arrowhead=normal style=solid]
+	carriageway -> hardstanding [label=" comprises 
+ «min 0»  " arrowhead=normal style=solid]
+	carriageway -> hardshoulder [label=" comprises 
+ «min 0»  " arrowhead=normal style=solid]
+	carriageway -> usableWidth [label=" comprises 
+ «some»  " arrowhead=normal style=solid]
+}

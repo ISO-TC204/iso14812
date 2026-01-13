@@ -1,0 +1,21 @@
+// Diagram for ITS user need
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"ITS user need" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">ITS user need</TD></TR></TABLE>> URL="../classes/itsVocabulary__ITS user need.md" margin=0]
+	}
+	userNeed [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">user need</TD></TR></TABLE>> URL="../user need/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		itsUser [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ITS user</TD></TR></TABLE>> URL="../ITS user/" margin=0 target=_top]
+	}
+	"ITS user need" -> userNeed [arrowhead=onormal style=solid]
+	"ITS user need" -> Invis [style=invis]
+	Invis -> itsUser [style=invis]
+	"ITS user need" -> itsUser [label=" desiredResultsOf 
+ «some»  " arrowhead=normal style=solid]
+}

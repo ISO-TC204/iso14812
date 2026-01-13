@@ -1,0 +1,19 @@
+// Diagram for connected unit
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"connected unit" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">connected unit</TD></TR></TABLE>> URL="../classes/itsVocabulary__connected unit.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		connected [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">connected</TD></TR></TABLE>> URL="../connected/" margin=0 target=_top]
+	}
+	"connected unit" -> Invis [style=invis]
+	Invis -> connected [style=invis]
+	"connected unit" -> connected [label=" is 
+ «some»  " arrowhead=normal style=solid]
+}

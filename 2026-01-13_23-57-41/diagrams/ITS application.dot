@@ -1,0 +1,23 @@
+// Diagram for ITS application
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"ITS application" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">ITS application</TD></TR></TABLE>> URL="../classes/itsVocabulary__ITS application.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		"its-sApplicationProcess" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ITS-S application process</TD></TR></TABLE>> URL="../ITS-S application process/" margin=0 target=_top]
+		itsService [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ITS service</TD></TR></TABLE>> URL="../ITS service/" margin=0 target=_top]
+	}
+	"ITS application" -> Invis [style=invis]
+	Invis -> "its-sApplicationProcess" [style=invis]
+	"its-sApplicationProcess" -> itsService [style=invis]
+	"ITS application" -> "its-sApplicationProcess" [label=" involves 
+ «min 2»  " arrowhead=normal style=solid]
+	"ITS application" -> itsService [label=" realizationOf 
+ «some»  " arrowhead=normal style=solid]
+}

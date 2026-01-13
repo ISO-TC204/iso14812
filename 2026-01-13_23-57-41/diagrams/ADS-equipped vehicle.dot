@@ -1,0 +1,21 @@
+// Diagram for ADS-equipped vehicle
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"ADS-equipped vehicle" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">ADS-equipped vehicle</TD></TR></TABLE>> URL="../classes/itsVocabulary__ADS-equipped vehicle.md" margin=0]
+	}
+	vehicle [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">vehicle</TD></TR></TABLE>> URL="../vehicle/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		ads [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ADS</TD></TR></TABLE>> URL="../ADS/" margin=0 target=_top]
+	}
+	"ADS-equipped vehicle" -> vehicle [arrowhead=onormal style=solid]
+	"ADS-equipped vehicle" -> Invis [style=invis]
+	Invis -> ads [style=invis]
+	"ADS-equipped vehicle" -> ads [label=" comprises 
+ «some»  " arrowhead=normal style=solid]
+}
