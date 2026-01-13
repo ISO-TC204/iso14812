@@ -1,0 +1,19 @@
+// Diagram for road identifier
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"road identifier" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">road identifier</TD></TR></TABLE>> URL="../classes/itsVocabulary__road identifier.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		road [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">road</TD></TR></TABLE>> URL="../road/" margin=0 target=_top]
+	}
+	"road identifier" -> Invis [style=invis]
+	Invis -> road [style=invis]
+	"road identifier" -> road [label=" identifies 
+ «some»  " arrowhead=normal style=solid]
+}

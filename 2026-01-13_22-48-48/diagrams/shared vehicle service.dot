@@ -1,0 +1,16 @@
+// Diagram for shared vehicle service
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"shared vehicle service" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">shared vehicle service</TD></TR></TABLE>> URL="../classes/itsVocabulary__shared vehicle service.md" margin=0]
+	}
+	transportService [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">transport service</TD></TR></TABLE>> URL="../transport service/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	"shared vehicle service" -> transportService [arrowhead=onormal style=solid]
+}

@@ -1,0 +1,23 @@
+// Diagram for vehicle occupant
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"vehicle occupant" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">vehicle occupant</TD></TR></TABLE>> URL="../classes/itsVocabulary__vehicle occupant.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		person [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">person</TD></TR></TABLE>> URL="../person/" margin=0 target=_top]
+		vehicle [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">vehicle</TD></TR></TABLE>> URL="../vehicle/" margin=0 target=_top]
+	}
+	"vehicle occupant" -> Invis [style=invis]
+	Invis -> person [style=invis]
+	person -> vehicle [style=invis]
+	"vehicle occupant" -> person [label=" isA 
+ «some»  " arrowhead=normal style=solid]
+	"vehicle occupant" -> vehicle [label=" isIn 
+ «some»  " arrowhead=normal style=solid]
+}
