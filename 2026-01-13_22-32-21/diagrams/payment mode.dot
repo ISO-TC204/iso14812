@@ -1,0 +1,19 @@
+// Diagram for payment mode
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"payment mode" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">payment mode</TD></TR></TABLE>> URL="../classes/itsVocabulary__payment mode.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		serviceProvider [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">service provider</TD></TR></TABLE>> URL="../service provider/" margin=0 target=_top]
+	}
+	"payment mode" -> Invis [style=invis]
+	Invis -> serviceProvider [style=invis]
+	"payment mode" -> serviceProvider [label=" timingAndLocationOfRemunerationTo 
+ «some»  " arrowhead=normal style=solid]
+}

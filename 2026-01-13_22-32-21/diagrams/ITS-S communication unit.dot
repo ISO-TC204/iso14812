@@ -1,0 +1,19 @@
+// Diagram for ITS-S communication unit
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"ITS-S communication unit" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">ITS-S communication unit</TD></TR></TABLE>> URL="../classes/itsVocabulary__ITS-S communication unit.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		functionalObject [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">functional object</TD></TR></TABLE>> URL="../functional object/" margin=0 target=_top]
+	}
+	"ITS-S communication unit" -> Invis [style=invis]
+	Invis -> functionalObject [style=invis]
+	"ITS-S communication unit" -> functionalObject [label=" contains 
+ «some»  " arrowhead=normal style=solid]
+}

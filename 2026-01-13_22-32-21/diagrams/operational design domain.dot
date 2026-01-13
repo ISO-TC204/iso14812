@@ -1,0 +1,19 @@
+// Diagram for operational design domain
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"operational design domain" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">operational design domain</TD></TR></TABLE>> URL="../classes/itsVocabulary__operational design domain.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		drivingAutomationSystem [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">driving automation system</TD></TR></TABLE>> URL="../driving automation system/" margin=0 target=_top]
+	}
+	"operational design domain" -> Invis [style=invis]
+	Invis -> drivingAutomationSystem [style=invis]
+	"operational design domain" -> drivingAutomationSystem [label=" forAGiven 
+ «some»  " arrowhead=normal style=solid]
+}

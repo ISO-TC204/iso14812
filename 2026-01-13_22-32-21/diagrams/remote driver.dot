@@ -1,0 +1,26 @@
+// Diagram for remote driver
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"remote driver" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">remote driver</TD></TR></TABLE>> URL="../classes/itsVocabulary__remote driver.md" margin=0]
+	}
+	driver [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">driver</TD></TR></TABLE>> URL="../driver/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		nomadicVehicleInputDevice [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">nomadic vehicle input device</TD></TR></TABLE>> URL="../nomadic vehicle input device/" margin=0 target=_top]
+		remoteVehicleInputDevice [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">remote vehicle input device</TD></TR></TABLE>> URL="../remote vehicle input device/" margin=0 target=_top]
+	}
+	"remote driver" -> driver [arrowhead=onormal style=solid]
+	"remote driver" -> Invis [style=invis]
+	Invis -> nomadicVehicleInputDevice [style=invis]
+	nomadicVehicleInputDevice -> remoteVehicleInputDevice [style=invis]
+	Ned24b37c5c794f679f58c55ab77ec8da [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1" BGCOLOR="lightyellow"><TR><TD ALIGN="CENTER">«unionOf»</TD></TR></TABLE>> margin=0]
+	Ned24b37c5c794f679f58c55ab77ec8da -> nomadicVehicleInputDevice [label=member arrowhead=normal style=dotted]
+	Ned24b37c5c794f679f58c55ab77ec8da -> remoteVehicleInputDevice [label=member arrowhead=normal style=dotted]
+	"remote driver" -> Ned24b37c5c794f679f58c55ab77ec8da [label=" uses 
+ «min 1»  " arrowhead=normal style=solid]
+}

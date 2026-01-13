@@ -1,0 +1,25 @@
+// Diagram for junction
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		junction [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">junction</TD></TR></TABLE>> URL="../classes/itsVocabulary__junction.md" margin=0]
+	}
+	intersection [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">intersection</TD></TR></TABLE>> URL="../intersection/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		egressLane [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">egress lane</TD></TR></TABLE>> URL="../egress lane/" margin=0 target=_top]
+		ingressLane [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ingress lane</TD></TR></TABLE>> URL="../ingress lane/" margin=0 target=_top]
+	}
+	junction -> intersection [arrowhead=onormal style=solid]
+	junction -> Invis [style=invis]
+	Invis -> egressLane [style=invis]
+	egressLane -> ingressLane [style=invis]
+	junction -> ingressLane [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	junction -> egressLane [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+}

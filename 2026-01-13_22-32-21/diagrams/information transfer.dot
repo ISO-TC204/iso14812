@@ -1,0 +1,25 @@
+// Diagram for information transfer
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"information transfer" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">information transfer</TD></TR></TABLE>> URL="../classes/itsVocabulary__information transfer.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		informationFlow [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">information flow</TD></TR></TABLE>> URL="../information flow/" margin=0 target=_top]
+		physicalObject [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">physical object</TD></TR></TABLE>> URL="../physical object/" margin=0 target=_top]
+	}
+	"information transfer" -> Invis [style=invis]
+	Invis -> informationFlow [style=invis]
+	informationFlow -> physicalObject [style=invis]
+	"information transfer" -> physicalObject [label=" sentFrom 
+ «some»  " arrowhead=normal style=solid]
+	"information transfer" -> physicalObject [label=" sentTo 
+ «some»  " arrowhead=normal style=solid]
+	"information transfer" -> informationFlow [label=" contentsOf 
+ «some»  " arrowhead=normal style=solid]
+}

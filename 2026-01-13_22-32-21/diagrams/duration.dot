@@ -1,0 +1,21 @@
+// Diagram for duration
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		duration [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">duration</TD></TR></TABLE>> URL="../classes/itsVocabulary__duration.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		instant [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">instant</TD></TR></TABLE>> URL="../instant/" margin=0 target=_top]
+	}
+	duration -> Invis [style=invis]
+	Invis -> instant [style=invis]
+	duration -> instant [label=" startsAt 
+ «exactly 1»  " arrowhead=normal style=solid]
+	duration -> instant [label=" endsAt 
+ «exactly 1»  " arrowhead=normal style=solid]
+}
