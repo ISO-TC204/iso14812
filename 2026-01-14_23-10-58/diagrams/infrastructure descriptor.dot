@@ -1,0 +1,19 @@
+// Diagram for infrastructure descriptor
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"infrastructure descriptor" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">infrastructure descriptor</TD></TR></TABLE>> URL="../classes/itsVocabulary__infrastructure descriptor.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		transportFacility [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">transport facility</TD></TR></TABLE>> URL="../transport facility/" margin=0 target=_top]
+	}
+	"infrastructure descriptor" -> Invis [style=invis]
+	Invis -> transportFacility [style=invis]
+	"infrastructure descriptor" -> transportFacility [label=" helpsIdentify 
+ «some»  " arrowhead=normal style=solid]
+}

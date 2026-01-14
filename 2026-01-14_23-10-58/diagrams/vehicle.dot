@@ -1,0 +1,47 @@
+// Diagram for vehicle
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		vehicle [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">vehicle</TD></TR></TABLE>> URL="../classes/itsVocabulary__vehicle.md" margin=0]
+	}
+	materialEntity [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">material entity</TD></TR></TABLE>> URL="../material entity/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		ads [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ADS</TD></TR></TABLE>> URL="../ADS/" margin=0 target=_top]
+		connected [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">connected</TD></TR></TABLE>> URL="../connected/" margin=0 target=_top]
+		driver [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">driver</TD></TR></TABLE>> URL="../driver/" margin=0 target=_top]
+		motor [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">motor</TD></TR></TABLE>> URL="../motor/" margin=0 target=_top]
+		"off-grid" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">off-grid</TD></TR></TABLE>> URL="../off-grid/" margin=0 target=_top]
+		vehicleInputDevice [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">vehicle input device</TD></TR></TABLE>> URL="../vehicle input device/" margin=0 target=_top]
+		wheel [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">wheel</TD></TR></TABLE>> URL="../wheel/" margin=0 target=_top]
+	}
+	vehicle -> materialEntity [arrowhead=onormal style=solid]
+	vehicle -> Invis [style=invis]
+	Invis -> ads [style=invis]
+	ads -> connected [style=invis]
+	connected -> driver [style=invis]
+	driver -> motor [style=invis]
+	motor -> "off-grid" [style=invis]
+	"off-grid" -> vehicleInputDevice [style=invis]
+	vehicleInputDevice -> wheel [style=invis]
+	Nfdf7ae765449454fb9a4552f4349b50c [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1" BGCOLOR="lightyellow"><TR><TD ALIGN="CENTER">«unionOf»</TD></TR></TABLE>> margin=0]
+	Nfdf7ae765449454fb9a4552f4349b50c -> ads [label=member arrowhead=normal style=dotted]
+	Nfdf7ae765449454fb9a4552f4349b50c -> driver [label=member arrowhead=normal style=dotted]
+	vehicle -> Nfdf7ae765449454fb9a4552f4349b50c [label=" ddtControlledBy 
+ «exactly 1»  " arrowhead=normal style=solid]
+	vehicle -> wheel [label=" has 
+ «min 0»  " arrowhead=normal style=solid]
+	vehicle -> motor [label=" has 
+ «min 0»  " arrowhead=normal style=solid]
+	vehicle -> vehicleInputDevice [label=" has 
+ «some»  " arrowhead=normal style=solid]
+	N5ffde62822ae4767be7d8d0f5ce18dc5 [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1" BGCOLOR="lightyellow"><TR><TD ALIGN="CENTER">«unionOf»</TD></TR></TABLE>> margin=0]
+	N5ffde62822ae4767be7d8d0f5ce18dc5 -> connected [label=member arrowhead=normal style=dotted]
+	N5ffde62822ae4767be7d8d0f5ce18dc5 -> "off-grid" [label=member arrowhead=normal style=dotted]
+	vehicle -> N5ffde62822ae4767be7d8d0f5ce18dc5 [label=" canBe 
+ «min 1»  " arrowhead=normal style=solid]
+}

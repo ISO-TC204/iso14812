@@ -1,0 +1,19 @@
+// Diagram for coordinate tuple
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"coordinate tuple" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">coordinate tuple</TD></TR></TABLE>> URL="../classes/itsVocabulary__coordinate tuple.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		pointLocation [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">point location</TD></TR></TABLE>> URL="../point location/" margin=0 target=_top]
+	}
+	"coordinate tuple" -> Invis [style=invis]
+	Invis -> pointLocation [style=invis]
+	"coordinate tuple" -> pointLocation [label=" designates 
+ «some»  " arrowhead=normal style=solid]
+}

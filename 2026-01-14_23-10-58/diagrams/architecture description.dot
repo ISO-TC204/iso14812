@@ -1,0 +1,39 @@
+// Diagram for architecture description
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"architecture description" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">architecture description</TD></TR></TABLE>> URL="../classes/itsVocabulary__architecture description.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		architecture [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">architecture</TD></TR></TABLE>> URL="../architecture/" margin=0 target=_top]
+		architectureView [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">architecture view</TD></TR></TABLE>> URL="../architecture view/" margin=0 target=_top]
+		architectureViewpoint [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">architecture viewpoint</TD></TR></TABLE>> URL="../architecture viewpoint/" margin=0 target=_top]
+		concern [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">concern</TD></TR></TABLE>> URL="../concern/" margin=0 target=_top]
+		stakeholder [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">stakeholder</TD></TR></TABLE>> URL="../stakeholder/" margin=0 target=_top]
+		system [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">system</TD></TR></TABLE>> URL="../system/" margin=0 target=_top]
+	}
+	"architecture description" -> Invis [style=invis]
+	Invis -> architecture [style=invis]
+	architecture -> architectureView [style=invis]
+	architectureView -> architectureViewpoint [style=invis]
+	architectureViewpoint -> concern [style=invis]
+	concern -> stakeholder [style=invis]
+	stakeholder -> system [style=invis]
+	"architecture description" -> architecture [label=" expresses 
+ «some»  " arrowhead=normal style=solid]
+	"architecture description" -> system [label=" identifies 
+ «some»  " arrowhead=normal style=solid]
+	"architecture description" -> stakeholder [label=" identifies 
+ «some»  " arrowhead=normal style=solid]
+	"architecture description" -> concern [label=" identifies 
+ «some»  " arrowhead=normal style=solid]
+	"architecture description" -> architectureView [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	"architecture description" -> architectureViewpoint [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+}

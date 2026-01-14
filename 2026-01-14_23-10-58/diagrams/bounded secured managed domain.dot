@@ -1,0 +1,21 @@
+// Diagram for bounded secured managed domain
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"bounded secured managed domain" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">bounded secured managed domain</TD></TR></TABLE>> URL="../classes/itsVocabulary__bounded secured managed domain.md" margin=0]
+	}
+	entity [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">entity</TD></TR></TABLE>> URL="../entity/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		environment [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">environment</TD></TR></TABLE>> URL="../environment/" margin=0 target=_top]
+	}
+	"bounded secured managed domain" -> entity [arrowhead=onormal style=solid]
+	"bounded secured managed domain" -> Invis [style=invis]
+	Invis -> environment [style=invis]
+	"bounded secured managed domain" -> environment [label=" represents 
+ «some»  " arrowhead=normal style=solid]
+}

@@ -1,0 +1,41 @@
+// Diagram for ITS-S reference architecture
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"ITS-S reference architecture" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">ITS-S reference architecture</TD></TR></TABLE>> URL="../classes/itsVocabulary__ITS-S reference architecture.md" margin=0]
+	}
+	referenceArchitecture [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">reference architecture</TD></TR></TABLE>> URL="../reference architecture/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		applicationEntity [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">application entity</TD></TR></TABLE>> URL="../application entity/" margin=0 target=_top]
+		facilitiesLayer [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">facilities layer</TD></TR></TABLE>> URL="../facilities layer/" margin=0 target=_top]
+		"its-sAccessLayer" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ITS-S access layer</TD></TR></TABLE>> URL="../ITS-S access layer/" margin=0 target=_top]
+		managementEntity [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">management entity</TD></TR></TABLE>> URL="../management entity/" margin=0 target=_top]
+		securityEntity [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">security entity</TD></TR></TABLE>> URL="../security entity/" margin=0 target=_top]
+		transnetLayer [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">transnet layer</TD></TR></TABLE>> URL="../transnet layer/" margin=0 target=_top]
+	}
+	"ITS-S reference architecture" -> referenceArchitecture [arrowhead=onormal style=solid]
+	"ITS-S reference architecture" -> Invis [style=invis]
+	Invis -> applicationEntity [style=invis]
+	applicationEntity -> facilitiesLayer [style=invis]
+	facilitiesLayer -> "its-sAccessLayer" [style=invis]
+	"its-sAccessLayer" -> managementEntity [style=invis]
+	managementEntity -> securityEntity [style=invis]
+	securityEntity -> transnetLayer [style=invis]
+	"ITS-S reference architecture" -> applicationEntity [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	"ITS-S reference architecture" -> "its-sAccessLayer" [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	"ITS-S reference architecture" -> transnetLayer [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	"ITS-S reference architecture" -> facilitiesLayer [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	"ITS-S reference architecture" -> managementEntity [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+	"ITS-S reference architecture" -> securityEntity [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+}

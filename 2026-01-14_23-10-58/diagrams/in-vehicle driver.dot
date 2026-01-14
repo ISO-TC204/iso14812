@@ -1,0 +1,21 @@
+// Diagram for in-vehicle driver
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"in-vehicle driver" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">in-vehicle driver</TD></TR></TABLE>> URL="../classes/itsVocabulary__in-vehicle driver.md" margin=0]
+	}
+	driver [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">driver</TD></TR></TABLE>> URL="../driver/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		"built-inVehicleInputDevice" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">built-in vehicle input device</TD></TR></TABLE>> URL="../built-in vehicle input device/" margin=0 target=_top]
+	}
+	"in-vehicle driver" -> driver [arrowhead=onormal style=solid]
+	"in-vehicle driver" -> Invis [style=invis]
+	Invis -> "built-inVehicleInputDevice" [style=invis]
+	"in-vehicle driver" -> "built-inVehicleInputDevice" [label=" uses 
+ «some»  " arrowhead=normal style=solid]
+}
