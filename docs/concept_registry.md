@@ -26,6 +26,7 @@ This page lists all known terms in the ITS Vocabulary.
 | b2cMobilitySharingApp | mobility app (3.5.13.1) that assists a transport user (3.5.2.3) in |
 | bikesharingService | shared vehicle service (3.5.6.3) that shares bicycles |
 | biologicalEntity | material entity (3.1.1.3) that was or is a living organism |
+| block-face | extent of sidewalk on one side of a street between two consecutive |
 | blockFace | extent of sidewalk on one side of a street between two consecutive |
 | boundedSecureManagedDomain |  |
 | boundedSecuredManagedDomain | abstract entity (3.1.1.1) representing a managed processing and memory |

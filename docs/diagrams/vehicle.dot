@@ -28,10 +28,10 @@ digraph {
 	motor -> "off-grid" [style=invis]
 	"off-grid" -> vehicleInputDevice [style=invis]
 	vehicleInputDevice -> wheel [style=invis]
-	Nbd36f624475e4223820ce6aa136b6940 [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1" BGCOLOR="lightyellow"><TR><TD ALIGN="CENTER">«unionOf»</TD></TR></TABLE>> margin=0]
-	Nbd36f624475e4223820ce6aa136b6940 -> ads [label=member arrowhead=normal style=dotted]
-	Nbd36f624475e4223820ce6aa136b6940 -> driver [label=member arrowhead=normal style=dotted]
-	vehicle -> Nbd36f624475e4223820ce6aa136b6940 [label=" ddtControlledBy 
+	Nfdf7ae765449454fb9a4552f4349b50c [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1" BGCOLOR="lightyellow"><TR><TD ALIGN="CENTER">«unionOf»</TD></TR></TABLE>> margin=0]
+	Nfdf7ae765449454fb9a4552f4349b50c -> ads [label=member arrowhead=normal style=dotted]
+	Nfdf7ae765449454fb9a4552f4349b50c -> driver [label=member arrowhead=normal style=dotted]
+	vehicle -> Nfdf7ae765449454fb9a4552f4349b50c [label=" ddtControlledBy 
  «exactly 1»  " arrowhead=normal style=solid]
 	vehicle -> wheel [label=" has 
  «min 0»  " arrowhead=normal style=solid]
@@ -39,9 +39,9 @@ digraph {
  «min 0»  " arrowhead=normal style=solid]
 	vehicle -> vehicleInputDevice [label=" has 
  «some»  " arrowhead=normal style=solid]
-	N9ad9604d7a1f42d29808d0a140f82908 [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1" BGCOLOR="lightyellow"><TR><TD ALIGN="CENTER">«unionOf»</TD></TR></TABLE>> margin=0]
-	N9ad9604d7a1f42d29808d0a140f82908 -> connected [label=member arrowhead=normal style=dotted]
-	N9ad9604d7a1f42d29808d0a140f82908 -> "off-grid" [label=member arrowhead=normal style=dotted]
-	vehicle -> N9ad9604d7a1f42d29808d0a140f82908 [label=" canBe 
+	N5ffde62822ae4767be7d8d0f5ce18dc5 [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1" BGCOLOR="lightyellow"><TR><TD ALIGN="CENTER">«unionOf»</TD></TR></TABLE>> margin=0]
+	N5ffde62822ae4767be7d8d0f5ce18dc5 -> connected [label=member arrowhead=normal style=dotted]
+	N5ffde62822ae4767be7d8d0f5ce18dc5 -> "off-grid" [label=member arrowhead=normal style=dotted]
+	vehicle -> N5ffde62822ae4767be7d8d0f5ce18dc5 [label=" canBe 
  «min 1»  " arrowhead=normal style=solid]
 }

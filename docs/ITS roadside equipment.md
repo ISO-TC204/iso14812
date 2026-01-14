@@ -22,6 +22,6 @@ EXAMPLE: traffic signal controller, variable message sign, vehicle detection
 |------------|-------|
 | altPrefLabel | ITS roadway equipment |
 | clause | 3.2.3.2 |
-| skos::historyNote | Introduced in ISO/TS 14812:2022 |
+| skos::historyNote | Introduced in ISO/TS 14812:2022. Added Note 3 to entry in 2025. |
 | skos::prefLabel | ITS roadside equipment |
 

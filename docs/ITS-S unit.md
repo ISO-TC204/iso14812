@@ -24,6 +24,10 @@ NOTE: This is a clarification of the definition provided in ISO
 | altPrefLabel | ITS station unit |
 | altPrefLabel | ITS-SU |
 | clause | 3.2.7.4 |
-| skos::historyNote | Introduced in ISO/TS 14812:2022 |
+| skos::historyNote | Introduced in ISO/TS 14812:2022; revised in 2025. The original definition
+            resulted in confusion as to whether it was intended to reference merely an implementation,
+            which is an instance of a realization (e.g., something with a model number) or an instance 
+            of an implementation (e.g., something that would have a serial number). Added Note 1 to 
+            entry. |
 | skos::prefLabel | ITS-S unit |
 

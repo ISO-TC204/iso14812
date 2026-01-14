@@ -116,6 +116,7 @@ def main():
                     global_patterns[coll_str]["classes"].append((mem_str, cls_name, member_ont, cls_order))
                     if member in local_classes:
                         patterned_classes_set.add(cls_name)
+        log.debug("Total patterns collected so far: %d, %s", len(global_patterns), global_patterns)
         for cls in local_classes:
             cls_name = get_label(g, cls)
             global_all_classes.add(cls_name)
@@ -147,6 +148,7 @@ def main():
 
     # Update mkdocs.yml navigation
     try:
+        log.info("Total patterns for nav: %d", len(global_patterns))
         update_mkdocs_nav(mkdocs_path, global_patterns, errors, class_to_onts, ontology_info, owl_file, local_classes, g, ns)
     except Exception as e:
         error_msg = f"Error updating mkdocs.yml: {str(e)}\n{traceback.format_exc()}"

@@ -17,6 +17,7 @@ NOTE: Within the US, the NTCIP standards call the facilities layer the
 | altPrefLabel | ITS-S facilities layer |
 | clause | 3.1.5.5 |
 | skos::hiddenLabel | application layer |
-| skos::historyNote | Introduced in ISO/TS 14812:2022 |
+| skos::historyNote | Introduced in ISO/TS 14812:2022. Revised in 2025 based on input from WG 16
+            and to align more closely with the other definitions within ISO 14812. |
 | skos::prefLabel | facilities layer |
 
