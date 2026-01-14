@@ -67,15 +67,15 @@ def generate_markdown(g: Graph, cls: URIRef, cls_name: str, global_patterns: dic
     filename = os.path.join(os.path.dirname(file_path), f"{get_filename(cls_name)}.md")
     
     log.debug(f"Writing {filename} for class {cls_name} ({cls})")
-    
     # Check if this is a pattern class
     is_pattern = cls_name in global_patterns
+    log.info(f"Generating Markdown for {'pattern' if is_pattern else 'non-pattern'} class: {cls_name}")
 
     if is_pattern:
         # Pattern class Markdown
         title = f"# {insert_spaces(cls_name)}\n\n"
         desc = get_first_literal(g, cls, [SKOS.definition]) or ""
-        log.info(f"Pattern {cls_name} description: {desc}")
+        log.debug(f"Pattern {cls_name} description: {desc}")
         top_desc = f"{desc}\n\n" if desc else ""
         members_md = "It consists of the following classes:\n\n"
         member_tuples = global_patterns[cls_name]["classes"]
@@ -195,8 +195,7 @@ def update_mkdocs_nav(mkdocs_path: str, global_patterns: dict, errors: list, cla
         log.error(error_msg)
         raise
 
-    new_nav = [{"Home": "index.md", "Alphabetical Listing": "concept_registry.md"}]
-    new_nav.extend(top_level_items)
+    new_nav = [{"Home": "index.md"}, {"Alphabetical Listing": "concept_registry.md"}]
     
     file_path = input_file
     ontology_name = ontology_info[file_path]["ontology_name"]
@@ -216,16 +215,19 @@ def update_mkdocs_nav(mkdocs_path: str, global_patterns: dict, errors: list, cla
 
         # 1. Sub-collections of Terms
         for sub_coll_str in terms_gp.get("subcollections", []):
+            log.info(f"Processing sub-collection for nav: {sub_coll_str}")
             if sub_coll_str in global_patterns:
                 sub_gp = global_patterns[sub_coll_str]
                 display_name = insert_spaces(sub_gp["name"])
                 sub_nav = build_sub_nav(sub_coll_str, global_patterns, class_to_onts, ontology_name)
+                log.debug(f"Built sub-nav for {display_name}: {sub_nav}")
                 if sub_nav:
                     top_level_items.append({display_name: sub_nav})
 
         # 2. Direct classes that are members of Terms (not in any sub-collection)
         direct_classes = []
         for cls_data in terms_gp.get("classes", []):
+            log.info(f"Processing direct class for nav: {cls_data}")
             cls_str, cls_name, ont, cls_order = cls_data
             # Only include classes that are not members of any sub-collection
             is_in_sub = False
@@ -242,6 +244,7 @@ def update_mkdocs_nav(mkdocs_path: str, global_patterns: dict, errors: list, cla
         for cls_name, ont, _ in direct_classes:
             display_cls = insert_spaces(cls_name)
             top_level_items.append({display_cls: f"{get_filename(cls_name)}.md"})
+            log.info(f"Added top-level class to nav: {cls_name} ({display_cls})")
 
         # Add all top-level items to nav
         new_nav.extend(top_level_items)
@@ -317,5 +320,5 @@ def build_sub_nav(coll_str: str, global_patterns: dict, class_to_onts: dict, ont
         else:
             cls_name, ont = it_val
             display_mem = insert_spaces(cls_name)
-            sub_nav.append({display_mem: f"{cls_name}.md"})
+            sub_nav.append({display_mem: f"{get_filename(cls_name)}.md"})
     return sub_nav

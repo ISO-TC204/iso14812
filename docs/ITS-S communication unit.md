@@ -22,6 +22,7 @@ NOTE: In case an ITS-SU consists of a single physical unit, the ITS-SU
 | altPrefLabel | ITS station communication unit |
 | altPrefLabel | ITS-SCU |
 | clause | 3.2.7.5 |
-| skos::historyNote | Introduced in ISO/TS 14812:2022 |
+| skos::historyNote | Introduced in ISO/TS 14812:2022; revised in 2025. Added Note 1 to 
+            entry and revised to "the" ITS-S rather than "an" ITS-S. |
 | skos::prefLabel | ITS-S communication unit |
 

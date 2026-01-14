@@ -15,6 +15,7 @@ NOTE: The full name of this layer is the networking and transport
 | altPrefLabel | ITS-S networking and transport layer |
 | altPrefLabel | networking and transport layer |
 | clause | 3.1.5.4 |
-| skos::historyNote | Introduced in ISO/TS 14812:2022 |
+| skos::historyNote | Introduced in ISO/TS 14812:2022. Revised in 2025 based on input from WG 16
+            and to align more closely with the other definitions within ISO 14812. |
 | skos::prefLabel | transnet layer |
 

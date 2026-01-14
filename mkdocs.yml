@@ -12,10 +12,12 @@ nav:
     - facilities layer: facilities layer.md
     - ITS-S access layer: ITS-S access layer.md
     - management entity: management entity.md
+    - security entity: security entity.md
     - transnet layer: transnet layer.md
   - architecture Enterprise View Terms:
     - document: document.md
     - enterprise object: enterprise object.md
+    - extend: extend.md
     - formal coordination: formal coordination.md
     - include: include.md
     - informal coordination: informal coordination.md
@@ -27,15 +29,18 @@ nav:
     - data flow: data flow.md
     - function: function.md
     - process: process.md
+    - process specification: process specification.md
   - architecture Physical View Terms:
     - functional object: functional object.md
     - information flow: information flow.md
     - information transfer: information transfer.md
     - ITS component: ITS component.md
+    - module: module.md
     - physical object: physical object.md
     - terminator: terminator.md
   - architecture Type Terms:
     - deployment architecture: deployment architecture.md
+    - ITS deployment architecture: ITS deployment architecture.md
     - ITS planning architecture: ITS planning architecture.md
     - ITS reference architecture: ITS reference architecture.md
     - ITS-S reference architecture: ITS-S reference architecture.md
@@ -49,6 +54,7 @@ nav:
     - functional view: functional view.md
     - functional viewpoint: functional viewpoint.md
     - physical view: physical view.md
+    - physical viewpoint: physical viewpoint.md
   - concept Realization Terms:
     - design: design.md
     - implementation: implementation.md
@@ -58,12 +64,14 @@ nav:
     - requirements specification: requirements specification.md
   - data Concept Management Terms:
     - data concept: data concept.md
+    - data concept registry: data concept registry.md
     - data dictionary: data dictionary.md
     - meta-attribute: meta-attribute.md
   - data Concept Type Terms:
     - class: class.md
     - data element: data element.md
     - data frame: data frame.md
+    - interface dialogue: interface dialogue.md
     - message: message.md
     - value domain: value domain.md
   - entity Terms:
@@ -72,6 +80,7 @@ nav:
     - immaterial entity: immaterial entity.md
     - material entity: material entity.md
     - non-biological entity: non-biological entity.md
+    - person: person.md
   - general Architecture Terms:
     - architecture: architecture.md
     - architecture description: architecture description.md
@@ -81,9 +90,11 @@ nav:
     - architecture viewpoint: architecture viewpoint.md
     - concern: concern.md
     - element: element.md
+    - environment: environment.md
     - model kind: model kind.md
     - stakeholder: stakeholder.md
   - general System Terms:
+    - cooperative ITS: cooperative ITS.md
     - intelligent transport system: intelligent transport system.md
     - surface transport system: surface transport system.md
     - system: system.md
@@ -97,6 +108,7 @@ nav:
     - digital signature: digital signature.md
     - information security event: information security event.md
     - information security incident: information security incident.md
+    - non-repudiation: non-repudiation.md
     - objective: objective.md
     - resilience: resilience.md
     - risk: risk.md
@@ -122,12 +134,14 @@ nav:
         system.md
     - traffic management central system: traffic management central system.md
     - traffic regulation central system: traffic regulation central system.md
+    - transport information central system: transport information central system.md
   - device Component Terms:
     - actuator: actuator.md
     - sensor: sensor.md
   - field Physical Object Terms:
     - connected: connected.md
     - connected unit: connected unit.md
+    - connected vehicle: connected vehicle.md
     - connected vehicle roadside equipment: connected vehicle roadside equipment.md
     - field support equipment: field support equipment.md
     - ITS roadside equipment: ITS roadside equipment.md
@@ -136,6 +150,7 @@ nav:
     - ITS application role: ITS application role.md
     - ITS-S application: ITS-S application.md
     - ITS-S application implementation: ITS-S application implementation.md
+    - ITS-S application installation: ITS-S application installation.md
     - ITS-S application process: ITS-S application process.md
     - ITS-S application process installation: ITS-S application process installation.md
   - its Application Terms:
@@ -143,6 +158,7 @@ nav:
     - interoperability design: interoperability design.md
     - ITS application: ITS application.md
     - ITS application specification: ITS application specification.md
+    - ITS deployment: ITS deployment.md
     - ITS implementation: ITS implementation.md
   - its Station Terms:
     - bounded secured managed domain: bounded secured managed domain.md
@@ -150,24 +166,30 @@ nav:
     - ITS trust domain: ITS trust domain.md
     - ITS-S communication unit: ITS-S communication unit.md
     - ITS-S host: ITS-S host.md
+    - ITS-S node: ITS-S node.md
     - ITS-S router: ITS-S router.md
     - ITS-S unit: ITS-S unit.md
   - personal Physical Object Terms:
     - nomadic device: nomadic device.md
     - nomadic vehicle device: nomadic vehicle device.md
     - personal information device: personal information device.md
+    - public information device: public information device.md
   - support Physical Object Terms:
     - cooperative ITS credentials management system: cooperative ITS credentials management
         system.md
+    - map provision system: map provision system.md
   - top-level Physical Object Terms:
     - central system: central system.md
     - field system: field system.md
     - personal system: personal system.md
     - support system: support system.md
+    - vehicle system: vehicle system.md
   - vehicle Physical Object Terms:
     - ITS on-board equipment: ITS on-board equipment.md
+    - ITS on-board unit: ITS on-board unit.md
 - infrastructure Terms:
   - alternate Mode Infrastructure Component Terms:
+    - block-face: block-face.md
     - cycle lane: cycle lane.md
     - cycleway: cycleway.md
     - escalator: escalator.md
@@ -178,13 +200,16 @@ nav:
     - sidewalk: sidewalk.md
   - facility Terms:
     - bridge: bridge.md
+    - movable bridge: movable bridge.md
     - transport facility: transport facility.md
     - transport infrastructure: transport infrastructure.md
   - infrastructure Operating Mode Terms:
     - hard shoulder for emergency use: hard shoulder for emergency use.md
+    - hard shoulder running: hard shoulder running.md
   - junction Terms:
     - egress lane: egress lane.md
     - egress link: egress link.md
+    - grade separated manoeuvre: grade separated manoeuvre.md
     - ingress lane: ingress lane.md
     - ingress link: ingress link.md
     - interchange: interchange.md
@@ -197,13 +222,16 @@ nav:
     - loading area: loading area.md
     - parking space: parking space.md
     - parking space for permit holders: parking space for permit holders.md
-    - pick-up/drop-off area: pick-up/drop-off area.md
+    - pick-up/drop-off area: pick-updrop-off area.md
+    - public transport vehicle stop: public transport vehicle stop.md
   - physical Traffic Separator Terms:
     - central reservation: central reservation.md
     - Jersey barrier: Jersey barrier.md
+    - kerb: kerb.md
     - physical traffic separator: physical traffic separator.md
   - road Equipment Terms:
     - road equipment: road equipment.md
+    - traffic control device: traffic control device.md
   - road Network Terms:
     - alley: alley.md
     - lane link: lane link.md
@@ -217,6 +245,7 @@ nav:
     - road network: road network.md
     - road section: road section.md
     - road segment: road segment.md
+    - service alley: service alley.md
     - service road: service road.md
   - road Reservation Component Terms:
     - carriageway: carriageway.md
@@ -227,6 +256,7 @@ nav:
     - hardstanding: hardstanding.md
     - lane: lane.md
     - lay-by: lay-by.md
+    - motorway: motorway.md
     - multiple carriageway: multiple carriageway.md
     - reserved lane: reserved lane.md
     - road reservation: road reservation.md
@@ -253,6 +283,7 @@ nav:
     - gazetteer: gazetteer.md
     - geographic descriptor: geographic descriptor.md
     - geographic identifier: geographic identifier.md
+    - infrastructure descriptor: infrastructure descriptor.md
     - link location: link location.md
     - location referencing: location referencing.md
     - network location: network location.md
@@ -266,6 +297,7 @@ nav:
     - geographic point location: geographic point location.md
     - linear location: linear location.md
     - location: location.md
+    - point coordinates: point coordinates.md
     - point destination: point destination.md
     - point location: point location.md
     - spatial location: spatial location.md
@@ -274,6 +306,7 @@ nav:
     - contractual model: contractual model.md
     - corporate customer model: corporate customer model.md
     - government customer model: government customer model.md
+    - peer-to-peer: peer-to-peer.md
     - private customer model: private customer model.md
   - financial Model Terms:
     - commercial: commercial.md
@@ -282,13 +315,16 @@ nav:
     - fractional ownership: fractional ownership.md
     - membership-based: membership-based.md
     - mutual benefit: mutual benefit.md
+    - open-access: open-access.md
     - private: private.md
     - public: public.md
   - generic Service Terms:
     - service: service.md
     - service provider: service provider.md
     - user: user.md
+    - user need: user need.md
   - its-su Service Terms:
+    - ITS-S service: ITS-S service.md
     - ITS-SU service: ITS-SU service.md
     - ITS-SU service provider: ITS-SU service provider.md
     - ITS-SU user: ITS-SU user.md
@@ -297,7 +333,9 @@ nav:
     - ITS service: ITS service.md
     - ITS service provider: ITS service provider.md
     - ITS user: ITS user.md
+    - ITS user need: ITS user need.md
   - network Model Terms:
+    - free-floating: free-floating.md
     - network model: network model.md
     - station-based one-way: station-based one-way.md
     - station-based roundtrip: station-based roundtrip.md
@@ -306,8 +344,10 @@ nav:
     - dynamic route: dynamic route.md
     - fixed route: fixed route.md
     - operational model: operational model.md
+    - paired on-demand: paired on-demand.md
     - sequential: sequential.md
   - shared Transport Service Terms:
+    - courier network service: courier network service.md
     - rideshare service: rideshare service.md
     - ridesourced service: ridesourced service.md
     - ridesplit service: ridesplit service.md
@@ -316,11 +356,13 @@ nav:
     - taxi-share service: taxi-share service.md
   - shared Vehicle Terms:
     - bikesharing service: bikesharing service.md
+    - carsharing service: carsharing service.md
   - transport-related Sharing Terms:
     - public transport: public transport.md
     - shared transport service: shared transport service.md
     - shared vehicle service: shared vehicle service.md
     - transport sharing: transport sharing.md
+    - vehicle sharing: vehicle sharing.md
   - transport Service Application Terms:
     - B2 C mobility sharing app: B2C mobility sharing app.md
     - mobility app: mobility app.md
@@ -330,13 +372,16 @@ nav:
     - real-time traveller information app: real-time traveller information app.md
     - ridesourcing app: ridesourcing app.md
     - taxi hailing app: taxi hailing app.md
+    - trip aggregator app: trip aggregator app.md
   - transport Service Terms:
     - transport provider: transport provider.md
     - transport service: transport service.md
     - transport user: transport user.md
+    - transport user need: transport user need.md
 - user Terms:
   - traveller Terms:
     - pedestrian: pedestrian.md
+    - protected road user: protected road user.md
     - road user: road user.md
     - traveller: traveller.md
     - vulnerable road user: vulnerable road user.md
@@ -344,12 +389,14 @@ nav:
     - driver: driver.md
     - in-vehicle driver: in-vehicle driver.md
     - passenger: passenger.md
+    - remote driver: remote driver.md
     - vehicle occupant: vehicle occupant.md
 - vehicle Terms:
   - vehicle Attribute Terms:
     - anonymized vehicle reference: anonymized vehicle reference.md
     - design speed: design speed.md
     - gross vehicle mass: gross vehicle mass.md
+    - gross vehicle mass rating: gross vehicle mass rating.md
     - speed: speed.md
     - vehicle equipment: vehicle equipment.md
     - vehicle fuel type: vehicle fuel type.md
@@ -358,6 +405,7 @@ nav:
     - vehicle registration plate identifier: vehicle registration plate identifier.md
   - vehicle Automation Terms:
     - ADS: ADS.md
+    - ADS-dedicated vehicle: ADS-dedicated vehicle.md
     - ADS-equipped vehicle: ADS-equipped vehicle.md
     - conventional vehicle: conventional vehicle.md
     - DDT performance-relevant system failure: DDT performance-relevant system failure.md
@@ -377,6 +425,7 @@ nav:
     - built-in vehicle input device: built-in vehicle input device.md
     - motor: motor.md
     - nomadic vehicle input device: nomadic vehicle input device.md
+    - remote vehicle input device: remote vehicle input device.md
     - vehicle: vehicle.md
     - vehicle input device: vehicle input device.md
     - wheel: wheel.md
@@ -384,7 +433,9 @@ nav:
     - disconnected: disconnected.md
     - off-grid: off-grid.md
     - unconnected: unconnected.md
+    - unequipped: unequipped.md
   - vehicle Speed Terms:
+    - high vehicle speed: high vehicle speed.md
     - high-speed vehicle: high-speed vehicle.md
     - low vehicle speed: low vehicle speed.md
     - low-speed vehicle: low-speed vehicle.md
@@ -399,6 +450,7 @@ nav:
   - vehicle Types Environment Terms:
     - motor vehicle: motor vehicle.md
     - motorized vehicle: motorized vehicle.md
+    - non-road cycle: non-road cycle.md
     - non-road vehicle: non-road vehicle.md
     - road cycle: road cycle.md
     - road vehicle: road vehicle.md

@@ -5,7 +5,7 @@ import traceback
 import re
 import textwrap
 from rdflib import Graph, RDF, OWL, URIRef, Literal, XSD, RDFS
-from utils import get_qname, get_ontology_metadata, _norm_base, get_leaf_classes, collect_oneOf, collect_list, update_concept_registry, parse_ontology_registry, update_ontology_registry
+from utils import get_qname, get_ontology_metadata, _norm_base, get_leaf_classes, collect_oneOf, collect_list, update_concept_registry
 from rdflib.namespace import DC, DCTERMS, SKOS
 from urllib.parse import urljoin
 
@@ -13,7 +13,11 @@ from urllib.parse import urljoin
 log = logging.getLogger("owl2mkdocs")
 
 def parse_concept_registry(script_dir):
-    registry_path = os.path.join(script_dir, "concept_registry.md")
+    root_dir = os.getcwd()
+    docs_dir = os.path.join(root_dir, "docs")
+    if not os.path.isdir(docs_dir):
+        log.warning(f"docs directory does not exist: {docs_dir}")
+    registry_path = os.path.join(docs_dir, "concept_registry.md")
     if not os.path.exists(registry_path):
         with open(registry_path, 'w', encoding='utf-8') as f:
             f.write("| name | description |\n|----------|------|\n")
@@ -189,7 +193,7 @@ def process_ontology(owl_path: str, errors: list, ontology_info) -> tuple:
     # Load the concept registry from the Python script directory
     script_dir = os.path.dirname(os.path.realpath(__file__))
     registry = parse_concept_registry(script_dir)
-    ontology_registry = parse_ontology_registry(script_dir)
+    ontology_registry = {}
 
     # Add object and datatype properties from registry to the graph
     for uri, info in registry.items():
@@ -370,7 +374,6 @@ def process_ontology(owl_path: str, errors: list, ontology_info) -> tuple:
         ritso_location = os.path.basename(os.path.dirname(os.path.dirname(owl_path)))
         description = ontology_info["description"]
         ontology_registry[official_iri] = {'preferred_prefix': preferred_prefix, 'ritso_location': ritso_location, 'description': description}
-    update_ontology_registry(script_dir, ontology_registry)
     ontology_info["patterns"] = set()
     ontology_info["non_pattern_classes"] = set()
 

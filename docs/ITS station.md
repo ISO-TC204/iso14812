@@ -21,6 +21,7 @@ NOTE: The ITS station reference architecture is defined in ISO 21217.
 |------------|-------|
 | altPrefLabel | ITS-S |
 | clause | 3.2.7.3 |
-| skos::historyNote | Introduced in ISO/TS 14812:2022 |
+| skos::historyNote | Introduced in ISO/TS 14812:2022. Revised in 2025 to indicate the "design"
+            and to add Note 2 to entry. |
 | skos::prefLabel | ITS station |
 

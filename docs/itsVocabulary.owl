@@ -140,12 +140,14 @@
       <skos:member rdf:resource="materialEntity"/>
       <skos:member rdf:resource="non-biologicalEntity"/>
       <skos:member rdf:resource="biologicalEntity"/>
+      <skos:member rdf:resource="person"/>
     </skos:Collection>
     <skos:Collection rdf:about="generalSystemTerms">
       <skos:member rdf:resource="system"/>
       <skos:member rdf:resource="transportSystem"/>
       <skos:member rdf:resource="surfaceTransportSystem"/>
       <skos:member rdf:resource="intelligentTransportSystem"/>
+      <skos:member rdf:resource="cooperativeIts"/>
     </skos:Collection>
     <skos:Collection rdf:about="generalArchitectureTerms">
       <skos:member rdf:resource="architecture"/>
@@ -158,6 +160,7 @@
       <skos:member rdf:resource="modelKind"/>
       <skos:member rdf:resource="architectureModel"/>
       <skos:member rdf:resource="element"/>
+      <skos:member rdf:resource="environment"/>
     </skos:Collection>
     <skos:Collection rdf:about="architectureViewTerms">
       <skos:member rdf:resource="communicationsView"/>
@@ -167,6 +170,7 @@
       <skos:member rdf:resource="functionalView"/>
       <skos:member rdf:resource="functionalViewpoint"/>
       <skos:member rdf:resource="physicalView"/>
+      <skos:member rdf:resource="physicalViewpoint"/>
     </skos:Collection>
     <skos:Collection rdf:about="architectureCommunicationViewTerms">
       <skos:member rdf:resource="applicationEntity"/>
@@ -175,6 +179,7 @@
       <skos:member rdf:resource="transnetLayer"/>
       <skos:member rdf:resource="facilitiesLayer"/>
       <skos:member rdf:resource="managementEntity"/>
+      <skos:member rdf:resource="securityEntity"/>
     </skos:Collection>
     <skos:Collection rdf:about="architectureEnterpriseViewTerms">
       <skos:member rdf:resource="enterpriseObject"/>
@@ -186,11 +191,13 @@
       <skos:member rdf:resource="role"/>
       <skos:member rdf:resource="relationship"/>
       <skos:member rdf:resource="include"/>
+      <skos:member rdf:resource="extend"/>
     </skos:Collection>
     <skos:Collection rdf:about="architectureFunctionalViewTerms">
       <skos:member rdf:resource="dataFlow"/>
       <skos:member rdf:resource="process"/>
       <skos:member rdf:resource="function"/>
+      <skos:member rdf:resource="processSpecification"/>
     </skos:Collection>
     <skos:Collection rdf:about="architecturePhysicalViewTerms">
       <skos:member rdf:resource="physicalObject"/>
@@ -199,6 +206,7 @@
       <skos:member rdf:resource="informationFlow"/>
       <skos:member rdf:resource="informationTransfer"/>
       <skos:member rdf:resource="functionalObject"/>
+      <skos:member rdf:resource="module"/>
     </skos:Collection>
     <skos:Collection rdf:about="architectureTypeTerms">
       <skos:member rdf:resource="referenceArchitecture"/>
@@ -207,11 +215,13 @@
       <skos:member rdf:resource="its-sReferenceArchitecture"/>
       <skos:member rdf:resource="itsReferenceArchitecture"/>
       <skos:member rdf:resource="itsPlanningArchitecture"/>
+      <skos:member rdf:resource="itsDeploymentArchitecture"/>
     </skos:Collection>
     <skos:Collection rdf:about="dataConceptManagementTerms">
       <skos:member rdf:resource="dataConcept"/>
       <skos:member rdf:resource="meta-attribute"/>
       <skos:member rdf:resource="dataDictionary"/>
+      <skos:member rdf:resource="dataConceptRegistry"/>
     </skos:Collection>
     <skos:Collection rdf:about="dataConceptTypeTerms">
       <skos:member rdf:resource="dataElement"/>
@@ -219,6 +229,7 @@
       <skos:member rdf:resource="valueDomain"/>
       <skos:member rdf:resource="dataFrame"/>
       <skos:member rdf:resource="message"/>
+      <skos:member rdf:resource="interfaceDialogue"/>
     </skos:Collection>
     <skos:Collection rdf:about="systemEngineeringTerms">
       <skos:member rdf:resource="useCase"/>
@@ -237,7 +248,7 @@
       <skos:member rdf:resource="digitalSignature"/>
       <skos:member rdf:resource="informationSecurityEvent"/>
       <skos:member rdf:resource="informationSecurityIncident"/>
-      <skos:member rdf:resource="nonRepudiation"/>
+      <skos:member rdf:resource="non-repudiation"/>
       <skos:member rdf:resource="objective"/>
       <skos:member rdf:resource="resilience"/>
       <skos:member rdf:resource="risk"/>
@@ -259,6 +270,7 @@
       <skos:member rdf:resource="fieldSystem"/>
       <skos:member rdf:resource="personalSystem"/>
       <skos:member rdf:resource="supportSystem"/>
+      <skos:member rdf:resource="vehicleSystem"/>
     </skos:Collection>
     <skos:Collection rdf:about="centrePhysicalObjectTerms">
       <skos:member rdf:resource="emergencyManagementCentralSystem"/>
@@ -268,6 +280,7 @@
       <skos:member rdf:resource="publicTransportCentralManagementSystem"/>
       <skos:member rdf:resource="trafficManagementCentralSystem"/>
       <skos:member rdf:resource="trafficRegulationCentralSystem"/>
+      <skos:member rdf:resource="transportInformationCentralSystem"/>
     </skos:Collection>
     <skos:Collection rdf:about="fieldPhysicalObjectTerms">
       <skos:member rdf:resource="fieldSupportEquipment"/>
@@ -276,17 +289,21 @@
       <skos:member rdf:resource="roadsideUnit"/>
       <skos:member rdf:resource="connectedUnit"/>
       <skos:member rdf:resource="connected"/>
+      <skos:member rdf:resource="connectedVehicle"/>
     </skos:Collection>
     <skos:Collection rdf:about="personalPhysicalObjectTerms">
       <skos:member rdf:resource="nomadicVehicleDevice"/>
       <skos:member rdf:resource="personalInformationDevice"/>
       <skos:member rdf:resource="nomadicDevice"/>
+      <skos:member rdf:resource="publicInformationDevice"/>
     </skos:Collection>
     <skos:Collection rdf:about="supportPhysicalObjectTerms">
       <skos:member rdf:resource="cooperativeItsCredentialsManagementSystem"/>
+      <skos:member rdf:resource="mapProvisionSystem"/>
     </skos:Collection>
     <skos:Collection rdf:about="vehiclePhysicalObjectTerms">
       <skos:member rdf:resource="itsOn-boardEquipment"/>
+      <skos:member rdf:resource="itsOn-boardUnit"/>
     </skos:Collection>
     <skos:Collection rdf:about="itsStationTerms">
       <skos:member rdf:resource="boundedSecuredManagedDomain"/>
@@ -296,6 +313,7 @@
       <skos:member rdf:resource="its-sCommunicationUnit"/>
       <skos:member rdf:resource="its-sHost"/>
       <skos:member rdf:resource="its-sRouter"/>
+      <skos:member rdf:resource="its-sNode"/>
     </skos:Collection>
     <skos:Collection rdf:about="itsApplicationTerms">
       <skos:member rdf:resource="itsApplication"/>
@@ -303,6 +321,7 @@
       <skos:member rdf:resource="itsApplicationSpecification"/>
       <skos:member rdf:resource="applicationTemplate"/>
       <skos:member rdf:resource="itsImplementation"/>
+      <skos:member rdf:resource="itsDeployment"/>
     </skos:Collection>
     <skos:Collection rdf:about="its-sApplicationProcessTerms">
       <skos:member rdf:resource="itsApplicationRole"/>
@@ -310,6 +329,7 @@
       <skos:member rdf:resource="its-sApplication"/>
       <skos:member rdf:resource="its-sApplicationImplementation"/>
       <skos:member rdf:resource="its-sApplicationProcessInstallation"/>
+      <skos:member rdf:resource="its-sApplicationInstallation"/>
     </skos:Collection>
     <skos:Collection rdf:about="deviceComponentTerms">
       <skos:member rdf:resource="actuator"/>
@@ -336,11 +356,13 @@
       <skos:member rdf:resource="shoulder"/>
       <skos:member rdf:resource="hardShoulder"/>
       <skos:member rdf:resource="softShoulder"/>
+      <skos:member rdf:resource="motorway"/>
     </skos:Collection>
     <skos:Collection rdf:about="physicalTrafficSeparatorTerms">
       <skos:member rdf:resource="physicalTrafficSeparator"/>
       <skos:member rdf:resource="centralReservation"/>
       <skos:member rdf:resource="jerseyBarrier"/>
+      <skos:member rdf:resource="kerb"/>
     </skos:Collection>
     <skos:Collection rdf:about="alternateModeInfrastructureComponentTerms">
       <skos:member rdf:resource="cycleLane"/>
@@ -355,6 +377,7 @@
     </skos:Collection>
     <skos:Collection rdf:about="infrastructureOperatingModeTerms">
       <skos:member rdf:resource="hardShoulderForEmergencyUse"/>
+      <skos:member rdf:resource="hardShoulderRunning"/>
     </skos:Collection>
     <skos:Collection rdf:about="roadNetworkTerms">
       <skos:member rdf:resource="road"/>
@@ -370,6 +393,7 @@
       <skos:member rdf:resource="alley"/>
       <skos:member rdf:resource="roadIdentifier"/>
       <skos:member rdf:resource="serviceRoad"/>
+      <skos:member rdf:resource="serviceAlley"/>
     </skos:Collection>
     <skos:Collection rdf:about="junctionTerms">
       <skos:member rdf:resource="intersection"/>
@@ -381,11 +405,13 @@
       <skos:member rdf:resource="intersectionManoeuvre"/>
       <skos:member rdf:resource="junctionAtGrade"/>
       <skos:member rdf:resource="interchange"/>
+      <skos:member rdf:resource="gradeSeparatedManoeuvre"/>
     </skos:Collection>
     <skos:Collection rdf:about="facilityTerms">
       <skos:member rdf:resource="transportFacility"/>
       <skos:member rdf:resource="transportInfrastructure"/>
       <skos:member rdf:resource="bridge"/>
+      <skos:member rdf:resource="movableBridge"/>
     </skos:Collection>
     <skos:Collection rdf:about="kerbsideUsageTerms">
       <skos:member rdf:resource="designatedParkingSpace"/>
@@ -393,9 +419,11 @@
       <skos:member rdf:resource="parkingSpace"/>
       <skos:member rdf:resource="parkingSpaceForPermitHolders"/>
       <skos:member rdf:resource="pick-upDrop-offArea"/>
+      <skos:member rdf:resource="publicTransportVehicleStop"/>
     </skos:Collection>
     <skos:Collection rdf:about="roadEquipmentTerms">
       <skos:member rdf:resource="roadEquipment"/>
+      <skos:member rdf:resource="trafficControlDevice"/>
     </skos:Collection>
     <skos:Collection rdf:about="locationTypeTerms">
       <skos:member rdf:resource="location"/>
@@ -408,6 +436,7 @@
       <skos:member rdf:resource="pointDestination"/>
       <skos:member rdf:resource="areaDestination"/>
       <skos:member rdf:resource="coordinateTuple"/>
+      <skos:member rdf:resource="pointCoordinates"/>
     </skos:Collection>
     <skos:Collection rdf:about="locationReferencingTerms">
       <skos:member rdf:resource="locationReferencing"/>
@@ -419,6 +448,7 @@
       <skos:member rdf:resource="gazetteer"/>
       <skos:member rdf:resource="networkLocation"/>
       <skos:member rdf:resource="geographicDescriptor"/>
+      <skos:member rdf:resource="infrastructureDescriptor"/>
     </skos:Collection>
     <skos:Collection rdf:about="jurisdictionalTerms">
       <skos:member rdf:resource="campus"/>
@@ -433,22 +463,26 @@
       <skos:member rdf:resource="service"/>
       <skos:member rdf:resource="serviceProvider"/>
       <skos:member rdf:resource="user"/>
+      <skos:member rdf:resource="userNeed"/>
     </skos:Collection>
     <skos:Collection rdf:about="transportServiceTerms">
       <skos:member rdf:resource="transportService"/>
       <skos:member rdf:resource="transportProvider"/>
       <skos:member rdf:resource="transportUser"/>
+      <skos:member rdf:resource="transportUserNeed"/>
     </skos:Collection>
     <skos:Collection rdf:about="itsServiceTerms">
       <skos:member rdf:resource="itsService"/>
       <skos:member rdf:resource="itsServiceProvider"/>
       <skos:member rdf:resource="itsUser"/>
+      <skos:member rdf:resource="itsUserNeed"/>
     </skos:Collection>
     <skos:Collection rdf:about="its-suServiceTerms">
       <skos:member rdf:resource="its-suService"/>
       <skos:member rdf:resource="its-suServiceProvider"/>
       <skos:member rdf:resource="its-suUser"/>
       <skos:member rdf:resource="its-suUserNeed"/>
+      <skos:member rdf:resource="its-sService"/>
     </skos:Collection>
     <skos:Collection rdf:about="transportServiceApplicationTerms">
       <skos:member rdf:resource="mobilityApp"/>
@@ -459,18 +493,21 @@
       <skos:member rdf:resource="publicTransportApp"/>
       <skos:member rdf:resource="real-timeTravellerInformationApp"/>
       <skos:member rdf:resource="taxiHailingApp"/>
+      <skos:member rdf:resource="tripAggregatorApp"/>
     </skos:Collection>
     <skos:Collection rdf:about="transport-relatedSharingTerms">
       <skos:member rdf:resource="publicTransport"/>
       <skos:member rdf:resource="sharedTransportService"/>
       <skos:member rdf:resource="sharedVehicleService"/>
       <skos:member rdf:resource="transportSharing"/>
+      <skos:member rdf:resource="vehicleSharing"/>
     </skos:Collection>
     <skos:Collection rdf:about="contractualModelTerms">
       <skos:member rdf:resource="contractualModel"/>
       <skos:member rdf:resource="corporateCustomerModel"/>
       <skos:member rdf:resource="privateCustomerModel"/>
       <skos:member rdf:resource="governmentCustomerModel"/>
+      <skos:member rdf:resource="peer-to-peer"/>
     </skos:Collection>
     <skos:Collection rdf:about="financialModelTerms">
       <skos:member rdf:resource="financialModel"/>
@@ -481,6 +518,7 @@
       <skos:member rdf:resource="fractionalOwnership"/>
       <skos:member rdf:resource="private"/>
       <skos:member rdf:resource="membership-based"/>
+      <skos:member rdf:resource="open-access"/>
     </skos:Collection>
     <skos:Collection rdf:about="operationalModelTerms">
       <skos:member rdf:resource="operationalModel"/>
@@ -488,11 +526,13 @@
       <skos:member rdf:resource="concurrent"/>
       <skos:member rdf:resource="fixedRoute"/>
       <skos:member rdf:resource="dynamicRoute"/>
+      <skos:member rdf:resource="pairedOn-demand"/>
     </skos:Collection>
     <skos:Collection rdf:about="networkModelTerms">
       <skos:member rdf:resource="networkModel"/>
       <skos:member rdf:resource="station-basedRoundtrip"/>
       <skos:member rdf:resource="station-basedOne-way"/>
+      <skos:member rdf:resource="free-floating"/>
     </skos:Collection>
     <skos:Collection rdf:about="sharedTransportServiceTerms">
       <skos:member rdf:resource="shuttleService"/>
@@ -501,21 +541,25 @@
       <skos:member rdf:resource="rideshareService"/>
       <skos:member rdf:resource="ridesourcedService"/>
       <skos:member rdf:resource="ridesplitService"/>
+      <skos:member rdf:resource="courierNetworkService"/>
     </skos:Collection>
     <skos:Collection rdf:about="sharedVehicleTerms">
       <skos:member rdf:resource="bikesharingService"/>
+      <skos:member rdf:resource="carsharingService"/>
     </skos:Collection>
     <skos:Collection rdf:about="travellerTerms">
       <skos:member rdf:resource="traveller"/>
       <skos:member rdf:resource="roadUser"/>
       <skos:member rdf:resource="pedestrian"/>
       <skos:member rdf:resource="vulnerableRoadUser"/>
+      <skos:member rdf:resource="protectedRoadUser"/>
     </skos:Collection>
     <skos:Collection rdf:about="vehicleOccupantTerms">
       <skos:member rdf:resource="passenger"/>
       <skos:member rdf:resource="vehicleOccupant"/>
       <skos:member rdf:resource="driver"/>
       <skos:member rdf:resource="in-vehicleDriver"/>
+      <skos:member rdf:resource="remoteDriver"/>
     </skos:Collection>
     <skos:Collection rdf:about="vehicleComponentTerms">
       <skos:member rdf:resource="vehicle"/>
@@ -524,6 +568,7 @@
       <skos:member rdf:resource="vehicleInputDevice"/>
       <skos:member rdf:resource="built-inVehicleInputDevice"/>
       <skos:member rdf:resource="nomadicVehicleInputDevice"/>
+      <skos:member rdf:resource="remoteVehicleInputDevice"/>
     </skos:Collection>
     <skos:Collection rdf:about="vehicleAttributeTerms">
       <skos:member rdf:resource="speed"/>
@@ -535,6 +580,7 @@
       <skos:member rdf:resource="vehicleLoadType"/>
       <skos:member rdf:resource="vehicleRegistrationPlateIdentifier"/>
       <skos:member rdf:resource="grossVehicleMass"/>
+      <skos:member rdf:resource="grossVehicleMassRating"/>
     </skos:Collection>
     <skos:Collection rdf:about="vehicleAutomationTerms">
       <skos:member rdf:resource="dynamicDrivingTask"/>
@@ -553,11 +599,13 @@
       <skos:member rdf:resource="conventionalVehicle"/>
       <skos:member rdf:resource="ads-equippedVehicle"/>
       <skos:member rdf:resource="dual-modeVehicle"/>
+      <skos:member rdf:resource="ads-dedicatedVehicle"/>
     </skos:Collection>
     <skos:Collection rdf:about="vehicleConnectivityTerms">
       <skos:member rdf:resource="off-grid"/>
       <skos:member rdf:resource="unconnected"/>
       <skos:member rdf:resource="disconnected"/>
+      <skos:member rdf:resource="unequipped"/>
     </skos:Collection>
     <skos:Collection rdf:about="vehicleSpeedTerms">
       <skos:member rdf:resource="ultra-low-speedVehicle"/>
@@ -571,6 +619,7 @@
       <skos:member rdf:resource="moderately-lowVehicleSpeed"/>
       <skos:member rdf:resource="moderateVehicleSpeed"/>
       <skos:member rdf:resource="moderately-highVehicleSpeed"/>
+      <skos:member rdf:resource="highVehicleSpeed"/>
     </skos:Collection>
     <skos:Collection rdf:about="vehicleTypesEnvironmentTerms">
       <skos:member rdf:resource="roadVehicle"/>
@@ -578,6 +627,7 @@
       <skos:member rdf:resource="motorVehicle"/>
       <skos:member rdf:resource="non-roadVehicle"/>
       <skos:member rdf:resource="roadCycle"/>
+      <skos:member rdf:resource="non-roadCycle"/>
     </skos:Collection>
     <skos:Collection rdf:about="paymentTerms">
       <skos:member rdf:resource="paymentMeans"/>
@@ -3575,7 +3625,7 @@
         <skos:note>The space can be for travel, gatherings, rest, or other purposes.</skos:note>
         <skos:historyNote>Introduced in ISO/TS 14812:2025</skos:historyNote>
     </owl:Class>
-    <owl:Class rdf:about="blockFace">
+    <owl:Class rdf:about="block-face">
         <clause>3.3.3.9</clause>
         <skos:prefLabel xml:lang="en">block-face</skos:prefLabel>
         <skos:definition>extent of sidewalk on one side of a street between two consecutive

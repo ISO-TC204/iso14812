@@ -270,7 +270,7 @@ def is_abstract(cls, g, ns):
 def get_filename(input_string: str) -> str:
     if input_string is None:
         return None
-    return input_string.replace("/", "_")
+    return input_string.replace("/", "")
 
 def get_id(qname):
     if not qname:
@@ -348,7 +348,11 @@ def get_ontology_for_uri(uri_str: str, ns_to_ontology: dict) -> str:
     return None
 
 def update_concept_registry(script_dir, registry):
-    registry_path = os.path.join(script_dir, "concept_registry.md")
+    root_dir = os.getcwd()
+    docs_dir = os.path.join(root_dir, "docs")
+    if not os.path.isdir(docs_dir):
+        log.warning(f"docs directory does not exist: {docs_dir}")
+    registry_path = os.path.join(docs_dir, "concept_registry.md")
     with open(registry_path, 'w', encoding='utf-8') as f:
         f.write("# Concept Registry\n\n")
         f.write("This page lists all known terms in the ITS Vocabulary.\n\n")
@@ -356,57 +360,10 @@ def update_concept_registry(script_dir, registry):
         # Sort by base_uri and then name
         sorted_items = sorted(registry.items())
         for uri, info in sorted_items:
-            log.info(f"Writing concept to registry: {uri}")
+            log.debug(f"Writing concept to registry: {uri}")
             if not uri.startswith('N') and info['type'] == 'class':
                 f.write(f"| {uri} | {info['description']} |\n")
     log.info(f"Updated concept_registry.md with {len(registry)} entries")
-
-def parse_ontology_registry(script_dir):
-    registry_path = os.path.join(script_dir, "ontology_registry.md")
-    if not os.path.exists(registry_path):
-        with open(registry_path, 'w', encoding='utf-8') as f:
-            f.write("|Prefix | Official IRI                                       | RITSO Location     | Description |\n|----------|------|------|-------------|\n")
-        log.info(f"Created new ontology_registry.md in {script_dir}")
-        return {}
-    content = open(registry_path, 'r', encoding='utf-8').read()
-    lines = content.splitlines()
-    registry = {}
-    in_table = False
-    headers = None
-    for line in lines:
-        if line.strip().startswith('|'):
-            if not in_table:
-                headers = [h.strip().lower() for h in line.split('|') if h.strip()]
-                log.debug(f"Parsed headers: {headers}")
-                in_table = True
-            elif headers and not line.strip().startswith('|---'):
-                values = [v.strip() for v in line.split('|') if v.strip()]
-                log.debug(f"Parsed values: {values}")
-                if len(values) < 4:  # Require all four columns
-                    log.warning(f"Skipping row with insufficient values (expected 4, got {len(values)}): {line}")
-                    continue
-                try:
-                    preferred_prefix = values[0]
-                    official_iri = values[1]
-                    ritso_location = values[2]
-                    description = values[3]
-                    registry[official_iri] = {'preferred_prefix': preferred_prefix, 'ritso_location': ritso_location, 'description': description}
-                except ValueError as e:
-                    log.warning(f"Skipping row due to missing header: {line} ({str(e)})")
-    log.debug(f"Loaded {len(registry)} entries from ontology_registry.md")
-    return registry
-
-def update_ontology_registry(script_dir, ontology_registry):
-    registry_path = os.path.join(script_dir, "ontology_registry.md")
-    with open(registry_path, 'w', encoding='utf-8') as f:
-        f.write("# Ontology Registry\n\n")
-        f.write("This page lists all known ontologies included in the RITSO.\n\n")
-        f.write("|Prefix | Official IRI | RITSO Location | Description |\n|-------|--------------|----------------|-------------|\n")
-        # Sort by preferred_prefix (case-insensitive)
-        sorted_items = sorted(ontology_registry.items(), key=lambda x: x[1]['preferred_prefix'].lower())
-        for iri, info in sorted_items:
-            f.write(f"| {info['preferred_prefix']} | {iri} | {info['ritso_location']} | {info['description']} |\n")
-    log.info(f"Updated ontology_registry.md with {len(ontology_registry)} entries")
 
 def fauxClass(cls_name):
     """

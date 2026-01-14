@@ -18,6 +18,6 @@ NOTE: An ITS architecture can be a reference, planning or deployment
 | Annotation | Value |
 |------------|-------|
 | clause | 3.1.9.5 |
-| skos::historyNote | Introduced in ISO/TS 14812:2022 |
+| skos::historyNote | Introduced in ISO/TS 14812:2022. Updated Note 2 to entry in 2025 to reference a more modern architecture reference model. |
 | skos::prefLabel | ITS reference architecture |
 
