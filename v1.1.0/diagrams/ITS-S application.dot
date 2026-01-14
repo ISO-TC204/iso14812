@@ -1,0 +1,21 @@
+// Diagram for ITS-S application
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"ITS-S application" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">ITS-S application</TD></TR></TABLE>> URL="../classes/itsVocabulary__ITS-S application.md" margin=0]
+	}
+	"its-sApplicationProcess" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ITS-S application process</TD></TR></TABLE>> URL="../ITS-S application process/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		applicationEntity [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">application entity</TD></TR></TABLE>> URL="../application entity/" margin=0 target=_top]
+	}
+	"ITS-S application" -> "its-sApplicationProcess" [arrowhead=onormal style=solid]
+	"ITS-S application" -> Invis [style=invis]
+	Invis -> applicationEntity [style=invis]
+	"ITS-S application" -> applicationEntity [label=" residesIn 
+ «some»  " arrowhead=normal style=solid]
+}

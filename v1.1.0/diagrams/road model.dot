@@ -1,0 +1,27 @@
+// Diagram for road model
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"road model" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">road model</TD></TR></TABLE>> URL="../classes/itsVocabulary__road model.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		link [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">link</TD></TR></TABLE>> URL="../link/" margin=0 target=_top]
+		"node" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">node</TD></TR></TABLE>> URL="../node/" margin=0 target=_top]
+		roadNetwork [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">road network</TD></TR></TABLE>> URL="../road network/" margin=0 target=_top]
+	}
+	"road model" -> Invis [style=invis]
+	Invis -> link [style=invis]
+	link -> "node" [style=invis]
+	"node" -> roadNetwork [style=invis]
+	"road model" -> roadNetwork [label=" represents 
+ «some»  " arrowhead=normal style=solid]
+	"road model" -> "node" [label=" constitutes 
+ «some»  " arrowhead=normal style=solid]
+	"road model" -> link [label=" constitutes 
+ «some»  " arrowhead=normal style=solid]
+}

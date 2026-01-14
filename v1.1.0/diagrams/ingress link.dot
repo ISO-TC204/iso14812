@@ -1,0 +1,19 @@
+// Diagram for ingress link
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"ingress link" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">ingress link</TD></TR></TABLE>> URL="../classes/itsVocabulary__ingress link.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		ingressLane [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ingress lane</TD></TR></TABLE>> URL="../ingress lane/" margin=0 target=_top]
+	}
+	"ingress link" -> Invis [style=invis]
+	Invis -> ingressLane [style=invis]
+	"ingress link" -> ingressLane [label=" aggregates 
+ «some»  " arrowhead=normal style=solid]
+}

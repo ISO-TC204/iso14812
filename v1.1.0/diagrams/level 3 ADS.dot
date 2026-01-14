@@ -1,0 +1,25 @@
+// Diagram for level 3 ADS
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"level 3 ADS" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">level 3 ADS</TD></TR></TABLE>> URL="../classes/itsVocabulary__level 3 ADS.md" margin=0]
+	}
+	ads [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ADS</TD></TR></TABLE>> URL="../ADS/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		"fallback-readyUser" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">fallback-ready user</TD></TR></TABLE>> URL="../fallback-ready user/" margin=0 target=_top]
+		operationalDesignDomain [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">operational design domain</TD></TR></TABLE>> URL="../operational design domain/" margin=0 target=_top]
+	}
+	"level 3 ADS" -> ads [arrowhead=onormal style=solid]
+	"level 3 ADS" -> Invis [style=invis]
+	Invis -> "fallback-readyUser" [style=invis]
+	"fallback-readyUser" -> operationalDesignDomain [style=invis]
+	"level 3 ADS" -> operationalDesignDomain [label=" operatesWithinA 
+ «some»  " arrowhead=normal style=solid]
+	"level 3 ADS" -> "fallback-readyUser" [label=" designedWithExpectationOf 
+ «some»  " arrowhead=normal style=solid]
+}

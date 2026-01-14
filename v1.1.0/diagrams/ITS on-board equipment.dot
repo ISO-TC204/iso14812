@@ -1,0 +1,21 @@
+// Diagram for ITS on-board equipment
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"ITS on-board equipment" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">ITS on-board equipment</TD></TR></TABLE>> URL="../classes/itsVocabulary__ITS on-board equipment.md" margin=0]
+	}
+	vehicleSystem [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">vehicle system</TD></TR></TABLE>> URL="../vehicle system/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		"itsOn-boardUnit" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ITS on-board unit</TD></TR></TABLE>> URL="../ITS on-board unit/" margin=0 target=_top]
+	}
+	"ITS on-board equipment" -> vehicleSystem [arrowhead=onormal style=solid]
+	"ITS on-board equipment" -> Invis [style=invis]
+	Invis -> "itsOn-boardUnit" [style=invis]
+	"ITS on-board equipment" -> "itsOn-boardUnit" [label=" comprises 
+ «some»  " arrowhead=normal style=solid]
+}

@@ -1,0 +1,23 @@
+// Diagram for ITS-S application process
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"ITS-S application process" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">ITS-S application process</TD></TR></TABLE>> URL="../classes/itsVocabulary__ITS-S application process.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		"its-sService" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ITS-S service</TD></TR></TABLE>> URL="../ITS-S service/" margin=0 target=_top]
+		itsStation [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ITS station</TD></TR></TABLE>> URL="../ITS station/" margin=0 target=_top]
+	}
+	"ITS-S application process" -> Invis [style=invis]
+	Invis -> "its-sService" [style=invis]
+	"its-sService" -> itsStation [style=invis]
+	"ITS-S application process" -> "its-sService" [label=" performsInformationProcessingFor 
+ «some»  " arrowhead=normal style=solid]
+	"ITS-S application process" -> itsStation [label=" elementIn 
+ «some»  " arrowhead=normal style=solid]
+}

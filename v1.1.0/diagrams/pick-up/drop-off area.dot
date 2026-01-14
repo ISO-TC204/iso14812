@@ -1,0 +1,23 @@
+// Diagram for pick-up/drop-off area
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"pick-up/drop-off area" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">pick-up/drop-off area</TD></TR></TABLE>> URL="../classes/itsVocabulary__pick-up/drop-off area.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		passenger [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">passenger</TD></TR></TABLE>> URL="../passenger/" margin=0 target=_top]
+		vehicle [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">vehicle</TD></TR></TABLE>> URL="../vehicle/" margin=0 target=_top]
+	}
+	"pick-up/drop-off area" -> Invis [style=invis]
+	Invis -> passenger [style=invis]
+	passenger -> vehicle [style=invis]
+	"pick-up/drop-off area" -> passenger [label=" for 
+ «some»  " arrowhead=normal style=solid]
+	"pick-up/drop-off area" -> vehicle [label=" toBoardOrAlightFrom 
+ «some»  " arrowhead=normal style=solid]
+}

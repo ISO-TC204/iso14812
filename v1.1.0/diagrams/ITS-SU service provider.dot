@@ -1,0 +1,25 @@
+// Diagram for ITS-SU service provider
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"ITS-SU service provider" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">ITS-SU service provider</TD></TR></TABLE>> URL="../classes/itsVocabulary__ITS-SU service provider.md" margin=0]
+	}
+	serviceProvider [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">service provider</TD></TR></TABLE>> URL="../service provider/" margin=0 target=_top]
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		"its-sUnit" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ITS-S unit</TD></TR></TABLE>> URL="../ITS-S unit/" margin=0 target=_top]
+		"its-suService" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ITS-SU service</TD></TR></TABLE>> URL="../ITS-SU service/" margin=0 target=_top]
+	}
+	"ITS-SU service provider" -> serviceProvider [arrowhead=onormal style=solid]
+	"ITS-SU service provider" -> Invis [style=invis]
+	Invis -> "its-sUnit" [style=invis]
+	"its-sUnit" -> "its-suService" [style=invis]
+	"ITS-SU service provider" -> "its-suService" [label=" delivers 
+ «some»  " arrowhead=normal style=solid]
+	"ITS-SU service provider" -> "its-sUnit" [label=" isA 
+ «some»  " arrowhead=normal style=solid]
+}

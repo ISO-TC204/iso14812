@@ -1,0 +1,19 @@
+// Diagram for traveller
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		traveller [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">traveller</TD></TR></TABLE>> URL="../classes/itsVocabulary__traveller.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		person [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">person</TD></TR></TABLE>> URL="../person/" margin=0 target=_top]
+	}
+	traveller -> Invis [style=invis]
+	Invis -> person [style=invis]
+	traveller -> person [label=" isA 
+ «some»  " arrowhead=normal style=solid]
+}

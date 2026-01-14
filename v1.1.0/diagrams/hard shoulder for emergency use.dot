@@ -1,0 +1,19 @@
+// Diagram for hard shoulder for emergency use
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"hard shoulder for emergency use" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">hard shoulder for emergency use</TD></TR></TABLE>> URL="../classes/itsVocabulary__hard shoulder for emergency use.md" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		hardShoulder [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">hard shoulder</TD></TR></TABLE>> URL="../hard shoulder/" margin=0 target=_top]
+	}
+	"hard shoulder for emergency use" -> Invis [style=invis]
+	Invis -> hardShoulder [style=invis]
+	"hard shoulder for emergency use" -> hardShoulder [label=" operatingModeOf 
+ «some»  " arrowhead=normal style=solid]
+}
