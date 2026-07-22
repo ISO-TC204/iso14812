@@ -1,0 +1,76 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:core a owl:Ontology ;
+    dcterms:title "ITS Vocabulary Core"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date .
+
+# Annotation properties and shared datatype/object properties
+
+:aggregates a owl:ObjectProperty .
+
+:altPrefLabel a owl:AnnotationProperty ;
+    rdfs:label "alternative preferred label"@en ;
+    rdfs:comment "This property is used to identify an alternative preferred label for a concept."@en ;
+    rdfs:range xsd:string .
+
+:attrOperationalModel a owl:DatatypeProperty ;
+    rdfs:label "operational model"@en .
+
+:attrTransportItem a owl:DatatypeProperty ;
+    rdfs:label "transport item"@en .
+
+:characteristicOf a owl:ObjectProperty ;
+    rdfs:label "characteristic of"@en .
+
+:clause a owl:AnnotationProperty ;
+    rdfs:label "clause"@en ;
+    rdfs:comment "This property is used to identify the clause number of a concept within the document."@en ;
+    rdfs:range xsd:string .
+
+:comprises a owl:ObjectProperty .
+
+:contains a owl:ObjectProperty .
+
+:delivers a owl:ObjectProperty .
+
+:describes a owl:ObjectProperty .
+
+:desiredResultsOf a owl:ObjectProperty ;
+    rdfs:label "desired results of"@en .
+
+:endsAt a owl:ObjectProperty ;
+    rdfs:label "ends at"@en .
+
+:for a owl:ObjectProperty .
+
+:fulfils a owl:ObjectProperty .
+
+:governs a owl:ObjectProperty .
+
+:has a owl:ObjectProperty .
+
+:identifies a owl:ObjectProperty .
+
+:installationOf a owl:ObjectProperty ;
+    rdfs:label "installation of"@en .
+
+:isA a owl:ObjectProperty ;
+    rdfs:label "is a"@en .
+
+:represents a owl:ObjectProperty .
+
+:startsAt a owl:ObjectProperty ;
+    rdfs:label "starts at"@en .
+
+:uses a owl:ObjectProperty .
+
+:using a owl:ObjectProperty .

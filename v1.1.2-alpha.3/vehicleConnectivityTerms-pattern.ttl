@@ -1,0 +1,50 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:vehicleConnectivityTerms a owl:Ontology ;
+    dcterms:title "Vehicle Connectivity Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:disconnected a owl:Class ;
+    rdfs:subClassOf :off-grid ;
+    skos:definition "characteristic of a [material entity](material entity.md) that is or was equipped with communications equipment that is sufficiently physically disconnected such that the material entity is no longer able to send data to or receive data from [connected](connected.md) entities"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The vehicle on-board equipment can still be present in the [vehicle](vehicle.md) and can even be partially connected, but not in any operational sense."@en ;
+    skos:prefLabel "disconnected"@en ;
+    :altPrefLabel "ITS disconnected"@en ;
+    :clause "3.7.4.3"@en .
+
+:unconnected a owl:Class ;
+    rdfs:subClassOf :off-grid ;
+    skos:definition "characteristic of a [material entity](material entity.md) that is equipped with communications equipment that is not active or is otherwise unable to send data to or receive data from [connected](connected.md) entities"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "unconnected"@en ;
+    :altPrefLabel "ITS unconnected"@en ;
+    :clause "3.7.4.2"@en .
+
+:unequipped a owl:Class ;
+    rdfs:subClassOf :off-grid ;
+    skos:definition "characteristic of a [material entity](material entity.md) that is not and has never been equipped with communications equipment for sending data to or receiving data from [connected](connected.md) entities"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "unequipped"@en ;
+    :altPrefLabel "ITS unequipped"@en ;
+    :clause "3.7.4.4"@en .
+
+:off-grid a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :characteristicOf ;
+            owl:someValuesFrom :materialEntity ] ;
+    skos:definition "characteristic of a [material entity](material entity.md) that is currently unable to send data to or receive data from [connected](connected.md) entities"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "off-grid"@en ;
+    :altPrefLabel "ITS off-grid"@en ;
+    :clause "3.7.4.1"@en .

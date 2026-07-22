@@ -1,0 +1,78 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:its-suServiceTerms a owl:Ontology ;
+    dcterms:title "Its-su Service Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:its-sService a owl:Class ;
+    rdfs:subClassOf :service ;
+    skos:definition "communication functionality of an [ITS station](ITS station.md) that provides the capability to connect to other nodes"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:note "The definition of ITS-S service predates the adoption of the concept model used for the other service terms in this standard. It is an outlier in that it describes a portion of the functionality contained within the ITS station reference architecture (i.e., the communication functionality) rather than the end functionality of the conceptual ITS station."@en,
+        "[ISO 21217:2020, 3.51; note added]"@en ;
+    skos:prefLabel "ITS-S service"@en ;
+    :clause "3.5.4.5"@en .
+
+:its-suServiceProvider a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :delivers ;
+            owl:someValuesFrom :its-suService ],
+        [ a owl:Restriction ;
+            owl:onProperty :isA ;
+            owl:someValuesFrom :its-sUnit ],
+        :serviceProvider ;
+    skos:definition "[ITS-SU](ITS-S unit.md) that delivers one or more [ITS-SU services](ITS-SU service.md)"@en ;
+    skos:historyNote "2025: Revised from ITS-S service provider to ITS-SU service provider to prevent conflict with ISO 21217 definitions."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "ITS-SU service provider"@en ;
+    :clause "3.5.4.2"@en .
+
+:its-suService a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :fulfils ;
+            owl:someValuesFrom :its-suUserNeed ],
+        [ a owl:Restriction ;
+            owl:onProperty :for ;
+            owl:someValuesFrom :its-suUser ],
+        :service ;
+    skos:definition "provision of functionality to fulfil an [ITS-SU user need](ITS-SU user need.md)"@en ;
+    skos:historyNote "2025: Revised from ITS-S service to ITS-SU service to prevent conflict with ISO 21217 definitions. Revised the definition to clarify and added note to entry."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "An ITS-SU service refers to the services provided by realizations of ITS-S application processes while an ITS-S service refers to the communication services that these processes use to communicate to other nodes."@en ;
+    skos:prefLabel "ITS-SU service"@en ;
+    :clause "3.5.4.1"@en .
+
+:its-suUser a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :has ;
+            owl:someValuesFrom :its-suUserNeed ],
+        :user ;
+    skos:definition "[entity](entity.md) that has a need to perform processing within a [bounded, secure, managed domain](bounded secured managed domain.md)"@en ;
+    skos:historyNote "2025: Revised from ITS-S user to ITS-SU user to prevent conflict with ISO 21217 definitions. Clarified the need was to perform processing within a bounded, secure, managed domain."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "ITS-SU user"@en ;
+    :clause "3.5.4.3"@en .
+
+:requiresProcessingWithin a owl:ObjectProperty ;
+    rdfs:label "requires processing within"@en .
+
+:its-suUserNeed a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :requiresProcessingWithin ;
+            owl:someValuesFrom :boundedSecuredManagedDomain ],
+        :userNeed ;
+    skos:definition "[user need](user need.md) for processing within a [bounded, secure, managed domain](bounded secured managed domain.md)"@en ;
+    skos:historyNote "2025: Revised from ITS-S user need to ITS-SU user need to prevent conflict with ISO 21217 definitions."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "ITS-SU user need"@en ;
+    :clause "3.5.4.4"@en .

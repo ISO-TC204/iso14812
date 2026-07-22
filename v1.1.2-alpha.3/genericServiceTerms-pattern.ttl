@@ -1,0 +1,59 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:genericServiceTerms a owl:Ontology ;
+    dcterms:title "Generic Service Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:serviceProvider a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :delivers ;
+            owl:someValuesFrom :service ],
+        :entity ;
+    skos:definition "[entity](entity.md) that delivers one or more [services](service.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "service provider"@en ;
+    :clause "3.5.1.2"@en .
+
+:service a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :fulfils ;
+            owl:someValuesFrom :userNeed ],
+        [ a owl:Restriction ;
+            owl:onProperty :for ;
+            owl:someValuesFrom :user ] ;
+    skos:definition "provision of one or more capabilities, functionalities or facilities to fulfil or enable the fulfilment of a [user need](user need.md)"@en ;
+    skos:historyNote "2025: Revised from \"enable a need\" to \"fulfil or enable the fulfilment of a user need\"."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "service"@en ;
+    :clause "3.5.1.1"@en .
+
+:userNeed a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :desiredResultsOf ;
+            owl:someValuesFrom :user ] ;
+    skos:definition "desired results of a [user](user.md) within a specified context of use"@en ;
+    skos:historyNote "2025: Revised to better align with the ISO 14812 concept model rather than ISO.IEC TR 25060."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "user need"@en ;
+    :altPrefLabel "need"@en ;
+    :clause "3.5.1.4"@en .
+
+:user a owl:Class ;
+    rdfs:subClassOf :entity ;
+    skos:definition "[entity](entity.md) for whom the [system](system.md) of interest is designed"@en ;
+    skos:historyNote "2025: Revised to eliminate a circular reference with user need."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The term \"consumer\" can be used when fulfilling the need results in the consumption of a [resource](resource.md)."@en ;
+    skos:prefLabel "user"@en ;
+    :altPrefLabel "consumer"@en ;
+    :clause "3.5.1.3"@en .

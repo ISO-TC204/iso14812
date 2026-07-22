@@ -1,0 +1,152 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:vehicleAttributeTerms a owl:Ontology ;
+    dcterms:title "Vehicle Attribute Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:anonymizedVehicleReference a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass :vehicle ;
+            owl:onProperty :encodedReferenceFor ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] ;
+    skos:definition "reference for a vehicle derived from vehicle properties such as registration number but encoded so that it does not allow a human to identify the vehicle directly from the encoded value"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "anonymized vehicle reference"@en ;
+    :clause "3.7.2.3"@en .
+
+:designSpeed a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass :vehicle ;
+            owl:onProperty :maximumSustainedSpeedOf ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] ;
+    skos:altLabel "top speed"@en ;
+    skos:definition "<vehicle> maximum [speed](speed.md) at which a [vehicle](vehicle.md) is intended to operate for a sustained period of time"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The term \"top speed\" is defined in SAE J3194 in relation to powered micromobility vehicles and is considered to be semantically equivalent to design speed."@en ;
+    skos:prefLabel "design speed"@en ;
+    :altPrefLabel "vehicle design speed"@en ;
+    :clause "3.7.2.2"@en .
+
+:grossVehicleMass a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass :vehicle ;
+            owl:onProperty :operatingMassOf ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] ;
+    skos:altLabel "gross vehicle weight"@en ;
+    skos:definition "operating mass (weight) of the vehicle according to legislation and/or regulations for the applicable region Note 1 to entry: Gross vehicle mass is often used to designate weight limits (e.g., on bridges)."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "gross vehicle mass"@en ;
+    :clause "3.7.2.9"@en .
+
+:grossVehicleMassRating a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass :vehicle ;
+            owl:onProperty :maxOperatingWeightFor ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] ;
+    skos:altLabel "gross vehicle weight rating"@en ;
+    skos:definition "maximum operating mass (weight) of the vehicle, as determined by the vehicle manufacturer, at which the vehicle can be safely and reliably operated for its intended purpose"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "gross vehicle mass rating"@en ;
+    :clause "3.7.2.10"@en .
+
+:speed a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass :materialEntity ;
+            owl:onProperty :rateOfChangeOfPositionOf ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] ;
+    skos:definition "rate of change of a [material entity's](material entity.md) position with respect to a frame of reference"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Speed is a function of time."@en,
+        "Speed is the scalar absolute value (magnitude) of velocity."@en ;
+    skos:prefLabel "speed"@en ;
+    :clause "3.7.2.1"@en .
+
+:vehicleEquipment a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass :vehicle ;
+            owl:onProperty :inUseOrOnBoard ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] ;
+    skos:definition "type of equipment in use or on board the vehicle"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "vehicle equipment"@en ;
+    :clause "3.7.2.4"@en .
+
+:vehicleFuelType a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass :vehicle ;
+            owl:onProperty :fuelUsedBy ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] ;
+    skos:definition "type of fuel used by the vehicle"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "vehicle fuel type"@en ;
+    :clause "3.7.2.5"@en .
+
+:vehicleIdentifier a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass :vehicle ;
+            owl:onProperty :globallyUniqueIdentifierFor ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] ;
+    skos:definition "series of 17 characters that is based on either ISO 3779 or ISO 3780 and uniquely identifies the individual vehicle and is normally securely attached to the vehicle chassis"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "vehicle identifier"@en ;
+    :clause "3.7.2.6"@en .
+
+:vehicleLoadType a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass :vehicle ;
+            owl:onProperty :loadCarriedBy ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] ;
+    skos:definition "type of load carried by the vehicle"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "vehicle load type"@en ;
+    :clause "3.7.2.7"@en .
+
+:vehicleRegistrationPlateIdentifier a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass :vehicle ;
+            owl:onProperty :identifierUniqueWithinRegionFor ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] ;
+    skos:definition "numeric or alphanumeric identifier or code, displayed on a registration plate attached to the vehicle, and unique within the issuing authority's region therefore usable for official identification purposes"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "vehicle registration plate identifier"@en ;
+    :clause "3.7.2.8"@en .
+
+:encodedReferenceFor a owl:ObjectProperty ;
+    rdfs:label "encoded reference for"@en .
+
+:fuelUsedBy a owl:ObjectProperty ;
+    rdfs:label "fuel used by"@en .
+
+:globallyUniqueIdentifierFor a owl:ObjectProperty ;
+    rdfs:label "globally unique identifier for"@en .
+
+:identifierUniqueWithinRegionFor a owl:ObjectProperty ;
+    rdfs:label "identifier unique within region for"@en .
+
+:inUseOrOnBoard a owl:ObjectProperty ;
+    rdfs:label "in use or on board"@en .
+
+:loadCarriedBy a owl:ObjectProperty ;
+    rdfs:label "load carried by"@en .
+
+:maxOperatingWeightFor a owl:ObjectProperty ;
+    rdfs:label "max operating weight for"@en .
+
+:maximumSustainedSpeedOf a owl:ObjectProperty ;
+    rdfs:label "maximum sustained speed of"@en .
+
+:operatingMassOf a owl:ObjectProperty ;
+    rdfs:label "operating mass of"@en .
+
+:rateOfChangeOfPositionOf a owl:ObjectProperty ;
+    rdfs:label "rate of change of position of"@en .

@@ -1,0 +1,59 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:entityTerms a owl:Ontology ;
+    dcterms:title "Entity Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:immaterialEntity a owl:Class ;
+    rdfs:subClassOf :entity ;
+    skos:definition "[entity](entity.md) that does not occupy three-dimensional space"@en ;
+    skos:example "Idea, process, organization, etc."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "immaterial entity"@en ;
+    :clause "3.1.1.2"@en .
+
+:non-biologicalEntity a owl:Class ;
+    rdfs:subClassOf :materialEntity ;
+    skos:definition "[material entity](material entity.md) that is not and has never been a living organism"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "non-biological entity"@en ;
+    :clause "3.1.1.4"@en .
+
+:person a owl:Class ;
+    rdfs:subClassOf :biologicalEntity ;
+    skos:definition "[biological entity](biological entity.md) that is a human being"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "person"@en ;
+    :clause "3.1.1.6"@en .
+
+:biologicalEntity a owl:Class ;
+    rdfs:subClassOf :materialEntity ;
+    skos:definition "[material entity](material entity.md) that was or is a living organism"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "biological entity"@en ;
+    :clause "3.1.1.5"@en .
+
+:entity a owl:Class ;
+    skos:definition "concrete or abstract thing that exists, did exist, or can possibly exist, including associations among these things"@en ;
+    skos:example "[person](person.md), object, event, idea, process, etc."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "entity"@en ;
+    :clause "3.1.1.1"@en .
+
+:materialEntity a owl:Class ;
+    rdfs:subClassOf :entity ;
+    skos:definition "[entity](entity.md) that occupies three-dimensional space"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "All material entities have certain characteristics that can be described and therefore this concept is important for ontology purposes."@en ;
+    skos:prefLabel "material entity"@en ;
+    :clause "3.1.1.3"@en .

@@ -1,0 +1,70 @@
+BASE   <https://w3id.org/itsdata/time/v1/>
+PREFIX : <https://w3id.org/itsdata/time/v1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX cdm2: <https://w3id.org/citydata/part2/v1/>
+PREFIX its-core: <https://w3id.org/itsdata/core/v1/>
+
+:ITSStationPattern a owl:Ontology;
+    # Ontology metadata
+    dcterms:title                  "ITS Station Pattern"@en;
+    skos:definition                "This ontology defines concepts related to ITS stations within Intelligent Transportation Systems (ITS)."@en;
+    dcterms:license                "http://creativecommons.org/licenses/by/4.0/";
+    its-core:draft                 "true"@en;
+    
+    #Provenance metadata
+    dcterms:creator                "Kenneth Vaughn"@en;
+    dcterms:created                "Draft"@en;
+    dcterms:modified               "2026-04-21"^^xsd:date .
+    
+
+####################################
+# Object Properties
+####################################
+
+
+####################################
+# Data Properties
+####################################
+
+
+####################################
+# Classes
+####################################
+
+:BSMD a owl:Class;
+    skos:definition         "abstract entity representing a managed processing and memory [environment](environment.md) that provides protection from code and data that has not been determined to meet established security requirements"@en ;
+    rdfs:subClassOf         :AbstractThing .
+
+:ITS-S a owl:Class;
+    skos:definition         "BSMD that is able to meet requirements of the ITS trust domain within which it is designed to participate"@en ;
+    rdfs:subClassOf         :AbstractThing .
+
+:BSME a owl:Class ;
+    owl:equivalentClass :ITS-SU ;
+    skos:prefLabel "BSME"@en ;
+    skos:altLabel "bounded, secured, managed entity"@en ;
+    rdfs:subClassOf :MaterialEntity .
+    
+:ITS-SU a owl:Class;
+    skos:definition         "instance of a material entity containing at least one ITS station implementation"@en ;
+    skos:prefLabel "ITS-SU"@en ;
+    skos:altLabel "ITS station unit"@en ;
+    rdfs:subClassOf         :MaterialEntity .
+
+:ITS-SCU a owl:Class;
+    skos:definition     "sealed physical unit in an ITS-SU containing a part or all of the functionality of an its host ITS station unit"@en ;
+    rdfs:subClassOf         :MaterialEntity .
+
+:ITS-SNode a owl:Class;
+    skos:definition     "node comprised of a set of functionalities in an ITS station unit that is connected to the ITS station internal network or comprises an entire ITS-SU"@en ;
+    skos:prefLabel "ITS-S node"@en ;
+    rdfs:subClassOf         :SoftwareEntity .
+
+

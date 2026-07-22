@@ -1,0 +1,53 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:physicalTrafficSeparatorTerms a owl:Ontology ;
+    dcterms:title "Physical Traffic Separator Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:centralReservation a owl:Class ;
+    rdfs:subClassOf :physicalTrafficSeparator ;
+    skos:altLabel "median"@en,
+        "median strip"@en,
+        "neutral ground"@en ;
+    skos:definition "part of the [road reservation](road reservation.md) between [carriageways](carriageway.md) designed for travel safety purposes"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A central reservation can be paved or unpaved and can be equipped with a safety barrier, rails, or other devices."@en ;
+    skos:prefLabel "central reservation"@en ;
+    :clause "3.3.2.2"@en .
+
+:jerseyBarrier a owl:Class ;
+    rdfs:subClassOf :physicalTrafficSeparator ;
+    skos:altLabel "city block"@en,
+        "concrete barrier"@en ;
+    skos:definition "[physical traffic separator](physical traffic separator.md) that consists of a wall with a wide, sloped base designed to divert [vehicles](vehicle.md) back into their [traffic lane](traffic lane.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Jersey barriers are typically modular. They are typically made of concrete but can also be made with other materials such as plastic filled with water or sand."@en ;
+    skos:prefLabel "Jersey barrier"@en ;
+    :clause "3.3.2.3"@en .
+
+:kerb a owl:Class ;
+    rdfs:subClassOf :physicalTrafficSeparator ;
+    skos:altLabel "curb"@en ;
+    skos:definition "physical traffic separator, usually upstanding, at the edge of a carriageway, hard strip, hard shoulder, or footway Note 1 to entry: \"Curb\" is the US spelling."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "kerb"@en ;
+    :clause "3.3.2.4"@en .
+
+:physicalTrafficSeparator a owl:Class ;
+    skos:definition "mechanism used to physically separate a travelled way or pathway from the adjacent environment"@en ;
+    skos:historyNote "2025: Replaced \"separate carriageways\" with \"separate a travelled way or pathway from the adjacent environment\" to clarify that physical traffic separators are not limited to separating carriageways. Added note 2 to entry."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Mechanisms include various types of barriers, such as walls, rails, pylons, kerbs and ditches, as well as open, unpaved space. If two streams of traffic are only separated by paved space (including any markings and rumble strips), they share a common carriageway."@en,
+        "The adjacent environment can be an opposing direction of travel, a different mode of travel, the edge of a bridge, etc."@en ;
+    skos:prefLabel "physical traffic separator"@en ;
+    :clause "3.3.2.1"@en .

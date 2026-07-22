@@ -1,0 +1,31 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:supportPhysicalObjectTerms a owl:Ontology ;
+    dcterms:title "Support Physical Object Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:cooperativeItsCredentialsManagementSystem a owl:Class ;
+    rdfs:subClassOf :supportSystem ;
+    skos:definition "[support system](support system.md) that enables trusted communications among [ITS components](ITS component.md) and protects data from unauthorized access"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "cooperative ITS credentials management system"@en ;
+    :altPrefLabel "CCMS"@en ;
+    :clause "3.2.5.1"@en .
+
+:mapProvisionSystem a owl:Class ;
+    rdfs:subClassOf :supportSystem ;
+    skos:definition "[support system](support system.md) that provides map databases used to support [ITS services](ITS service.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "map provision system"@en ;
+    :altPrefLabel "ITS map provision system"@en ;
+    :clause "3.2.5.2"@en .

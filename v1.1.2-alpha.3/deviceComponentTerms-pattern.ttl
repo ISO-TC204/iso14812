@@ -1,0 +1,39 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:deviceComponentTerms a owl:Ontology ;
+    dcterms:title "Device Component Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:actuator a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :changesPropertyOf ;
+            owl:someValuesFrom :materialEntity ] ;
+    skos:definition "device with the capability to convert meaningful signals into changes to one or more properties of a [material entity](material entity.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "actuator"@en ;
+    :clause "3.2.10.1"@en .
+
+:sensor a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :observesPropertyOf ;
+            owl:someValuesFrom :materialEntity ] ;
+    skos:definition "device with the capability of observing one or more properties of a [material entity](material entity.md) and converting those properties into meaningful signals"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "sensor"@en ;
+    :clause "3.2.10.2"@en .
+
+:changesPropertyOf a owl:ObjectProperty ;
+    rdfs:label "changes property of"@en .
+
+:observesPropertyOf a owl:ObjectProperty ;
+    rdfs:label "observes property of"@en .

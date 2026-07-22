@@ -1,0 +1,51 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:facilityTerms a owl:Ontology ;
+    dcterms:title "Facility Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:movableBridge a owl:Class ;
+    rdfs:subClassOf :bridge ;
+    skos:definition "[bridge](bridge.md) with a deck that can be moved in a way that disrupts the continuous travel path"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:note "Movable bridges can be used over waterways to allow for the passage of tall ships."@en,
+        "Movable bridges include, but are not limited to, bascule bridges, vertical lift bridges, and swing bridges."@en ;
+    skos:prefLabel "movable bridge"@en ;
+    :clause "3.3.7.4"@en .
+
+:transportInfrastructure a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :systemOf ;
+            owl:someValuesFrom :transportFacility ],
+        :system ;
+    skos:definition "system of [transport facilities](transport facility.md) and equipment needed for a transport system"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:note "Transport infrastructure typically includes or shares telecommunications infrastructure in the case of ITS."@en ;
+    skos:prefLabel "transport infrastructure"@en ;
+    :clause "3.3.7.2"@en .
+
+:bridge a owl:Class ;
+    rdfs:subClassOf :transportFacility ;
+    skos:definition "[transport facility](transport facility.md) built over a gap to provide a continuous travel path"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "bridge"@en ;
+    :clause "3.3.7.3"@en .
+
+:systemOf a owl:ObjectProperty ;
+    rdfs:label "system of"@en .
+
+:transportFacility a owl:Class ;
+    skos:definition "physical structure or installation, including related site works, serving one or more transport-related purposes"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "transport facility"@en ;
+    :clause "3.3.7.1"@en .

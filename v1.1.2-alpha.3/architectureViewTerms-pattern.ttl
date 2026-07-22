@@ -1,0 +1,130 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:architectureViewTerms a owl:Ontology ;
+    dcterms:title "Architecture View Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:communicationsViewpoint a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :governs ;
+            owl:someValuesFrom :communicationsView ],
+        :architectureViewpoint ;
+    skos:definition "[architecture viewpoint](architecture viewpoint.md) used to frame [concerns](concern.md) related to all layers of the Open Systems Interconnection (OSI) stack and related management and security issues"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "communications viewpoint"@en ;
+    :clause "3.1.4.2"@en .
+
+:enterpriseViewpoint a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :governs ;
+            owl:someValuesFrom :enterpriseView ],
+        :architectureViewpoint ;
+    skos:definition "[architecture viewpoint](architecture viewpoint.md) used to frame the policies, funding incentives, working arrangements and jurisdictional structure that support the technical layers of the [architecture](architecture.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "enterprise viewpoint"@en ;
+    :clause "3.1.4.4"@en .
+
+:functionalViewpoint a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :governs ;
+            owl:someValuesFrom :functionalView ],
+        :architectureViewpoint ;
+    skos:definition "[architecture viewpoint](architecture viewpoint.md) used to frame [concerns](concern.md) related to the definition of [processes](process.md) that perform surface transport functions and [data flows](data flow.md) shared between these processes"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "functional viewpoint"@en ;
+    :clause "3.1.4.6"@en .
+
+:physicalViewpoint a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :governs ;
+            owl:someValuesFrom :physicalView ],
+        :architectureViewpoint ;
+    skos:definition "[architecture viewpoint](architecture viewpoint.md) used to frame [concerns](concern.md) related to the assignment of functionality to [physical objects](physical object.md) and the interfaces among these physical objects"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "physical viewpoint"@en ;
+    :clause "3.1.4.8"@en .
+
+:basedOn a owl:ObjectProperty ;
+    rdfs:label "based on"@en .
+
+:communicationsView a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :basedOn ;
+            owl:someValuesFrom :its-sReferenceArchitecture ],
+        :architectureView ;
+    skos:definition "[architecture view](architecture view.md) from the [communications viewpoint](communications viewpoint.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Within ITS, the preferred model for describing the communications view is based on the [ITS-S reference architecture](ITS-S reference architecture.md)."@en ;
+    skos:prefLabel "communications view"@en ;
+    :clause "3.1.4.1"@en .
+
+:enterpriseView a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :resource ],
+        [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :enterpriseObject ],
+        [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :role ],
+        [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :relationship ],
+        [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :interaction ],
+        [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :informationFlow ],
+        :architectureView ;
+    skos:definition "[architecture view](architecture view.md) from the [enterprise viewpoint](enterprise viewpoint.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "enterprise view"@en ;
+    :clause "3.1.4.3"@en .
+
+:functionalView a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :dataFlow ],
+        [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :processSpecification ],
+        [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :process ],
+        [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :terminator ],
+        :architectureView ;
+    skos:definition "[architecture view](architecture view.md) from the [functional viewpoint](functional viewpoint.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "functional view"@en ;
+    :clause "3.1.4.5"@en .
+
+:physicalView a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :physicalObject ],
+        [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :informationTransfer ],
+        [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :functionalObject ],
+        :architectureView ;
+    skos:definition "[architecture view](architecture view.md) from the [physical viewpoint](physical viewpoint.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The term \"deployment view\" is sometimes used within the broader ICT community, but the term \"physical view\" is preferred to prevent confusion between the physical view of a reference architecture and any part of a [deployment architecture](deployment architecture.md)."@en ;
+    skos:prefLabel "physical view"@en ;
+    :clause "3.1.4.7"@en .

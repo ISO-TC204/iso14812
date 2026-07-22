@@ -1,0 +1,71 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:centrePhysicalObjectTerms a owl:Ontology ;
+    dcterms:title "Centre Physical Object Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:emergencyManagementCentralSystem a owl:Class ;
+    rdfs:subClassOf :centralSystem ;
+    skos:definition "[centre system](central system.md) that allows an [entity](entity.md) to manage and respond to crashes, events, disasters, evacuation orders and other incidents"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "emergency management central system"@en ;
+    :clause "3.2.2.1"@en .
+
+:fleetAndFreightManagementCentralSystem a owl:Class ;
+    rdfs:subClassOf :centralSystem ;
+    skos:definition "[centre system](central system.md) that allows a fleet or freight operator to manage and control its personnel, equipment and/or freight"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "fleet and freight management central system"@en ;
+    :clause "3.2.2.2"@en .
+
+:maintenanceAndConstructionCentralManagementSystem a owl:Class ;
+    rdfs:subClassOf :centralSystem ;
+    skos:definition "[centre system](central system.md) that allows an [entity](entity.md) to monitor and manage the construction and maintenance of [road](road.md) infrastructure"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "maintenance and construction central management system"@en ;
+    :clause "3.2.2.3"@en .
+
+:paymentAdministrationCentralSystem a owl:Class ;
+    rdfs:subClassOf :centralSystem ;
+    skos:definition "[centre system](central system.md) that allows an [entity](entity.md) to manage financial transactions related to transportation, especially the electronic transfer of funds"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "payment administration central system"@en ;
+    :clause "3.2.2.4"@en .
+
+:publicTransportCentralManagementSystem a owl:Class ;
+    rdfs:subClassOf :centralSystem ;
+    skos:definition "[centre system](central system.md) that allows an [entity](entity.md) to manage the activities of a [public transport](public transport.md) agency"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "public transport central management system"@en ;
+    :clause "3.2.2.5"@en .
+
+:trafficManagementCentralSystem a owl:Class ;
+    rdfs:subClassOf :centralSystem ;
+    skos:definition "[centre system](central system.md) that monitors and controls traffic and the [road network](road network.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "traffic management central system"@en ;
+    :clause "3.2.2.6"@en .
+
+:trafficRegulationCentralSystem a owl:Class ;
+    rdfs:subClassOf :centralSystem ;
+    skos:definition "[centre system](central system.md) that officially records traffic regulations in electronic form so that they can be distributed to other systems"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "traffic regulation central system"@en ;
+    :clause "3.2.2.7"@en .
+
+:transportInformationCentralSystem a owl:Class ;
+    rdfs:subClassOf :centralSystem ;
+    skos:definition "[centre system](central system.md) that provides information of interest to the travelling public"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "transport information central system"@en ;
+    :clause "3.2.2.8"@en .

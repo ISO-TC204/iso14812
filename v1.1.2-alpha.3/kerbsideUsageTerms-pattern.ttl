@@ -1,0 +1,88 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:kerbsideUsageTerms a owl:Ontology ;
+    dcterms:title "Kerbside Usage Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:loadingArea a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :forDesignated ;
+            owl:someValuesFrom :vehicles ] ;
+    skos:definition "area designated for [vehicles](vehicle.md) to load and/or unload goods"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:note "The area can include the vehicle waiting area and the goods waiting area."@en ;
+    skos:prefLabel "loading area"@en ;
+    :altPrefLabel "unloading area"@en ;
+    :clause "3.3.8.2"@en .
+
+:parkingSpaceForPermitHolders a owl:Class ;
+    rdfs:subClassOf :designatedParkingSpace ;
+    skos:definition "[designated parking space](designated parking space.md) that requires a special permit from an appropriate authority"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:note "The permit can be physically displayed or linked to a database, per authority policies."@en ;
+    skos:prefLabel "parking space for permit holders"@en ;
+    :clause "3.3.8.4"@en .
+
+:publicTransportVehicleStop a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :for ;
+            owl:someValuesFrom :publicTransportVehicle ],
+        :pick-upDrop-offArea ;
+    skos:definition "[pick-up/drop-off area](pick-updrop-off area.md) area for public transport vehicles"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:note "The term \"PTV stop\" is often specialized to indicate the type of public transport vehicle (e.g., \"bus stop\", \"tram stop\")."@en ;
+    skos:prefLabel "public transport vehicle stop"@en ;
+    :altPrefLabel "PTV stop"@en ;
+    :clause "3.3.8.6"@en .
+
+:designatedParkingSpace a owl:Class ;
+    rdfs:subClassOf :parkingSpace ;
+    skos:definition "[parking space](parking space.md) for a designated purpose Note 1 to entry:  Note 2 to entry:"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:note "Designated parking spaces include those that require permits (e.g., reserved for those with disabilities) as well as advisory notices that rely upon voluntary compliance (e.g., reserved for expectant mothers)."@en,
+        "The term \"designated parking space\" is often specialized to indicate the type of designation (e.g., \"electric vehicle parking space\")."@en ;
+    skos:prefLabel "designated parking space"@en ;
+    :clause "3.3.8.1"@en .
+
+:forDesignated a owl:ObjectProperty ;
+    rdfs:label "for designated"@en .
+
+:parkingSpace a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass :vehicle ;
+            owl:onProperty :store ] ;
+    skos:definition "location for storing a [vehicle](vehicle.md) Note 1 to entry: The vehicle can be a motor vehicle, cycle, or any other type of vehicle. Note 2 to entry: A parking space is usually designed for a single vehicle. Note 3 to entry: Parking spaces can be, but are not necessarily, denoted by painted or other road surface markings."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "parking space"@en ;
+    :clause "3.3.8.3"@en .
+
+:pick-upDrop-offArea a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :toBoardOrAlightFrom ;
+            owl:someValuesFrom :vehicle ],
+        [ a owl:Restriction ;
+            owl:onProperty :for ;
+            owl:someValuesFrom :passenger ] ;
+    skos:definition "area intended to allow passengers to board and/or alight from [vehicles](vehicle.md)"@en ;
+    skos:example "kerbside passenger pick-up area at an airport arrivals zone"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:note "The area can include the vehicle waiting area and the pedestrian waiting area."@en ;
+    skos:prefLabel "pick-up/drop-off area"@en ;
+    :altPrefLabel "PUDO area"@en ;
+    :clause "3.3.8.5"@en .
+
+:store a owl:ObjectProperty .
+
+:toBoardOrAlightFrom a owl:ObjectProperty ;
+    rdfs:label "to board or alight from"@en .

@@ -1,0 +1,121 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:vehicleSpeedTerms a owl:Ontology ;
+    dcterms:title "Vehicle Speed Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:high-speedVehicle a owl:Class ;
+    rdfs:subClassOf :vehicle ;
+    skos:definition "[vehicle](vehicle.md) with a [design speed](design speed.md) in the range of [high vehicle speeds](high vehicle speed.md)"@en ;
+    skos:example "High-speed train"@en,
+        "Racing car."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "high-speed vehicle"@en ;
+    :clause "3.7.5.6"@en .
+
+:highVehicleSpeed a owl:Class ;
+    rdfs:subClassOf :speed ;
+    skos:definition "[speed](speed.md) of a [vehicle](vehicle.md) that exceeds free flow motorway speeds by a factor of two or more"@en ;
+    skos:example "A speed in excess of 198 km/h."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Local regulations for the exact speed range vary."@en ;
+    skos:prefLabel "high vehicle speed"@en ;
+    :clause "3.7.5.12"@en .
+
+:low-speedVehicle a owl:Class ;
+    rdfs:subClassOf :vehicle ;
+    skos:altLabel "cycle-speed vehicle"@en ;
+    skos:definition "[vehicle](vehicle.md) with a [design speed](design speed.md) in the range of [low vehicle speeds](low vehicle speed.md)"@en ;
+    skos:example "Mountain bicycle."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The term \"cycle-speed vehicle\" is allowed but the preferred term follows a logical progression of levels."@en ;
+    skos:prefLabel "low-speed vehicle"@en ;
+    :clause "3.7.5.2"@en .
+
+:lowVehicleSpeed a owl:Class ;
+    rdfs:subClassOf :speed ;
+    skos:definition "[speed](speed.md) of a [vehicle](vehicle.md) that exceeds [pedestrian](pedestrian.md) speeds and is more typical of pedal cycles"@en ;
+    skos:example "SAE J3194 associates this with a top speed in the range between 13 km/h and 32 km/h."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Local regulations for the exact speed range vary."@en ;
+    skos:prefLabel "low vehicle speed"@en ;
+    :clause "3.7.5.8"@en .
+
+:moderate-speedVehicle a owl:Class ;
+    rdfs:subClassOf :vehicle ;
+    skos:definition "[vehicle](vehicle.md) with a [design speed](design speed.md) in the range of [moderate vehicle speeds](moderate vehicle speed.md)"@en ;
+    skos:example "Typical side-by-side utility task vehicle (UTV)."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "moderate-speed vehicle"@en ;
+    :clause "3.7.5.4"@en .
+
+:moderateVehicleSpeed a owl:Class ;
+    rdfs:subClassOf :speed ;
+    skos:definition "[speed](speed.md) of a [vehicle](vehicle.md) that exceeds [moderately-low vehicle speeds](moderately-low vehicle speed.md) but does not reach free-flow motorway speeds"@en ;
+    skos:example "A speed in the range of 48 km/h and 87 km/h."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Local regulations for the exact speed range vary."@en ;
+    skos:prefLabel "moderate vehicle speed"@en ;
+    :clause "3.7.5.10"@en .
+
+:moderately-highVehicleSpeed a owl:Class ;
+    rdfs:subClassOf :speed ;
+    skos:definition "[speed](speed.md) of a [vehicle](vehicle.md) that is typical of free-flow motorway speeds to twice that speed"@en ;
+    skos:example "A speed in the range of 87 km/h and 198 km/h."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Local regulations for the exact speed range vary."@en ;
+    skos:prefLabel "moderately-high vehicle speed"@en ;
+    :clause "3.7.5.11"@en .
+
+:moderately-lowVehicleSpeed a owl:Class ;
+    rdfs:subClassOf :speed ;
+    skos:definition "[speed](speed.md) of a [vehicle](vehicle.md) that exceeds speeds typical of pedal cycles but can be reached on performance pedal cycles in short bursts or by performance riders"@en ;
+    skos:example "SAE J3194 associates this with a top speed in the range of 32 km/h to 48 km/h."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Local regulations for the exact speed range vary."@en ;
+    skos:prefLabel "moderately-low vehicle speed"@en ;
+    :clause "3.7.5.9"@en .
+
+:moderatelyHigh-speedVehicle a owl:Class ;
+    rdfs:subClassOf :vehicle ;
+    skos:definition "[vehicle](vehicle.md) with a [design speed](design speed.md) in the range of [moderately-high vehicle speeds](moderately-high vehicle speed.md)"@en ;
+    skos:example "Typical [passenger](passenger.md) car."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "moderately high-speed vehicle"@en ;
+    :clause "3.7.5.5"@en .
+
+:moderatelyLow-speedVehicle a owl:Class ;
+    rdfs:subClassOf :vehicle ;
+    skos:definition "[vehicle](vehicle.md) with a [design speed](design speed.md) in the range of [moderately-low vehicle speeds](moderately-low vehicle speed.md)"@en ;
+    skos:example "Typical moped."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "moderately low-speed vehicle"@en ;
+    :clause "3.7.5.3"@en .
+
+:ultra-low-speedVehicle a owl:Class ;
+    rdfs:subClassOf :vehicle ;
+    skos:altLabel "pedestrian-speed vehicle"@en ;
+    skos:definition "[vehicle](vehicle.md) with a [design speed](design speed.md) that does not exceed [ultra-low vehicle speeds](ultra-low vehicle speed.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The term \"pedestrian speed vehicle\" is allowed but the preferred term follows a logical progression of levels."@en ;
+    skos:prefLabel "ultra-low-speed vehicle"@en ;
+    :clause "3.7.5.1"@en .
+
+:ultra-lowVehicleSpeed a owl:Class ;
+    rdfs:subClassOf :speed ;
+    skos:definition "[speed](speed.md) of a [vehicle](vehicle.md) that does not greatly exceed typical [pedestrian](pedestrian.md) speeds"@en ;
+    skos:example "SAE J3194 associates this with a top speed of less than 13 km/h."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Local regulations for the exact speed range vary."@en ;
+    skos:prefLabel "ultra-low vehicle speed"@en ;
+    :clause "3.7.5.7"@en .

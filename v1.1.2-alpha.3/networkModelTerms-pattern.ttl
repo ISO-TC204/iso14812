@@ -1,0 +1,43 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:networkModelTerms a owl:Ontology ;
+    dcterms:title "Network Model Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:free-floating a owl:Class ;
+    rdfs:subClassOf :networkModel ;
+    skos:definition "<transport service> [network model](network model.md) where the [transport service](transport service.md) may be initiated and terminated at any [spatial location](spatial location.md) meeting basic criteria"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The basic criteria typically include geographic limits and requirements related to legal and safe locations."@en ;
+    skos:prefLabel "free-floating"@en ;
+    :clause "3.5.10.4"@en .
+
+:station-basedOne-way a owl:Class ;
+    rdfs:subClassOf :networkModel ;
+    skos:definition "<transport service> [operational model](operational model.md) where the [transport service](transport service.md) is initiated and terminated at two different facilities managed by the [transport provider](transport provider.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "station-based one-way"@en ;
+    :clause "3.5.10.3"@en .
+
+:station-basedRoundtrip a owl:Class ;
+    rdfs:subClassOf :networkModel ;
+    skos:definition "<transport service> [operational model](operational model.md) where the [transport service](transport service.md) is initiated and terminated at the same facility managed by the [transport provider](transport provider.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "station-based roundtrip"@en ;
+    :clause "3.5.10.2"@en .
+
+:networkModel a owl:Class ;
+    skos:definition "infrastructure framework for the agreement between a [service provider](service provider.md) and a [user](user.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "network model"@en ;
+    :clause "3.5.10.1"@en .

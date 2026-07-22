@@ -1,0 +1,102 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:itsApplicationTerms a owl:Ontology ;
+    dcterms:title "Its Application Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:applicationTemplate a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :annotatedOutlineFor ;
+            owl:someValuesFrom :itsApplicationSpecification ] ;
+    skos:definition "defined annotated outline for an [ITS application specification](ITS application specification.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "application template"@en ;
+    :altPrefLabel "ITS application template"@en ;
+    :clause "3.2.8.4"@en .
+
+:itsDeployment a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :installationOf ;
+            owl:someValuesFrom :itsImplementation ] ;
+    skos:definition "installation capable of performing one or more [ITS applications](ITS application.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "An ITS deployment typically refers to the support, central and roadside ITS stations coupled with a tacit acknowledgement of the mobile ITS stations that will communicate with the support, central or roadside ITS stations."@en ;
+    skos:prefLabel "ITS deployment"@en ;
+    :clause "3.2.8.6"@en .
+
+:annotatedOutlineFor a owl:ObjectProperty ;
+    rdfs:label "annotated outline for"@en .
+
+:definesHowToProvide a owl:ObjectProperty ;
+    rdfs:label "defines how to provide"@en .
+
+:details a owl:ObjectProperty .
+
+:implements a owl:ObjectProperty .
+
+:interoperabilityDesign a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :definesHowToProvide ;
+            owl:someValuesFrom :service ],
+        [ a owl:Restriction ;
+            owl:onProperty :using ;
+            owl:someValuesFrom :physicalObject ] ;
+    skos:definition "characteristics necessary to fully define how various [physical objects](physical object.md) interoperate to provide a [service](service.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Characteristics often include but are not limited to functional, performance and interface requirements."@en ;
+    skos:prefLabel "interoperability design"@en ;
+    :clause "3.2.8.2"@en .
+
+:involves a owl:ObjectProperty .
+
+:itsApplicationSpecification a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :details ;
+            owl:someValuesFrom :interoperabilityDesign ],
+        [ a owl:Restriction ;
+            owl:onProperty :for ;
+            owl:someValuesFrom :itsApplication ] ;
+    skos:definition "one or more [documents](document.md) that detail the [interoperability design](interoperability design.md) for an [ITS application](ITS application.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "ITS application specification"@en ;
+    :clause "3.2.8.3"@en .
+
+:itsImplementation a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :implements ;
+            owl:someValuesFrom :itsApplication ] ;
+    skos:definition "integration of each [physical object](physical object.md) necessary to implement one or more [ITS applications](ITS application.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "An ITS application typically requires multiple components (e.g. an ITS-S acting as a user and another ITS-S acting as a provider). An ITS implementation includes a sample of each component necessary for the service but often does not represent a complete deployment."@en,
+        "An ITS implementation is typically used for a laboratory or other experimental [environment](environment.md) prior to a full-scale deployment."@en ;
+    skos:prefLabel "ITS implementation"@en ;
+    :clause "3.2.8.5"@en .
+
+:realizationOf a owl:ObjectProperty ;
+    rdfs:label "realization of"@en .
+
+:itsApplication a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :realizationOf ;
+            owl:someValuesFrom :itsService ],
+        [ a owl:Restriction ;
+            owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+            owl:onClass :its-sApplicationProcess ;
+            owl:onProperty :involves ] ;
+    skos:definition "requirements for an [ITS service](ITS service.md) that involves an association of two or more complementary [ITS-S application processes](ITS-S application process.md)"@en ;
+    skos:historyNote "2025: Revised to be \"requirements for\" rather than \"realization of\" to clarify that it is a design-level artifact that is assigned an identifier (i.e., ITS-AID) rather than an implementation. Added Notes to entry."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "An ITS application can also involve associations with nodes that are not ITS stations."@en,
+        "This is a clarification of the ISO 21217:2020 definition that described this as an instantiation."@en ;
+    skos:prefLabel "ITS application"@en ;
+    :clause "3.2.8.1"@en .

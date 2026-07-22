@@ -1,0 +1,122 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:itsStationTerms a owl:Ontology ;
+    dcterms:title "Its Station Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:its-sHost a owl:Class ;
+    rdfs:subClassOf :its-sNode ;
+    skos:definition "[ITS-S node](ITS-S node.md) comprised of [ITS-S](ITS station.md) functionalities other than the functionalities of an [ITS-S router](ITS-S router.md), ITS-S border router, ITS-S mobile router or an ITS-S gateway"@en ;
+    skos:historyNote "2025: Revised to be an ITS-S node."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "ITS-S border router and ITS-S mobile router are ITS-S routers with added functionalities, which is why they are separately excluded in the above definition."@en,
+        "ITS-S border router, ITS-S mobile router, and ITS-S gateway are defined in ISO 21217."@en ;
+    skos:prefLabel "ITS-S host"@en ;
+    :altPrefLabel "management host"@en ;
+    :clause "3.2.7.6"@en .
+
+:its-sRouter a owl:Class ;
+    rdfs:subClassOf :its-sNode ;
+    skos:definition "[ITS-S node](ITS-S node.md) comprised of routing functionalities of an [ITS station unit](ITS-S unit.md) used to connect two networks and to forward packets not explicitly addressed to itself"@en ;
+    skos:historyNote "2025: Revised to be an ITS-S node."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "ITS-S router"@en ;
+    :clause "3.2.7.7"@en .
+
+:containedIn a owl:ObjectProperty ;
+    rdfs:label "contained in"@en .
+
+:describedBy a owl:ObjectProperty ;
+    rdfs:label "described by"@en .
+
+:instantiationOf a owl:ObjectProperty ;
+    rdfs:label "instantiation of"@en .
+
+:its-sCommunicationUnit a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :contains ;
+            owl:someValuesFrom :functionalObject ] ;
+    skos:definition "physical unit in an [ITS-S unit](ITS-S unit.md) containing part or all of the functionality of the [ITS-S](ITS station.md)"@en ;
+    skos:historyNote "2025: Added Note 1 to entry and revised to \"the\" ITS-S rather than \"an\" ITS-S."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "In case an ITS-SU consists of a single physical unit, the ITS-SU and the ITS-SCU are identical. In case an ITS-SU consists of more than one ITS-SCU, then these ITS-SCUs are interconnected via the ITS station-internal network of the ITS-SU."@en ;
+    skos:prefLabel "ITS-S communication unit"@en ;
+    :altPrefLabel "ITS station communication unit"@en,
+        "ITS-SCU"@en ;
+    :clause "3.2.7.5"@en .
+
+:its-sUnit a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :comprises ;
+            owl:someValuesFrom :its-sCommunicationUnit ],
+        [ a owl:Restriction ;
+            owl:onProperty :instantiationOf ;
+            owl:someValuesFrom :itsStation ] ;
+    skos:definition "[instance](instance.md) of an physical unit produced by an [ITS station](ITS station.md) [implementation](implementation.md)"@en ;
+    skos:historyNote "2025: The original definition resulted in confusion as to whether it was intended to reference merely an implementation, which is an instance of a realization (e.g., something with a model number) or an instance of an implementation (e.g., something that would have a serial number). Added Note 1 to entry."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "This is a clarification of the definition provided in ISO 21217:2020. While the definition for ITS station unit in ISO 21217:2020 refers to an implementation, the full text interchangeably describes it as an implementation or a physical instantiation, but does not define those terms explicitly."@en ;
+    skos:prefLabel "ITS-S unit"@en ;
+    :altPrefLabel "ITS station unit"@en,
+        "ITS-SU"@en ;
+    :clause "3.2.7.4"@en .
+
+:itsStation a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :meetsRequirementsOf ;
+            owl:someValuesFrom :itsTrustDomain ],
+        [ a owl:Restriction ;
+            owl:onProperty :describedBy ;
+            owl:someValuesFrom :its-sReferenceArchitecture ],
+        :boundedSecuredManagedDomain ;
+    skos:definition "[bounded secured managed domain](bounded secured managed domain.md) that is able to meet requirements of the [ITS trust domain](ITS trust domain.md) within which it is designed to participate"@en ;
+    skos:historyNote "2025: Revised to indicate the \"design\" and to add Note 2 to entry."@en,
+        "Introduced in ISO/TS 14812:2022."@en ;
+    skos:note "The ITS station reference architecture is defined in ISO 21217."@en,
+        "This complements the ISO 21217:2020 definition (which identifies the component parts) and is consistent with the text of ISO 21217:2020."@en ;
+    skos:prefLabel "ITS station"@en ;
+    :altPrefLabel "ITS-S"@en ;
+    :clause "3.2.7.3"@en .
+
+:itsTrustDomain a owl:Class ;
+    rdfs:subClassOf :boundedSecuredManagedDomain ;
+    skos:definition "set of [bounded secured managed domains](bounded secured managed domain.md) that meet a defined set of ITS industry security requirements"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "ITS trust domain"@en ;
+    :clause "3.2.7.2"@en .
+
+:meetsRequirementsOf a owl:ObjectProperty ;
+    rdfs:label "meets requirements of"@en .
+
+:boundedSecuredManagedDomain a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :represents ;
+            owl:someValuesFrom :environment ],
+        :entity ;
+    skos:definition "abstract [entity](entity.md) representing a managed processing and memory [environment](environment.md) that provides protection from code and data that has not been determined to meet established security requirements"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "bounded secured managed domain"@en ;
+    :altPrefLabel "BSMD"@en ;
+    :clause "3.2.7.1"@en .
+
+:its-sNode a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :comprises ;
+            owl:someValuesFrom :functionality ],
+        [ a owl:Restriction ;
+            owl:onProperty :containedIn ;
+            owl:someValuesFrom :its-sUnit ] ;
+    skos:definition "node comprised of a set of functionalities in an [ITS-S unit](ITS-S unit.md) that is [connected](connected.md) to the [ITS station](ITS station.md)-internal network or comprises an entire ITS-S unit"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "ITS-S node"@en ;
+    :clause "3.2.7.8"@en .

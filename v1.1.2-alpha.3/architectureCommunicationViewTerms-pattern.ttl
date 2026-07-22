@@ -1,0 +1,79 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:architectureCommunicationViewTerms a owl:Ontology ;
+    dcterms:title "Architecture Communication View Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:applicationEntity a owl:Class ;
+    skos:definition "part of the [ITS station reference architecture](ITS-S reference architecture.md) that is responsible for providing ITS-related functionality"@en ;
+    skos:hiddenLabel "information layer"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Within the US, the National Transportation Communications for ITS Protocol (NTCIP) standards identify an \"information layer\" on top of the traditional OSI stack. However, the purpose of this layer includes both information configuration and functionality. The ITS-S reference architecture separates these two roles between the [management entity](management entity.md) and the [application entity](application entity.md)."@en ;
+    skos:prefLabel "application entity"@en ;
+    :altPrefLabel "ITS-S application entity"@en ;
+    :clause "3.1.5.1"@en .
+
+:facilitiesLayer a owl:Class ;
+    skos:definition "communications layer in the [ITS station reference architecture](ITS-S reference architecture.md) corresponding to the session, presentation and application layers of the OSI model"@en ;
+    skos:hiddenLabel "application layer"@en ;
+    skos:historyNote "2025: Revised based on input from WG 16 and to align more closely with the other definitions within ISO 14812."@en,
+        "Introduced in ISO/TS 14812:2022."@en ;
+    skos:note "Within the US, the NTCIP standards call the facilities layer the \"application layer\". However, as this term is easily confused with both the OSI application layer and the [application entity](application entity.md), the term should be avoided and qualified when used (e.g. OSI application layer)."@en ;
+    skos:prefLabel "facilities layer"@en ;
+    :altPrefLabel "ITS-S facilities layer"@en ;
+    :clause "3.1.5.5"@en .
+
+:its-sAccessLayer a owl:Class ;
+    rdfs:subClassOf :accessLayer ;
+    skos:definition "communications layer in the [ITS station reference architecture](ITS-S reference architecture.md) corresponding to the physical and data link layers of the OSI model for ITS communications"@en ;
+    skos:historyNote "2025: Revised based on input from WG 16 and to align more closely with the other definitions within ISO 14812."@en,
+        "Introduced in ISO/TS 14812:2022."@en ;
+    skos:prefLabel "ITS-S access layer"@en ;
+    :clause "3.1.5.3"@en .
+
+:managementEntity a owl:Class ;
+    skos:definition "part of the [ITS station reference architecture](ITS-S reference architecture.md) that is responsible for management and configuration of all layers and entities within the ITS-S"@en ;
+    skos:historyNote "2025: Revised based on input from WG 16 and to align more closely with the other definitions within ISO 14812."@en,
+        "Introduced in ISO/TS 14812:2022."@en ;
+    skos:prefLabel "management entity"@en ;
+    :altPrefLabel "ITS-S management entity"@en ;
+    :clause "3.1.5.6"@en .
+
+:securityEntity a owl:Class ;
+    skos:definition "part of the [ITS station reference architecture](ITS-S reference architecture.md) that is responsible for providing communication security and [system](system.md) security"@en ;
+    skos:historyNote "2025: Revised based on input from WG 16 and to align more closely with the other definitions within ISO 14812."@en,
+        "Introduced in ISO/TS 14812:2022."@en ;
+    skos:prefLabel "security entity"@en ;
+    :altPrefLabel "ITS-S security entity"@en ;
+    :clause "3.1.5.7"@en .
+
+:transnetLayer a owl:Class ;
+    skos:definition "communications layer in the [ITS station reference architecture](ITS-S reference architecture.md) corresponding to the network and transport layers of the OSI model"@en ;
+    skos:historyNote "2025: Revised based on input from WG 16 and to align more closely with the other definitions within ISO 14812."@en,
+        "Introduced in ISO/TS 14812:2022."@en ;
+    skos:note "The full name of this layer is the networking and transport layer, but the term transnet layer provides a more concise name."@en ;
+    skos:prefLabel "transnet layer"@en ;
+    :altPrefLabel "ITS-S networking and transport layer"@en,
+        "networking and transport layer"@en ;
+    :clause "3.1.5.4"@en .
+
+:accessLayer a owl:Class ;
+    skos:altLabel "link layer"@en,
+        "subnet layer"@en ;
+    skos:definition "communications layer that corresponds to the physical and data link layers of the OSI model"@en ;
+    skos:historyNote "2025: Revised based on input from WG 16 and to align more closely with the other definitions within ISO 14812."@en,
+        "Introduced in ISO/TS 14812:2022."@en ;
+    skos:note "Within the Internet Engineering Task Force (IETF), the term \"link layer\" is used to describe the same functionality as the access layer."@en,
+        "Within the US, the NTCIP standards use the term \"subnet layer\" to describe the same functionality as the access layer."@en ;
+    skos:prefLabel "access layer"@en ;
+    :clause "3.1.5.2"@en .

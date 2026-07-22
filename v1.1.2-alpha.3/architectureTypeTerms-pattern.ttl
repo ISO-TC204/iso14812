@@ -1,0 +1,88 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:architectureTypeTerms a owl:Ontology ;
+    dcterms:title "Architecture Type Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:its-sReferenceArchitecture a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :securityEntity ],
+        [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :facilitiesLayer ],
+        [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :applicationEntity ],
+        [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :managementEntity ],
+        [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :transnetLayer ],
+        [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :its-sAccessLayer ],
+        :referenceArchitecture ;
+    skos:definition "[reference architecture](reference architecture.md) for handling communications within a [physical object](physical object.md) as defined in ISO 21217"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The ITS-S reference architecture provides a model for describing communication."@en ;
+    skos:prefLabel "ITS-S reference architecture"@en ;
+    :clause "3.1.9.4"@en .
+
+:itsDeploymentArchitecture a owl:Class ;
+    rdfs:subClassOf :deploymentArchitecture ;
+    skos:definition "[deployment architecture](deployment architecture.md) for one or more [ITS services](ITS service.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "ITS deployment architecture"@en ;
+    :clause "3.1.9.7"@en .
+
+:itsPlanningArchitecture a owl:Class ;
+    rdfs:subClassOf :planningArchitecture ;
+    skos:definition "[planning architecture](planning architecture.md) for one or more [ITS services](ITS service.md)"@en ;
+    skos:prefLabel "ITS planning architecture"@en ;
+    :clause "3.1.9.6"@en .
+
+:itsReferenceArchitecture a owl:Class ;
+    rdfs:subClassOf :referenceArchitecture ;
+    skos:definition "[reference architecture](reference architecture.md) for one or more [ITS services](ITS service.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022."@en,
+        "Updated Note 2 to entry in 2025 to reference a more modern architecture reference model."@en ;
+    skos:note "An ITS architecture can be a reference, planning or deployment architecture [deployment architecture.md]."@en,
+        "The Architecture Reference for Cooperative and Intelligent Transportation (ARC-IT; see Reference [25]) is an example of an ITS reference architecture."@en ;
+    skos:prefLabel "ITS reference architecture"@en ;
+    :clause "3.1.9.5"@en .
+
+:deploymentArchitecture a owl:Class ;
+    rdfs:subClassOf :architecture ;
+    skos:definition "[architecture](architecture.md) that provides a vision of a specific deployment of a [system](system.md) within a geographic area"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "deployment architecture"@en ;
+    :clause "3.1.9.3"@en .
+
+:planningArchitecture a owl:Class ;
+    rdfs:subClassOf :architecture ;
+    skos:altLabel "regional architecture"@en ;
+    skos:definition "[architecture](architecture.md) that provides a long-term vision of system [elements](element.md) that may be deployed and managed by different projects and/or [entities](entity.md) within a geographic area"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Some countries use the term \"regional architecture\", but in International Standards, the term \"regional\" is avoided due to its multiple meanings."@en ;
+    skos:prefLabel "planning architecture"@en ;
+    :clause "3.1.9.2"@en .
+
+:referenceArchitecture a owl:Class ;
+    rdfs:subClassOf :architecture ;
+    skos:definition "[architecture](architecture.md) that provides a template solution for [planning](planning architecture.md) and [deployment architectures](deployment architecture.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Interface standards are based on a reference architecture, which should be explicitly described."@en ;
+    skos:prefLabel "reference architecture"@en ;
+    :clause "3.1.9.1"@en .

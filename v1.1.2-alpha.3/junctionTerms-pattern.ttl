@@ -1,0 +1,133 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:junctionTerms a owl:Ontology ;
+    dcterms:title "Junction Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:egressLink a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :egressLane ] ;
+    skos:definition "all [egress lanes](egress lane.md) on a [road link](road link.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "egress link"@en ;
+    :clause "3.3.6.6"@en .
+
+:ingressLink a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :ingressLane ] ;
+    skos:definition "all [ingress lanes](ingress lane.md) on a [road link](road link.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "ingress link"@en ;
+    :clause "3.3.6.4"@en .
+
+:interchange a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :gradeSeparatedManoeuvre ],
+        :junction ;
+    skos:definition "[junction](junction.md) with at least one [grade separated manoeuvre](grade separated manoeuvre.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The grade separation allows [travellers](traveller.md) on the [link](link.md) to pass unimpeded through the interchange when congestion is not present."@en,
+        "The term \"interchange\" typically refers to the facilities that enable all available manoeuvres at the grade separated [intersection](intersection.md), which typically includes multiple junctions."@en ;
+    skos:prefLabel "interchange"@en ;
+    :clause "3.3.6.9"@en .
+
+:junctionAtGrade a owl:Class ;
+    rdfs:subClassOf :junction ;
+    skos:altLabel "grade junction"@en ;
+    skos:definition "[junction](junction.md) without any [grade separated manoeuvres](grade separated manoeuvre.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "junction at grade"@en ;
+    :altPrefLabel "at-grade intersection"@en ;
+    :clause "3.3.6.8"@en .
+
+:entryFor a owl:ObjectProperty ;
+    rdfs:label "entry for"@en .
+
+:exitFor a owl:ObjectProperty ;
+    rdfs:label "exit for"@en .
+
+:from a owl:ObjectProperty .
+
+:gradeSeparatedManoeuvre a owl:Class ;
+    rdfs:subClassOf :intersectionManoeuvre ;
+    skos:definition "manoeuvre that is vertically separated from one or more manoeuvres that cross its two-dimensional path"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "grade separated manoeuvre"@en ;
+    :clause "3.3.6.10"@en .
+
+:intersection a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+            owl:onClass :road ;
+            owl:onProperty :meetingOrCrossing ] ;
+    skos:definition "space where two or more [roads](road.md) meet or cross"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Complex intersections can be viewed as multiple intersections by providing separate designations for distinct [road links](road link.md). For example, one model could depict a complex intersection as being associated with multiple junctions; another model could depict the same physical infrastructure as being multiple intersections that are interconnected by different [roads](road.md), each with its own designator (e.g. \"ramp from northbound Road A to eastbound Road B\")."@en,
+        "Intersections can be associated with zero [junctions](junction.md), such as a motorway crossing a road without any connecting ramps, or can be associated with one or more junctions, such as a diamond [interchange](interchange.md)."@en ;
+    skos:prefLabel "intersection"@en ;
+    :clause "3.3.6.1"@en .
+
+:intersectionManoeuvre a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :to ;
+            owl:someValuesFrom :egressLane ],
+        [ a owl:Restriction ;
+            owl:onProperty :from ;
+            owl:someValuesFrom :ingressLane ] ;
+    skos:altLabel "maneuver"@en ;
+    skos:definition "<junction> movement from an [ingress lane](ingress lane.md) to an [egress lane](egress lane.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The term \"maneuver\" is the American English spelling."@en ;
+    skos:prefLabel "intersection manoeuvre"@en ;
+    :altPrefLabel "manoeuvre"@en ;
+    :clause "3.3.6.7"@en .
+
+:meetingOrCrossing a owl:ObjectProperty ;
+    rdfs:label "meeting or crossing"@en .
+
+:to a owl:ObjectProperty .
+
+:egressLane a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :exitFor ;
+            owl:someValuesFrom :junction ] ;
+    skos:definition "[traffic lane](traffic lane.md) designed for exiting a [junction](junction.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "egress lane"@en ;
+    :clause "3.3.6.5"@en .
+
+:ingressLane a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :entryFor ;
+            owl:someValuesFrom :junction ] ;
+    skos:definition "[traffic lane](traffic lane.md) designed for entering a [junction](junction.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "ingress lane"@en ;
+    :clause "3.3.6.3"@en .
+
+:junction a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :egressLane ],
+        [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :ingressLane ],
+        :intersection ;
+    skos:altLabel ""@en,
+        "[intersection](intersection.md) that allows [travellers](traveller.md) to change [roads](road.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "junction"@en ;
+    :clause "3.3.6.2"@en .

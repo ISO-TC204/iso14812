@@ -1,0 +1,31 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:coreTerms a owl:Ontology ;
+    dcterms:title "Core Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports
+        <core.ttl> ,
+        <architectureCommunicationViewTerms-pattern.ttl> ,
+        <architectureEnterpriseViewTerms-pattern.ttl> ,
+        <architectureFunctionalViewTerms-pattern.ttl> ,
+        <architecturePhysicalViewTerms-pattern.ttl> ,
+        <architectureTypeTerms-pattern.ttl> ,
+        <architectureViewTerms-pattern.ttl> ,
+        <conceptRealizationTerms-pattern.ttl> ,
+        <dataConceptManagementTerms-pattern.ttl> ,
+        <dataConceptTypeTerms-pattern.ttl> ,
+        <entityTerms-pattern.ttl> ,
+        <generalArchitectureTerms-pattern.ttl> ,
+        <generalSystemTerms-pattern.ttl> ,
+        <informationSecurityTerms-pattern.ttl> ,
+        <systemEngineeringTerms-pattern.ttl> ,
+        <timeTerms-pattern.ttl> .

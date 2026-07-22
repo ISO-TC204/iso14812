@@ -1,0 +1,60 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:vehicleTypesEnvironmentTerms a owl:Ontology ;
+    dcterms:title "Vehicle Types Environment Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:motorVehicle a owl:Class ;
+    rdfs:subClassOf :motorizedVehicle,
+        :roadVehicle ;
+    skos:definition "[motorized](motorized vehicle.md) [road vehicle](road vehicle.md) allowed to operate in the same [driving spaces](driving space.md) as motorized [passenger](passenger.md) cars"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "motor vehicle"@en ;
+    :clause "3.7.6.3"@en .
+
+:non-roadCycle a owl:Class ;
+    rdfs:subClassOf :vehicle ;
+    skos:definition "human-powered [vehicle](vehicle.md) not meeting the legal requirements to be driven in [cycle lanes](cycle lane.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "non-road cycle"@en ;
+    :clause "3.7.6.6"@en .
+
+:non-roadVehicle a owl:Class ;
+    rdfs:subClassOf :vehicle ;
+    skos:definition "[vehicle](vehicle.md) not meeting the legal requirements to be driven in [traffic lanes](traffic lane.md) or [cycle lanes](cycle lane.md) of a [road network](road network.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "non-road vehicle"@en ;
+    :clause "3.7.6.4"@en .
+
+:roadCycle a owl:Class ;
+    rdfs:subClassOf :vehicle ;
+    skos:definition "[vehicle](vehicle.md) meeting the legal requirements to operate in [cycle lanes](cycle lane.md) and [cycleways](cycleway.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "In some countries, other special [lanes](lane.md) could also be open to road cycles, such as bus lanes."@en ;
+    skos:prefLabel "road cycle"@en ;
+    :clause "3.7.6.5"@en .
+
+:motorizedVehicle a owl:Class ;
+    rdfs:subClassOf :vehicle ;
+    skos:definition "self-propelled [vehicle](vehicle.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "motorized vehicle"@en ;
+    :clause "3.7.6.2"@en .
+
+:roadVehicle a owl:Class ;
+    rdfs:subClassOf :vehicle ;
+    skos:definition "[vehicle](vehicle.md) meeting the requirements to operate within the [driving space](driving space.md) of a [road](road.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Unless indicated otherwise, the term typically refers to vehicles that are allowed to operate in the same [driving spaces](driving space.md) as motorized [passenger](passenger.md) cars, according to the legal requirements of the local [jurisdictional entity](jurisdictional entity.md). However, the term can be contextualized for other [environments](environment.md). For example, a bicycle is a [road vehicle](road vehicle.md) when the [road](road.md) is a [cycleway](cycleway.md)."@en ;
+    skos:prefLabel "road vehicle"@en ;
+    :clause "3.7.6.1"@en .
