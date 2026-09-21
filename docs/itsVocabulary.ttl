@@ -16,9 +16,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     cc:attributionName "ISO 14812"@en ;
     vann:preferredNamespacePrefix "itsVocab"@en ;
     dcterms:issued "2026-06-01"^^xsd:date ;
-    owl:versionInfo "1.1.2"@en ;
+    owl:versionInfo "1.1.2-alpha.4" ;
     dcterms:creator "Kenneth Vaughn"@en ;
-    owl:versionIRI <https://w3id.org/itsdata/vocab/1.1.1/> ;
+    owl:versionIRI <https://w3id.org/itsdata/vocab/1.1.2-alpha.4> ;
+    owl:priorVersion               <https://w3id.org/itsdata/vocab/1.1.2-alpha.3> ;
     rdfs:comment """
     1.0.0 - 2022: Published as ISO/TS 14812:2022. 
     1.1.0 - 2025: Updated to reflect ISO/TS 14812:2025 (Edition 2). 
@@ -26,7 +27,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     1.1.2 - 2026: Converted to *.ttl syntax and enhancement to website generation. 
     Note: Version numbers follow semantic versioning principles (major.minor.patch). This is different than ISO standard edition numbers, which are sequential.
     """@en ;
-    dcterms:modified "2026-06-01"^^xsd:date ;
+    dcterms:modified "2026-09-21"^^xsd:date ;
     owl:imports
         <core.ttl> ,
         <coreTerms-group.ttl> ,

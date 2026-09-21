@@ -11,7 +11,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :genericServiceTerms a owl:Ontology ;
     dcterms:title "Generic Service Terms"@en ;
-    dcterms:modified "2026-05-29"^^xsd:date ;
+    dcterms:modified "2026-09-21"^^xsd:date ;
     owl:imports <core.ttl> .
 
 :serviceProvider a owl:Class ;
