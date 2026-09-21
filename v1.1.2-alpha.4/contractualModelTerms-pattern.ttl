@@ -1,0 +1,56 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:contractualModelTerms a owl:Ontology ;
+    dcterms:title "Contractual Model Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:corporateCustomerModel a owl:Class ;
+    rdfs:subClassOf :contractualModel ;
+    skos:definition "[contractual model](contractual model.md) where the [user](user.md) is a [commercial](commercial.md) [entity](entity.md)"@en ;
+    skos:example "A business purchasing monthly [public transport](public transport.md) passes for its employees."@en,
+        "A commercial entity using a commercial courier service for package delivery."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "corporate customer model"@en ;
+    :clause "3.5.7.2"@en .
+
+:governmentCustomerModel a owl:Class ;
+    rdfs:subClassOf :contractualModel ;
+    skos:definition "[contractual model](contractual model.md) where the [user](user.md) is a governmental [entity](entity.md)"@en ;
+    skos:example "A governmental entity using a [commercial](commercial.md) courier service for package delivery."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "government customer model"@en ;
+    :clause "3.5.7.4"@en .
+
+:peer-to-peer a owl:Class ;
+    rdfs:subClassOf :contractualModel ;
+    skos:definition "<transport service> [private customer model](private customer model.md) where the [service provider](service provider.md) is an individual"@en ;
+    skos:example "Ridesourcing."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The customer and provider can connect and/or contract through a third-party [service](service.md)."@en ;
+    skos:prefLabel "peer-to-peer"@en ;
+    :clause "3.5.7.5"@en .
+
+:privateCustomerModel a owl:Class ;
+    rdfs:subClassOf :contractualModel ;
+    skos:definition "[contractual model](contractual model.md) where the [user](user.md) is an individual"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "private customer model"@en ;
+    :clause "3.5.7.3"@en .
+
+:contractualModel a owl:Class ;
+    skos:definition "legal framework for the agreement between a [service provider](service provider.md) and a [user](user.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Contracts can be via a third party, implied or verbal, especially in the case of [peer-to-peer](peer-to-peer.md)."@en ;
+    skos:prefLabel "contractual model"@en ;
+    :altPrefLabel "shared mobility contract model"@en ;
+    :clause "3.5.7.1"@en .

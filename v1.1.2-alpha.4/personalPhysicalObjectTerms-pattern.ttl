@@ -1,0 +1,58 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:personalPhysicalObjectTerms a owl:Ontology ;
+    dcterms:title "Personal Physical Object Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:nomadicDevice a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onClass :traveller ;
+            owl:onProperty :accessedBy ],
+        :personalInformationDevice ;
+    skos:definition "[personal information device](personal information device.md) that is taken with and can be accessed by the [traveller](traveller.md) during a journey"@en ;
+    skos:example "Smartphone."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "nomadic device"@en ;
+    :altPrefLabel "ITS nomadic device"@en ;
+    :clause "3.2.4.3"@en .
+
+:nomadicVehicleDevice a owl:Class ;
+    rdfs:subClassOf :personalSystem ;
+    skos:altLabel "external in-vehicle device"@en ;
+    skos:definition "[personal system](personal system.md) consisting of global navigation satellite system (GNSS) and/or wireless [modules](module.md) that are connected to a [vehicle](vehicle.md) during a trip"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "nomadic vehicle device"@en ;
+    :altPrefLabel "carry-in vehicle device"@en ;
+    :clause "3.2.4.1"@en .
+
+:publicInformationDevice a owl:Class ;
+    rdfs:subClassOf :personalSystem ;
+    skos:definition "[personal system](personal system.md) that provides public access to [traveller](traveller.md) information"@en ;
+    skos:example "Kiosk."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "public information device"@en ;
+    :altPrefLabel "ITS public information device"@en ;
+    :clause "3.2.4.4"@en .
+
+:accessedBy a owl:ObjectProperty ;
+    rdfs:label "accessed by"@en .
+
+:personalInformationDevice a owl:Class ;
+    rdfs:subClassOf :personalSystem ;
+    skos:definition "[personal system](personal system.md) that enables personal access to [traveller](traveller.md) information"@en ;
+    skos:example "Personal computer."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "personal information device"@en ;
+    :altPrefLabel "ITS personal information device"@en ;
+    :clause "3.2.4.2"@en .

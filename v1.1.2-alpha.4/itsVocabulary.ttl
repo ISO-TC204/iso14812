@@ -1,0 +1,40 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+: a owl:Ontology ;
+    dcterms:title "ITS Vocabulary"@en ;
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:description "A vocabulary defined for Intelligent Transport Systems and documented as a formal ontology. The contents of this vocabulary are periodically standardized in ISO 14812, whereas this file is maintained through a [GitHub project](https://github.com/ISO-TC204/iso14812).  The original version of the vocabulary was published as [ISO/TS 14812:2022](https://www.iso.org/standard/79779.html). [Edition 2](https://www.iso.org/standard/85041.html) was released in 2025.  With edition 3, the draft standard is now generated from this ontology file, originally developed in 2026."@en ;
+    cc:attributionName "ISO 14812"@en ;
+    vann:preferredNamespacePrefix "itsVocab"@en ;
+    dcterms:issued "2026-06-01"^^xsd:date ;
+    owl:versionInfo "1.1.2"@en ;
+    dcterms:creator "Kenneth Vaughn"@en ;
+    owl:versionIRI <https://w3id.org/itsdata/vocab/1.1.1/> ;
+    rdfs:comment """
+    1.0.0 - 2022: Published as ISO/TS 14812:2022. 
+    1.1.0 - 2025: Updated to reflect ISO/TS 14812:2025 (Edition 2). 
+    1.1.1 - 2026: Converted to formal ontology. 
+    1.1.2 - 2026: Converted to *.ttl syntax and enhancement to website generation. 
+    Note: Version numbers follow semantic versioning principles (major.minor.patch). This is different than ISO standard edition numbers, which are sequential.
+    """@en ;
+    dcterms:modified "2026-06-01"^^xsd:date ;
+    owl:imports
+        <core.ttl> ,
+        <coreTerms-group.ttl> ,
+        <financialTerms-group.ttl> ,
+        <infrastructureTerms-group.ttl> ,
+        <locationTerms-group.ttl> ,
+        <serviceTerms-group.ttl> ,
+        <technologyTerms-group.ttl> ,
+        <terms-group.ttl> ,
+        <userTerms-group.ttl> ,
+        <vehicleTerms-group.ttl> .

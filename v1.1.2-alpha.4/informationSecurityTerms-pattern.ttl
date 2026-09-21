@@ -1,0 +1,128 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:informationSecurityTerms a owl:Ontology ;
+    dcterms:title "Information Security Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:authentication a owl:Class ;
+    dcterms:source "ISO/IEC 2382:2015"@en ;
+    skos:definition "verification that a [message](message.md) was sent by the purported originator to the intended recipient and that the message was not changed in transit"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "authentication"@en ;
+    :clause "3.1.14.1"@en .
+
+:authenticator a owl:Class ;
+    dcterms:source "ISO/IEC/IEEE 8802-21, adapted from"@en ;
+    skos:definition "a network entity that executes an [authentication](authentication.md) process on a [message](message.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "authenticator"@en ;
+    :clause "3.1.14.2"@en .
+
+:control a owl:Class ;
+    dcterms:source "ISO/IEC 27000:2018, 3.14"@en ;
+    skos:definition "measure that is modifying [risk](risk.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "control"@en ;
+    :clause "3.1.14.3"@en .
+
+:cryptography a owl:Class ;
+    dcterms:source "ISO/IEC 22739:2018"@en ;
+    skos:definition "discipline that embodies the principles, means, and methods for the transformation of data in order to hide their semantic content, prevent their unauthorized use, or prevent their undetected modification"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "cryptography"@en ;
+    :clause "3.1.14.4"@en .
+
+:dataPrivacy a owl:Class ;
+    dcterms:source "ISO/IEC 17573-2:2018"@en ;
+    skos:definition "rights and obligations of individuals and organizations with respect to the collection, use, retention, disclosure and disposal of personal information"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "data privacy"@en ;
+    :clause "3.1.14.5"@en .
+
+:digitalSignature a owl:Class ;
+    dcterms:source "ISO/IEC 2382:2015"@en ;
+    skos:definition "data appended to a message, that allow the recipient of the [message](message.md) to verify the source of the message"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "digital signature"@en ;
+    :clause "3.1.14.6"@en .
+
+:informationSecurityEvent a owl:Class ;
+    dcterms:source "ISO/IEC 27035-1"@en ;
+    skos:definition "occurrence indicating a possible breach of information security or failure of [controls](control.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "information security event"@en ;
+    :clause "3.1.14.7"@en .
+
+:informationSecurityIncident a owl:Class ;
+    dcterms:source "ISO/IEC 27035-1"@en ;
+    skos:definition "related and identified information security event(s) [information security event.md] that can harm an organization's assets or compromise its operations"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel ""@en,
+        "information security incident"@en ;
+    :clause "3.1.14.8"@en .
+
+:non-repudiation a owl:Class ;
+    dcterms:source "ISO/IEC 27000:2018, 3.48"@en ;
+    skos:definition "ability to prove the occurrence of a claimed event or action and its originating entities"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "non-repudiation"@en ;
+    :clause "3.1.14.9"@en .
+
+:objective a owl:Class ;
+    dcterms:source "ISO/IEC 27000:2018, 3.49"@en ;
+    skos:definition "result to be achieved"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "objective"@en ;
+    :clause "3.1.14.10"@en .
+
+:resilience a owl:Class ;
+    dcterms:source "ISO/IEC 23257:2019"@en ;
+    skos:definition "capability of a system to maintain its functions and structure in the face of internal and external change, and to degrade gracefully when this is necessary"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "resilience"@en ;
+    :clause "3.1.14.11"@en .
+
+:risk a owl:Class ;
+    dcterms:source "ISO/IEC 27000:2018, 3.61"@en ;
+    skos:definition "effect of uncertainty on [objectives](objective.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "risk"@en ;
+    :clause "3.1.14.12"@en .
+
+:threat a owl:Class ;
+    dcterms:source "ISO/IEC 27000:2018, 3.75"@en ;
+    skos:definition "potential cause of an unwanted incident, which can result in harm to a system or organization"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "threat"@en ;
+    :clause "3.1.14.13"@en .
+
+:transparency a owl:Class ;
+    dcterms:source "ISO/IEC 19944-1"@en ;
+    skos:definition "open, comprehensive and understandable presentation of information"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "transparency"@en ;
+    :clause "3.1.14.14"@en .
+
+:trustworthiness a owl:Class ;
+    dcterms:source "ISO/IEC 5723"@en ;
+    skos:definition "ability to meet stakeholders expectations in a verifiable way"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "trustworthiness"@en ;
+    :clause "3.1.14.15"@en .
+
+:vulnerability a owl:Class ;
+    dcterms:source "ISO/IEC 27000:2018, 3.77"@en ;
+    skos:definition "weakness of an asset or [control](control.md) that can be exploited by one or more [threats](threat.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "vulnerability"@en ;
+    :clause "3.1.14.16"@en .

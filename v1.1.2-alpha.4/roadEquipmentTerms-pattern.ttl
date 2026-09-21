@@ -1,0 +1,33 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:roadEquipmentTerms a owl:Ontology ;
+    dcterms:title "Road Equipment Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:trafficControlDevice a owl:Class ;
+    rdfs:subClassOf :roadEquipment ;
+    skos:definition "[road equipment](road equipment.md) used to visually, audibly, or tangibly convey regulatory, advisory, or guidance information to [road users](road user.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "traffic control device"@en ;
+    :clause "3.3.9.2"@en .
+
+:roadEquipment a owl:Class ;
+    skos:altLabel "road furniture"@en ;
+    skos:definition "component of [transport infrastructure](transport infrastructure.md) along the roadway intended to contribute to the safety, operations, management, awareness, and comfort of movements of the [road users](road user.md)"@en ;
+    skos:example "sign, traffic signal, safety rail, gantry, bus stop structure, highway safety lighting"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "ITS roadside equipment is a type of roadside equipment."@en,
+        "Road equipment can be next to, over, on and/or in the roadway."@en,
+        "Road equipment is sometimes referred to as \"roadside equipment\"."@en ;
+    skos:prefLabel "road equipment"@en ;
+    :clause "3.3.9.1"@en .

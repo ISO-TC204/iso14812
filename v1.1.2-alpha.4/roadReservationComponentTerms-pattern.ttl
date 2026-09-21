@@ -1,0 +1,275 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:roadReservationComponentTerms a owl:Ontology ;
+    dcterms:title "Road Reservation Component Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:cross-section a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :comprises ;
+            owl:someValuesFrom :roadReservation ] ;
+    skos:definition "transverse view of [road](road.md) geometry"@en ;
+    skos:example [ a :img ;
+            :alt "Cross-section example"@en ;
+            :src "images/cross_section.png"@en ] ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The transverse view provides a vertical section of the ground and [carriageway](carriageway.md) at right angles to the centre line of the carriageway."@en ;
+    skos:prefLabel "cross-section"@en ;
+    :clause "3.3.1.1"@en .
+
+:drivingSpace a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :forMovementOf ;
+            owl:someValuesFrom :vehicle ],
+        [ a owl:Restriction ;
+            owl:onProperty :areaAbove ;
+            owl:someValuesFrom :roadway ] ;
+    skos:definition "area above the [roadway](roadway.md) that is primarily designed for the movement of [vehicles](vehicle.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "In practice, the driving space design considers a variety of issues, which can result in suboptimal [road segments](road segment.md) that violate normal design guidelines. Such [locations](spatial location.md) are typically posted with warning signs, but they are still designed for the movement of vehicles."@en,
+        "While the driving space is designed with certain vehicle characteristics in mind, local regulations typically allow a wider set of vehicles to use the driving space."@en ;
+    skos:prefLabel "driving space"@en ;
+    :clause "3.3.1.4"@en .
+
+:dualCarriageway a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass :physicalTrafficSeparator ;
+            owl:onProperty :has ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass :carriageway ;
+            owl:onProperty :comprises ;
+            owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ],
+        :roadway ;
+    skos:definition "having exactly two [carriageways](carriageway.md)"@en ;
+    skos:historyNote "2025: Revised to change term to \"dual carriageway\" rather than \"dual carriageway road segment\" to broaden its use and revised definition and note 1 to entry accordingly. Removed admitted term \"divided highway\" and associated note to entry."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The \"dual carriageway\" term can be used to describe a [road](road.md), [road section](road section.md), [road link](road link.md), or [road segment](road segment.md)."@en,
+        "The two carriageways are typically designed for travel in opposite directions."@en ;
+    skos:prefLabel "dual carriageway"@en ;
+    :clause "3.3.1.8"@en .
+
+:hardShoulder a owl:Class ;
+    rdfs:subClassOf :shoulder ;
+    skos:definition "part of the paved [carriageway](carriageway.md) designed to support traffic loads but not normally intended for driving"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A hard shoulder can be narrow or wide enough for a [traffic lane](traffic lane.md)."@en,
+        "A hard shoulder can have a surface that discourages usage as a driving surface in some countries."@en ;
+    skos:prefLabel "hard shoulder"@en ;
+    :clause "3.3.1.19"@en .
+
+:motorway a owl:Class ;
+    rdfs:subClassOf :road ;
+    skos:altLabel "freeway"@en,
+        "interstate highway"@en ;
+    skos:definition "[road](road.md) with separate carriageways for each direction, with limited access that prevents cross traffic on the same level, and for the exclusive use of certain classes of motor vehicles"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:note "The terms \"interstate highway\" and \"freeway\" are US terms."@en ;
+    skos:prefLabel "motorway"@en ;
+    :clause "3.3.1.21"@en .
+
+:multipleCarriageway a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+            owl:onClass :physicalTrafficSeparator ;
+            owl:onProperty :has ],
+        [ a owl:Restriction ;
+            owl:minQualifiedCardinality "3"^^xsd:nonNegativeInteger ;
+            owl:onClass :carriageway ;
+            owl:onProperty :comprises ],
+        :roadway ;
+    skos:definition "having more than one [carriageway](carriageway.md)"@en ;
+    skos:historyNote "2025: Revised to change term to \"multiple carriageway\" rather than \"multiple carriageway road segment\" to broaden its use and revised definition and note 1 to entry accordingly."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The \"multiple carriageway\" term can be used to describe a road, road section, road link, or road segment."@en,
+        "The separate carriageways are typically designed for separate traffic for (often multiple) specific operational reasons, such as direction of travel, category of vehicle (e.g. high occupancy vehicle), local versus through travel, etc."@en ;
+    skos:prefLabel "multiple carriageway"@en ;
+    :clause "3.3.1.9"@en .
+
+:reservedLane a owl:Class ;
+    rdfs:subClassOf :trafficLane ;
+    skos:definition "[traffic lane](traffic lane.md) restricted to a specific subset of [road vehicles](road vehicle.md) or [user](user.md) categories"@en ;
+    skos:example "Bus lane."@en,
+        "High-occupancy vehicle lane."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A traffic lane may be reserved permanently or under certain conditions or times."@en ;
+    skos:prefLabel "reserved lane"@en ;
+    :clause "3.3.1.14"@en .
+
+:singleCarriageway a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass :carriageway ;
+            owl:onProperty :comprises ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        :roadway ;
+    skos:definition "having exactly one [carriageway](carriageway.md)"@en ;
+    skos:historyNote "2025: Revised to change term to \"single carriageway\" rather than \"single carriageway road segment\" to broaden its use and revised definition and note 1 to entry accordingly. Removed admitted term \"undivided highway\" and associated note to entry."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A single carriageway [road segment](road segment.md) could have multiple [lanes](lane.md) and could allow travel in opposite directions"@en,
+        "The \"single carriageway\" term can be used to describe a [road](road.md), [road section](road section.md), [road link](road link.md), or [road segment](road segment.md)."@en ;
+    skos:prefLabel "single carriageway"@en ;
+    :clause "3.3.1.7"@en .
+
+:softShoulder a owl:Class ;
+    rdfs:subClassOf :shoulder ;
+    skos:definition "unpaved part of the [road reservation](road reservation.md) not belonging to the [carriageway](carriageway.md) but providing lateral support to it"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Soft shoulders are not normally intended for driving."@en,
+        "Soft shoulders often have a grass or gravel surface."@en ;
+    skos:prefLabel "soft shoulder"@en ;
+    :clause "3.3.1.20"@en .
+
+:areaAbove a owl:ObjectProperty ;
+    rdfs:label "area above"@en .
+
+:forMovementOf a owl:ObjectProperty ;
+    rdfs:label "for movement of"@en .
+
+:hardstanding a owl:Class ;
+    skos:definition "part of a paved [carriageway](carriageway.md) that is not a [traffic lane](traffic lane.md), [hard shoulder](hard shoulder.md), or [lay-by](lay-by.md)."@en ;
+    skos:example [ a :img ;
+            :alt "Hardstanding example"@en ;
+            :src "images/hardstanding.png"@en ] ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Hardstanding can include edges of a hard shoulder outside of designated lane markings, slips for future connector [roads](road.md), etc."@en ;
+    skos:prefLabel "hardstanding"@en ;
+    :clause "3.3.1.17"@en .
+
+:lay-by a owl:Class ;
+    skos:definition "short length of paved [carriageway](carriageway.md) at its edge designed to allow a [vehicle](vehicle.md) to draw out of the [traffic lanes](traffic lane.md) and stop temporarily"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Lay-bys are not part of a [hard shoulder](hard shoulder.md)."@en,
+        "Lay-bys can be used for emergency situations, picking up/dropping off [passengers](passenger.md), etc."@en ;
+    skos:prefLabel "lay-by"@en ;
+    :clause "3.3.1.16"@en .
+
+:roadReservation a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :comprises ;
+            owl:someValuesFrom :roadway ],
+        [ a owl:Restriction ;
+            owl:onProperty :comprises ;
+            owl:someValuesFrom :lane ],
+        [ a owl:Restriction ;
+            owl:onProperty :comprises ;
+            owl:someValuesFrom :roadside ] ;
+    skos:definition "area legally reserved for [road](road.md) transport purposes and support"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Support includes physical equipment such as safety devices, signage and controller cabinets as well as access by maintenance vehicles and personnel."@en,
+        "The road reservation includes all [carriageways](carriageway.md) as well as width to allow for [roadside](roadside.md) devices, [shoulders](shoulder.md), [verges](verge.md), [footpaths](footpath.md), drainage facilities, sound walls, slopes, embankments, etc."@en ;
+    skos:prefLabel "road reservation"@en ;
+    :altPrefLabel "easement"@en ;
+    :clause "3.3.1.2"@en .
+
+:roadside a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :comprises ;
+            owl:someValuesFrom :verge ] ;
+    skos:definition "portion of the [road reservation](road reservation.md) excluding all [roadway](roadway.md) and [driving space](driving space.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "[Roadside](roadside.md), [shoulder](shoulder.md) and [verge](verge.md) define similar but slightly different concepts"@en ;
+    skos:prefLabel "roadside"@en ;
+    :clause "3.3.1.10"@en .
+
+:travelledWay a owl:Class ;
+    skos:definition "part of the [roadway](roadway.md) that is currently intended for transport purposes"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The travelled way does not include [hard shoulders](hard shoulder.md), [hardstanding](hardstanding.md), or other areas that are not currently intended for normal operational use. In other words, while these other areas are \"designed\" for transport purposes, they are not \"intended\" for normal transport purposes (at present); rather these extra areas exist for safety and other exceptional use conditions."@en,
+        "While the limits of the roadway are defined by the design of the physical infrastructure and are generally static; the limits of the travelled way can be dynamic, such as in the case of a [hard shoulder for emergency use](hard shoulder for emergency use.md) being converted into [hard shoulder running](hard shoulder running.md) operation."@en ;
+    skos:prefLabel "travelled way"@en ;
+    :clause "3.3.1.6"@en .
+
+:usableWidth a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :comprises ;
+            owl:someValuesFrom :trafficLane ] ;
+    skos:definition "all [traffic lanes](traffic lane.md) of a [carriageway](carriageway.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "usable width"@en ;
+    :clause "3.3.1.15"@en .
+
+:verge a owl:Class ;
+    skos:definition "unpaved part of the [roadside](roadside.md) designed for travel safety purposes"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A verge can separate two [lanes](lane.md) of different modes, separate a [traffic lane](traffic lane.md) from a ditch, or separate a lane from another safety hazard."@en,
+        "Roadside, [shoulder](shoulder.md) and verge define similar but slightly different concepts."@en ;
+    skos:prefLabel "verge"@en ;
+    :clause "3.3.1.11"@en .
+
+:lane a owl:Class ;
+    skos:definition "<generic> portion of [road reservation](road reservation.md) intended to accommodate a single line of moving [material entities](material entity.md) along its length"@en ;
+    skos:example "[Traffic lane](traffic lane.md), [cycle lane](cycle lane.md), [sidewalk](sidewalk.md)."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "[Lanes](lane.md) are often bounded by lane markings."@en,
+        "Lanes may be significantly wider than the normal [vehicle](vehicle.md) width to allow variance in lane position of the vehicle as well as for various vehicle dimensions."@en,
+        "The \"lane\" nomenclature typically refers to [motor vehicle](motor vehicle.md) usage, but can also refer to other purposes, such as [sidewalks](sidewalk.md)."@en ;
+    skos:prefLabel "lane"@en ;
+    :altPrefLabel "generic lane"@en ;
+    :clause "3.3.1.12"@en .
+
+:shoulder a owl:Class ;
+    skos:definition "either a [hard shoulder](hard shoulder.md) or a [soft shoulder](soft shoulder.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "In some jurisdictions, a shoulder can be used for emergency stops and/or other purposes in addition to providing a clear zone for safety purposes."@en,
+        "[Roadside](roadside.md), shoulder and [verge](verge.md) define similar but slightly different concepts"@en ;
+    skos:prefLabel "shoulder"@en ;
+    :clause "3.3.1.18"@en .
+
+:trafficLane a owl:Class ;
+    rdfs:subClassOf :lane ;
+    skos:definition "portion of [carriageway](carriageway.md) designed to accommodate a single line of moving [road vehicles](road vehicle.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A traffic lane can be bi-directional, such as a single lane [road](road.md), a two-way turn/overtaking lane, or a reversible flow lane."@en,
+        "Some jurisdictions allow supplemental uses of a traffic lane, such as multiple motorcycles sharing the width of a traffic lane or allowing a bicycle to use the edge of a lane."@en,
+        "The term \"lane\" is often used to refer to a \"traffic lane\" when the context is known to be \"traffic\"."@en ;
+    skos:prefLabel "traffic lane"@en ;
+    :altPrefLabel "lane"@en ;
+    :clause "3.3.1.13"@en .
+
+:carriageway a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onClass :hardshoulder ;
+            owl:onProperty :comprises ],
+        [ a owl:Restriction ;
+            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onClass :lay-by ;
+            owl:onProperty :comprises ],
+        [ a owl:Restriction ;
+            owl:onProperty :comprises ;
+            owl:someValuesFrom :usableWidth ],
+        [ a owl:Restriction ;
+            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onClass :hardstanding ;
+            owl:onProperty :comprises ] ;
+    skos:definition "contiguous area of paved [roadway](roadway.md) designed for the use of vehicles along a [road segment](road segment.md)"@en ;
+    skos:historyNote "2025: Revised to add \"paved\" and \"designed for the use of vehicles\"."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A carriageway is comprised of one or more [traffic lanes](traffic lane.md) [i.e. the [usable width](usable width.md)] and could include [shoulders](shoulder.md) and [lay-bys](lay-by.md)."@en,
+        "Carriageways are separated by [physical traffic separators](physical traffic separator.md)."@en,
+        "When looking at a [cross-section](cross-section.md) of the [road reservation](road reservation.md), the roadway consists of all of the carriageways."@en ;
+    skos:prefLabel "carriageway"@en ;
+    :clause "3.3.1.5"@en .
+
+:roadway a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :comprises ;
+            owl:someValuesFrom :travelledWay ] ;
+    skos:definition "part of the surface of the [road reservation](road reservation.md) primarily designed for the movement of [vehicles](vehicle.md) that conform to a specified set of requirements"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A roadway is characterized using a [cross-section](cross-section.md) of a road facility as the roadway characteristics often change along the length of the road. See [road](road.md), [road section](road section.md), [road segment](road segment.md), and [road link](road link.md) for different types of stretches of roadway."@en,
+        "In practice, the roadway design considers a variety of issues, which can result in suboptimal [road segments](road segment.md) that violate normal design guidelines. Such [locations](spatial location.md) are typically posted with warning signs, but they are still designed for the movement of vehicles."@en,
+        "The roadway includes any contiguous [hard shoulders](hard shoulder.md), [hardstanding](hardstanding.md) and [reserved lanes](reserved lane.md)."@en,
+        "While the roadway is designed with certain vehicle characteristics in mind, local regulations typically allow a wider set of vehicles to use the roadway."@en ;
+    skos:prefLabel "roadway"@en ;
+    :clause "3.3.1.3"@en .

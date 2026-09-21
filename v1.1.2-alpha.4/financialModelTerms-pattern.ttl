@@ -1,0 +1,89 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:financialModelTerms a owl:Ontology ;
+    dcterms:title "Financial Model Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:commercial a owl:Class ;
+    rdfs:subClassOf :financialModel ;
+    skos:definition "type of [financial model](financial model.md) where [services](service.md) are provided with a profit motive"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "commercial"@en ;
+    :clause "3.5.8.2"@en .
+
+:fractionalOwnership a owl:Class ;
+    rdfs:subClassOf :cooperative ;
+    skos:definition "<transport service> [cooperative](cooperative.md) [financial model](financial model.md) where [users](user.md) partner to support the purchase, maintenance and overhead costs associated with a [service](service.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "fractional ownership"@en ;
+    :clause "3.5.8.6"@en .
+
+:membership-based a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :describes ;
+            owl:someValuesFrom :financialModel ] ;
+    skos:definition "characteristic of a [financial model](financial model.md) that requires [users](user.md) to enter into an agreement prior to receiving [services](service.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The agreement can be associated with fees."@en,
+        "The agreement can be minimal, such as collecting user information for business purposes."@en,
+        "The membership can be granted as a part of a broader agreement. For example, a university bus [system](system.md) can restrict access to students and faculty."@en ;
+    skos:prefLabel "membership-based"@en ;
+    :clause "3.5.8.8"@en .
+
+:mutualBenefit a owl:Class ;
+    rdfs:subClassOf :cooperative ;
+    skos:definition "[cooperative](cooperative.md) [financial model](financial model.md) where [users](user.md) partner on a per-use basis"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "mutual benefit"@en ;
+    :clause "3.5.8.5"@en .
+
+:open-access a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :describes ;
+            owl:someValuesFrom :financialModel ] ;
+    skos:definition "characteristic of a [financial model](financial model.md) that does not require membership within an organization to receive [services](service.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "This includes models where membership is optional and can provide extra benefits."@en ;
+    skos:prefLabel "open-access"@en ;
+    :clause "3.5.8.9"@en .
+
+:private a owl:Class ;
+    rdfs:subClassOf :financialModel ;
+    skos:definition "<transport service> [financial model](financial model.md) where [services](service.md) are provided to members of the owning organization without usage fees"@en ;
+    skos:example "Fleet vehicles of an employer."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "private"@en ;
+    :clause "3.5.8.7"@en .
+
+:public a owl:Class ;
+    rdfs:subClassOf :financialModel ;
+    skos:definition "type of [financial model](financial model.md) where [services](service.md) are provided by an administrative authority in an attempt to better serve societal interests"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The transport service [transport service.md] is typically offered to the transport consumer for less than the full capital and operating cost of providing the service, but this is not a requirement."@en,
+        "Typically, the administrative authority is a local government agency; but it could be another administrative authority, such as the national government or a [commercial](commercial.md) [entity](entity.md) managing transport needs [transport needs.md] on their campus."@en ;
+    skos:prefLabel "public"@en ;
+    :clause "3.5.8.3"@en .
+
+:cooperative a owl:Class ;
+    rdfs:subClassOf :financialModel ;
+    skos:definition "type of [financial model](financial model.md) where [users](user.md) partner to defray the costs of [services](service.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Cooperative models are exclusive [commercial](commercial.md) and [public](public.md) models."@en ;
+    skos:prefLabel "cooperative"@en ;
+    :clause "3.5.8.4"@en .
+
+:financialModel a owl:Class ;
+    skos:definition "economic framework for the agreement between a [service provider](service provider.md) and a [user](user.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "financial model"@en ;
+    :clause "3.5.8.1"@en .

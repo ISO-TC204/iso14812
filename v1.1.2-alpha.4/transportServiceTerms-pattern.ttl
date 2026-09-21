@@ -1,0 +1,76 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:transportServiceTerms a owl:Ontology ;
+    dcterms:title "Transport Service Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:transportProvider a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :delivers ;
+            owl:someValuesFrom :transportService ],
+        :serviceProvider ;
+    skos:definition "[entity](entity.md) that delivers one or more [transport services](transport service.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "transport provider"@en ;
+    :altPrefLabel "provider"@en,
+        "service provider"@en ;
+    :clause "3.5.2.2"@en .
+
+:desireToTransport a owl:ObjectProperty ;
+    rdfs:label "desire to transport"@en .
+
+:transportService a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :transports ;
+            owl:someValuesFrom :materialEntity ],
+        [ a owl:Restriction ;
+            owl:onProperty :fulfils ;
+            owl:someValuesFrom :transportUserNeed ],
+        [ a owl:Restriction ;
+            owl:onProperty :for ;
+            owl:someValuesFrom :transportUser ],
+        :service ;
+    skos:definition "[service](service.md) that transports one or more [material entities](material entity.md) from one [spatial location](spatial location.md) to another"@en ;
+    skos:historyNote "2025: Revised to eliminate circular reference with transport need and to use \"transport\" rather than \"deliver\" to be more clear."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The material entities transported can be people and/or goods."@en ;
+    skos:prefLabel "transport service"@en ;
+    :altPrefLabel "service"@en ;
+    :clause "3.5.2.1"@en .
+
+:transportUserNeed a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :desireToTransport ;
+            owl:someValuesFrom :materialEntity ],
+        [ a owl:Restriction ;
+            owl:onProperty :desiredResultsOf ;
+            owl:someValuesFrom :transportUser ],
+        :userNeed ;
+    skos:definition "[user need](user need.md) to transport one or more [material entities](material entity.md) to a different [spatial location](spatial location.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "transport user need"@en ;
+    :altPrefLabel "need"@en,
+        "user need"@en ;
+    :clause "3.5.2.4"@en .
+
+:transports a owl:ObjectProperty .
+
+:transportUser a owl:Class ;
+    rdfs:subClassOf :user ;
+    skos:definition "[entity](entity.md) that has a desire to transport a [material entity](material entity.md)"@en ;
+    skos:historyNote "2025: Revised to eliminate circular reference with transport need."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "transport user"@en ;
+    :altPrefLabel "consumer"@en,
+        "user"@en ;
+    :clause "3.5.2.3"@en .

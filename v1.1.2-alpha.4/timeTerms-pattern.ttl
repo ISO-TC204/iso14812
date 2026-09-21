@@ -1,0 +1,36 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:timeTerms a owl:Ontology ;
+    dcterms:title "Time Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:duration a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass :instant ;
+            owl:onProperty :endsAt ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass :instant ;
+            owl:onProperty :startsAt ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] ;
+    skos:definition "time between two [instants](instant.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "duration"@en ;
+    :clause "3.1.13.2"@en .
+
+:instant a owl:Class ;
+    dcterms:source "ISO 19108:2002, 4.1.17, modified - Note 1 to entry removed."@en ;
+    skos:definition "0-dimensional geometric primitive representing position in time"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "instant"@en ;
+    :clause "3.1.13.1"@en .

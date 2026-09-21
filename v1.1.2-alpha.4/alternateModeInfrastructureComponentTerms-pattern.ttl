@@ -1,0 +1,112 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:alternateModeInfrastructureComponentTerms a owl:Ontology ;
+    dcterms:title "Alternate Mode Infrastructure Component Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:block-face a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :startsAt ;
+            owl:someValuesFrom :intersection ],
+        [ a owl:Restriction ;
+            owl:onProperty :endsAt ;
+            owl:someValuesFrom :intersection ],
+        [ a owl:Restriction ;
+            owl:onProperty :extentOf ;
+            owl:someValuesFrom :sidewalk ] ;
+    skos:definition "extent of sidewalk on one side of a street between two consecutive intersections crossing that street"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "block-face"@en ;
+    :clause "3.3.3.9"@en .
+
+:cycleway a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :comprises ;
+            owl:someValuesFrom :cycleLane ] ;
+    skos:definition "infrastructure primarily designed for the use of cycles and separate from a [carriageway](carriageway.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Local legislation can allow cycleways to be used by a variety of [moderately low-speed vehicles](moderately low-speed vehicle.md) (e.g. low-speed scooters, skateboards, etc.) and can share usage of other low-speed modes such as [pedestrians](pedestrian.md), horseback riders, etc."@en ;
+    skos:prefLabel "cycleway"@en ;
+    :altPrefLabel "cycle track"@en ;
+    :clause "3.3.3.2"@en .
+
+:escalator a owl:Class ;
+    rdfs:subClassOf :footpath ;
+    skos:definition "rising or falling stairway that assists pedestrians in vertical transitions"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "escalator"@en ;
+    :clause "3.3.3.5"@en .
+
+:movingWalkway a owl:Class ;
+    rdfs:subClassOf :footpath ;
+    skos:altLabel "travellator"@en ;
+    skos:definition "footpath consisting of a conveyor belt for pedestrians Note 1 to entry: Moving walkways are often used in airports with long footpaths Note 2 to entry: Moving walkways assist pedestrians in traversing longer distances. Note 3 to entry: \"Travellator\" is a term used in Singapore."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "moving walkway"@en ;
+    :clause "3.3.3.6"@en .
+
+:pedestrianCrossing a owl:Class ;
+    rdfs:subClassOf :footpath ;
+    skos:definition "physically marked location to enhance the safety of pedestrians crossing one or more lanes of a different mode of travel"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:note "In some cases, local regulations can require vehicles to give way to the pedestrians in the pedestrian crossing and/or restrict pedestrians to only cross at pedestrian crossings."@en,
+        "Pedestrian permission and/or priority at crossing can be managed when traffic signals are present."@en ;
+    skos:prefLabel "pedestrian crossing"@en ;
+    :altPrefLabel "crosswalk"@en ;
+    :clause "3.3.3.7"@en .
+
+:sharedSpace a owl:Class ;
+    skos:definition "public area space for use by users with distinctly different characteristics"@en ;
+    skos:example "facility designed for the use of pedestrians, cycles, and motor vehicles"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:note "The space can be for travel, gatherings, rest, or other purposes."@en ;
+    skos:prefLabel "shared space"@en ;
+    :clause "3.3.3.8"@en .
+
+:along a owl:ObjectProperty .
+
+:cycleLane a owl:Class ;
+    rdfs:subClassOf :lane ;
+    skos:definition "[lane](lane.md) designed for the through movement of cycles"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Cycle lanes are typically much narrower than [traffic lanes](traffic lane.md)."@en,
+        "Cycle lanes are typically part of either a [carriageway](carriageway.md) or a [cycleway](cycleway.md)."@en,
+        "Cycle lanes could also allow and be designed for [motorized vehicles](motorized vehicle.md) (e.g. e-scooters, mopeds, etc.) with similar performance characteristics as human-powered cycles, subject to local regulations."@en ;
+    skos:prefLabel "cycle lane"@en ;
+    :clause "3.3.3.1"@en .
+
+:extentOf a owl:ObjectProperty ;
+    rdfs:label "extent of"@en .
+
+:sidewalk a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :along ;
+            owl:someValuesFrom :roadside ],
+        :footpath,
+        :lane ;
+    skos:altLabel "pavement"@en ;
+    skos:definition "[footpath](footpath.md) along a [roadside](roadside.md)"@en ;
+    skos:historyNote "2025: \"Footway\" added as another preferred term and \"pavement\" as an admitted term. Added note to entry regarding British English \"pavement\"."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A paved footway is called a \"pavement\" in the British English."@en ;
+    skos:prefLabel "sidewalk"@en ;
+    :altPrefLabel "footway"@en ;
+    :clause "3.3.3.4"@en .
+
+:footpath a owl:Class ;
+    skos:definition "area designed for the longitudinal movement of pedestrians"@en ;
+    skos:historyNote "2025: Changed term to \"footpath\". Revised to distinguish between a footpath, which can be crossing areas, and footways, which are curvilinear and form lanes. Removed note to entry regarding British English \"pavement\". Revised remaining note to entry to refer to \"footpaths\"."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Regulations typically allow footpaths to be used by other [ultra-low-speed vehicles](ultra-low-speed vehicle.md), such as the users of wheelchairs and strollers."@en ;
+    skos:prefLabel "footpath"@en ;
+    :clause "3.3.3.3"@en .

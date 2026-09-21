@@ -1,0 +1,80 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:transportServiceApplicationTerms a owl:Ontology ;
+    dcterms:title "Transport Service Application Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:b2cMobilitySharingApp a owl:Class ;
+    rdfs:subClassOf :mobilityApp ;
+    skos:definition "[mobility app](mobility app.md) that assists a [transport user](transport user.md) in acquiring a [transport service](transport service.md) from a specific business"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "B2C mobility sharing app"@en ;
+    :clause "3.5.5.2"@en .
+
+:navigationApp a owl:Class ;
+    rdfs:subClassOf :mobilityApp ;
+    skos:definition "[mobility app](mobility app.md) that assists a [transport user](transport user.md) to determine the best route to a destination"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "navigation app"@en ;
+    :clause "3.5.5.4"@en .
+
+:publicTransportApp a owl:Class ;
+    rdfs:subClassOf :mobilityApp ;
+    skos:definition "[mobility app](mobility app.md) that assists a [transport user](transport user.md) in using a [public transport](public transport.md) [system](system.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A public transport app can include features such as viewing maps, searching routes and schedules, real-time arrival information, ticketing, electronic boarding pass, etc."@en ;
+    skos:prefLabel "public transport app"@en ;
+    :clause "3.5.5.7"@en .
+
+:real-timeTravellerInformationApp a owl:Class ;
+    rdfs:subClassOf :mobilityApp ;
+    skos:definition "[mobility app](mobility app.md) that provides information about current travel conditions to a [transport user](transport user.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "real-time traveller information app"@en ;
+    :clause "3.5.5.8"@en .
+
+:ridesourcingApp a owl:Class ;
+    rdfs:subClassOf :p2pMobilitySharingApp ;
+    skos:definition "[P2P mobility sharing app](P2P mobility sharing app.md) for acquiring a [ridesourced service](ridesourced service.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "ridesourcing app"@en ;
+    :clause "3.5.5.6"@en .
+
+:taxiHailingApp a owl:Class ;
+    rdfs:subClassOf :mobilityApp ;
+    skos:definition "[mobility app](mobility app.md) that assists a [transport user](transport user.md) in electronically requesting a taxi"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "taxi hailing app"@en ;
+    :clause "3.5.5.9"@en .
+
+:tripAggregatorApp a owl:Class ;
+    rdfs:subClassOf :mobilityApp ;
+    skos:definition "[mobility app](mobility app.md) that assists a [transport user](transport user.md) in planning trips that may span multiple vehicle modes or [transport providers](transport provider.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The assistance can include reservations, ticketing and similar [services](service.md)."@en ;
+    skos:prefLabel "trip aggregator app"@en ;
+    :clause "3.5.5.3"@en .
+
+:p2pMobilitySharingApp a owl:Class ;
+    rdfs:subClassOf :mobilityApp ;
+    skos:definition "[mobility app](mobility app.md) that assists a [transport user](transport user.md) in acquiring [transport service](transport service.md) from an individual that participates in the mobility app's network"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "P2P mobility sharing app"@en ;
+    :clause "3.5.5.5"@en .
+
+:mobilityApp a owl:Class ;
+    rdfs:subClassOf :its-sApplicationImplementation ;
+    skos:definition "[ITS-S application implementation](ITS-S application implementation.md) designed to assist an individual transport consumer in understanding transport-related information, making decisions, and/or acting upon decisions"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "mobility app"@en ;
+    :clause "3.5.5.1"@en .

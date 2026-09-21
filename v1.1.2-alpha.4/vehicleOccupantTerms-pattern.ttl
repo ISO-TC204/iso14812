@@ -1,0 +1,80 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:vehicleOccupantTerms a owl:Ontology ;
+    dcterms:title "Vehicle Occupant Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:in-vehicleDriver a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :uses ;
+            owl:someValuesFrom :built-inVehicleInputDevice ],
+        :driver ;
+    skos:definition "[driver](driver.md) that performs the [dynamic driving task](dynamic driving task.md) using the [vehicle's](vehicle.md) built-in [input devices](built-in vehicle input device.md) to control the longitudinal and lateral movement of the vehicle"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "in-vehicle driver"@en ;
+    :altPrefLabel "conventional driver"@en ;
+    :clause "3.6.2.4"@en .
+
+:passenger a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :isA ;
+            owl:someValuesFrom :person ],
+        [ a owl:Restriction ;
+            owl:onProperty :travellingIn ;
+            owl:someValuesFrom :vehicle ] ;
+    skos:definition "[person](person.md) who has a reservation to travel or is travelling in a [vehicle](vehicle.md) except for any crew, staff or [drivers](driver.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "passenger"@en ;
+    :clause "3.6.2.1"@en .
+
+:remoteDriver a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass [ a owl:Class ;
+                    owl:unionOf ( :nomadicVehicleInputDevice :remoteVehicleInputDevice ) ] ;
+            owl:onProperty :uses ],
+        :driver ;
+    skos:definition "[driver](driver.md) that performs the [dynamic driving task](dynamic driving task.md) without using the [vehicle's](vehicle.md) built-in [input devices](built-in vehicle input device.md) to control the longitudinal and lateral movement of the vehicle"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A remote driver can use a variety of physical input devices, but none that are built into the vehicle."@en ;
+    skos:prefLabel "remote driver"@en ;
+    :clause "3.6.2.5"@en .
+
+:vehicleOccupant a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :isA ;
+            owl:someValuesFrom :person ],
+        [ a owl:Restriction ;
+            owl:onProperty :isIn ;
+            owl:someValuesFrom :vehicle ] ;
+    skos:definition "[person](person.md) in or on a [vehicle](vehicle.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A vehicle occupant in a stationary vehicle is not necessarily a [traveller](traveller.md)."@en ;
+    skos:prefLabel "vehicle occupant"@en ;
+    :clause "3.6.2.2"@en .
+
+:isIn a owl:ObjectProperty ;
+    rdfs:label "is in"@en .
+
+:travellingIn a owl:ObjectProperty ;
+    rdfs:label "travelling in"@en .
+
+:driver a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :isA ;
+            owl:someValuesFrom :person ] ;
+    skos:definition "[person](person.md) that is currently responsible for the [dynamic driving task](dynamic driving task.md) for the [vehicle](vehicle.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The driver is typically on-board the vehicle but could be remote from the vehicle or automated logic."@en ;
+    skos:prefLabel "driver"@en ;
+    :clause "3.6.2.3"@en .

@@ -1,0 +1,61 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:travellerTerms a owl:Ontology ;
+    dcterms:title "Traveller Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:pedestrian a owl:Class ;
+    rdfs:subClassOf :traveller ;
+    skos:definition "[person](person.md) who is travelling on foot"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "pedestrian"@en ;
+    :clause "3.6.1.4"@en .
+
+:protectedRoadUser a owl:Class ;
+    rdfs:subClassOf :roadUser ;
+    skos:altLabel "non-vulnerable road user"@en ;
+    skos:definition "[road user](road user.md) who is protected by the body of a motor vehicle that meets local safety regulations"@en ;
+    skos:example "[vehicle occupants](vehicle occupant.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "protected road user"@en ;
+    :clause "3.6.1.6"@en .
+
+:vulnerableRoadUser a owl:Class ;
+    rdfs:subClassOf :roadUser ;
+    skos:definition "[road user](road user.md) who is not protected by the body of a motor vehicle that meets local safety regulations"@en ;
+    skos:example "[Pedestrian](pedestrian.md), cyclist, motorcyclist, road work personnel, horse, horseback rider, person with disabilities (e.g., wheelchair), etc."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "vulnerable road user"@en ;
+    :clause "3.6.1.5"@en .
+
+:locatedWithin a owl:ObjectProperty ;
+    rdfs:label "located within"@en .
+
+:traveller a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :isA ;
+            owl:someValuesFrom :person ] ;
+    skos:definition "[person](person.md) who is headed to a destination"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "traveller"@en ;
+    :clause "3.6.1.1"@en .
+
+:roadUser a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :locatedWithin ;
+            owl:someValuesFrom :roadReservation ] ;
+    skos:definition "mobile [material entity](material entity.md) within the [road reservation](road reservation.md)"@en ;
+    skos:example "[Pedestrian](pedestrian.md), road work personnel, [vehicle occupants](vehicle occupant.md), occupied and unoccupied vehicles, horses, etc."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "road user"@en ;
+    :clause "3.6.1.2"@en .
