@@ -150,7 +150,7 @@ This page lists all known terms in the ITS Vocabulary.
 | [intersection](intersection.md) | space where two or more [roads](road.md) meet or cross |
 | [intersection manoeuvre](intersection manoeuvre.md) | <junction> movement from an [ingress lane](ingress lane.md) to an [egress lane](egress lane.md) |
 | [ISO named area](ISO named area.md) | Note 1 to entry: ISO 3166-2 includes codes for major subdivisions of countries and states. |
-| [ITS application](ITS application.md) | requirements for an [ITS service](ITS service.md) that involves an association of two or more complementary [ITS-S application processes](ITS-S application process.md) |
+| [ITS application](ITS application.md) | functionality that implements an [ITS service](ITS service.md) that involves an association of two or more complementary [ITS-S application processes](ITS-S application process.md) |
 | [ITS application role](ITS application role.md) | [ITS-SU user need](ITS-SU user need.md) expressed as a formal set of interoperability requirements that need to be fulfilled to satisfy a portion of functionality of an [ITS application](ITS application.md) |
 | [ITS application specification](ITS application specification.md) | one or more [documents](document.md) that detail the [interoperability design](interoperability design.md) for an [ITS application](ITS application.md) |
 | [ITS component](ITS component.md) | [physical object](physical object.md) that has been assigned one or more [functional objects](functional object.md) in the provision of one or more [ITS services](ITS service.md) |
@@ -162,13 +162,13 @@ This page lists all known terms in the ITS Vocabulary.
 | [ITS planning architecture](ITS planning architecture.md) | [planning architecture](planning architecture.md) for one or more [ITS services](ITS service.md) |
 | [ITS reference architecture](ITS reference architecture.md) | [reference architecture](reference architecture.md) for one or more [ITS services](ITS service.md) |
 | [ITS roadside equipment](ITS roadside equipment.md) | [field system](field system.md) that performs localized [ITS services](ITS service.md) |
-| [ITS service](ITS service.md) | provision of functionality that fulfils one or more [ITS user needs](ITS user need.md) |
+| [ITS service](ITS service.md) | functionality that fulfils one or more [ITS user needs](ITS user need.md) |
 | [ITS service provider](ITS service provider.md) | [entity](entity.md) that delivers one or more [ITS services](ITS service.md) |
-| [ITS station](ITS station.md) | [bounded secured managed domain](bounded secured managed domain.md) that is able to meet requirements of the [ITS trust domain](ITS trust domain.md) within which it is designed to participate |
+| [ITS station](ITS station.md) | functional entity that is bounded, secured, and managed; certified by an ITS trust domain; and comprised of an ITS-S facilities layer, ITS-S networking & transport layer, ITS-S access layer, ITS-S management entity, ITS-S security entity and ITS-S application entity providing ITS services |
 | [ITS trust domain](ITS trust domain.md) | set of [bounded secured managed domains](bounded secured managed domain.md) that meet a defined set of ITS industry security requirements |
 | [ITS user](ITS user.md) | [entity](entity.md) that uses information, communication, and transducer technologies to achieve benefits when using a [surface transport system](surface transport system.md) |
 | [ITS user need](ITS user need.md) | [user need](user need.md) for a [surface transport system](surface transport system.md) benefit that can be met with the use of information, communication, and transducer technologies |
-| [ITS-S access layer](ITS-S access layer.md) | communications layer in the [ITS station reference architecture](ITS-S reference architecture.md) corresponding to the physical and data link layers of the OSI model for ITS communications |
+| [ITS-S access layer](ITS-S access layer.md) | communications layer in the [ITS station reference architecture](ITS-S reference architecture.md) comprised of the physical and data link layers of the OSI model |
 | [ITS-S application](ITS-S application.md) | [ITS-S application process](ITS-S application process.md) residing in the [application entity](application entity.md) |
 | [ITS-S application implementation](ITS-S application implementation.md) | implementation of an [ITS-S application process](ITS-S application process.md) within the [application entity](application entity.md) |
 | [ITS-S application installation](ITS-S application installation.md) | [ITS-S application process installation](ITS-S application process installation.md) within the [application entity](application entity.md) |
@@ -181,7 +181,7 @@ This page lists all known terms in the ITS Vocabulary.
 | [ITS-S router](ITS-S router.md) | [ITS-S node](ITS-S node.md) comprised of routing functionalities of an [ITS station unit](ITS-S unit.md) used to connect two networks and to forward packets not explicitly addressed to itself |
 | [ITS-S service](ITS-S service.md) | communication functionality of an [ITS station](ITS station.md) that provides the capability to connect to other nodes |
 | [ITS-S unit](ITS-S unit.md) | [instance](instance.md) of an physical unit produced by an [ITS station](ITS station.md) [implementation](implementation.md) |
-| [ITS-SU service](ITS-SU service.md) | provision of functionality to fulfil an [ITS-SU user need](ITS-SU user need.md) |
+| [ITS-SU service](ITS-SU service.md) | functionality to fulfil an [ITS-SU user need](ITS-SU user need.md) |
 | [ITS-SU service provider](ITS-SU service provider.md) | [ITS-SU](ITS-S unit.md) that delivers one or more [ITS-SU services](ITS-SU service.md) |
 | [ITS-SU user](ITS-SU user.md) | [entity](entity.md) that has a need to perform processing within a [bounded, secure, managed domain](bounded secured managed domain.md) |
 | [ITS-SU user need](ITS-SU user need.md) | [user need](user need.md) for processing within a [bounded, secure, managed domain](bounded secured managed domain.md) |
@@ -322,7 +322,7 @@ This page lists all known terms in the ITS Vocabulary.
 | [security entity](security entity.md) | part of the [ITS station reference architecture](ITS-S reference architecture.md) that is responsible for providing communication security and [system](system.md) security |
 | [sensor](sensor.md) | device with the capability of observing one or more properties of a [material entity](material entity.md) and converting those properties into meaningful signals |
 | [sequential](sequential.md) | [operational model](operational model.md) where [services](service.md) are provided to a single [user](user.md) at any one time |
-| [service](service.md) | provision of one or more capabilities, functionalities or facilities to fulfil or enable the fulfilment of a [user need](user need.md) |
+| [service](service.md) | one or more capabilities, functionalities or facilities to fulfil or enable the fulfilment of a [user need](user need.md) |
 | [service alley](service alley.md) | alley designed to facilitate the provision of services for adjacent locations |
 | [service provider](service provider.md) | [entity](entity.md) that delivers one or more [services](service.md) |
 | [service road](service road.md) | road designed to facilitate the provision of services to customers |

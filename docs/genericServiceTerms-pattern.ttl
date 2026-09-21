@@ -31,8 +31,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         [ a owl:Restriction ;
             owl:onProperty :for ;
             owl:someValuesFrom :user ] ;
-    skos:definition "provision of one or more capabilities, functionalities or facilities to fulfil or enable the fulfilment of a [user need](user need.md)"@en ;
-    skos:historyNote "2025: Revised from \"enable a need\" to \"fulfil or enable the fulfilment of a user need\"."@en,
+    skos:definition "one or more capabilities, functionalities or facilities to fulfil or enable the fulfilment of a [user need](user need.md)"@en ;
+    skos:historyNote "2026: Revised to clarify that it is used as a noun by removing \"provision of\"."@en,
+        "2025: Revised from \"enable a need\" to \"fulfil or enable the fulfilment of a user need\"."@en,
         "Introduced in ISO/TS 14812:2022"@en ;
     skos:prefLabel "service"@en ;
     :clause "3.5.1.1"@en .

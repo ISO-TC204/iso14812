@@ -82,20 +82,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "ITS implementation"@en ;
     :clause "3.2.8.5"@en .
 
-:realizationOf a owl:ObjectProperty ;
-    rdfs:label "realization of"@en .
-
 :itsApplication a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty :realizationOf ;
+            owl:onProperty :implements ;
             owl:someValuesFrom :itsService ],
         [ a owl:Restriction ;
             owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
             owl:onClass :its-sApplicationProcess ;
             owl:onProperty :involves ] ;
-    skos:definition "requirements for an [ITS service](ITS service.md) that involves an association of two or more complementary [ITS-S application processes](ITS-S application process.md)"@en ;
-    skos:historyNote "2025: Revised to be \"requirements for\" rather than \"realization of\" to clarify that it is a design-level artifact that is assigned an identifier (i.e., ITS-AID) rather than an implementation. Added Notes to entry."@en,
-        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:definition "functionality that implements an [ITS service](ITS service.md) that involves an association of two or more complementary [ITS-S application processes](ITS-S application process.md)"@en ;
+    skos:historyNote "2026: Revised to be \"functionality that implements ...\" rather than \"requirements for ...\" based on comments from WG16 experts."@en,
+        "2025: Revised to be \"requirements for ...\" rather than \"realization of\" to clarify that it is a design-level artifact that is assigned an identifier (i.e., ITS-AID) rather than an implementation. Added Notes to entry."@en,
+        "2022: Added to ISO/TS 14812:2022 as \"realization of ...\" rather than \"instantiation of ...\" to clarify that it is not an instance of running software."@en,
+        "2014: Introduced in ISO 21217:2014 as \"instantiation of an ITS service that involves an association of two or more complementary ITS-S application processes\""@en ;
     skos:note "An ITS application can also involve associations with nodes that are not ITS stations."@en,
         "This is a clarification of the ISO 21217:2020 definition that described this as an instantiation."@en ;
     skos:prefLabel "ITS application"@en ;

@@ -10,7 +10,7 @@ transverse view of [road](road.md) geometry
 
 Clause: 3.3.1.1
 
-EXAMPLE: n3696715cd880487786593b7567fd6ecbb2
+EXAMPLE: n0c5199428337404a8fd606d6d34d405eb2
 
 Note 1 to entry: The transverse view provides a vertical section of the ground and [carriageway](carriageway.md) at right angles to the centre line of the carriageway.
 

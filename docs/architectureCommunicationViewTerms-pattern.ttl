@@ -35,9 +35,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :its-sAccessLayer a owl:Class ;
     rdfs:subClassOf :accessLayer ;
-    skos:definition "communications layer in the [ITS station reference architecture](ITS-S reference architecture.md) corresponding to the physical and data link layers of the OSI model for ITS communications"@en ;
-    skos:historyNote "2025: Revised based on input from WG 16 and to align more closely with the other definitions within ISO 14812."@en,
-        "Introduced in ISO/TS 14812:2022."@en ;
+    skos:definition "communications layer in the [ITS station reference architecture](ITS-S reference architecture.md) comprised of the physical and data link layers of the OSI model"@en ;
+    skos:historyNote "2026: Revised \"corresponding to\" to \"comprised of\" to clarify the relationship type; removed \"for ITS communications\" as it is implied by the context and only caused confusion at the end of the statement."@en,
+        "2025: Revised based on input from WG 16 and to align more closely with the other definitions within ISO 14812."@en,
+        "2022: Added to ISO/TS 14812:2022."@en,
+        "2014: Introduced in ISO 21217:2014 as \"protocol layer in the ITS-S reference architecture containing the OSI physical and data link layer protocols for ITS communications\"."@en;
     skos:prefLabel "ITS-S access layer"@en ;
     :clause "3.1.5.3"@en .
 

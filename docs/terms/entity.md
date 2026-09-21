@@ -29,7 +29,7 @@ History note: Introduced in ISO/TS 14812:2022
 | [high-speed vehicle](high-speed vehicle.md) | [vehicle](vehicle.md) with a [design speed](design speed.md) in the range of [high vehicle speeds](high vehicle speed.md) |
 | [immaterial entity](immaterial entity.md) | [entity](entity.md) that does not occupy three-dimensional space |
 | [ITS service provider](ITS service provider.md) | [entity](entity.md) that delivers one or more [ITS services](ITS service.md) |
-| [ITS station](ITS station.md) | [bounded secured managed domain](bounded secured managed domain.md) that is able to meet requirements of the [ITS trust domain](ITS trust domain.md) within which it is designed to participate |
+| [ITS station](ITS station.md) | functional entity that is bounded, secured, and managed; certified by an ITS trust domain; and comprised of an ITS-S facilities layer, ITS-S networking & transport layer, ITS-S access layer, ITS-S management entity, ITS-S security entity and ITS-S application entity providing ITS services |
 | [ITS trust domain](ITS trust domain.md) | set of [bounded secured managed domains](bounded secured managed domain.md) that meet a defined set of ITS industry security requirements |
 | [ITS user](ITS user.md) | [entity](entity.md) that uses information, communication, and transducer technologies to achieve benefits when using a [surface transport system](surface transport system.md) |
 | [ITS-SU service provider](ITS-SU service provider.md) | [ITS-SU](ITS-S unit.md) that delivers one or more [ITS-SU services](ITS-SU service.md) |

@@ -45,8 +45,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             owl:onProperty :for ;
             owl:someValuesFrom :its-suUser ],
         :service ;
-    skos:definition "provision of functionality to fulfil an [ITS-SU user need](ITS-SU user need.md)"@en ;
-    skos:historyNote "2025: Revised from ITS-S service to ITS-SU service to prevent conflict with ISO 21217 definitions. Revised the definition to clarify and added note to entry."@en,
+    skos:definition "functionality to fulfil an [ITS-SU user need](ITS-SU user need.md)"@en ;
+    skos:historyNote "2026: Revised to clarify that it is used as a noun by removing \"provision of\"."@en,
+    "2025: Revised from ITS-S service to ITS-SU service to prevent conflict with ISO 21217 definitions. Revised the definition to clarify and added note to entry."@en,
         "Introduced in ISO/TS 14812:2022"@en ;
     skos:note "An ITS-SU service refers to the services provided by realizations of ITS-S application processes while an ITS-S service refers to the communication services that these processes use to communicate to other nodes."@en ;
     skos:prefLabel "ITS-SU service"@en ;

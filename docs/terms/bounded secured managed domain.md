@@ -18,7 +18,7 @@ History note: Introduced in ISO/TS 14812:2022
 
 | Class | Description |
 | --- | --- |
-| [ITS station](ITS station.md) | [bounded secured managed domain](bounded secured managed domain.md) that is able to meet requirements of the [ITS trust domain](ITS trust domain.md) within which it is designed to participate |
+| [ITS station](ITS station.md) | functional entity that is bounded, secured, and managed; certified by an ITS trust domain; and comprised of an ITS-S facilities layer, ITS-S networking & transport layer, ITS-S access layer, ITS-S management entity, ITS-S security entity and ITS-S application entity providing ITS services |
 | [ITS trust domain](ITS trust domain.md) | set of [bounded secured managed domains](bounded secured managed domain.md) that meet a defined set of ITS industry security requirements |
 
 ## Relationships for bounded secured managed domain
