@@ -2,13 +2,15 @@
 
 # service
 
-provision of one or more capabilities, functionalities or facilities to fulfil or enable the fulfilment of a [user need](user need.md)
+one or more capabilities, functionalities or facilities to fulfil or enable the fulfilment of a [user need](user need.md)
 
 <object type="image/svg+xml" data="../../diagrams/service.dot.svg">
     <img alt="service Diagram" src="../../diagrams/service.dot.png" /> <!-- Fallback for non-SVG browsers -->
 </object>
 
 Clause: 3.5.1.1
+
+History note: 2026: Revised to clarify that it is used as a noun by removing "provision of".
 
 History note: 2025: Revised from "enable a need" to "fulfil or enable the fulfilment of a user need".
 
@@ -21,9 +23,9 @@ History note: Introduced in ISO/TS 14812:2022
 | [bikesharing service](bikesharing service.md) | [shared vehicle service](shared vehicle service.md) that shares bicycles |
 | [carsharing service](carsharing service.md) | [shared vehicle service](shared vehicle service.md) that shares [passenger](passenger.md) cars |
 | [courier network service](courier network service.md) | [commercial](commercial.md), [peer-to-peer](peer-to-peer.md) [shared transport service](shared transport service.md) that transports goods |
-| [ITS service](ITS service.md) | provision of functionality that fulfils one or more [ITS user needs](ITS user need.md) |
+| [ITS service](ITS service.md) | functionality that fulfils one or more [ITS user needs](ITS user need.md) |
 | [ITS-S service](ITS-S service.md) | communication functionality of an [ITS station](ITS station.md) that provides the capability to connect to other nodes |
-| [ITS-SU service](ITS-SU service.md) | provision of functionality to fulfil an [ITS-SU user need](ITS-SU user need.md) |
+| [ITS-SU service](ITS-SU service.md) | functionality to fulfil an [ITS-SU user need](ITS-SU user need.md) |
 | [public transport](public transport.md) | [transport service](transport service.md) that is publicly accessible enabling the movement of one or more [persons](person.md) |
 | [rideshare service](rideshare service.md) | [cooperative](cooperative.md) [shared transport service](shared transport service.md) that transports [passengers](passenger.md) [concurrently](concurrent.md) |
 | [ridesourced service](ridesourced service.md) | [commercial](commercial.md), [peer-to-peer](peer-to-peer.md) [shared transport service](shared transport service.md) that transports [passengers](passenger.md) |

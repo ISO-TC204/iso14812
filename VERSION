@@ -1,0 +1,15 @@
+# Ontology / documentation release version for this repository.
+# Line 1 is required. Line 2 is only for documentation-only releases.
+#
+# Ontology release (must bump SemVer vs RELEASES), do not include docs-only line:
+#   version: 1.2.3
+#   version: 1.2.3-alpha.1
+#
+# Documentation-only release (SemVer unchanged; date >= latest RELEASES date):
+#   version: 1.2.3
+#   doc-only: 2026-07-27
+#
+# Aligns with owl:versionInfo in docs/itsVocabulary.ttl (1.1.2).
+# Seeded RELEASES records that ontology baseline; this VERSION is doc-only
+# for adopting shared version-control workflows.
+version: 1.1.2-alpha.4

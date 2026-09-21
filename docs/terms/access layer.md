@@ -26,7 +26,7 @@ History note: Introduced in ISO/TS 14812:2022.
 
 | Class | Description |
 | --- | --- |
-| [ITS-S access layer](ITS-S access layer.md) | communications layer in the [ITS station reference architecture](ITS-S reference architecture.md) corresponding to the physical and data link layers of the OSI model for ITS communications |
+| [ITS-S access layer](ITS-S access layer.md) | communications layer in the [ITS station reference architecture](ITS-S reference architecture.md) comprised of the physical and data link layers of the OSI model |
 
 
 ---

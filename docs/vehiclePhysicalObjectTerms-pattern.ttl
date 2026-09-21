@@ -32,7 +32,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :itsOn-boardUnit a owl:Class ;
     rdfs:subClassOf :connectedUnit ;
     skos:altLabel "onboard unit"@en ;
-    skos:definition "part of [ITS on-board equipment](ITSon-board equipment.md) that provides wireless connectivity to other [ITS components](ITS component.md) external to the [vehicle](vehicle.md)"@en ;
+    skos:definition "part of [ITS on-board equipment](ITS on-board equipment.md) that provides wireless connectivity to other [ITS components](ITS component.md) external to the [vehicle](vehicle.md)"@en ;
     skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
     skos:note "An OBU implementation can also include ITS functionality."@en ;
     skos:prefLabel "ITS on-board unit"@en ;

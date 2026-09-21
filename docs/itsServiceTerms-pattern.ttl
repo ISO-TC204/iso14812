@@ -34,9 +34,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             owl:onProperty :fulfils ;
             owl:someValuesFrom :itsUserNeed ],
         :service ;
-    skos:definition "provision of functionality that fulfils one or more [ITS user needs](ITS user need.md)"@en ;
-    skos:historyNote "2025: Revised to better align with other service terms."@en,
-        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:definition "functionality that fulfils one or more [ITS user needs](ITS user need.md)"@en ;
+    skos:note "ITS services are designed to provide benefits to ITS users, such as increasing safety, sustainability, efficiency, and comfort."@en ;
+    skos:historyNote "2026: Removed \"provision of\" as it implies a verb rather than the intended noun form; Added note to entry to indicate example benefits provided to users."@en,
+        "2025: Added \"provision of\" based on comments; added \"s\" to \"user need\" to correct grammar."@en,
+        "2022: Introduced in ISO/TS 14812:2022 as \"functionality that fulfils one or more [ITS user need](ITS user need.md)\" to better align with the general service terminology pattern."@en,
+        "2010: Introduced in ISO 21217:2010 as \"functionality provided to users of intelligent transport systems designed e.g. to increase safety, sustainability, efficiency, or comfort\"."@en  ;
     skos:prefLabel "ITS service"@en ;
     :altPrefLabel "service"@en ;
     :clause "3.5.3.1"@en .

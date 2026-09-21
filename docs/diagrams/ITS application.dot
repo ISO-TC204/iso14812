@@ -16,6 +16,6 @@ digraph {
 	"ITS application" -> Invis [style=invis]
 	Invis -> "its-sApplicationProcess" [style=invis]
 	"its-sApplicationProcess" -> itsService [style=invis]
-	"ITS application" -> itsService [label=" realization of " arrowhead=normal style=solid]
+	"ITS application" -> itsService [label=" implements " arrowhead=normal style=solid]
 	"ITS application" -> "its-sApplicationProcess" [label=" involves " arrowhead=normal style=solid]
 }

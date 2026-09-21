@@ -2,7 +2,7 @@
 
 # ITS service
 
-provision of functionality that fulfils one or more [ITS user needs](ITS user need.md)
+functionality that fulfils one or more [ITS user needs](ITS user need.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS service.dot.svg">
     <img alt="ITS service Diagram" src="../../diagrams/ITS service.dot.png" /> <!-- Fallback for non-SVG browsers -->
@@ -12,9 +12,15 @@ Clause: 3.5.3.1
 
 Alternative preferred term: service
 
-History note: 2025: Revised to better align with other service terms.
+Note 1 to entry: ITS services are designed to provide benefits to ITS users, such as increasing safety, sustainability, efficiency, and comfort.
 
-History note: Introduced in ISO/TS 14812:2022
+History note: 2026: Removed "provision of" as it implies a verb rather than the intended noun form; Added note to entry to indicate example benefits provided to users.
+
+History note: 2025: Added "provision of" based on comments; added "s" to "user need" to correct grammar.
+
+History note: 2022: Introduced in ISO/TS 14812:2022 as "functionality that fulfils one or more [ITS user need](ITS user need.md)" to better align with the general service terminology pattern.
+
+History note: 2010: Introduced in ISO 21217:2010 as "functionality provided to users of intelligent transport systems designed e.g. to increase safety, sustainability, efficiency, or comfort".
 
 ## Relationships for ITS service
 

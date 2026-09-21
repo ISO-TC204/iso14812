@@ -2,7 +2,7 @@
 
 # ITS-SU service
 
-provision of functionality to fulfil an [ITS-SU user need](ITS-SU user need.md)
+functionality to fulfil an [ITS-SU user need](ITS-SU user need.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS-SU service.dot.svg">
     <img alt="ITS-SU service Diagram" src="../../diagrams/ITS-SU service.dot.png" /> <!-- Fallback for non-SVG browsers -->
@@ -11,6 +11,8 @@ provision of functionality to fulfil an [ITS-SU user need](ITS-SU user need.md)
 Clause: 3.5.4.1
 
 Note 1 to entry: An ITS-SU service refers to the services provided by realizations of ITS-S application processes while an ITS-S service refers to the communication services that these processes use to communicate to other nodes.
+
+History note: 2026: Revised to clarify that it is used as a noun by removing "provision of".
 
 History note: 2025: Revised from ITS-S service to ITS-SU service to prevent conflict with ISO 21217 definitions. Revised the definition to clarify and added note to entry.
 
