@@ -2,6 +2,8 @@
 
 # egress lane
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [traffic lane](traffic lane.md) designed for exiting a [junction](junction.md)
 
 <object type="image/svg+xml" data="../../diagrams/egress lane.dot.svg">

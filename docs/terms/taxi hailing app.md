@@ -2,6 +2,8 @@
 
 # taxi hailing app
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [mobility app](mobility app.md) that assists a [transport user](transport user.md) in electronically requesting a taxi
 
 <object type="image/svg+xml" data="../../diagrams/taxi hailing app.dot.svg">

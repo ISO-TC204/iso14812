@@ -2,6 +2,8 @@
 
 # P2P mobility sharing app
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [mobility app](mobility app.md) that assists a [transport user](transport user.md) in acquiring [transport service](transport service.md) from an individual that participates in the mobility app's network
 
 <object type="image/svg+xml" data="../../diagrams/P2P mobility sharing app.dot.svg">

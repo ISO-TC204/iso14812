@@ -2,6 +2,8 @@
 
 # road network
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 interconnected collection of [roads](road.md)
 
 <object type="image/svg+xml" data="../../diagrams/road network.dot.svg">

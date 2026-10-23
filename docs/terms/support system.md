@@ -2,6 +2,8 @@
 
 # support system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [ITS component](ITS component.md) that provides services in support of one or more other ITS components
 
 <object type="image/svg+xml" data="../../diagrams/support system.dot.svg">

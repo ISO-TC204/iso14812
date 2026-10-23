@@ -291,6 +291,49 @@ def collection_list_item(clause_display: str, label: str, link: str) -> str:
     return f"- [{label}]({link})\n"
 
 
+def example_image_href(src: str) -> str:
+    """Resolve an ontology image src to a path from docs/terms/ pages."""
+    src = (src or "").strip()
+    if not src:
+        return src
+    if src.startswith(("http://", "https://", "/")):
+        return src
+    rel = src[2:] if src.startswith("./") else src
+    if rel.startswith("docs/"):
+        rel = rel[len("docs/") :]
+    if not rel.startswith("images/"):
+        rel = f"images/{rel.lstrip('/')}"
+    return f"../{rel}"
+
+
+def format_skos_example(g: Graph, example, ns: str, docs_dir: str | None = None) -> str:
+    """Render a skos:example value: literal text or an :img blank node as Markdown."""
+    if isinstance(example, Literal):
+        return str(example)
+
+    src_pred = URIRef(ns + "src")
+    alt_pred = URIRef(ns + "alt")
+    img_type = URIRef(ns + "img")
+    src = g.value(example, src_pred)
+    alt = g.value(example, alt_pred)
+    is_img = src is not None or img_type in set(g.objects(example, RDF.type))
+    if not is_img:
+        return str(example)
+
+    src_str = str(src).strip() if src is not None else ""
+    alt_str = str(alt).strip() if alt is not None else ""
+    if not src_str:
+        log.warning("Image example is missing :src")
+        return alt_str or str(example)
+
+    href = example_image_href(src_str)
+    if docs_dir and not src_str.startswith(("http://", "https://", "/")):
+        local = Path(docs_dir) / href.removeprefix("../")
+        if not local.is_file():
+            log.warning("Image example file not found: %s", local)
+    return f"![{alt_str}]({href})"
+
+
 def get_repository_url(mkdocs_path: str | None = None) -> str:
     """Return the GitHub repository URL from mkdocs.yml repo_url, if set."""
     path = mkdocs_path or os.path.join(os.getcwd(), "mkdocs.yml")

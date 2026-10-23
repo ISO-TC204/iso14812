@@ -2,6 +2,8 @@
 
 # road reservation
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 area legally reserved for [road](road.md) transport purposes and support
 
 <object type="image/svg+xml" data="../../diagrams/road reservation.dot.svg">

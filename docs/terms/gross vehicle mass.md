@@ -2,6 +2,8 @@
 
 # gross vehicle mass
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 operating mass (weight) of the vehicle according to legislation and/or regulations for the applicable region Note 1 to entry: Gross vehicle mass is often used to designate weight limits (e.g., on bridges).
 
 <object type="image/svg+xml" data="../../diagrams/gross vehicle mass.dot.svg">

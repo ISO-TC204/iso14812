@@ -2,6 +2,8 @@
 
 # payment means
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 financial instrument accepted by the service provider, that gives the user the right to use provided services
 
 <object type="image/svg+xml" data="../../diagrams/payment means.dot.svg">

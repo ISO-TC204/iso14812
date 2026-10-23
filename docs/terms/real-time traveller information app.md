@@ -2,6 +2,8 @@
 
 # real-time traveller information app
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [mobility app](mobility app.md) that provides information about current travel conditions to a [transport user](transport user.md)
 
 <object type="image/svg+xml" data="../../diagrams/real-time traveller information app.dot.svg">

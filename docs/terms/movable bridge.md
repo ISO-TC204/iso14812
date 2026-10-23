@@ -2,6 +2,8 @@
 
 # movable bridge
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [bridge](bridge.md) with a deck that can be moved in a way that disrupts the continuous travel path
 
 <object type="image/svg+xml" data="../../diagrams/movable bridge.dot.svg">

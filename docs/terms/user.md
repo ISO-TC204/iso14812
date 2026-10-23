@@ -2,6 +2,8 @@
 
 # user
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [entity](entity.md) for whom the [system](system.md) of interest is designed
 
 <object type="image/svg+xml" data="../../diagrams/user.dot.svg">

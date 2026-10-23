@@ -2,6 +2,8 @@
 
 # connected unit
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 electronic device that is [connected](connected.md) using one or more communication media
 
 <object type="image/svg+xml" data="../../diagrams/connected unit.dot.svg">

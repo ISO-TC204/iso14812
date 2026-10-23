@@ -2,6 +2,8 @@
 
 # cycle lane
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [lane](lane.md) designed for the through movement of cycles
 
 <object type="image/svg+xml" data="../../diagrams/cycle lane.dot.svg">

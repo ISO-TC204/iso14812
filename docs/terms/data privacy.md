@@ -2,6 +2,8 @@
 
 # data privacy
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 rights and obligations of individuals and organizations with respect to the collection, use, retention, disclosure and disposal of personal information
 
 <object type="image/svg+xml" data="../../diagrams/data privacy.dot.svg">

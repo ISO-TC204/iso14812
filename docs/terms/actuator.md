@@ -2,6 +2,8 @@
 
 # actuator
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 device with the capability to convert meaningful signals into changes to one or more properties of a [material entity](material entity.md)
 
 <object type="image/svg+xml" data="../../diagrams/actuator.dot.svg">

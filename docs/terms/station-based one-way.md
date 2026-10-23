@@ -2,6 +2,8 @@
 
 # station-based one-way
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <transport service> [operational model](operational model.md) where the [transport service](transport service.md) is initiated and terminated at two different facilities managed by the [transport provider](transport provider.md)
 
 <object type="image/svg+xml" data="../../diagrams/station-based one-way.dot.svg">

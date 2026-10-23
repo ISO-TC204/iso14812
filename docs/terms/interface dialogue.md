@@ -2,6 +2,8 @@
 
 # interface dialogue
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 bi-directional communication sequence between two parties in accordance with predetermined protocols
 
 <object type="image/svg+xml" data="../../diagrams/interface dialogue.dot.svg">

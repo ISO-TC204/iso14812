@@ -2,6 +2,8 @@
 
 # vehicle sharing
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 using a [shared vehicle service](shared vehicle service.md)
 
 <object type="image/svg+xml" data="../../diagrams/vehicle sharing.dot.svg">

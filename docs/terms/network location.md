@@ -2,6 +2,8 @@
 
 # network location
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 point or linear location on a network
 
 <object type="image/svg+xml" data="../../diagrams/network location.dot.svg">

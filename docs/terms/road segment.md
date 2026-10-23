@@ -2,6 +2,8 @@
 
 # road segment
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [link](link.md) that represents a contiguous length of a [road link](road link.md) characterized by the same physical characteristics
 
 <object type="image/svg+xml" data="../../diagrams/road segment.dot.svg">

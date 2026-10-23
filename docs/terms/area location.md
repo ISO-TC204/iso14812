@@ -2,6 +2,8 @@
 
 # area location
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [spatial location](spatial location.md) enclosed within a two-dimensional boundary or boundaries across a defined surface
 
 <object type="image/svg+xml" data="../../diagrams/area location.dot.svg">

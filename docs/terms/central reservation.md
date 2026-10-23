@@ -2,6 +2,8 @@
 
 # central reservation
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 part of the [road reservation](road reservation.md) between [carriageways](carriageway.md) designed for travel safety purposes
 
 <object type="image/svg+xml" data="../../diagrams/central reservation.dot.svg">

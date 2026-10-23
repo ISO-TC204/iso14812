@@ -2,6 +2,8 @@
 
 # passenger
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [person](person.md) who has a reservation to travel or is travelling in a [vehicle](vehicle.md) except for any crew, staff or [drivers](driver.md)
 
 <object type="image/svg+xml" data="../../diagrams/passenger.dot.svg">

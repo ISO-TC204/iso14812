@@ -2,6 +2,8 @@
 
 # mobility app
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [ITS-S application implementation](ITS-S application implementation.md) designed to assist an individual transport consumer in understanding transport-related information, making decisions, and/or acting upon decisions
 
 <object type="image/svg+xml" data="../../diagrams/mobility app.dot.svg">

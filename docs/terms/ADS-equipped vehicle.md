@@ -2,6 +2,8 @@
 
 # ADS-equipped vehicle
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [vehicle](vehicle.md) integrated with an [ADS](ADS.md)
 
 <object type="image/svg+xml" data="../../diagrams/ADS-equipped vehicle.dot.svg">

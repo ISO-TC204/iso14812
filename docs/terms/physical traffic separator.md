@@ -2,6 +2,8 @@
 
 # physical traffic separator
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 mechanism used to physically separate a travelled way or pathway from the adjacent environment
 
 <object type="image/svg+xml" data="../../diagrams/physical traffic separator.dot.svg">

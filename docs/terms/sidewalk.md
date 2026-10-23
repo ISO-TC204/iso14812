@@ -2,6 +2,8 @@
 
 # sidewalk
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [footpath](footpath.md) along a [roadside](roadside.md)
 
 <object type="image/svg+xml" data="../../diagrams/sidewalk.dot.svg">

@@ -2,6 +2,8 @@
 
 # kerb
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 physical traffic separator, usually upstanding, at the edge of a carriageway, hard strip, hard shoulder, or footway Note 1 to entry: "Curb" is the US spelling.
 
 <object type="image/svg+xml" data="../../diagrams/kerb.dot.svg">

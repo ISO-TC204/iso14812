@@ -2,6 +2,8 @@
 
 # message
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 grouping of [data elements](data element.md), [data frames](data frame.md), or data elements and data frames that is used to convey information
 
 <object type="image/svg+xml" data="../../diagrams/message.dot.svg">

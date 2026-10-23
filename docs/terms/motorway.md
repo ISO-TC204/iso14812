@@ -2,6 +2,8 @@
 
 # motorway
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [road](road.md) with separate carriageways for each direction, with limited access that prevents cross traffic on the same level, and for the exclusive use of certain classes of motor vehicles
 
 <object type="image/svg+xml" data="../../diagrams/motorway.dot.svg">

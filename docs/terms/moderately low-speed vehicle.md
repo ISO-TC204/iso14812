@@ -2,6 +2,8 @@
 
 # moderately low-speed vehicle
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [vehicle](vehicle.md) with a [design speed](design speed.md) in the range of [moderately-low vehicle speeds](moderately-low vehicle speed.md)
 
 <object type="image/svg+xml" data="../../diagrams/moderately low-speed vehicle.dot.svg">

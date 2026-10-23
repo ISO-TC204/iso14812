@@ -2,6 +2,8 @@
 
 # private customer model
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [contractual model](contractual model.md) where the [user](user.md) is an individual
 
 <object type="image/svg+xml" data="../../diagrams/private customer model.dot.svg">

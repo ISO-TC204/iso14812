@@ -2,6 +2,8 @@
 
 # campus
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [jurisdictional area](jurisdictional area.md) with a [jurisdictional entity](jurisdictional entity.md) who is the owner of the area but excluding transport facilities managed by the local government
 
 <object type="image/svg+xml" data="../../diagrams/campus.dot.svg">

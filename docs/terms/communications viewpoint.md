@@ -2,6 +2,8 @@
 
 # communications viewpoint
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [architecture viewpoint](architecture viewpoint.md) used to frame [concerns](concern.md) related to all layers of the Open Systems Interconnection (OSI) stack and related management and security issues
 
 <object type="image/svg+xml" data="../../diagrams/communications viewpoint.dot.svg">

@@ -2,6 +2,8 @@
 
 # DDT performance-relevant system failure
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 malfunction in a [vehicle system](vehicle system.md) that prevents the [driving automation system](driving automation system.md) from reliably performing its portion of the [dynamic driving task](dynamic driving task.md) on a sustained basis
 
 <object type="image/svg+xml" data="../../diagrams/DDT performance-relevant system failure.dot.svg">

@@ -2,6 +2,8 @@
 
 # non-road vehicle
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [vehicle](vehicle.md) not meeting the legal requirements to be driven in [traffic lanes](traffic lane.md) or [cycle lanes](cycle lane.md) of a [road network](road network.md)
 
 <object type="image/svg+xml" data="../../diagrams/non-road vehicle.dot.svg">

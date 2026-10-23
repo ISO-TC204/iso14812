@@ -2,6 +2,8 @@
 
 # coordinate tuple
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 ordered list of numbers that jointly designate the position of a point
 
 <object type="image/svg+xml" data="../../diagrams/coordinate tuple.dot.svg">

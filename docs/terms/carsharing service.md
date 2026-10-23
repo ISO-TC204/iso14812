@@ -2,6 +2,8 @@
 
 # carsharing service
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [shared vehicle service](shared vehicle service.md) that shares [passenger](passenger.md) cars
 
 <object type="image/svg+xml" data="../../diagrams/carsharing service.dot.svg">

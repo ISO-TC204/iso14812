@@ -2,6 +2,8 @@
 
 # wheel
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 circular [material entity](material entity.md) that rotates about an axle to facilitate movement of the [vehicle](vehicle.md)
 
 <object type="image/svg+xml" data="../../diagrams/wheel.dot.svg">

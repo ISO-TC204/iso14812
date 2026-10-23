@@ -2,6 +2,8 @@
 
 # emergency management central system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [centre system](central system.md) that allows an [entity](entity.md) to manage and respond to crashes, events, disasters, evacuation orders and other incidents
 
 <object type="image/svg+xml" data="../../diagrams/emergency management central system.dot.svg">

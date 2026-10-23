@@ -2,6 +2,8 @@
 
 # moderately-high vehicle speed
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [speed](speed.md) of a [vehicle](vehicle.md) that is typical of free-flow motorway speeds to twice that speed
 
 <object type="image/svg+xml" data="../../diagrams/moderately-high vehicle speed.dot.svg">

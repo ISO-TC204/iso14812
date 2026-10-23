@@ -2,6 +2,8 @@
 
 # authentication
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 verification that a [message](message.md) was sent by the purported originator to the intended recipient and that the message was not changed in transit
 
 <object type="image/svg+xml" data="../../diagrams/authentication.dot.svg">

@@ -2,6 +2,8 @@
 
 # resilience
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 capability of a system to maintain its functions and structure in the face of internal and external change, and to degrade gracefully when this is necessary
 
 <object type="image/svg+xml" data="../../diagrams/resilience.dot.svg">

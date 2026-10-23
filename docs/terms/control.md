@@ -2,6 +2,8 @@
 
 # control
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 measure that is modifying [risk](risk.md)
 
 <object type="image/svg+xml" data="../../diagrams/control.dot.svg">

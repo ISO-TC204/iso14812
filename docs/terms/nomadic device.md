@@ -2,6 +2,8 @@
 
 # nomadic device
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [personal information device](personal information device.md) that is taken with and can be accessed by the [traveller](traveller.md) during a journey
 
 <object type="image/svg+xml" data="../../diagrams/nomadic device.dot.svg">

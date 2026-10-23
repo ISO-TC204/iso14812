@@ -2,6 +2,8 @@
 
 # map provision system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [support system](support system.md) that provides map databases used to support [ITS services](ITS service.md)
 
 <object type="image/svg+xml" data="../../diagrams/map provision system.dot.svg">

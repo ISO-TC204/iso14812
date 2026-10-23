@@ -2,6 +2,8 @@
 
 # cycleway
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 infrastructure primarily designed for the use of cycles and separate from a [carriageway](carriageway.md)
 
 <object type="image/svg+xml" data="../../diagrams/cycleway.dot.svg">

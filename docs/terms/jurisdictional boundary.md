@@ -2,6 +2,8 @@
 
 # jurisdictional boundary
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 territorial limit associated with a [jurisdictional area](jurisdictional area.md)
 
 <object type="image/svg+xml" data="../../diagrams/jurisdictional boundary.dot.svg">

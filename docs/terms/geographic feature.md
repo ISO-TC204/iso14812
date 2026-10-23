@@ -2,6 +2,8 @@
 
 # geographic feature
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 abstraction of real-world phenomena
 
 <object type="image/svg+xml" data="../../diagrams/geographic feature.dot.svg">

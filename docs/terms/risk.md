@@ -2,6 +2,8 @@
 
 # risk
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 effect of uncertainty on [objectives](objective.md)
 
 <object type="image/svg+xml" data="../../diagrams/risk.dot.svg">

@@ -2,6 +2,8 @@
 
 # data element
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 unit of data that is considered in a given context to be indivisible and which includes an unambiguous representational form
 
 <object type="image/svg+xml" data="../../diagrams/data element.dot.svg">

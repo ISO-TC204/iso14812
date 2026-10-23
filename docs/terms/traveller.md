@@ -2,6 +2,8 @@
 
 # traveller
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [person](person.md) who is headed to a destination
 
 <object type="image/svg+xml" data="../../diagrams/traveller.dot.svg">

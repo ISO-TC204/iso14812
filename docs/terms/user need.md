@@ -2,6 +2,8 @@
 
 # user need
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 desired results of a [user](user.md) within a specified context of use
 
 <object type="image/svg+xml" data="../../diagrams/user need.dot.svg">

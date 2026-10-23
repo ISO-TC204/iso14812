@@ -2,6 +2,8 @@
 
 # ITS-S application
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [ITS-S application process](ITS-S application process.md) residing in the [application entity](application entity.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS-S application.dot.svg">

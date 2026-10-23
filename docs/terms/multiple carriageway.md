@@ -2,6 +2,8 @@
 
 # multiple carriageway
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 having more than one [carriageway](carriageway.md)
 
 <object type="image/svg+xml" data="../../diagrams/multiple carriageway.dot.svg">

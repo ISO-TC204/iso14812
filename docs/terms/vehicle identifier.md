@@ -2,6 +2,8 @@
 
 # vehicle identifier
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 series of 17 characters that is based on either ISO 3779 or ISO 3780 and uniquely identifies the individual vehicle and is normally securely attached to the vehicle chassis
 
 <object type="image/svg+xml" data="../../diagrams/vehicle identifier.dot.svg">

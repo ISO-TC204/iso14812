@@ -2,6 +2,8 @@
 
 # reference architecture
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [architecture](architecture.md) that provides a template solution for [planning](planning architecture.md) and [deployment architectures](deployment architecture.md)
 
 <object type="image/svg+xml" data="../../diagrams/reference architecture.dot.svg">

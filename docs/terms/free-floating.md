@@ -2,6 +2,8 @@
 
 # free-floating
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <transport service> [network model](network model.md) where the [transport service](transport service.md) may be initiated and terminated at any [spatial location](spatial location.md) meeting basic criteria
 
 <object type="image/svg+xml" data="../../diagrams/free-floating.dot.svg">

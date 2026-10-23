@@ -2,6 +2,8 @@
 
 # process specification
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [document](document.md) that defines a lowest-level [process](process.md)
 
 <object type="image/svg+xml" data="../../diagrams/process specification.dot.svg">

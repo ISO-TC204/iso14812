@@ -2,6 +2,8 @@
 
 # lane
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <generic> portion of [road reservation](road reservation.md) intended to accommodate a single line of moving [material entities](material entity.md) along its length
 
 <object type="image/svg+xml" data="../../diagrams/lane.dot.svg">

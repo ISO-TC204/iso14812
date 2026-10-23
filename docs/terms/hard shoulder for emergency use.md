@@ -2,6 +2,8 @@
 
 # hard shoulder for emergency use
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 operating mode of a [hard shoulder](hard shoulder.md) that allows operation of emergency, construction, maintenance, or other special use [vehicles](vehicle.md) or for emergency stopping and is prohibited for other vehicle usage
 
 <object type="image/svg+xml" data="../../diagrams/hard shoulder for emergency use.dot.svg">

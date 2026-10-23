@@ -2,6 +2,8 @@
 
 # junction at grade
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [junction](junction.md) without any [grade separated manoeuvres](grade separated manoeuvre.md)
 
 <object type="image/svg+xml" data="../../diagrams/junction at grade.dot.svg">

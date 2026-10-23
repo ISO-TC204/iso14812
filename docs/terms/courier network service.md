@@ -2,6 +2,8 @@
 
 # courier network service
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [commercial](commercial.md), [peer-to-peer](peer-to-peer.md) [shared transport service](shared transport service.md) that transports goods
 
 <object type="image/svg+xml" data="../../diagrams/courier network service.dot.svg">

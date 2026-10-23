@@ -2,6 +2,8 @@
 
 # application entity
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 part of the [ITS station reference architecture](ITS-S reference architecture.md) that is responsible for providing ITS-related functionality
 
 <object type="image/svg+xml" data="../../diagrams/application entity.dot.svg">

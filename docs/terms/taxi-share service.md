@@ -2,6 +2,8 @@
 
 # taxi-share service
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [commercial](commercial.md) [shared transport service](shared transport service.md) that transports [passengers](passenger.md) [concurrently](concurrent.md)
 
 <object type="image/svg+xml" data="../../diagrams/taxi-share service.dot.svg">

@@ -2,6 +2,8 @@
 
 # concern
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <system> interest in a [system](system.md) relevant to one or more of its [stakeholders](stakeholder.md)
 
 <object type="image/svg+xml" data="../../diagrams/concern.dot.svg">

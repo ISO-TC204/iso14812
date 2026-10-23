@@ -2,6 +2,8 @@
 
 # cooperative ITS
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 subset of [ITS](intelligent transport system.md) where information is shared among [ITS stations](ITS station.md) in a manner that enables its use by multiple ITS services [ITS service.md]
 
 <object type="image/svg+xml" data="../../diagrams/cooperative ITS.dot.svg">

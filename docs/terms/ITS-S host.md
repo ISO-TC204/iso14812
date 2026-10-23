@@ -2,6 +2,8 @@
 
 # ITS-S host
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [ITS-S node](ITS-S node.md) comprised of [ITS-S](ITS station.md) functionalities other than the functionalities of an [ITS-S router](ITS-S router.md), ITS-S border router, ITS-S mobile router or an ITS-S gateway
 
 <object type="image/svg+xml" data="../../diagrams/ITS-S host.dot.svg">

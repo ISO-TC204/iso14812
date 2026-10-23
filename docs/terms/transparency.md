@@ -2,6 +2,8 @@
 
 # transparency
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 open, comprehensive and understandable presentation of information
 
 <object type="image/svg+xml" data="../../diagrams/transparency.dot.svg">

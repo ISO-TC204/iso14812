@@ -2,6 +2,8 @@
 
 # level 2 driving automation
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [driver support system](driver support system.md) that provides sustained lateral and longitudinal [vehicle](vehicle.md) motion control within a specific [operational design domain](operational design domain.md) with the expectation that a conventional [driver](driver.md) completes the object and event detection and response
 
 <object type="image/svg+xml" data="../../diagrams/level 2 driving automation.dot.svg">

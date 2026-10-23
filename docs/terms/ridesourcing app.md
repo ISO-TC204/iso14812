@@ -2,6 +2,8 @@
 
 # ridesourcing app
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [P2P mobility sharing app](P2P mobility sharing app.md) for acquiring a [ridesourced service](ridesourced service.md)
 
 <object type="image/svg+xml" data="../../diagrams/ridesourcing app.dot.svg">

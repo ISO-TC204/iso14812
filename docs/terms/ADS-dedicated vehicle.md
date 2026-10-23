@@ -2,6 +2,8 @@
 
 # ADS-dedicated vehicle
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [ADS-equipped vehicle](ADS-equipped vehicle.md) designed for only driverless operation for complete trips
 
 <object type="image/svg+xml" data="../../diagrams/ADS-dedicated vehicle.dot.svg">

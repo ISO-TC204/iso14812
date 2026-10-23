@@ -2,6 +2,8 @@
 
 # ITS-SU service provider
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [ITS-SU](ITS-S unit.md) that delivers one or more [ITS-SU services](ITS-SU service.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS-SU service provider.dot.svg">

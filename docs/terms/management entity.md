@@ -2,6 +2,8 @@
 
 # management entity
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 part of the [ITS station reference architecture](ITS-S reference architecture.md) that is responsible for management and configuration of all layers and entities within the ITS-S
 
 <object type="image/svg+xml" data="../../diagrams/management entity.dot.svg">

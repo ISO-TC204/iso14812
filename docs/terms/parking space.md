@@ -2,6 +2,8 @@
 
 # parking space
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 location for storing a [vehicle](vehicle.md) Note 1 to entry: The vehicle can be a motor vehicle, cycle, or any other type of vehicle. Note 2 to entry: A parking space is usually designed for a single vehicle. Note 3 to entry: Parking spaces can be, but are not necessarily, denoted by painted or other road surface markings.
 
 <object type="image/svg+xml" data="../../diagrams/parking space.dot.svg">

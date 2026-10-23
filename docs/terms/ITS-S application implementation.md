@@ -2,6 +2,8 @@
 
 # ITS-S application implementation
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 implementation of an [ITS-S application process](ITS-S application process.md) within the [application entity](application entity.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS-S application implementation.dot.svg">

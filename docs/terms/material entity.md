@@ -2,6 +2,8 @@
 
 # material entity
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [entity](entity.md) that occupies three-dimensional space
 
 <object type="image/svg+xml" data="../../diagrams/material entity.dot.svg">

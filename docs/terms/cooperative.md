@@ -2,6 +2,8 @@
 
 # cooperative
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 type of [financial model](financial model.md) where [users](user.md) partner to defray the costs of [services](service.md)
 
 <object type="image/svg+xml" data="../../diagrams/cooperative.dot.svg">

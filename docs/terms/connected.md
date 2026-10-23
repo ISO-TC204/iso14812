@@ -2,6 +2,8 @@
 
 # connected
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 characteristic of a [material entity](material entity.md) that is equipped with enabled (i.e. on) and operational electronic communication technologies to support [ITS services](ITS service.md), including the means to send and receive data to and from other connected entities
 
 <object type="image/svg+xml" data="../../diagrams/connected.dot.svg">

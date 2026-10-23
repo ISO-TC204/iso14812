@@ -2,6 +2,8 @@
 
 # system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 combination of interacting [elements](element.md) organized to achieve one or more stated purposes
 
 <object type="image/svg+xml" data="../../diagrams/system.dot.svg">

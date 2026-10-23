@@ -2,6 +2,8 @@
 
 # point coordinates
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 coordinate tuple defining the geodetic position of a single [point location](point location.md) using a known geodetic reference system
 
 <object type="image/svg+xml" data="../../diagrams/point coordinates.dot.svg">

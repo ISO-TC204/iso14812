@@ -2,6 +2,8 @@
 
 # public transport central management system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [centre system](central system.md) that allows an [entity](entity.md) to manage the activities of a [public transport](public transport.md) agency
 
 <object type="image/svg+xml" data="../../diagrams/public transport central management system.dot.svg">

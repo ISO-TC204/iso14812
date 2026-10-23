@@ -2,6 +2,8 @@
 
 # fleet and freight management central system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [centre system](central system.md) that allows a fleet or freight operator to manage and control its personnel, equipment and/or freight
 
 <object type="image/svg+xml" data="../../diagrams/fleet and freight management central system.dot.svg">

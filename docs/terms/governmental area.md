@@ -2,6 +2,8 @@
 
 # governmental area
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 transport-related, [jurisdictional area](jurisdictional area.md) whose only [jurisdictional entities](jurisdictional entity.md) are governmental entities
 
 <object type="image/svg+xml" data="../../diagrams/governmental area.dot.svg">

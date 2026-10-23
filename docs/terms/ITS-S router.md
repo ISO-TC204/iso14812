@@ -2,6 +2,8 @@
 
 # ITS-S router
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [ITS-S node](ITS-S node.md) comprised of routing functionalities of an [ITS station unit](ITS-S unit.md) used to connect two networks and to forward packets not explicitly addressed to itself
 
 <object type="image/svg+xml" data="../../diagrams/ITS-S router.dot.svg">

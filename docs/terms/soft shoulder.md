@@ -2,6 +2,8 @@
 
 # soft shoulder
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 unpaved part of the [road reservation](road reservation.md) not belonging to the [carriageway](carriageway.md) but providing lateral support to it
 
 <object type="image/svg+xml" data="../../diagrams/soft shoulder.dot.svg">

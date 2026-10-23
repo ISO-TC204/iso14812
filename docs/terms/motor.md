@@ -2,6 +2,8 @@
 
 # motor
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [material entity](material entity.md) that converts energy into mechanical motion
 
 <object type="image/svg+xml" data="../../diagrams/motor.dot.svg">

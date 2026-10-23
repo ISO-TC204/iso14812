@@ -2,6 +2,8 @@
 
 # moderate-speed vehicle
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [vehicle](vehicle.md) with a [design speed](design speed.md) in the range of [moderate vehicle speeds](moderate vehicle speed.md)
 
 <object type="image/svg+xml" data="../../diagrams/moderate-speed vehicle.dot.svg">

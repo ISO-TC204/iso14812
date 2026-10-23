@@ -2,6 +2,8 @@
 
 # personal information device
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [personal system](personal system.md) that enables personal access to [traveller](traveller.md) information
 
 <object type="image/svg+xml" data="../../diagrams/personal information device.dot.svg">

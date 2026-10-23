@@ -2,6 +2,8 @@
 
 # non-biological entity
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [material entity](material entity.md) that is not and has never been a living organism
 
 <object type="image/svg+xml" data="../../diagrams/non-biological entity.dot.svg">

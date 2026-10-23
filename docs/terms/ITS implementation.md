@@ -2,6 +2,8 @@
 
 # ITS implementation
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 integration of each [physical object](physical object.md) necessary to implement one or more [ITS applications](ITS application.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS implementation.dot.svg">

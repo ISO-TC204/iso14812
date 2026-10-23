@@ -2,6 +2,8 @@
 
 # private
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <transport service> [financial model](financial model.md) where [services](service.md) are provided to members of the owning organization without usage fees
 
 <object type="image/svg+xml" data="../../diagrams/private.dot.svg">

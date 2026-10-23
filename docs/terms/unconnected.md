@@ -2,6 +2,8 @@
 
 # unconnected
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 characteristic of a [material entity](material entity.md) that is equipped with communications equipment that is not active or is otherwise unable to send data to or receive data from [connected](connected.md) entities
 
 <object type="image/svg+xml" data="../../diagrams/unconnected.dot.svg">

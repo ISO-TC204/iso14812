@@ -2,6 +2,8 @@
 
 # geographic descriptor
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 descriptor that identifies a geographic characteristic to help identify a specific location
 
 <object type="image/svg+xml" data="../../diagrams/geographic descriptor.dot.svg">

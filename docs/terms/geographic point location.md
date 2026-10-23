@@ -2,6 +2,8 @@
 
 # geographic point location
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 well defined geographic place described by one coordinate tuple
 
 <object type="image/svg+xml" data="../../diagrams/geographic point location.dot.svg">

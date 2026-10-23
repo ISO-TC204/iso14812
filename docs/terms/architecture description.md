@@ -2,6 +2,8 @@
 
 # architecture description
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 work product used to express an [architecture](architecture.md)
 
 <object type="image/svg+xml" data="../../diagrams/architecture description.dot.svg">

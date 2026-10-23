@@ -2,6 +2,8 @@
 
 # road cycle
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [vehicle](vehicle.md) meeting the legal requirements to operate in [cycle lanes](cycle lane.md) and [cycleways](cycleway.md)
 
 <object type="image/svg+xml" data="../../diagrams/road cycle.dot.svg">

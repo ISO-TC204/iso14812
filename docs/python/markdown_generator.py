@@ -6,6 +6,7 @@ import traceback
 from collections import defaultdict
 from rdflib import Graph, XSD, Literal, URIRef, OWL, RDFS, RDF
 from rdflib.namespace import DCTERMS, SKOS
+from draft_terms import DRAFT_WATERMARK
 from ontology_processor_ttl import (
     BASE,
     parent_clause_from_class_entries,
@@ -36,6 +37,7 @@ from utils import (
     md_table_delimiter,
     concept_registry_nav_path,
     collection_list_item,
+    format_skos_example,
     group_nav_path,
     pattern_nav_path,
     group_page_filename,
@@ -271,6 +273,7 @@ def generate_markdown(
     class_to_onts: dict,
     term_collection_map: dict,
     repo_url: str | None = None,
+    draft_terms: set | None = None,
 ):
     """Generate Markdown file for a class, including all superclasses and disjoint statements in Formalization."""
     docs_dir = os.path.dirname(file_path)
@@ -329,11 +332,14 @@ def generate_markdown(
         examples = list(g.objects(cls, SKOS.example))
         example_md = ""
         if examples:
-            if len(examples) == 1:
-                example_md += f"EXAMPLE: {str(examples[0])}\n\n"
+            formatted = [format_skos_example(g, example, ns, docs_dir) for example in examples]
+            if len(formatted) == 1:
+                prefix = "EXAMPLE:\n\n" if formatted[0].startswith("![") else "EXAMPLE: "
+                example_md += f"{prefix}{formatted[0]}\n\n"
             else:
-                for i, example in enumerate(examples, start=1):
-                    example_md += f"Example {i}: {str(example)}\n\n"
+                for i, example_text in enumerate(formatted, start=1):
+                    prefix = f"Example {i}:\n\n" if example_text.startswith("![") else f"Example {i}: "
+                    example_md += f"{prefix}{example_text}\n\n"
         sources = list(g.objects(cls, DCTERMS.source))
         source_md = ""
         if sources:
@@ -421,9 +427,11 @@ def generate_markdown(
             other_annot_head += md_table_delimiter(2)
             other_annot_md = other_annot_head + other_annot_md + "\n"
         
+        watermark = DRAFT_WATERMARK if draft_terms and cls in draft_terms else ""
         content = (
             breadcrumb
             + title
+            + watermark
             + top_desc
             + diagram_line
             + clause_md

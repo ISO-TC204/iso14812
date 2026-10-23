@@ -2,6 +2,8 @@
 
 # ITS user
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [entity](entity.md) that uses information, communication, and transducer technologies to achieve benefits when using a [surface transport system](surface transport system.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS user.dot.svg">

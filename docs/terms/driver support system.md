@@ -2,6 +2,8 @@
 
 # driver support system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [driving automation system](driving automation system.md) that is only able to perform part of the [dynamic driving task](dynamic driving task.md)
 
 <object type="image/svg+xml" data="../../diagrams/driver support system.dot.svg">

@@ -2,6 +2,8 @@
 
 # jurisdictional area
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 territory for which a [jurisdictional entity](jurisdictional entity.md) has the power to define rules of behaviour
 
 <object type="image/svg+xml" data="../../diagrams/jurisdictional area.dot.svg">

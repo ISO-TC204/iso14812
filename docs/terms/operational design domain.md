@@ -2,6 +2,8 @@
 
 # operational design domain
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 set of operating conditions under which a given [driving automation system](driving automation system.md) or feature thereof is specifically designed to function
 
 <object type="image/svg+xml" data="../../diagrams/operational design domain.dot.svg">

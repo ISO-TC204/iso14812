@@ -2,6 +2,8 @@
 
 # threat
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 potential cause of an unwanted incident, which can result in harm to a system or organization
 
 <object type="image/svg+xml" data="../../diagrams/threat.dot.svg">

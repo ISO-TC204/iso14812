@@ -2,6 +2,8 @@
 
 # interoperability design
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 characteristics necessary to fully define how various [physical objects](physical object.md) interoperate to provide a [service](service.md)
 
 <object type="image/svg+xml" data="../../diagrams/interoperability design.dot.svg">

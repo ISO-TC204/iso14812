@@ -2,6 +2,8 @@
 
 # ridesplit service
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [ridesourced service](ridesourced service.md) that serves [passengers](passenger.md) [concurrently](concurrent.md)
 
 <object type="image/svg+xml" data="../../diagrams/ridesplit service.dot.svg">

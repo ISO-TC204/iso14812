@@ -2,6 +2,8 @@
 
 # ITS-S reference architecture
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [reference architecture](reference architecture.md) for handling communications within a [physical object](physical object.md) as defined in ISO 21217
 
 <object type="image/svg+xml" data="../../diagrams/ITS-S reference architecture.dot.svg">

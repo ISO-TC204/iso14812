@@ -2,6 +2,8 @@
 
 # instance
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 discrete, bounded object with an intrinsic, immutable, and unique identity
 
 <object type="image/svg+xml" data="../../diagrams/instance.dot.svg">

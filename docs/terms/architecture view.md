@@ -2,6 +2,8 @@
 
 # architecture view
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 work product expressing the [architecture](architecture.md) of a [system](system.md) from the perspective of specific system [concerns](concern.md)
 
 <object type="image/svg+xml" data="../../diagrams/architecture view.dot.svg">

@@ -2,6 +2,8 @@
 
 # loading area
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 area designated for [vehicles](vehicle.md) to load and/or unload goods
 
 <object type="image/svg+xml" data="../../diagrams/loading area.dot.svg">

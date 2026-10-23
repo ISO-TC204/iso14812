@@ -2,6 +2,8 @@
 
 # service alley
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 alley designed to facilitate the provision of services for adjacent locations
 
 <object type="image/svg+xml" data="../../diagrams/service alley.dot.svg">

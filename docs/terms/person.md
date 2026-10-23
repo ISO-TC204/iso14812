@@ -2,6 +2,8 @@
 
 # person
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [biological entity](biological entity.md) that is a human being
 
 <object type="image/svg+xml" data="../../diagrams/person.dot.svg">

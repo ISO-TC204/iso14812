@@ -2,6 +2,8 @@
 
 # roadway
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 part of the surface of the [road reservation](road reservation.md) primarily designed for the movement of [vehicles](vehicle.md) that conform to a specified set of requirements
 
 <object type="image/svg+xml" data="../../diagrams/roadway.dot.svg">

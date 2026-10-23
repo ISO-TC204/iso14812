@@ -2,6 +2,8 @@
 
 # roadside
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 portion of the [road reservation](road reservation.md) excluding all [roadway](roadway.md) and [driving space](driving space.md)
 
 <object type="image/svg+xml" data="../../diagrams/roadside.dot.svg">

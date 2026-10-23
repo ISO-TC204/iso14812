@@ -2,6 +2,8 @@
 
 # physical viewpoint
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [architecture viewpoint](architecture viewpoint.md) used to frame [concerns](concern.md) related to the assignment of functionality to [physical objects](physical object.md) and the interfaces among these physical objects
 
 <object type="image/svg+xml" data="../../diagrams/physical viewpoint.dot.svg">

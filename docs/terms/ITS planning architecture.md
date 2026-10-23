@@ -2,6 +2,8 @@
 
 # ITS planning architecture
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [planning architecture](planning architecture.md) for one or more [ITS services](ITS service.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS planning architecture.dot.svg">

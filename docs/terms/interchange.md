@@ -2,6 +2,8 @@
 
 # interchange
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [junction](junction.md) with at least one [grade separated manoeuvre](grade separated manoeuvre.md)
 
 <object type="image/svg+xml" data="../../diagrams/interchange.dot.svg">

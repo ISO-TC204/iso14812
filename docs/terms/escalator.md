@@ -2,6 +2,8 @@
 
 # escalator
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 rising or falling stairway that assists pedestrians in vertical transitions
 
 <object type="image/svg+xml" data="../../diagrams/escalator.dot.svg">

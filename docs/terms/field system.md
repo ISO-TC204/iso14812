@@ -2,6 +2,8 @@
 
 # field system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 infrastructure-based [ITS component](ITS component.md) located outside of a data centre that is designed to provide local processing or routing services while stationary
 
 <object type="image/svg+xml" data="../../diagrams/field system.dot.svg">

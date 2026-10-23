@@ -2,6 +2,8 @@
 
 # ITS application specification
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 one or more [documents](document.md) that detail the [interoperability design](interoperability design.md) for an [ITS application](ITS application.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS application specification.dot.svg">

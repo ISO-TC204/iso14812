@@ -2,6 +2,8 @@
 
 # public transport vehicle stop
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [pick-up/drop-off area](pick-updrop-off area.md) area for public transport vehicles
 
 <object type="image/svg+xml" data="../../diagrams/public transport vehicle stop.dot.svg">

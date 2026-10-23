@@ -2,6 +2,8 @@
 
 # ingress lane
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [traffic lane](traffic lane.md) designed for entering a [junction](junction.md)
 
 <object type="image/svg+xml" data="../../diagrams/ingress lane.dot.svg">

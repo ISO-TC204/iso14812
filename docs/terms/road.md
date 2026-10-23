@@ -2,6 +2,8 @@
 
 # road
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 curvilinear length of [roadway](roadway.md) that shares the same [road identifier](road identifier.md)
 
 <object type="image/svg+xml" data="../../diagrams/road.dot.svg">

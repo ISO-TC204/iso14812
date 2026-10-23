@@ -2,6 +2,8 @@
 
 # jurisdiction
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 legal power to issue rules of behaviour for a defined area
 
 <object type="image/svg+xml" data="../../diagrams/jurisdiction.dot.svg">

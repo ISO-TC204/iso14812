@@ -2,6 +2,8 @@
 
 # paired on-demand
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <transport service> [concurrent](concurrent.md) operation where the [transport provider](transport provider.md) may choose to divert from its path to service a new request from another [transport users](transport user.md) while servicing an earlier transport user
 
 <object type="image/svg+xml" data="../../diagrams/paired on-demand.dot.svg">

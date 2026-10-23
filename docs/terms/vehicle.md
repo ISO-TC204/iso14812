@@ -2,6 +2,8 @@
 
 # vehicle
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [material entity](material entity.md) designed to transport people or physical goods by changing its physical position
 
 <object type="image/svg+xml" data="../../diagrams/vehicle.dot.svg">

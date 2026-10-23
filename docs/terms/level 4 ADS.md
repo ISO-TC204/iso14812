@@ -2,6 +2,8 @@
 
 # level 4 ADS
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [ADS](ADS.md) that is capable of operating within a specific [operational design domain](operational design domain.md) and providing its own [fallback](fallback.md), without any expectation that a human [driver](driver.md) will respond to a request to intervene
 
 <object type="image/svg+xml" data="../../diagrams/level 4 ADS.dot.svg">

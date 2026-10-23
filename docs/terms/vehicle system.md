@@ -2,6 +2,8 @@
 
 # vehicle system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [ITS component](ITS component.md) that is installed as a component of a [vehicle](vehicle.md)
 
 <object type="image/svg+xml" data="../../diagrams/vehicle system.dot.svg">

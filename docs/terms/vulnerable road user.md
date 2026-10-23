@@ -2,6 +2,8 @@
 
 # vulnerable road user
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [road user](road user.md) who is not protected by the body of a motor vehicle that meets local safety regulations
 
 <object type="image/svg+xml" data="../../diagrams/vulnerable road user.dot.svg">

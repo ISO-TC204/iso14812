@@ -2,6 +2,8 @@
 
 # use case
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 description of the behavioural requirements of a [system](system.md) and its [interaction](interaction.md) with a [user](user.md)
 
 <object type="image/svg+xml" data="../../diagrams/use case.dot.svg">

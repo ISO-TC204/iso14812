@@ -2,6 +2,8 @@
 
 # role
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 specified responsibilities
 
 <object type="image/svg+xml" data="../../diagrams/role.dot.svg">

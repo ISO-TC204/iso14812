@@ -2,6 +2,8 @@
 
 # ingress link
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 all [ingress lanes](ingress lane.md) on a [road link](road link.md)
 
 <object type="image/svg+xml" data="../../diagrams/ingress link.dot.svg">

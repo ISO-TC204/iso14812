@@ -2,6 +2,8 @@
 
 # surface transport system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [transport system](transport system.md) designed to move [material entities](material entity.md) across the surface or near-surface of the Earth
 
 <object type="image/svg+xml" data="../../diagrams/surface transport system.dot.svg">

@@ -2,6 +2,8 @@
 
 # scenario
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <use case> description of the sequence of events from the [user's](user.md) perspective to perform a task in a specified context
 
 <object type="image/svg+xml" data="../../diagrams/scenario.dot.svg">

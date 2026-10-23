@@ -2,6 +2,8 @@
 
 # speed
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 rate of change of a [material entity's](material entity.md) position with respect to a frame of reference
 
 <object type="image/svg+xml" data="../../diagrams/speed.dot.svg">

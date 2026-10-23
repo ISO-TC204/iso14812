@@ -2,6 +2,8 @@
 
 # model kind
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 conventions for a type of modelling
 
 <object type="image/svg+xml" data="../../diagrams/model kind.dot.svg">

@@ -2,6 +2,8 @@
 
 # high-speed vehicle
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [vehicle](vehicle.md) with a [design speed](design speed.md) in the range of [high vehicle speeds](high vehicle speed.md)
 
 <object type="image/svg+xml" data="../../diagrams/high-speed vehicle.dot.svg">

@@ -2,6 +2,8 @@
 
 # travelled way
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 part of the [roadway](roadway.md) that is currently intended for transport purposes
 
 <object type="image/svg+xml" data="../../diagrams/travelled way.dot.svg">

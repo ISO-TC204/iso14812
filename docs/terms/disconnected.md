@@ -2,6 +2,8 @@
 
 # disconnected
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 characteristic of a [material entity](material entity.md) that is or was equipped with communications equipment that is sufficiently physically disconnected such that the material entity is no longer able to send data to or receive data from [connected](connected.md) entities
 
 <object type="image/svg+xml" data="../../diagrams/disconnected.dot.svg">

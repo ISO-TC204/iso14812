@@ -12,4 +12,4 @@
 # Aligns with owl:versionInfo in docs/itsVocabulary.ttl (1.1.2).
 # Seeded RELEASES records that ontology baseline; this VERSION is doc-only
 # for adopting shared version-control workflows.
-version: 1.1.2-alpha.4
+version: 1.1.2-alpha.5

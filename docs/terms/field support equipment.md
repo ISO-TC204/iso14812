@@ -2,6 +2,8 @@
 
 # field support equipment
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 portable [field system](field system.md) used by field personnel to locally troubleshoot, initialize, reprogram and test infrastructure equipment
 
 <object type="image/svg+xml" data="../../diagrams/field support equipment.dot.svg">

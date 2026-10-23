@@ -2,6 +2,8 @@
 
 # transport user
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [entity](entity.md) that has a desire to transport a [material entity](material entity.md)
 
 <object type="image/svg+xml" data="../../diagrams/transport user.dot.svg">

@@ -2,6 +2,8 @@
 
 # commercial
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 type of [financial model](financial model.md) where [services](service.md) are provided with a profit motive
 
 <object type="image/svg+xml" data="../../diagrams/commercial.dot.svg">

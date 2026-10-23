@@ -2,6 +2,8 @@
 
 # public transport app
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [mobility app](mobility app.md) that assists a [transport user](transport user.md) in using a [public transport](public transport.md) [system](system.md)
 
 <object type="image/svg+xml" data="../../diagrams/public transport app.dot.svg">

@@ -2,6 +2,8 @@
 
 # vehicle occupant
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [person](person.md) in or on a [vehicle](vehicle.md)
 
 <object type="image/svg+xml" data="../../diagrams/vehicle occupant.dot.svg">

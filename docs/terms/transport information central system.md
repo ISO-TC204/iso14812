@@ -2,6 +2,8 @@
 
 # transport information central system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [centre system](central system.md) that provides information of interest to the travelling public
 
 <object type="image/svg+xml" data="../../diagrams/transport information central system.dot.svg">

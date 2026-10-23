@@ -2,6 +2,8 @@
 
 # transnet layer
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 communications layer in the [ITS station reference architecture](ITS-S reference architecture.md) corresponding to the network and transport layers of the OSI model
 
 <object type="image/svg+xml" data="../../diagrams/transnet layer.dot.svg">

@@ -2,6 +2,8 @@
 
 # peer-to-peer
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <transport service> [private customer model](private customer model.md) where the [service provider](service provider.md) is an individual
 
 <object type="image/svg+xml" data="../../diagrams/peer-to-peer.dot.svg">

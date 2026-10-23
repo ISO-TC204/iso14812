@@ -2,6 +2,8 @@
 
 # hardstanding
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 part of a paved [carriageway](carriageway.md) that is not a [traffic lane](traffic lane.md), [hard shoulder](hard shoulder.md), or [lay-by](lay-by.md).
 
 <object type="image/svg+xml" data="../../diagrams/hardstanding.dot.svg">
@@ -10,7 +12,9 @@ part of a paved [carriageway](carriageway.md) that is not a [traffic lane](traff
 
 Clause: 3.3.1.17
 
-EXAMPLE: n0c5199428337404a8fd606d6d34d405eb10
+EXAMPLE:
+
+![Hardstanding example](../images/hardstanding.png)
 
 Note 1 to entry: Hardstanding can include edges of a hard shoulder outside of designated lane markings, slips for future connector [roads](road.md), etc.
 

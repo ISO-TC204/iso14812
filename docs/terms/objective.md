@@ -2,6 +2,8 @@
 
 # objective
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 result to be achieved
 
 <object type="image/svg+xml" data="../../diagrams/objective.dot.svg">

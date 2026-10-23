@@ -2,6 +2,8 @@
 
 # information transfer
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [information flow](information flow.md) from a [physical object](physical object.md) acting as an information provider and sent to another physical object acting as an information consumer
 
 <object type="image/svg+xml" data="../../diagrams/information transfer.dot.svg">

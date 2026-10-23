@@ -2,6 +2,8 @@
 
 # functional object
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 set of related [processes](process.md) that are performed by a [physical object](physical object.md) to fulfil aspects of an [ITS service](ITS service.md)
 
 <object type="image/svg+xml" data="../../diagrams/functional object.dot.svg">

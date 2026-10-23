@@ -2,6 +2,8 @@
 
 # ITS component
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [physical object](physical object.md) that has been assigned one or more [functional objects](functional object.md) in the provision of one or more [ITS services](ITS service.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS component.dot.svg">

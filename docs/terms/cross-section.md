@@ -2,6 +2,8 @@
 
 # cross-section
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 transverse view of [road](road.md) geometry
 
 <object type="image/svg+xml" data="../../diagrams/cross-section.dot.svg">
@@ -10,7 +12,9 @@ transverse view of [road](road.md) geometry
 
 Clause: 3.3.1.1
 
-EXAMPLE: n0c5199428337404a8fd606d6d34d405eb2
+EXAMPLE:
+
+![Cross-section example](../images/cross_section.png)
 
 Note 1 to entry: The transverse view provides a vertical section of the ground and [carriageway](carriageway.md) at right angles to the centre line of the carriageway.
 

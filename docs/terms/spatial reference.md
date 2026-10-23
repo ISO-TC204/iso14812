@@ -2,6 +2,8 @@
 
 # spatial reference
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 description of a [spatial location](spatial location.md) in the real world according to a defined reference system
 
 <object type="image/svg+xml" data="../../diagrams/spatial reference.dot.svg">

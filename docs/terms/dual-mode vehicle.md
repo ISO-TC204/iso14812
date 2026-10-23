@@ -2,6 +2,8 @@
 
 # dual-mode vehicle
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <driving automation> [ADS-equipped vehicle](ADS-equipped vehicle.md) designed for both driverless operation and operation by a conventional [driver](driver.md) for complete trips
 
 <object type="image/svg+xml" data="../../diagrams/dual-mode vehicle.dot.svg">

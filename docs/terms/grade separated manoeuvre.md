@@ -2,6 +2,8 @@
 
 # grade separated manoeuvre
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 manoeuvre that is vertically separated from one or more manoeuvres that cross its two-dimensional path
 
 <object type="image/svg+xml" data="../../diagrams/grade separated manoeuvre.dot.svg">

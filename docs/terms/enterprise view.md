@@ -2,6 +2,8 @@
 
 # enterprise view
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [architecture view](architecture view.md) from the [enterprise viewpoint](enterprise viewpoint.md)
 
 <object type="image/svg+xml" data="../../diagrams/enterprise view.dot.svg">

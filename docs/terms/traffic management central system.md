@@ -2,6 +2,8 @@
 
 # traffic management central system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [centre system](central system.md) that monitors and controls traffic and the [road network](road network.md)
 
 <object type="image/svg+xml" data="../../diagrams/traffic management central system.dot.svg">

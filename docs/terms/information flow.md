@@ -2,6 +2,8 @@
 
 # information flow
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 information that is exchanged between [physical objects](physical object.md)
 
 <object type="image/svg+xml" data="../../diagrams/information flow.dot.svg">

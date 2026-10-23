@@ -2,6 +2,8 @@
 
 # ultra-low vehicle speed
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [speed](speed.md) of a [vehicle](vehicle.md) that does not greatly exceed typical [pedestrian](pedestrian.md) speeds
 
 <object type="image/svg+xml" data="../../diagrams/ultra-low vehicle speed.dot.svg">

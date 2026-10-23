@@ -2,6 +2,8 @@
 
 # shared vehicle service
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [transport service](transport service.md) that [sequentially](sequential.md) provides the same [vehicles](vehicle.md) to multiple unrelated [transport users](transport user.md) and where the transport user has the primary responsibility for the operation of the vehicle
 
 <object type="image/svg+xml" data="../../diagrams/shared vehicle service.dot.svg">

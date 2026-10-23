@@ -2,6 +2,8 @@
 
 # data concept registry
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 electronic [data dictionary](data dictionary.md) that follows precise documented rules for the registration and management of stored [data concepts](data concept.md)
 
 <object type="image/svg+xml" data="../../diagrams/data concept registry.dot.svg">

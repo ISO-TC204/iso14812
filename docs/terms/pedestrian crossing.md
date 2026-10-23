@@ -2,6 +2,8 @@
 
 # pedestrian crossing
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 physically marked location to enhance the safety of pedestrians crossing one or more lanes of a different mode of travel
 
 <object type="image/svg+xml" data="../../diagrams/pedestrian crossing.dot.svg">

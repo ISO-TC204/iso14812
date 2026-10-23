@@ -2,6 +2,8 @@
 
 # resource
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <enterprise view> [element](element.md) that represents an [entity](entity.md) that is managed, operated, referenced and/or used to develop and provide [ITS](intelligent transport system.md)
 
 <object type="image/svg+xml" data="../../diagrams/resource.dot.svg">

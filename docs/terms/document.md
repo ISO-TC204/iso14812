@@ -2,6 +2,8 @@
 
 # document
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 uniquely identified unit of information for human use
 
 <object type="image/svg+xml" data="../../diagrams/document.dot.svg">

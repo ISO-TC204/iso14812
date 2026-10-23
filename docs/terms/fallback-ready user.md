@@ -2,6 +2,8 @@
 
 # fallback-ready user
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <driving automation> [person](person.md) who is able to operate the [vehicle](vehicle.md) if the [Level 3 ADS](level 3 ADS.md) issues a request to intervene or if that person otherwise identifies a condition that requires intervention to perform the [dynamic driving task](dynamic driving task.md)
 
 <object type="image/svg+xml" data="../../diagrams/fallback-ready user.dot.svg">

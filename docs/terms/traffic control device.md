@@ -2,6 +2,8 @@
 
 # traffic control device
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [road equipment](road equipment.md) used to visually, audibly, or tangibly convey regulatory, advisory, or guidance information to [road users](road user.md)
 
 <object type="image/svg+xml" data="../../diagrams/traffic control device.dot.svg">

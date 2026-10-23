@@ -2,6 +2,8 @@
 
 # carriageway
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 contiguous area of paved [roadway](roadway.md) designed for the use of vehicles along a [road segment](road segment.md)
 
 <object type="image/svg+xml" data="../../diagrams/carriageway.dot.svg">

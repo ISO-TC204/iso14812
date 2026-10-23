@@ -2,6 +2,8 @@
 
 # immaterial entity
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [entity](entity.md) that does not occupy three-dimensional space
 
 <object type="image/svg+xml" data="../../diagrams/immaterial entity.dot.svg">

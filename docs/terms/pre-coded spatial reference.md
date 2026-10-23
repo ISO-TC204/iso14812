@@ -2,6 +2,8 @@
 
 # pre-coded spatial reference
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [spatial reference](spatial reference.md) using a unique identifier that is agreed upon in both the sender and receiver [system](system.md) to select a [location](location.md) from a set of pre-coded locations
 
 <object type="image/svg+xml" data="../../diagrams/pre-coded spatial reference.dot.svg">

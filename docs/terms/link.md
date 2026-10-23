@@ -2,6 +2,8 @@
 
 # link
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <road network> component of a [road model](road model.md) that represents a connection between two [nodes](node.md)
 
 <object type="image/svg+xml" data="../../diagrams/link.dot.svg">

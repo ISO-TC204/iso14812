@@ -2,6 +2,8 @@
 
 # vehicle fuel type
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 type of fuel used by the vehicle
 
 <object type="image/svg+xml" data="../../diagrams/vehicle fuel type.dot.svg">

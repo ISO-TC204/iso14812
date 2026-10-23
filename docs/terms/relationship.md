@@ -2,6 +2,8 @@
 
 # relationship
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <enterprise view> [element](element.md) that represents an association between two [resources](resource.md)
 
 <object type="image/svg+xml" data="../../diagrams/relationship.dot.svg">

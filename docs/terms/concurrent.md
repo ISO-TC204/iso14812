@@ -2,6 +2,8 @@
 
 # concurrent
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [operational model](operational model.md) where [services](service.md) can be provided to multiple [users](user.md) at any one time
 
 <object type="image/svg+xml" data="../../diagrams/concurrent.dot.svg">
