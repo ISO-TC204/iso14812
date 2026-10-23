@@ -11,7 +11,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :core a owl:Ontology ;
     dcterms:title "ITS Vocabulary Core"@en ;
-    dcterms:modified "2026-05-29"^^xsd:date .
+    dcterms:modified "2026-10-23"^^xsd:date .
 
 # Annotation properties and shared datatype/object properties
 
