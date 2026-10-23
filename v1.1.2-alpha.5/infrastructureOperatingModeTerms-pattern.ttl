@@ -1,0 +1,36 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:infrastructureOperatingModeTerms a owl:Ontology ;
+    dcterms:title "Infrastructure Operating Mode Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:hardShoulderForEmergencyUse a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :operatingModeOf ;
+            owl:someValuesFrom :hardShoulder ] ;
+    skos:definition "operating mode of a [hard shoulder](hard shoulder.md) that allows operation of emergency, construction, maintenance, or other special use [vehicles](vehicle.md) or for emergency stopping and is prohibited for other vehicle usage"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "hard shoulder for emergency use"@en ;
+    :clause "3.3.4.1"@en .
+
+:hardShoulderRunning a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :operatingModeOf ;
+            owl:someValuesFrom :hardShoulder ] ;
+    skos:definition "operating mode of a [hard shoulder](hard shoulder.md) that allows operation of general-purpose [motor vehicles](motor vehicle.md) as an extra lane [lane.md]"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "hard shoulder running"@en ;
+    :clause "3.3.4.2"@en .
+
+:operatingModeOf a owl:ObjectProperty ;
+    rdfs:label "operating mode of"@en .

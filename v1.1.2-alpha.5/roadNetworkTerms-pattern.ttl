@@ -1,0 +1,163 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:roadNetworkTerms a owl:Ontology ;
+    dcterms:title "Road Network Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:roadIdentifier a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :identifies ;
+            owl:someValuesFrom :road ] ;
+    skos:definition "designator by a road authority to uniquely identify one or more curvilinear lengths of [roadway](roadway.md) within the context of the road authority"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:note "A single road identifier can be assigned to non-contiguous lengths of roadway."@en,
+        "The identifier is typically either a name (e.g., Main Street), a class of road coupled with a number (e.g., \"M25\" meaning \"motorway no. 25\")."@en,
+        "The same road identifier can be allocated by different road authorities to different, physically distinct, curvilinear lengths of roadway."@en ;
+    skos:prefLabel "road identifier"@en ;
+    :clause "3.3.5.12"@en .
+
+:roadModel a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutes ;
+            owl:someValuesFrom :link ],
+        [ a owl:Restriction ;
+            owl:onProperty :constitutes ;
+            owl:someValuesFrom :node ],
+        [ a owl:Restriction ;
+            owl:onProperty :represents ;
+            owl:someValuesFrom :roadNetwork ] ;
+    skos:definition "representation of a [road network](road network.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Road models for different [systems](system.md) will often define different models. For example, a public [transport system](transport system.md) can define [road links](road link.md) based on the [spatial location](spatial location.md) of bus stops while a traffic system can define road links based on the spatial location of [junctions](junction.md)."@en ;
+    skos:prefLabel "road model"@en ;
+    :clause "3.3.5.3"@en .
+
+:roadSection a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :roadLink ] ;
+    skos:definition "aggregation of one or more [road links](road link.md) that represents a contiguous length of a [road](road.md) that shares the same management and operational strategies"@en ;
+    skos:example "A speed limit regulation can be applied to a road section."@en,
+        "A traffic signal timing plan is applied to one road section."@en ;
+    skos:historyNote "2025: Added example 2."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Different [road models](road model.md) can divide the same [road](road.md) into different road sections."@en ;
+    skos:prefLabel "road section"@en ;
+    :clause "3.3.5.7"@en .
+
+:serviceAlley a owl:Class ;
+    rdfs:subClassOf :alley ;
+    skos:definition "alley designed to facilitate the provision of services for adjacent locations"@en ;
+    skos:example "alley for trash collection"@en,
+        "alley that provides access to an electrical substation"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "service alley"@en ;
+    :clause "3.3.5.14"@en .
+
+:serviceRoad a owl:Class ;
+    rdfs:subClassOf :road ;
+    skos:definition "road designed to facilitate the provision of services to customers"@en ;
+    skos:example "road used to access parking spaces or pick-up/drop-off area"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "service road"@en ;
+    :clause "3.3.5.13"@en .
+
+:alley a owl:Class ;
+    rdfs:subClassOf :road ;
+    skos:definition "[road](road.md) that has buildings, walls or fences on each side"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "alley"@en ;
+    :clause "3.3.5.11"@en .
+
+:connects a owl:ObjectProperty .
+
+:laneLink a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutes ;
+            owl:someValuesFrom :laneSegment ],
+        :link ;
+    skos:definition "[link](link.md) that represents a [lane](lane.md) of a [road link](road link.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A [lane segment](lane segment.md) can start or end at [spatial locations](spatial location.md) other than the start or end of the corresponding [road segment](road segment.md) (e.g. a lane can start mid-block)."@en,
+        "A lane segment only includes the sequential lane links, it does not include lane links from adjacent lanes."@en ;
+    skos:prefLabel "lane link"@en ;
+    :clause "3.3.5.9"@en .
+
+:laneSegment a owl:Class ;
+    rdfs:subClassOf :link ;
+    skos:definition "[link](link.md) that represents a contiguous length of a [lane link](lane link.md) characterized by the same physical characteristics"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "lane segment"@en ;
+    :clause "3.3.5.10"@en .
+
+:node a owl:Class ;
+    skos:definition "<road network> component of a [road model](road model.md) representing a [point location](point location.md) of the [road network](road network.md) graph"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The point location typically represents a point along the [road](road.md) which can be used to designate the [spatial location](spatial location.md) of a [junction](junction.md), [public transport vehicle stop](public transport vehicle stop.md), [jurisdictional boundary](jurisdictional boundary.md), termination point, etc."@en ;
+    skos:prefLabel "node"@en ;
+    :altPrefLabel "road network node"@en ;
+    :clause "3.3.5.4"@en .
+
+:roadLink a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :constitutes ;
+            owl:someValuesFrom :roadSegment ],
+        [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :laneLink ],
+        :link ;
+    skos:definition "[link](link.md) representing a contiguous length of a [road](road.md) between two [nodes](node.md) of operational or managerial significance"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The operational characteristics of the nodes would relate to the type of [road model](road model.md). For example, a traffic [system](system.md) can base its road links on nodes that represent [junctions](junction.md) and road terminators."@en ;
+    skos:prefLabel "road link"@en ;
+    :clause "3.3.5.6"@en .
+
+:roadNetwork a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :road ] ;
+    skos:definition "interconnected collection of [roads](road.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "road network"@en ;
+    :clause "3.3.5.2"@en .
+
+:roadSegment a owl:Class ;
+    rdfs:subClassOf :link ;
+    skos:definition "[link](link.md) that represents a contiguous length of a [road link](road link.md) characterized by the same physical characteristics"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The definition of road segments is highly dependent on which characteristics are modelled by the implementation. Characteristics that can result in a new road segment include addition or subtraction of a [lane](lane.md), a change in [roadway](roadway.md) width, the change of [road](road.md) type (e.g. start/end of a bridge), etc."@en ;
+    skos:prefLabel "road segment"@en ;
+    :clause "3.3.5.8"@en .
+
+:constitutes a owl:ObjectProperty .
+
+:road a owl:Class ;
+    skos:definition "curvilinear length of [roadway](roadway.md) that shares the same [road identifier](road identifier.md)"@en ;
+    skos:historyNote "2025: Revised \"identification\" to \"road identifier\" to align with other terms."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A length of the [road network](road network.md) may be referenced by multiple designators (e.g. Main Street and Route 7). In this case, there would be two [roads](road.md) that share the same set of [carriageways](carriageway.md)."@en,
+        "A road can change directions at a [junction](junction.md)."@en,
+        "The identification is generally a name or number."@en ;
+    skos:prefLabel "road"@en ;
+    :clause "3.3.5.1"@en .
+
+:link a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass :instant ;
+            owl:onProperty :connects ;
+            owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ] ;
+    skos:definition "<road network> component of a [road model](road model.md) that represents a connection between two [nodes](node.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A link can be curvilinear and can have various attributes such as width."@en ;
+    skos:prefLabel "link"@en ;
+    :clause "3.3.5.5"@en .

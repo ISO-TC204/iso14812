@@ -1,0 +1,93 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:fieldPhysicalObjectTerms a owl:Ontology ;
+    dcterms:title "Field Physical Object Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:connectedVehicle a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :is ;
+            owl:someValuesFrom :connected ],
+        :vehicle ;
+    skos:definition "[vehicle](vehicle.md) that is [connected](connected.md) using one or more communication media"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "connected vehicle"@en ;
+    :clause "3.2.3.7"@en .
+
+:connectedVehicleRoadsideEquipment a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onClass :roadsideUnit ;
+            owl:onProperty :aggregates ],
+        :itsRoadsideEquipment ;
+    skos:definition "[ITS roadside equipment](ITS roadside equipment.md) that perform [ITS services](ITS service.md) by exchanging electronic [messages](message.md) with nearby [connected vehicles](connected vehicle.md) and/or [personal systems](personal system.md) via short-range wireless technologies"@en ;
+    skos:historyNote "2025: Revised to 1. Revised term from connected roadside equipment to connected vehicle roadside equipment, 2. Replace \"ITS connected roadside equipment\" and \"RSE\" with \"CV-RSE\", and 3. Change reference to \"vehicle systems\" to \"connected vehicles\"."@en,
+        "Introduced in ISO/TS 14812:2022."@en ;
+    skos:note "Connected roadside equipment typically provides ITS-related functionality but the term includes roadside equipment that only provide the ITS service of routing for short-range wireless technologies."@en,
+        "The term \"connected vehicle roadside equipment\" is used within the current version of the Architecture Reference for Cooperative and Intelligent Transportation (ARC-IT; see Reference [25])."@en ;
+    skos:prefLabel "connected vehicle roadside equipment"@en ;
+    :altPrefLabel "CV-RSE"@en ;
+    :clause "3.2.3.3"@en .
+
+:fieldSupportEquipment a owl:Class ;
+    rdfs:subClassOf :fieldSystem ;
+    skos:definition "portable [field system](field system.md) used by field personnel to locally troubleshoot, initialize, reprogram and test infrastructure equipment"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "field support equipment"@en ;
+    :altPrefLabel "ITS field support equipment"@en ;
+    :clause "3.2.3.1"@en .
+
+:connectedUnit a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :is ;
+            owl:someValuesFrom :connected ] ;
+    skos:definition "electronic device that is [connected](connected.md) using one or more communication media"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "connected unit"@en ;
+    :altPrefLabel "ITS connected unit"@en ;
+    :clause "3.2.3.5"@en .
+
+:itsRoadsideEquipment a owl:Class ;
+    rdfs:subClassOf :fieldSystem ;
+    skos:definition "[field system](field system.md) that performs localized [ITS services](ITS service.md)"@en ;
+    skos:example "traffic signal controller, variable message sign, vehicle detection"@en ;
+    skos:historyNote "2025: Added Note 3 to entry."@en,
+        "Introduced in ISO/TS 14812:2022."@en ;
+    skos:note "\"ITS roadway equipment\" is used within the current version of the Architecture Reference for Cooperative and Intelligent Transportation (ARC-IT; see Reference [25]). The term [roadway](roadway.md) has been revised to reflect that the equipment is typically along the roadway rather than a part of the roadway."@en,
+        "ITS services that can be performed by ITS roadside equipment include surveillance, traffic control, information provision, payment transaction services, and/or enforcement"@en,
+        "While the term \"roadside\" indicates the typical location of the equipment, ITS roadside equipment (or portions thereof) can be embedded in the roadway itself."@en ;
+    skos:prefLabel "ITS roadside equipment"@en ;
+    :altPrefLabel "ITS roadway equipment"@en ;
+    :clause "3.2.3.2"@en .
+
+:roadsideUnit a owl:Class ;
+    rdfs:subClassOf :connectedUnit ;
+    skos:definition "part of [connected vehicle roadside equipment](connected vehicle roadside equipment.md) that provides wireless connectivity to [vehicle systems](vehicle system.md) and/or [personal systems](personal system.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "roadside unit"@en ;
+    :altPrefLabel "ITS roadside unit"@en,
+        "RSU"@en ;
+    :clause "3.2.3.4"@en .
+
+:connected a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :characteristicOf ;
+            owl:someValuesFrom :materialEntity ] ;
+    skos:definition "characteristic of a [material entity](material entity.md) that is equipped with enabled (i.e. on) and operational electronic communication technologies to support [ITS services](ITS service.md), including the means to send and receive data to and from other connected entities"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The term \"connected\" does not imply support for any specific communications interface or ITS-S application process [ITS-S application process.md]."@en ;
+    skos:prefLabel "connected"@en ;
+    :altPrefLabel "ITS connected"@en ;
+    :clause "3.2.3.6"@en .
+
+:is a owl:ObjectProperty .

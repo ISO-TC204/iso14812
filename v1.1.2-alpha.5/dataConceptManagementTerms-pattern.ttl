@@ -1,0 +1,56 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:dataConceptManagementTerms a owl:Ontology ;
+    dcterms:title "Data Concept Management Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:dataConceptRegistry a owl:Class ;
+    rdfs:subClassOf :dataDictionary ;
+    skos:definition "electronic [data dictionary](data dictionary.md) that follows precise documented rules for the registration and management of stored [data concepts](data concept.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A data concept registry typically includes advanced features for adding retrieving, and working with its contents."@en,
+        "The data concept registry contains [meta-attributes](meta-attribute.md) about [data concepts](data concept.md) in terms of their names and representational forms as well as the semantics associated with the data concepts. A data concept registry may contain metadata that assists information interchange and re-use, both from the perspective of human users and for machine-interpretation of data concepts."@en ;
+    skos:prefLabel "data concept registry"@en ;
+    :clause "3.1.10.4"@en .
+
+:meta-attribute a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :characteristicOf ;
+            owl:someValuesFrom :dataConcept ] ;
+    skos:definition "documenting characteristic of a [data concept](data concept.md) that is stored in a [data dictionary](data dictionary.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "meta-attribute"@en ;
+    :clause "3.1.10.2"@en .
+
+:dataConcept a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :storedIn ;
+            owl:someValuesFrom :dataDictionary ],
+        [ a owl:Restriction ;
+            owl:onProperty :describes ;
+            owl:someValuesFrom :entity ] ;
+    skos:definition "[data element](data element.md), [class](class.md), [value domain](value domain.md), [data frame](data frame.md), [message](message.md) or [interface dialogue](interface dialogue.md) defined, at a minimum, with an unambiguous identifier and a definition"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "In order to exchange a value corresponding to a data concept, more information than an identifier, a name and a definition can be needed. For a property, a data type is needed. Depending on the kind of property, other data elements such as unit of measure, and language, can be needed as well. The additional information can be given in the [data dictionary](data dictionary.md), in a data specification that references the data concept or associated with the data themselves."@en ;
+    skos:prefLabel "data concept"@en ;
+    :clause "3.1.10.1"@en .
+
+:storedIn a owl:ObjectProperty ;
+    rdfs:label "stored in"@en .
+
+:dataDictionary a owl:Class ;
+    dcterms:source "ISO 22745-2:2010, B.2.16, modified - \"collection of data dictionary entries...\" replaced with \"collection of data concepts...\"."@en ;
+    skos:definition "collection of [data concepts](data concept.md) that allows lookup by [entity](entity.md) identifier"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "data dictionary"@en ;
+    :clause "3.1.10.3"@en .

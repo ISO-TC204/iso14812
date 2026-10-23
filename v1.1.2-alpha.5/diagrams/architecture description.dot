@@ -1,0 +1,33 @@
+// Diagram for architecture description
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		"architecture description" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">architecture description</TD></TR></TABLE>> margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		architecture [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">architecture</TD></TR></TABLE>> URL="../terms/architecture/" margin=0 target=_top]
+		architectureView [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">architecture view</TD></TR></TABLE>> URL="../terms/architecture view/" margin=0 target=_top]
+		architectureViewpoint [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">architecture viewpoint</TD></TR></TABLE>> URL="../terms/architecture viewpoint/" margin=0 target=_top]
+		concern [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">concern</TD></TR></TABLE>> URL="../terms/concern/" margin=0 target=_top]
+		stakeholder [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">stakeholder</TD></TR></TABLE>> URL="../terms/stakeholder/" margin=0 target=_top]
+		system [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">system</TD></TR></TABLE>> URL="../terms/system/" margin=0 target=_top]
+	}
+	"architecture description" -> Invis [style=invis]
+	Invis -> architecture [style=invis]
+	architecture -> architectureView [style=invis]
+	architectureView -> architectureViewpoint [style=invis]
+	architectureViewpoint -> concern [style=invis]
+	concern -> stakeholder [style=invis]
+	stakeholder -> system [style=invis]
+	"architecture description" -> architectureViewpoint [label=" aggregates " arrowhead=normal style=solid]
+	"architecture description" -> stakeholder [label=" identifies " arrowhead=normal style=solid]
+	"architecture description" -> concern [label=" identifies " arrowhead=normal style=solid]
+	"architecture description" -> architectureView [label=" aggregates " arrowhead=normal style=solid]
+	"architecture description" -> system [label=" identifies " arrowhead=normal style=solid]
+	"architecture description" -> architecture [label=" expresses " arrowhead=normal style=solid]
+}

@@ -1,0 +1,45 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:architectureFunctionalViewTerms a owl:Ontology ;
+    dcterms:title "Architecture Functional View Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:dataFlow a owl:Class ;
+    skos:definition "representation of data flowing between two [process](process.md) or between a process and a [terminator](terminator.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "data flow"@en ;
+    :clause "3.1.7.1"@en .
+
+:process a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :function ] ;
+    skos:definition "<functional view> series of one or more [functions](function.md) in support of an [ITS service](ITS service.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "process"@en ;
+    :altPrefLabel "functional view process"@en ;
+    :clause "3.1.7.2"@en .
+
+:processSpecification a owl:Class ;
+    skos:definition "[document](document.md) that defines a lowest-level [process](process.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "process specification"@en ;
+    :clause "3.1.7.4"@en .
+
+:function a owl:Class ;
+    skos:definition "<functional view> series of actions or activities performed by a given object to achieve a goal"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A function transforms inputs into outputs that may include the creation, modification, monitoring or destruction of [elements](element.md)."@en ;
+    skos:prefLabel "function"@en ;
+    :altPrefLabel "functional view function"@en ;
+    :clause "3.1.7.3"@en .

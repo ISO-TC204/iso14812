@@ -1,0 +1,87 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:its-sApplicationProcessTerms a owl:Ontology ;
+    dcterms:title "Its-s Application Process Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:its-sApplicationImplementation a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :implementationOf ;
+            owl:someValuesFrom :its-sApplication ] ;
+    skos:definition "implementation of an [ITS-S application process](ITS-S application process.md) within the [application entity](application entity.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "An implementation is typically associated with an implementation name, a version and release number."@en ;
+    skos:prefLabel "ITS-S application implementation"@en ;
+    :clause "3.2.9.4"@en .
+
+:its-sApplicationInstallation a owl:Class ;
+    rdfs:subClassOf :its-sApplicationProcessInstallation ;
+    skos:definition "[ITS-S application process installation](ITS-S application process installation.md) within the [application entity](application entity.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "ITS-S application installation"@en ;
+    :clause "3.2.9.6"@en .
+
+:itsApplicationRole a owl:Class ;
+    rdfs:subClassOf :its-sUserNeed ;
+    skos:definition "[ITS-SU user need](ITS-SU user need.md) expressed as a formal set of interoperability requirements that need to be fulfilled to satisfy a portion of functionality of an [ITS application](ITS application.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "ITS application role"@en ;
+    :clause "3.2.9.1"@en .
+
+:elementIn a owl:ObjectProperty ;
+    rdfs:label "element in"@en .
+
+:implementationOf a owl:ObjectProperty ;
+    rdfs:label "implementation of"@en .
+
+:its-sApplication a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :residesIn ;
+            owl:someValuesFrom :applicationEntity ],
+        :its-sApplicationProcess ;
+    skos:definition "[ITS-S application process](ITS-S application process.md) residing in the [application entity](application entity.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "ITS-S application"@en ;
+    :clause "3.2.9.3"@en .
+
+:its-sApplicationProcessInstallation a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :installationOf ;
+            owl:someValuesFrom :its-sApplicationProcess ] ;
+    skos:definition "installation of an implementation of an [ITS-S application process](ITS-S application process.md) on an [ITS station](ITS station.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "An implementation is typically associated with an implementation name, a version and release number."@en,
+        "An installation is typically associated with a specific licence code or serial number."@en ;
+    skos:prefLabel "ITS-S application process installation"@en ;
+    :clause "3.2.9.5"@en .
+
+:performsInformationProcessingFor a owl:ObjectProperty ;
+    rdfs:label "performs information processing for"@en .
+
+:residesIn a owl:ObjectProperty ;
+    rdfs:label "resides in"@en .
+
+:its-sApplicationProcess a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :performsInformationProcessingFor ;
+            owl:someValuesFrom :its-sService ],
+        [ a owl:Restriction ;
+            owl:onProperty :elementIn ;
+            owl:someValuesFrom :itsStation ] ;
+    skos:definition "information manipulation within an [ITS station](ITS station.md) for an [ITS-SU service](ITS-SU service.md)"@en ;
+    skos:historyNote "2025: Rephrased to align with ISO rules; added Notes to entry."@en,
+        "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "ITS-S application processes use ITS-S services to communicate with other nodes."@en,
+        "This clarifies the ISO 21217:2020 definition to remove ambiguity and a circular reference to \"application\"."@en ;
+    skos:prefLabel "ITS-S application process"@en ;
+    :clause "3.2.9.2"@en .

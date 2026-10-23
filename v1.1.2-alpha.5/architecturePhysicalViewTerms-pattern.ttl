@@ -1,0 +1,101 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:architecturePhysicalViewTerms a owl:Ontology ;
+    dcterms:title "Architecture Physical View Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:informationTransfer a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :sentFrom ;
+            owl:someValuesFrom :physicalObject ],
+        [ a owl:Restriction ;
+            owl:onProperty :sentTo ;
+            owl:someValuesFrom :physicalObject ],
+        [ a owl:Restriction ;
+            owl:onProperty :contentsOf ;
+            owl:someValuesFrom :informationFlow ] ;
+    skos:altLabel "information flow triple"@en ;
+    skos:definition "[information flow](information flow.md) from a [physical object](physical object.md) acting as an information provider and sent to another physical object acting as an information consumer"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The term \"information flow triple\" is used extensively in the Architecture Reference for Cooperative and Intelligent Transportation (ARC-IT; see Reference [25])."@en ;
+    skos:prefLabel "information transfer"@en ;
+    :clause "3.1.8.5"@en .
+
+:itsComponent a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :functionalObject ],
+        :physicalObject ;
+    skos:definition "[physical object](physical object.md) that has been assigned one or more [functional objects](functional object.md) in the provision of one or more [ITS services](ITS service.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Physical objects are ITS components if they are an integral part of the [system](system.md); otherwise they are [terminators](terminator.md)."@en ;
+    skos:prefLabel "ITS component"@en ;
+    :clause "3.1.8.2"@en .
+
+:module a owl:Class ;
+    rdfs:subClassOf :functionalObject ;
+    skos:definition "[functional object](functional object.md) that can be replaced and has defined interfaces"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "module"@en ;
+    :altPrefLabel "ITS module"@en ;
+    :clause "3.1.8.7"@en .
+
+:terminator a owl:Class ;
+    rdfs:subClassOf :physicalObject ;
+    skos:definition "[entity](entity.md) that is external to the [ITS service](ITS service.md) implementation but with which the implementation communicates either to obtain inputs or to which it can send outputs"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A terminator can exist within [functional](functional view.md) and [physical](physical view.md) views."@en ;
+    skos:prefLabel "terminator"@en ;
+    :altPrefLabel "ITS terminator"@en ;
+    :clause "3.1.8.3"@en .
+
+:contentsOf a owl:ObjectProperty ;
+    rdfs:label "contents of"@en .
+
+:groups a owl:ObjectProperty .
+
+:informationFlow a owl:Class ;
+    skos:definition "information that is exchanged between [physical objects](physical object.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "information flow"@en ;
+    :clause "3.1.8.4"@en .
+
+:sentFrom a owl:ObjectProperty ;
+    rdfs:label "sent from"@en .
+
+:sentTo a owl:ObjectProperty ;
+    rdfs:label "sent to"@en .
+
+:functionalObject a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :groups ;
+            owl:someValuesFrom :process ],
+        :resource ;
+    skos:definition "set of related [processes](process.md) that are performed by a [physical object](physical object.md) to fulfil aspects of an [ITS service](ITS service.md)"@en ;
+    skos:example "A vehicle OBE can include a \"vehicle basic safety\" functional object."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The term \"module\" is used by the European FRAME architecture while the Architecture Reference for Cooperative and Intelligent Transportation (ARC-IT) uses the term \"functional object\"."@en ;
+    skos:prefLabel "functional object"@en ;
+    :altPrefLabel "ITS functional object"@en ;
+    :clause "3.1.8.6"@en .
+
+:physicalObject a owl:Class ;
+    rdfs:subClassOf :resource,
+        :system ;
+    skos:definition "<physical view> abstraction of a [material entity](material entity.md) that interacts with other abstract material entities in the provision of [ITS services](ITS service.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Physical objects are represented as [elements](element.md) within the [physical view](physical view.md) and perform a role. Physical objects can be implemented as cloud-based [systems](system.md)."@en,
+        "Within many ITS reference architectures (ITS reference architecture.md), physical objects are placed into one of five categories: centre, support, field, vehicle or [traveller](traveller.md)."@en ;
+    skos:prefLabel "physical object"@en ;
+    :altPrefLabel "ITS physical object"@en ;
+    :clause "3.1.8.1"@en .

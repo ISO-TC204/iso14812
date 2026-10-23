@@ -1,0 +1,123 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:sharedTransportServiceTerms a owl:Ontology ;
+    dcterms:title "Shared Transport Service Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:courierNetworkService a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "peer-to-peer"@en ;
+            owl:onProperty :attrContractualModel ],
+        [ a owl:Restriction ;
+            owl:hasValue "goods"@en ;
+            owl:onProperty :attrTransportItem ],
+        [ a owl:Restriction ;
+            owl:hasValue "commercial"@en ;
+            owl:onProperty :attrFinancialModel ],
+        :sharedTransportService ;
+    skos:definition "[commercial](commercial.md), [peer-to-peer](peer-to-peer.md) [shared transport service](shared transport service.md) that transports goods"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The goods are typically small packages, letters, food, etc."@en ;
+    skos:prefLabel "courier network service"@en ;
+    :clause "3.5.11.7"@en .
+
+:rideshareService a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "concurrent"@en ;
+            owl:onProperty :attrOperationalModel ],
+        [ a owl:Restriction ;
+            owl:hasValue "passengers"@en ;
+            owl:onProperty :attrTransportItem ],
+        [ a owl:Restriction ;
+            owl:hasValue "cooperative"@en ;
+            owl:onProperty :attrFinancialModel ],
+        :sharedTransportService ;
+    skos:definition "[cooperative](cooperative.md) [shared transport service](shared transport service.md) that transports [passengers](passenger.md) [concurrently](concurrent.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "rideshare service"@en ;
+    :clause "3.5.11.4"@en .
+
+:ridesplitService a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "concurrent"@en ;
+            owl:onProperty :attrOperationalModel ],
+        :ridesourcedService ;
+    skos:definition "[ridesourced service](ridesourced service.md) that serves [passengers](passenger.md) [concurrently](concurrent.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "ridesplit service"@en ;
+    :clause "3.5.11.6"@en .
+
+:shuttleService a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "passengers"@en ;
+            owl:onProperty :attrTransportItem ],
+        :sharedTransportService ;
+    skos:definition "[shared transport service](shared transport service.md) that transports [passengers](passenger.md) between two specified [spatial locations](spatial location.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Each location can be defined as point, linear or area locations. However, the areas of the two locations should not overlap."@en ;
+    skos:prefLabel "shuttle service"@en ;
+    :clause "3.5.11.1"@en .
+
+:taxi-shareService a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "concurrent"@en ;
+            owl:onProperty :attrOperationalModel ],
+        [ a owl:Restriction ;
+            owl:hasValue "commercial"@en ;
+            owl:onProperty :attrFinancialModel ],
+        [ a owl:Restriction ;
+            owl:hasValue "passengers"@en ;
+            owl:onProperty :attrTransportItem ],
+        :sharedTransportService ;
+    skos:definition "[commercial](commercial.md) [shared transport service](shared transport service.md) that transports [passengers](passenger.md) [concurrently](concurrent.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "taxi-share service"@en ;
+    :clause "3.5.11.3"@en .
+
+:taxiService a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "commercial"@en ;
+            owl:onProperty :attrFinancialModel ],
+        [ a owl:Restriction ;
+            owl:hasValue "sequential"@en ;
+            owl:onProperty :attrOperationalModel ],
+        [ a owl:Restriction ;
+            owl:hasValue "passengers"@en ;
+            owl:onProperty :attrTransportItem ],
+        :sharedTransportService ;
+    skos:definition "[commercial](commercial.md) [shared transport service](shared transport service.md) that transports [passengers](passenger.md) [sequentially](sequential.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "taxi service"@en ;
+    :clause "3.5.11.2"@en .
+
+:ridesourcedService a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "peer-to-peer"@en ;
+            owl:onProperty :attrContractualModel ],
+        [ a owl:Restriction ;
+            owl:hasValue "passengers"@en ;
+            owl:onProperty :attrTransportItem ],
+        [ a owl:Restriction ;
+            owl:hasValue "commercial"@en ;
+            owl:onProperty :attrFinancialModel ],
+        :sharedTransportService ;
+    skos:definition "[commercial](commercial.md), [peer-to-peer](peer-to-peer.md) [shared transport service](shared transport service.md) that transports [passengers](passenger.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "ridesourced service"@en ;
+    :clause "3.5.11.5"@en .
+
+:attrContractualModel a owl:DatatypeProperty ;
+    rdfs:label "contractual model"@en .
+
+:attrFinancialModel a owl:DatatypeProperty ;
+    rdfs:label "financial model"@en .

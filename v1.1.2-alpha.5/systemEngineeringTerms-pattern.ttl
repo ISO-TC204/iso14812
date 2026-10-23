@@ -1,0 +1,40 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:systemEngineeringTerms a owl:Ontology ;
+    dcterms:title "System Engineering Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:useCase a owl:Class ;
+    dcterms:source "ISO/IEC/IEEE 26515:2018, 3.15, modified - Note 1 to entry removed."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :scenario ] ;
+    skos:definition "description of the behavioural requirements of a [system](system.md) and its [interaction](interaction.md) with a [user](user.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "use case"@en ;
+    :clause "3.1.12.1"@en .
+
+:scenario a owl:Class ;
+    dcterms:source "ISO/IEC 25062:2006, A.17"@en ;
+    skos:definition "<use case> description of the sequence of events from the [user's](user.md) perspective to perform a task in a specified context"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "scenario"@en ;
+    :altPrefLabel "use case scenario"@en ;
+    :clause "3.1.12.2"@en .
+
+:role a owl:Class ;
+    dcterms:source "ISO/IEC 11179-3:2013, 3.2.121"@en ;
+    skos:definition "specified responsibilities"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "role"@en ;
+    :clause "3.1.12.3"@en .

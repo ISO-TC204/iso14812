@@ -1,0 +1,123 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:locationReferencingTerms a owl:Ontology ;
+    dcterms:title "Location Referencing Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:dynamicSpatialReference a owl:Class ;
+    rdfs:subClassOf :spatialReference ;
+    skos:altLabel "dynamic location reference"@en ;
+    skos:definition "[spatial reference](spatial reference.md) generated on-the-fly based on geographic properties in a digital map database"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "dynamic spatial reference"@en ;
+    :clause "3.4.2.3"@en .
+
+:gazetteer a owl:Class ;
+    dcterms:source "ISO 19112:2019, 3.1.1, modified - \"register of location instances...\" changed to \"register of spatial references...\" in order to fit the relevant concept model."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :aggregates ;
+            owl:someValuesFrom :spatialReference ] ;
+    skos:altLabel "location table"@en ;
+    skos:definition "register of [spatial references](spatial reference.md) of one or more [spatial location](spatial location.md) sub-types containing some information regarding position"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The positional information need not be coordinates but could be descriptive."@en ;
+    skos:prefLabel "gazetteer"@en ;
+    :clause "3.4.2.7"@en .
+
+:geographicDescriptor a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :helpsIdentify ;
+            owl:someValuesFrom :spatialLocation ] ;
+    skos:definition "descriptor that identifies a geographic characteristic to help identify a specific location"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "geographic descriptor"@en ;
+    :clause "3.4.2.9"@en .
+
+:geographicIdentifier a owl:Class ;
+    dcterms:source "ISO 19112:2019, 3.1.2, modified - Note 1 to entry and deprecated term added."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :referenceUsedBy ;
+            owl:someValuesFrom :spatialReference ] ;
+    skos:definition "[spatial reference](spatial reference.md) in the form of a label or code that identifies a [location](location.md)"@en ;
+    skos:example "\"Spain\" is an example of a label (country name); \"SW1P 3AD\" is an example of a code (postcode)."@en ;
+    skos:hiddenLabel "location code"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The term \"location code\" has been used previously in ISO/TC 204 documents, but \"geographic identifier\" is preferred to better align with the activities of ISO/TC 211."@en ;
+    skos:prefLabel "geographic identifier"@en ;
+    :clause "3.4.2.6"@en .
+
+:infrastructureDescriptor a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :helpsIdentify ;
+            owl:someValuesFrom :transportFacility ] ;
+    skos:definition "descriptor that identifies infrastructure to help identify a specific location"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "infrastructure descriptor"@en ;
+    :clause "3.4.2.10"@en .
+
+:linkLocation a owl:Class ;
+    rdfs:subClassOf :pre-codedSpatialReference ;
+    skos:definition "[pre-coded spatial reference](pre-coded spatial reference.md) defined within the [road network](road network.md) database"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "link location"@en ;
+    :clause "3.4.2.5"@en .
+
+:locationReferencing a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :processToDevelop ;
+            owl:someValuesFrom :spatialReference ] ;
+    skos:definition "process used to develop a [spatial reference](spatial reference.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "location referencing"@en ;
+    :altPrefLabel "ITS location referencing"@en ;
+    :clause "3.4.2.1"@en .
+
+:networkLocation a owl:Class ;
+    skos:definition "point or linear location on a network"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "network location"@en ;
+    :clause "3.4.2.8"@en .
+
+:pre-codedSpatialReference a owl:Class ;
+    rdfs:subClassOf :spatialReference ;
+    skos:altLabel "pre-coded location reference"@en ;
+    skos:definition "[spatial reference](spatial reference.md) using a unique identifier that is agreed upon in both the sender and receiver [system](system.md) to select a [location](location.md) from a set of pre-coded locations"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "pre-coded spatial reference"@en ;
+    :clause "3.4.2.4"@en .
+
+:processToDevelop a owl:ObjectProperty ;
+    rdfs:label "process to develop"@en .
+
+:referenceUsedBy a owl:ObjectProperty ;
+    rdfs:label "reference used by"@en .
+
+:specificationOf a owl:ObjectProperty ;
+    rdfs:label "specification of"@en .
+
+:helpsIdentify a owl:ObjectProperty ;
+    rdfs:label "helps identify"@en .
+
+:spatialReference a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :specificationOf ;
+            owl:someValuesFrom :spatialLocation ] ;
+    skos:altLabel "location reference"@en ;
+    skos:definition "description of a [spatial location](spatial location.md) in the real world according to a defined reference system"@en ;
+    skos:example "Coordinate tuple: 51.476852, -0.000500."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "It is not necessary for the rules be formal coordinates but they could be descriptive."@en,
+        "The term \"location reference\" has been used within ITS, but the term \"spatial reference\" is preferred to better align with the activities of ISO/TC 211."@en ;
+    skos:prefLabel "spatial reference"@en ;
+    :altPrefLabel "ITS spatial reference"@en ;
+    :clause "3.4.2.2"@en .

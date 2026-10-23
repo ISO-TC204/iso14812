@@ -1,0 +1,85 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:transport-relatedSharingTerms a owl:Ontology ;
+    dcterms:title "Transport-related Sharing Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:publicTransport a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "passengers"@en ;
+            owl:onProperty :attrTransportItem ],
+        [ a owl:Restriction ;
+            owl:hasValue "public"@en ;
+            owl:onProperty :attrAccessibility ],
+        :transportService ;
+    skos:definition "[transport service](transport service.md) that is publicly accessible enabling the movement of one or more [persons](person.md)"@en ;
+    skos:example "Bus, tram, cable car, metro, train and ferry are examples of public transport means for collective use."@en,
+        "Publicly-accessible shared cars, shared bikes and shared el-scooters are examples of public transport means for shared and individual use."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A public transport service can be scheduled or on-demand."@en,
+        "A public transport service is based on the use of publicly accessible transport means for collective, shared or individual use."@en ;
+    skos:prefLabel "public transport"@en ;
+    :altPrefLabel "public transport service"@en ;
+    :clause "3.5.6.1"@en .
+
+:transportSharing a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :using ;
+            owl:someValuesFrom :sharedTransportService ] ;
+    skos:definition "using a [shared transport service](shared transport service.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "transport sharing"@en ;
+    :clause "3.5.6.4"@en .
+
+:vehicleSharing a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :using ;
+            owl:someValuesFrom :sharedVehicleService ] ;
+    skos:definition "using a [shared vehicle service](shared vehicle service.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "This term can be specialized by replacing \"vehicle\" with any defined vehicle type. However, in some cases the preferred form is to consolidate terms (e.g. \"carsharing\" rather than \"passenger car sharing\")."@en ;
+    skos:prefLabel "vehicle sharing"@en ;
+    :clause "3.5.6.5"@en .
+
+:attrAccessibility a owl:DatatypeProperty ;
+    rdfs:label "accessibility"@en .
+
+:sharedTransportService a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "transport provider"@en ;
+            owl:onProperty :attrVehicleOperator ],
+        :transportService ;
+    skos:definition "[transport service](transport service.md) that relies upon the same [resources](resource.md) to fulfil the [transport user needs](transport user need.md) of multiple unrelated [transport users](transport user.md) and where the [transport provider](transport provider.md) has the primary responsibility for the operation of the transport mode"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A shared transport service might not be dependent upon a vehicle and/or could be multi-modal. For example, a letter courier service could rely on walking and [public transport](public transport.md)."@en,
+        "Responsibilities of the transport service can be further delegated to others. For example, a courier service relying on public transport would delegate the operation of the transport mode to the public transport operator."@en ;
+    skos:prefLabel "shared transport service"@en ;
+    :clause "3.5.6.2"@en .
+
+:sharedVehicleService a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "transport consumer"@en ;
+            owl:onProperty :attrVehicleOperator ],
+        [ a owl:Restriction ;
+            owl:hasValue "sequential"@en ;
+            owl:onProperty :attrOperationalModel ],
+        :transportService ;
+    skos:definition "[transport service](transport service.md) that [sequentially](sequential.md) provides the same [vehicles](vehicle.md) to multiple unrelated [transport users](transport user.md) and where the transport user has the primary responsibility for the operation of the vehicle"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "As there should only be one operator of a vehicle at any time, a shared vehicle service should use a sequential operational model."@en,
+        "This term can be specialized by replacing \"vehicle\" with any defined vehicle type (e.g. \"automated vehicle sharing\")."@en ;
+    skos:prefLabel "shared vehicle service"@en ;
+    :clause "3.5.6.3"@en .
+
+:attrVehicleOperator a owl:DatatypeProperty ;
+    rdfs:label "vehicle operator"@en .

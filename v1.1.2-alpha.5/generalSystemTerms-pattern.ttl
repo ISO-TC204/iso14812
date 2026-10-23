@@ -1,0 +1,84 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:generalSystemTerms a owl:Ontology ;
+    dcterms:title "General System Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:cooperativeIts a owl:Class ;
+    rdfs:subClassOf :intelligentTransportSystem ;
+    skos:definition "subset of [ITS](intelligent transport system.md) where information is shared among [ITS stations](ITS station.md) in a manner that enables its use by multiple ITS services [ITS service.md]"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "cooperative ITS"@en ;
+    :altPrefLabel "C-ITS"@en ;
+    :clause "3.1.2.5"@en .
+
+:designedFor a owl:ObjectProperty ;
+    rdfs:label "designed for"@en .
+
+:designedToBenefit a owl:ObjectProperty ;
+    rdfs:label "designed to benefit"@en .
+
+:exhibits a owl:ObjectProperty .
+
+:intelligentTransportSystem a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :designedToBenefit ;
+            owl:someValuesFrom :surfaceTransportSystem ],
+        :system ;
+    skos:altLabel "intelligent transportation system"@en ;
+    skos:definition "[system](system.md) comprised of information, communication, sensor and control technologies and that is designed to benefit a [surface transport system](surface transport system.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "\"Intelligent transportation system\" is the American English equivalent."@en,
+        "Benefits potentially include, but are not limited to, increased safety, sustainability, efficiency and comfort."@en,
+        "The full term (i.e. \"intelligent transport system\") is often used when the noun is used as a subject, whereas the abbreviation (i.e. \"ITS\") is often used to modify another noun (e.g. \"Intelligent transport systems provide ITS services.\")."@en ;
+    skos:prefLabel "intelligent transport system"@en ;
+    :altPrefLabel "ITS"@en ;
+    :clause "3.1.2.4"@en .
+
+:situatedIn a owl:ObjectProperty ;
+    rdfs:label "situated in"@en .
+
+:surfaceTransportSystem a owl:Class ;
+    rdfs:subClassOf :transportSystem ;
+    skos:altLabel "transport system"@en ;
+    skos:definition "[transport system](transport system.md) designed to move [material entities](material entity.md) across the surface or near-surface of the Earth"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A surface transport system can include tunnels, bridges and similar [elements](element.md)."@en,
+        "Due to the defined scope of ITS, the term \"transport system\" is intended to be interpreted as being synonymous with the term \"surface transport system\" unless explicitly specified otherwise."@en,
+        "There is not complete agreement on the precise limitations of a \"surface transport system\" within the ITS community. Currently, the term is almost exclusively applied to ground-based travel of goods and people over significant distances. The term is viewed as including ferry systems, which often form an integral part of a local surface transport system; it is less clear if it includes long-distance sea-fairing ships. The term \"surface transport systems\" is also generally limited to transport systems that cover a considerable distance (e.g. factory conveyance technologies are not often referred to as \"surface transport systems\"). It has been suggested that air travel, which is arguably a transport system designed to move physical entities between points on the surface of the earth, ought to be included in the scope of the term, but this perspective is not universally accepted. It is expected that the exact limitations of the term will be further refined as ITS matures."@en ;
+    skos:prefLabel "surface transport system"@en ;
+    :clause "3.1.2.3"@en .
+
+:transportSystem a owl:Class ;
+    rdfs:subClassOf :system ;
+    skos:definition "[system](system.md) of infrastructure [elements](element.md) and optionally [vehicles](vehicle.md) that are jointly designed to move [material entities](material entity.md) from an origin to a destination"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Transport systems can also include any supporting system, such as information and control systems."@en ;
+    skos:prefLabel "transport system"@en ;
+    :clause "3.1.2.2"@en .
+
+:system a owl:Class ;
+    dcterms:source "ISO/IEC/IEEE 15288:2015, 4.1.46, modified - Notes to entry removed."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :situatedIn ;
+            owl:someValuesFrom :environment ],
+        [ a owl:Restriction ;
+            owl:onProperty :designedFor ;
+            owl:someValuesFrom :user ],
+        [ a owl:Restriction ;
+            owl:onProperty :exhibits ;
+            owl:someValuesFrom :architecture ] ;
+    skos:definition "combination of interacting [elements](element.md) organized to achieve one or more stated purposes"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "system"@en ;
+    :clause "3.1.2.1"@en .

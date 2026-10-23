@@ -1,0 +1,110 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:locationTypeTerms a owl:Ontology ;
+    dcterms:title "Location Type Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:areaDestination a owl:Class ;
+    rdfs:subClassOf :areaLocation ;
+    skos:definition "area location, which is the destination of a defined route or itinerary"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "area destination"@en ;
+    :clause "3.4.1.9"@en .
+
+:geographicFeature a owl:Class ;
+    dcterms:source "ISO 19101-1:2014, 4.1.11, \"geographic\" has been added to the term to clarify context; note 1 to entry has been replaced."@en ;
+    skos:definition "abstraction of real-world phenomena"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:note "Geographic features can be defined for any geographic entity that can be defined with geospatial boundaries, such as landmarks, buildings, transport infrastructure (e.g., road, pathway, railway, bridge structures, intersections, traffic signal cabinet, traffic signal pole, waterway), jurisdictional areas (e.g., country, city), etc."@en ;
+    skos:prefLabel "geographic feature"@en ;
+    :clause "3.4.1.7"@en .
+
+:geographicPointLocation a owl:Class ;
+    dcterms:source "ISO 19145:2013, 4.1.11, modified - Note 1 to entry added."@en ;
+    rdfs:subClassOf :pointLocation ;
+    skos:altLabel "geolocation"@en ;
+    skos:definition "well defined geographic place described by one coordinate tuple"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The \"geolocation\" term is a short version of the term used within some ITS communities."@en ;
+    skos:prefLabel "geographic point location"@en ;
+    :clause "3.4.1.4"@en .
+
+:linearLocation a owl:Class ;
+    rdfs:subClassOf :spatialLocation ;
+    skos:definition "[spatial location](spatial location.md) that extends between two [point locations](point location.md) along a defined path"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The path can exhibit 3-dimensional characteristics."@en ;
+    skos:prefLabel "linear location"@en ;
+    :altPrefLabel "ITS linear location"@en ;
+    :clause "3.4.1.5"@en .
+
+:pointCoordinates a owl:Class ;
+    rdfs:subClassOf :coordinateTuple ;
+    skos:definition "coordinate tuple defining the geodetic position of a single [point location](point location.md) using a known geodetic reference system"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "point coordinates"@en ;
+    :clause "3.4.1.11"@en .
+
+:pointDestination a owl:Class ;
+    rdfs:subClassOf :pointLocation ;
+    skos:definition "point location, which is the destination of a defined route or itinerary"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "point destination"@en ;
+    :clause "3.4.1.8"@en .
+
+:areaLocation a owl:Class ;
+    rdfs:subClassOf :spatialLocation ;
+    skos:definition "[spatial location](spatial location.md) enclosed within a two-dimensional boundary or boundaries across a defined surface"@en ;
+    skos:example "The British Isles."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The boundary can consist of a single curvilinear line (e.g. a circle) or multiple curvilinear lines (e.g. the boundaries of city limits) and can consist of multiple enclosed areas."@en ;
+    skos:prefLabel "area location"@en ;
+    :altPrefLabel "ITS area location"@en ;
+    :clause "3.4.1.6"@en .
+
+:coordinateTuple a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :designates ;
+            owl:someValuesFrom :pointLocation ] ;
+    skos:definition "ordered list of numbers that jointly designate the position of a point"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:note "The number of values in a coordinate tuple is immutable."@en,
+        "This definition was derived by consolidating the definitions of \"coordinate tuple\", \"coordinate\", and \"tuple\" from ISO 19136:2020."@en ;
+    skos:prefLabel "coordinate tuple"@en ;
+    :clause "3.4.1.10"@en .
+
+:designates a owl:ObjectProperty .
+
+:location a owl:Class ;
+    skos:definition "particular place or position"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The term \"location\" by itself is a broad term that can be used to reference spatial, computer memory, imaginary and other locations."@en ;
+    skos:prefLabel "location"@en ;
+    :clause "3.4.1.1"@en .
+
+:pointLocation a owl:Class ;
+    rdfs:subClassOf :spatialLocation ;
+    skos:definition "[spatial location](spatial location.md) with no length in any of the spatial dimensions"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "point location"@en ;
+    :clause "3.4.1.3"@en .
+
+:spatialLocation a owl:Class ;
+    rdfs:subClassOf :location ;
+    skos:definition "[location](location.md) within three-dimensional space"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The \"location\" could be a point (consuming no space) or could consume space in one, two, or three dimensions. In any case, the location is identified within a larger space."@en,
+        "Within ITS, locations are typically locations on or near the surface of the earth."@en ;
+    skos:prefLabel "spatial location"@en ;
+    :altPrefLabel "ITS spatial location"@en ;
+    :clause "3.4.1.2"@en .

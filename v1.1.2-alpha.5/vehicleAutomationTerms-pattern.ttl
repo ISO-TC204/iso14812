@@ -1,0 +1,261 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:vehicleAutomationTerms a owl:Ontology ;
+    dcterms:title "Vehicle Automation Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:ads-dedicatedVehicle a owl:Class ;
+    rdfs:subClassOf :ads-equippedVehicle ;
+    skos:definition "[ADS-equipped vehicle](ADS-equipped vehicle.md) designed for only driverless operation for complete trips"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "ADS-dedicated vehicle"@en ;
+    :clause "3.7.3.17"@en .
+
+:conventionalVehicle a owl:Class ;
+    rdfs:subClassOf :vehicle ;
+    skos:definition "<driving automation> [vehicle](vehicle.md) designed to be operated by a [person](person.md) during part or all of every trip."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "conventional vehicle"@en ;
+    :altPrefLabel "automation-equipped conventional vehicle"@en ;
+    :clause "3.7.3.14"@en .
+
+:dual-modeVehicle a owl:Class ;
+    rdfs:subClassOf :ads-equippedVehicle ;
+    skos:definition "<driving automation> [ADS-equipped vehicle](ADS-equipped vehicle.md) designed for both driverless operation and operation by a conventional [driver](driver.md) for complete trips"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "dual-mode vehicle"@en ;
+    :altPrefLabel "driving automation dual-mode vehicle"@en ;
+    :clause "3.7.3.16"@en .
+
+:level1DrivingAutomation a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :operatesWithinA ;
+            owl:someValuesFrom :operationalDesignDomain ],
+        :driverSupportSystem ;
+    skos:definition "[driver support system](driver support system.md) that provides either sustained lateral or sustained longitudinal [vehicle](vehicle.md) motion control within a specific [operational design domain](operational design domain.md) with the expectation that a conventional [driver](driver.md) completes the [dynamic driving task](dynamic driving task.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Other driving automation levels include [level 2 driving automation](level 2 driving automation.md), [level 3 ADS](level 3 ADS.md), [level 4 ADS](level 4 ADS.md), and [level 5 ADS](level 5 ADS.md)."@en ;
+    skos:prefLabel "level 1 driving automation"@en ;
+    :altPrefLabel "driver assistance"@en ;
+    :clause "3.7.3.8"@en .
+
+:level2DrivingAutomation a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :operatesWithinA ;
+            owl:someValuesFrom :operationalDesignDomain ],
+        :driverSupportSystem ;
+    skos:definition "[driver support system](driver support system.md) that provides sustained lateral and longitudinal [vehicle](vehicle.md) motion control within a specific [operational design domain](operational design domain.md) with the expectation that a conventional [driver](driver.md) completes the object and event detection and response"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Other driving automation levels include [level 1 driving automation](level 1 driving automation.md), [level 3 ADS](level 3 ADS.md), [level 4 ADS](level 4 ADS.md), and [level 5 ADS](level 5 ADS.md)."@en ;
+    skos:prefLabel "level 2 driving automation"@en ;
+    :altPrefLabel "partial driving automation"@en ;
+    :clause "3.7.3.9"@en .
+
+:level3Ads a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :designedWithExpectationOf ;
+            owl:someValuesFrom :fallback-readyUser ],
+        [ a owl:Restriction ;
+            owl:onProperty :operatesWithinA ;
+            owl:someValuesFrom :operationalDesignDomain ],
+        :ads ;
+    skos:definition "[ADS](ADS.md) designed with the expectation that the [fallback-ready user](fallback-ready user.md) is available to intervene"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Level 3 ADSs are restricted to operating within a specific [operational design domain](operational design domain.md)."@en,
+        "Other driving automation levels include [level 1 driving automation](level 1 driving automation.md), [level 2 driving automation](level 2 driving automation.md), [level 4 ADS](level 4 ADS.md), and [level 5 ADS](level 5 ADS.md)."@en,
+        "The user can intervene due to an ADS-issued request, a [dynamic driving task](dynamic driving task.md) performance-relevant system failure, or other reasons."@en ;
+    skos:prefLabel "level 3 ADS"@en ;
+    :altPrefLabel "conditional driving automation"@en,
+        "level 3 Automated Driving System"@en ;
+    :clause "3.7.3.11"@en .
+
+:level4Ads a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :providesItsOwn ;
+            owl:someValuesFrom :fallback ],
+        [ a owl:Restriction ;
+            owl:onProperty :operatesWithinA ;
+            owl:someValuesFrom :operationalDesignDomain ],
+        :ads ;
+    skos:definition "[ADS](ADS.md) that is capable of operating within a specific [operational design domain](operational design domain.md) and providing its own [fallback](fallback.md), without any expectation that a human [driver](driver.md) will respond to a request to intervene"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Other driving automation levels include [level 1 driving automation](level 1 driving automation.md), [level 2 driving automation](level 2 driving automation.md), [level 3 ADS](level 3 ADS.md), and [level 5 ADS](level 5 ADS.md)."@en ;
+    skos:prefLabel "level 4 ADS"@en ;
+    :altPrefLabel "high driving automation"@en,
+        "level 4 Automated Driving System"@en ;
+    :clause "3.7.3.12"@en .
+
+:level5Ads a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :providesItsOwn ;
+            owl:someValuesFrom :fallback ],
+        [ a owl:Restriction ;
+            owl:onProperty :operatesWithinA ;
+            owl:someValuesFrom :operationalDesignDomain ],
+        :ads ;
+    skos:definition "[ADS](ADS.md) that is capable of unconditional (i.e. not [operational design domain](operational design domain.md)-specific) operation and providing its own [fallback](fallback.md), without any expectation that a human [driver](driver.md) will respond to a request to intervene"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Other driving automation levels include [level 1 driving automation](level 1 driving automation.md), [level 2 driving automation](level 2 driving automation.md), [level 3 ADS](level 3 ADS.md), and [level 4 ADS](level 4 ADS.md)."@en ;
+    skos:prefLabel "level 5 ADS"@en ;
+    :altPrefLabel "full driving automation"@en,
+        "level 5 Automated Driving System"@en ;
+    :clause "3.7.3.13"@en .
+
+:canControl a owl:ObjectProperty ;
+    rdfs:label "can control"@en .
+
+:ddtPerformance-relevantSystemFailure a owl:Class ;
+    skos:definition "malfunction in a [vehicle system](vehicle system.md) that prevents the [driving automation system](driving automation system.md) from reliably performing its portion of the [dynamic driving task](dynamic driving task.md) on a sustained basis"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The malfunction can be internal to the driving automation system or part of another vehicle system."@en ;
+    skos:prefLabel "DDT performance-relevant system failure"@en ;
+    :clause "3.7.3.5"@en .
+
+:designedWithExpectationOf a owl:ObjectProperty ;
+    rdfs:label "designed with expectation of"@en .
+
+:fallback-readyUser a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :readyToPerform ;
+            owl:someValuesFrom :dynamicDrivingTask ] ;
+    skos:definition "<driving automation> [person](person.md) who is able to operate the [vehicle](vehicle.md) if the [Level 3 ADS](level 3 ADS.md) issues a request to intervene or if that person otherwise identifies a condition that requires intervention to perform the [dynamic driving task](dynamic driving task.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:prefLabel "fallback-ready user"@en ;
+    :altPrefLabel "DDT fallback-ready user"@en ;
+    :clause "3.7.3.4"@en .
+
+:forAGiven a owl:ObjectProperty ;
+    rdfs:label "for a given"@en .
+
+:isRequiredToOperate a owl:ObjectProperty ;
+    rdfs:label "is required to operate"@en .
+
+:mayBeCausedBy a owl:ObjectProperty ;
+    rdfs:label "may be caused by"@en .
+
+:mayBeCausedByAViolationOf a owl:ObjectProperty ;
+    rdfs:label "may be caused by a violation of"@en .
+
+:performsAllOf a owl:ObjectProperty ;
+    rdfs:label "performs all of"@en .
+
+:performsPartOf a owl:ObjectProperty ;
+    rdfs:label "performs part of"@en .
+
+:performsPartOrAllOf a owl:ObjectProperty ;
+    rdfs:label "performs part or all of"@en .
+
+:readyToPerform a owl:ObjectProperty ;
+    rdfs:label "ready to perform"@en .
+
+:driverSupportSystem a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :performsPartOf ;
+            owl:someValuesFrom :dynamicDrivingTask ],
+        :drivingAutomationSystem ;
+    skos:definition "[driving automation system](driving automation system.md) that is only able to perform part of the [dynamic driving task](dynamic driving task.md)"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "Driver support systems include [level 1 driving automation](level 1 driving automation.md) and [level 2 driving automation](level 2 driving automation.md)."@en ;
+    skos:prefLabel "driver support system"@en ;
+    :clause "3.7.3.7"@en .
+
+:fallback a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :mayBeCausedByAViolationOf ;
+            owl:someValuesFrom :operationalDesignDomain ],
+        [ a owl:Restriction ;
+            owl:onProperty :mayBeCausedBy ;
+            owl:someValuesFrom :ddtPerformance-relevantSystemFailure ] ;
+    skos:definition "<driving automation> response by a [person](person.md) to perform the [dynamic driving task](dynamic driving task.md) or by an [ADS](ADS.md) to achieve a minimal risk condition when the response is triggered upon violation of the defined [operational design domain](operational design domain.md) constraints or in response to a [dynamic driving task](dynamic driving task.md) performance-relevant [driving automation system](driving automation system.md) failure"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "This term includes the response of a person to perform the DDT in a manner to quickly achieve a minimal risk condition."@en ;
+    skos:prefLabel "fallback"@en ;
+    :altPrefLabel "driving automation fallback"@en ;
+    :clause "3.7.3.3"@en .
+
+:providesItsOwn a owl:ObjectProperty ;
+    rdfs:label "provides its own"@en .
+
+:ads-equippedVehicle a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :comprises ;
+            owl:someValuesFrom :ads ],
+        :vehicle ;
+    skos:altLabel "AV"@en,
+        "automated vehicle"@en ;
+    skos:definition "[vehicle](vehicle.md) integrated with an [ADS](ADS.md)"@en ;
+    skos:hiddenLabel "autonomous vehicle"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The term \"autonomous vehicle\" is also often used in a colloquial form and is even less well defined. The term is particularly problematic because the word \"autonomous\" has been used for a long time in the robotics and artificial intelligence research communities to signify [systems](system.md) that have the ability and authority to make decisions independently and self-sufficiently. Due to its imprecise and overly broad meaning, use of the term \"autonomous vehicle\" is discouraged."@en,
+        "The terms \"automated vehicle\" and \"AV\" are often used in a colloquial form. However, these terms can be used to mean either an \"ADS-equipped vehicle\" or a \"vehicle with an engaged ADS\". The term \"ADS-equipped vehicle\" is preferred since it is more precise and descriptive in its meaning."@en,
+        "This term can be, and when possible should be, refined by identifying the level of automation. For example, the terms \"level 5 ADS-equipped vehicle\" and \"level 5 automated vehicle\" should be interpreted as \"ADS-equipped vehicle where the ADS is a [level 5 ADS](level 5 ADS.md).\""@en,
+        "This term only describes the capabilities of the vehicle, not its operational state. In other words, the term applies as long as the ADS is a component of the vehicle, independent of whether the [dynamic driving task](dynamic driving task.md) is actively engaged or not."@en ;
+    skos:prefLabel "ADS-equipped vehicle"@en ;
+    :clause "3.7.3.15"@en .
+
+:drivingAutomationSystem a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :performsPartOrAllOf ;
+            owl:someValuesFrom :dynamicDrivingTask ] ;
+    skos:definition "hardware and software [system](system.md) that is able to perform part or all of the [dynamic driving task](dynamic driving task.md) on a sustained basis"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "A driving automation system includes any system capable of level 1-5 driving automation."@en,
+        "Driving automation levels are defined in ISO/SAE 22736, which is also known as SAE J3016."@en,
+        "Driving automation levels include [level 1 driving automation](level 1 driving automation.md), [level 2 driving automation](level 2 driving automation.md), [level 3 ADS](level 3 ADS.md), [level 4 ADS](level 4 ADS.md), and [level 5 ADS](level 5 ADS.md)."@en,
+        "In contrast to this generic term for any level 1-5 system, the specific term for a level 3-5 system is \"Automated Driving System (ADS).\" Given the similarity between the generic term, \"driving automation system,\" and the level 3-5-specific term, \"Automated Driving System,\" the latter term is intentionally capitalized when spelled out and reduced to its acronym, \"ADS\", as much as possible, while \"driving automation system\" should not be."@en ;
+    skos:prefLabel "driving automation system"@en ;
+    :clause "3.7.3.6"@en .
+
+:ads a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :canControl ;
+            owl:someValuesFrom :ads-equippedVehicle ],
+        [ a owl:Restriction ;
+            owl:onProperty :performsAllOf ;
+            owl:someValuesFrom :dynamicDrivingTask ],
+        :drivingAutomationSystem ;
+    skos:definition "[driving automation system](driving automation system.md) that is able to perform the entire [dynamic driving task](dynamic driving task.md) on a sustained basis"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The abbreviated form (\"ADS\") is the most preferred form and the alternative form (\"Automated Driving System\") uses initial capitals to avoid confusion with the more general \"driving automation system\"."@en ;
+    skos:prefLabel "ADS"@en ;
+    :altPrefLabel "Automated Driving System"@en ;
+    :clause "3.7.3.10"@en .
+
+:dynamicDrivingTask a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :isRequiredToOperate ;
+            owl:someValuesFrom :vehicle ] ;
+    skos:definition "all real-time operational and tactical functions required to operate a [vehicle](vehicle.md) in on-road traffic"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The DDT excludes strategic functions such as trip scheduling and selection of destinations and waypoints."@en,
+        "The DDT includes lateral vehicle motion control, longitudinal vehicle motion control, monitoring the driving [environment](environment.md), object and event response execution, manoeuvre planning and enhancing conspicuity."@en ;
+    skos:prefLabel "dynamic driving task"@en ;
+    :altPrefLabel "DDT"@en ;
+    :clause "3.7.3.1"@en .
+
+:operatesWithinA a owl:ObjectProperty ;
+    rdfs:label "operates within a"@en .
+
+:operationalDesignDomain a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :forAGiven ;
+            owl:someValuesFrom :drivingAutomationSystem ] ;
+    skos:definition "set of operating conditions under which a given [driving automation system](driving automation system.md) or feature thereof is specifically designed to function"@en ;
+    skos:example "[ADS](ADS.md) feature designed to operate a [vehicle](vehicle.md) only on fully access-controlled freeways in low-speed traffic, under fair weather conditions and optimal [road](road.md) maintenance conditions (e.g. good lane markings and not under construction)."@en,
+        "ADS-dedicated vehicle designed to operate only within a geographically-defined area, and only during daylight at speeds not exceeding 25 mph."@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2022"@en ;
+    skos:note "The conditions can include environmental, geographical, time-of-day, and/or other restrictions."@en,
+        "The conditions can require the presence or absence of certain traffic or [roadway](roadway.md) characteristics."@en ;
+    skos:prefLabel "operational design domain"@en ;
+    :altPrefLabel "ODD"@en ;
+    :clause "3.7.3.2"@en .

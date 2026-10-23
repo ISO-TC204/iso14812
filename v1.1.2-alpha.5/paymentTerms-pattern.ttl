@@ -1,0 +1,42 @@
+BASE <https://w3id.org/itsdata/vocab/>
+PREFIX : <https://w3id.org/itsdata/vocab/>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:paymentTerms a owl:Ontology ;
+    dcterms:title "Payment Terms"@en ;
+    dcterms:modified "2026-05-29"^^xsd:date ;
+    owl:imports <core.ttl> .
+
+:paymentMeans a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :acceptedBy ;
+            owl:someValuesFrom :serviceProvider ] ;
+    skos:definition "financial instrument accepted by the service provider, that gives the user the right to use provided services"@en ;
+    skos:example "token, stored electronic account, fleet card, bank account, credit card, contract"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "payment means"@en ;
+    :clause "3.8.1.1"@en .
+
+:paymentMode a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :timingAndLocationOfRemunerationTo ;
+            owl:someValuesFrom :serviceProvider ] ;
+    skos:altLabel "payment method"@en ;
+    skos:definition "timing and location of remuneration for services including whether the payment is required prior to, at the time of or post access to the service or commodity"@en ;
+    skos:example "pre-payment"@en ;
+    skos:historyNote "Introduced in ISO/TS 14812:2025"@en ;
+    skos:prefLabel "payment mode"@en ;
+    :clause "3.8.1.2"@en .
+
+:acceptedBy a owl:ObjectProperty ;
+    rdfs:label "accepted by"@en .
+
+:timingAndLocationOfRemunerationTo a owl:ObjectProperty ;
+    rdfs:label "timing and location of remuneration to"@en .
