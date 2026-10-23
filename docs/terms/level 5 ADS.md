@@ -2,6 +2,8 @@
 
 # level 5 ADS
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [ADS](ADS.md) that is capable of unconditional (i.e. not [operational design domain](operational design domain.md)-specific) operation and providing its own [fallback](fallback.md), without any expectation that a human [driver](driver.md) will respond to a request to intervene
 
 <object type="image/svg+xml" data="../../diagrams/level 5 ADS.dot.svg">

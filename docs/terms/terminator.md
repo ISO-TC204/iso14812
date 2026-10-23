@@ -2,6 +2,8 @@
 
 # terminator
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [entity](entity.md) that is external to the [ITS service](ITS service.md) implementation but with which the implementation communicates either to obtain inputs or to which it can send outputs
 
 <object type="image/svg+xml" data="../../diagrams/terminator.dot.svg">

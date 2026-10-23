@@ -2,6 +2,8 @@
 
 # dynamic driving task
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 all real-time operational and tactical functions required to operate a [vehicle](vehicle.md) in on-road traffic
 
 <object type="image/svg+xml" data="../../diagrams/dynamic driving task.dot.svg">

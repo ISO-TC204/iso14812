@@ -2,6 +2,8 @@
 
 # in-vehicle driver
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [driver](driver.md) that performs the [dynamic driving task](dynamic driving task.md) using the [vehicle's](vehicle.md) built-in [input devices](built-in vehicle input device.md) to control the longitudinal and lateral movement of the vehicle
 
 <object type="image/svg+xml" data="../../diagrams/in-vehicle driver.dot.svg">

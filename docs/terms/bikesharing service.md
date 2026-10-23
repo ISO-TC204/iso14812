@@ -2,6 +2,8 @@
 
 # bikesharing service
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [shared vehicle service](shared vehicle service.md) that shares bicycles
 
 <object type="image/svg+xml" data="../../diagrams/bikesharing service.dot.svg">

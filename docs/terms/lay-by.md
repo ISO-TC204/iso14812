@@ -2,6 +2,8 @@
 
 # lay-by
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 short length of paved [carriageway](carriageway.md) at its edge designed to allow a [vehicle](vehicle.md) to draw out of the [traffic lanes](traffic lane.md) and stop temporarily
 
 <object type="image/svg+xml" data="../../diagrams/lay-by.dot.svg">

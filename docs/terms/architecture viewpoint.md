@@ -2,6 +2,8 @@
 
 # architecture viewpoint
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 work product establishing the conventions for the construction, interpretation and use of [architecture views](architecture view.md) to frame specific system [concerns](concern.md)
 
 <object type="image/svg+xml" data="../../diagrams/architecture viewpoint.dot.svg">

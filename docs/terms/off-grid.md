@@ -2,6 +2,8 @@
 
 # off-grid
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 characteristic of a [material entity](material entity.md) that is currently unable to send data to or receive data from [connected](connected.md) entities
 
 <object type="image/svg+xml" data="../../diagrams/off-grid.dot.svg">

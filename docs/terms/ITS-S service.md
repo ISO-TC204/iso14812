@@ -2,6 +2,8 @@
 
 # ITS-S service
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 communication functionality of an [ITS station](ITS station.md) that provides the capability to connect to other nodes
 
 <object type="image/svg+xml" data="../../diagrams/ITS-S service.dot.svg">

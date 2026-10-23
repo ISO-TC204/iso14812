@@ -2,6 +2,8 @@
 
 # instant
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 0-dimensional geometric primitive representing position in time
 
 <object type="image/svg+xml" data="../../diagrams/instant.dot.svg">

@@ -2,6 +2,8 @@
 
 # transport infrastructure
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 system of [transport facilities](transport facility.md) and equipment needed for a transport system
 
 <object type="image/svg+xml" data="../../diagrams/transport infrastructure.dot.svg">

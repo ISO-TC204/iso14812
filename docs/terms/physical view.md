@@ -2,6 +2,8 @@
 
 # physical view
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [architecture view](architecture view.md) from the [physical viewpoint](physical viewpoint.md)
 
 <object type="image/svg+xml" data="../../diagrams/physical view.dot.svg">

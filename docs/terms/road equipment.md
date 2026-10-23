@@ -2,6 +2,8 @@
 
 # road equipment
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 component of [transport infrastructure](transport infrastructure.md) along the roadway intended to contribute to the safety, operations, management, awareness, and comfort of movements of the [road users](road user.md)
 
 <object type="image/svg+xml" data="../../diagrams/road equipment.dot.svg">

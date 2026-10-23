@@ -2,6 +2,8 @@
 
 # financial model
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 economic framework for the agreement between a [service provider](service provider.md) and a [user](user.md)
 
 <object type="image/svg+xml" data="../../diagrams/financial model.dot.svg">

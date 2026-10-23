@@ -2,6 +2,8 @@
 
 # ITS application role
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [ITS-SU user need](ITS-SU user need.md) expressed as a formal set of interoperability requirements that need to be fulfilled to satisfy a portion of functionality of an [ITS application](ITS application.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS application role.dot.svg">

@@ -2,6 +2,8 @@
 
 # B2C mobility sharing app
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [mobility app](mobility app.md) that assists a [transport user](transport user.md) in acquiring a [transport service](transport service.md) from a specific business
 
 <object type="image/svg+xml" data="../../diagrams/B2C mobility sharing app.dot.svg">

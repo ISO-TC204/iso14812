@@ -2,6 +2,8 @@
 
 # hard shoulder
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 part of the paved [carriageway](carriageway.md) designed to support traffic loads but not normally intended for driving
 
 <object type="image/svg+xml" data="../../diagrams/hard shoulder.dot.svg">

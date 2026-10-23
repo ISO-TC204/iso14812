@@ -2,6 +2,8 @@
 
 # include
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <enterprise view> [relationship](relationship.md) where one [resource](resource.md) contains another resource
 
 <object type="image/svg+xml" data="../../diagrams/include.dot.svg">

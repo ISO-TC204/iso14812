@@ -2,6 +2,8 @@
 
 # value domain
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 a set of permissible values
 
 <object type="image/svg+xml" data="../../diagrams/value domain.dot.svg">

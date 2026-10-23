@@ -2,6 +2,8 @@
 
 # area destination
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 area location, which is the destination of a defined route or itinerary
 
 <object type="image/svg+xml" data="../../diagrams/area destination.dot.svg">

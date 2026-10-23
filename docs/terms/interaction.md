@@ -2,6 +2,8 @@
 
 # interaction
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <enterprise view> [element](element.md) that represents coordination between two [enterprise objects](enterprise object.md)
 
 <object type="image/svg+xml" data="../../diagrams/interaction.dot.svg">

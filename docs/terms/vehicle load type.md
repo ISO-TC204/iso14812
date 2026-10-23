@@ -2,6 +2,8 @@
 
 # vehicle load type
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 type of load carried by the vehicle
 
 <object type="image/svg+xml" data="../../diagrams/vehicle load type.dot.svg">

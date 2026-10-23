@@ -2,6 +2,8 @@
 
 # transport facility
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 physical structure or installation, including related site works, serving one or more transport-related purposes
 
 <object type="image/svg+xml" data="../../diagrams/transport facility.dot.svg">

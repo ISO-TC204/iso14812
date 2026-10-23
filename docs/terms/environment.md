@@ -2,6 +2,8 @@
 
 # environment
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <system> context determining the setting and circumstances of all influences upon a [system](system.md)
 
 <object type="image/svg+xml" data="../../diagrams/environment.dot.svg">

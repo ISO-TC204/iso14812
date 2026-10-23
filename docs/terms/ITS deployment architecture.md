@@ -2,6 +2,8 @@
 
 # ITS deployment architecture
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [deployment architecture](deployment architecture.md) for one or more [ITS services](ITS service.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS deployment architecture.dot.svg">

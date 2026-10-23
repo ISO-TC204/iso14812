@@ -2,6 +2,8 @@
 
 # conventional vehicle
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <driving automation> [vehicle](vehicle.md) designed to be operated by a [person](person.md) during part or all of every trip.
 
 <object type="image/svg+xml" data="../../diagrams/conventional vehicle.dot.svg">

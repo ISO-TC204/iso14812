@@ -2,6 +2,8 @@
 
 # ITS roadside equipment
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [field system](field system.md) that performs localized [ITS services](ITS service.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS roadside equipment.dot.svg">

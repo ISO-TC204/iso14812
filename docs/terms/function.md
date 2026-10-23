@@ -2,6 +2,8 @@
 
 # function
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <functional view> series of actions or activities performed by a given object to achieve a goal
 
 <object type="image/svg+xml" data="../../diagrams/function.dot.svg">

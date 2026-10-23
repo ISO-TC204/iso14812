@@ -2,6 +2,8 @@
 
 # requirement
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 provision that contains criteria to be fulfilled
 
 <object type="image/svg+xml" data="../../diagrams/requirement.dot.svg">

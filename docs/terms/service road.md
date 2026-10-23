@@ -2,6 +2,8 @@
 
 # service road
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 road designed to facilitate the provision of services to customers
 
 <object type="image/svg+xml" data="../../diagrams/service road.dot.svg">

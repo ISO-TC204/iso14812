@@ -2,6 +2,8 @@
 
 # security entity
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 part of the [ITS station reference architecture](ITS-S reference architecture.md) that is responsible for providing communication security and [system](system.md) security
 
 <object type="image/svg+xml" data="../../diagrams/security entity.dot.svg">

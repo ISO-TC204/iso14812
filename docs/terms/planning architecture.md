@@ -2,6 +2,8 @@
 
 # planning architecture
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [architecture](architecture.md) that provides a long-term vision of system [elements](element.md) that may be deployed and managed by different projects and/or [entities](entity.md) within a geographic area
 
 <object type="image/svg+xml" data="../../diagrams/planning architecture.dot.svg">

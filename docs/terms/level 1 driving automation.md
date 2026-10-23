@@ -2,6 +2,8 @@
 
 # level 1 driving automation
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [driver support system](driver support system.md) that provides either sustained lateral or sustained longitudinal [vehicle](vehicle.md) motion control within a specific [operational design domain](operational design domain.md) with the expectation that a conventional [driver](driver.md) completes the [dynamic driving task](dynamic driving task.md)
 
 <object type="image/svg+xml" data="../../diagrams/level 1 driving automation.dot.svg">

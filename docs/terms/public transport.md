@@ -2,6 +2,8 @@
 
 # public transport
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [transport service](transport service.md) that is publicly accessible enabling the movement of one or more [persons](person.md)
 
 <object type="image/svg+xml" data="../../diagrams/public transport.dot.svg">

@@ -2,6 +2,8 @@
 
 # node
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <road network> component of a [road model](road model.md) representing a [point location](point location.md) of the [road network](road network.md) graph
 
 <object type="image/svg+xml" data="../../diagrams/node.dot.svg">

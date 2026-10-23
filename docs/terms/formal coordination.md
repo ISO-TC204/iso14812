@@ -2,6 +2,8 @@
 
 # formal coordination
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <enterprise view> [interaction](interaction.md) between two [enterprise objects](enterprise object.md) governed by a documented agreement
 
 <object type="image/svg+xml" data="../../diagrams/formal coordination.dot.svg">

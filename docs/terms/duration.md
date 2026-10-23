@@ -2,6 +2,8 @@
 
 # duration
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 time between two [instants](instant.md)
 
 <object type="image/svg+xml" data="../../diagrams/duration.dot.svg">

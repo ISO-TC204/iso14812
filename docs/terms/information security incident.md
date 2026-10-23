@@ -2,6 +2,8 @@
 
 # information security incident
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 related and identified information security event(s) [information security event.md] that can harm an organization's assets or compromise its operations
 
 <object type="image/svg+xml" data="../../diagrams/information security incident.dot.svg">

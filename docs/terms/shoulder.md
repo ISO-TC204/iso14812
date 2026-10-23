@@ -2,6 +2,8 @@
 
 # shoulder
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 either a [hard shoulder](hard shoulder.md) or a [soft shoulder](soft shoulder.md)
 
 <object type="image/svg+xml" data="../../diagrams/shoulder.dot.svg">

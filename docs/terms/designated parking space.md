@@ -2,6 +2,8 @@
 
 # designated parking space
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [parking space](parking space.md) for a designated purpose Note 1 to entry:  Note 2 to entry:
 
 <object type="image/svg+xml" data="../../diagrams/designated parking space.dot.svg">

@@ -2,6 +2,8 @@
 
 # road section
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 aggregation of one or more [road links](road link.md) that represents a contiguous length of a [road](road.md) that shares the same management and operational strategies
 
 <object type="image/svg+xml" data="../../diagrams/road section.dot.svg">

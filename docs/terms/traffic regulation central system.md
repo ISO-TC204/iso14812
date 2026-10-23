@@ -2,6 +2,8 @@
 
 # traffic regulation central system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [centre system](central system.md) that officially records traffic regulations in electronic form so that they can be distributed to other systems
 
 <object type="image/svg+xml" data="../../diagrams/traffic regulation central system.dot.svg">

@@ -2,6 +2,8 @@
 
 # facilities layer
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 communications layer in the [ITS station reference architecture](ITS-S reference architecture.md) corresponding to the session, presentation and application layers of the OSI model
 
 <object type="image/svg+xml" data="../../diagrams/facilities layer.dot.svg">

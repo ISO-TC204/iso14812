@@ -2,6 +2,8 @@
 
 # link location
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [pre-coded spatial reference](pre-coded spatial reference.md) defined within the [road network](road network.md) database
 
 <object type="image/svg+xml" data="../../diagrams/link location.dot.svg">

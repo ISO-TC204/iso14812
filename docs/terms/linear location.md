@@ -2,6 +2,8 @@
 
 # linear location
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [spatial location](spatial location.md) that extends between two [point locations](point location.md) along a defined path
 
 <object type="image/svg+xml" data="../../diagrams/linear location.dot.svg">

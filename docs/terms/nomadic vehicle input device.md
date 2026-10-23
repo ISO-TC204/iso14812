@@ -2,6 +2,8 @@
 
 # nomadic vehicle input device
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [vehicle input device](vehicle input device.md) that can be carried into, or in near proximity of, a [vehicle](vehicle.md) and [connected](connected.md) as desired
 
 <object type="image/svg+xml" data="../../diagrams/nomadic vehicle input device.dot.svg">

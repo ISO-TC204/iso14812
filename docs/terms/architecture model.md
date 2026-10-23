@@ -2,6 +2,8 @@
 
 # architecture model
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 work product representing one or more [architecture views](architecture view.md) and expressed in a format governed by a [model kind](model kind.md)
 
 <object type="image/svg+xml" data="../../diagrams/architecture model.dot.svg">

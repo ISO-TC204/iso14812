@@ -2,6 +2,8 @@
 
 # ITS service provider
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [entity](entity.md) that delivers one or more [ITS services](ITS service.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS service provider.dot.svg">

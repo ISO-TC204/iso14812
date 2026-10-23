@@ -2,6 +2,8 @@
 
 # ITS-SU user
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [entity](entity.md) that has a need to perform processing within a [bounded, secure, managed domain](bounded secured managed domain.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS-SU user.dot.svg">

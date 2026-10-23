@@ -2,6 +2,8 @@
 
 # point location
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [spatial location](spatial location.md) with no length in any of the spatial dimensions
 
 <object type="image/svg+xml" data="../../diagrams/point location.dot.svg">

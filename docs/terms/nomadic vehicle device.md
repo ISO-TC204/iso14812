@@ -2,6 +2,8 @@
 
 # nomadic vehicle device
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [personal system](personal system.md) consisting of global navigation satellite system (GNSS) and/or wireless [modules](module.md) that are connected to a [vehicle](vehicle.md) during a trip
 
 <object type="image/svg+xml" data="../../diagrams/nomadic vehicle device.dot.svg">

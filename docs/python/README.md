@@ -12,6 +12,7 @@ The main entry point is `ttl2mkdocs.py`. Supporting modules:
 | `utils.py` | Labels, breadcrumbs, page-feedback links, helpers |
 | `split_ontology.py` | Utility for splitting / linkifying ontology content |
 | `fields.py` | Shared field helpers |
+| `draft_terms.py` | Mark terms changed since the last approved (non-pre-release) ontology version |
 
 These scripts are the ISO 14812 counterpart to the broader [ont2md](https://github.com/ISO-TC204/ont2md) tooling used by RITSO topic ontologies. They are specialized for vocabulary groups/patterns, clause numbers, and SKOS-oriented term pages.
 
@@ -102,7 +103,7 @@ Only classes in that namespace that are treated as publishable terms receive ind
 | `skos:definition` | Lead definition |
 | `:clause` | Clause line, sorting, pattern/group parent clause |
 | `:altPrefLabel`, `skos:altLabel`, `skos:hiddenLabel` | Alternate / admitted / deprecated terms |
-| `skos:note`, `skos:example`, `skos:historyNote` | Notes, examples, history |
+| `skos:note`, `skos:example`, `skos:historyNote` | Notes, examples, history. Image examples use a blank node typed `:img` with `:src` (for example `images/cross_section.png`) and `:alt`; the generator emits a Markdown image linked from `docs/terms/` |
 | `dcterms:source` | Source line |
 | `rdfs:subClassOf`, `owl:disjointWith`, property restrictions | Diagrams and “Relationships” tables |
 
@@ -115,6 +116,10 @@ After patterns are collected, the processor warns when:
 - clause numbers under a shared root are not contiguous.
 
 These warnings appear inline and again in the run summary.
+
+### Draft watermarks
+
+Term pages whose OWL class triples differ from the last **approved** ontology release (the latest `RELEASES` ontology SemVer with no pre-release label, for example `1.1.0` rather than `1.1.2-alpha.3`) receive a `draft4-watermark` (“DRAFT”) stamp. Comparison uses git history of `docs/**/*.ttl` at that release tag (or the commit that recorded it in `RELEASES`). New terms and any changed annotations, hierarchy, or restrictions are marked; unchanged terms are not.
 
 ### Page feedback links
 

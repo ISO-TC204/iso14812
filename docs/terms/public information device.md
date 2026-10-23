@@ -2,6 +2,8 @@
 
 # public information device
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [personal system](personal system.md) that provides public access to [traveller](traveller.md) information
 
 <object type="image/svg+xml" data="../../diagrams/public information device.dot.svg">

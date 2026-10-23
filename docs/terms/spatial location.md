@@ -2,6 +2,8 @@
 
 # spatial location
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [location](location.md) within three-dimensional space
 
 <object type="image/svg+xml" data="../../diagrams/spatial location.dot.svg">

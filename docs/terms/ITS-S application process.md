@@ -2,6 +2,8 @@
 
 # ITS-S application process
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 information manipulation within an [ITS station](ITS station.md) for an [ITS-SU service](ITS-SU service.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS-S application process.dot.svg">

@@ -2,6 +2,8 @@
 
 # deployment architecture
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [architecture](architecture.md) that provides a vision of a specific deployment of a [system](system.md) within a geographic area
 
 <object type="image/svg+xml" data="../../diagrams/deployment architecture.dot.svg">

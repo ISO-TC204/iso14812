@@ -2,6 +2,8 @@
 
 # geographic identifier
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [spatial reference](spatial reference.md) in the form of a label or code that identifies a [location](location.md)
 
 <object type="image/svg+xml" data="../../diagrams/geographic identifier.dot.svg">

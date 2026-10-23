@@ -2,6 +2,8 @@
 
 # traffic lane
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 portion of [carriageway](carriageway.md) designed to accommodate a single line of moving [road vehicles](road vehicle.md)
 
 <object type="image/svg+xml" data="../../diagrams/traffic lane.dot.svg">

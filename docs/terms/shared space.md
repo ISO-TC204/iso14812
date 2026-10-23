@@ -2,6 +2,8 @@
 
 # shared space
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 public area space for use by users with distinctly different characteristics
 
 <object type="image/svg+xml" data="../../diagrams/shared space.dot.svg">

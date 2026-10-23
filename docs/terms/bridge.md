@@ -2,6 +2,8 @@
 
 # bridge
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [transport facility](transport facility.md) built over a gap to provide a continuous travel path
 
 <object type="image/svg+xml" data="../../diagrams/bridge.dot.svg">

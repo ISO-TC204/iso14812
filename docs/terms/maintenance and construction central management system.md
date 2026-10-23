@@ -2,6 +2,8 @@
 
 # maintenance and construction central management system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [centre system](central system.md) that allows an [entity](entity.md) to monitor and manage the construction and maintenance of [road](road.md) infrastructure
 
 <object type="image/svg+xml" data="../../diagrams/maintenance and construction central management system.dot.svg">

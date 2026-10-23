@@ -2,6 +2,8 @@
 
 # location referencing
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 process used to develop a [spatial reference](spatial reference.md)
 
 <object type="image/svg+xml" data="../../diagrams/location referencing.dot.svg">

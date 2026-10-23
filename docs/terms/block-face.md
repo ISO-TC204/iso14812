@@ -2,6 +2,8 @@
 
 # block-face
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 extent of sidewalk on one side of a street between two consecutive intersections crossing that street
 
 <object type="image/svg+xml" data="../../diagrams/block-face.dot.svg">

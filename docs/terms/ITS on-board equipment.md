@@ -2,6 +2,8 @@
 
 # ITS on-board equipment
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [vehicle system](vehicle system.md) that provides all ITS functionality on-board the [vehicle](vehicle.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS on-board equipment.dot.svg">

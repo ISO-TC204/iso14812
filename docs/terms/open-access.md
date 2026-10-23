@@ -2,6 +2,8 @@
 
 # open-access
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 characteristic of a [financial model](financial model.md) that does not require membership within an organization to receive [services](service.md)
 
 <object type="image/svg+xml" data="../../diagrams/open-access.dot.svg">

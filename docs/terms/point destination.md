@@ -2,6 +2,8 @@
 
 # point destination
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 point location, which is the destination of a defined route or itinerary
 
 <object type="image/svg+xml" data="../../diagrams/point destination.dot.svg">

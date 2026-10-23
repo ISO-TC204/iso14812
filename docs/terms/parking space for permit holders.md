@@ -2,6 +2,8 @@
 
 # parking space for permit holders
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [designated parking space](designated parking space.md) that requires a special permit from an appropriate authority
 
 <object type="image/svg+xml" data="../../diagrams/parking space for permit holders.dot.svg">

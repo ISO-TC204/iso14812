@@ -2,6 +2,8 @@
 
 # single carriageway
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 having exactly one [carriageway](carriageway.md)
 
 <object type="image/svg+xml" data="../../diagrams/single carriageway.dot.svg">

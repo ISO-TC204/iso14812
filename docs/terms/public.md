@@ -2,6 +2,8 @@
 
 # public
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 type of [financial model](financial model.md) where [services](service.md) are provided by an administrative authority in an attempt to better serve societal interests
 
 <object type="image/svg+xml" data="../../diagrams/public.dot.svg">

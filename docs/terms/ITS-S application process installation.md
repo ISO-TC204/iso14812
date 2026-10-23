@@ -2,6 +2,8 @@
 
 # ITS-S application process installation
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 installation of an implementation of an [ITS-S application process](ITS-S application process.md) on an [ITS station](ITS station.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS-S application process installation.dot.svg">

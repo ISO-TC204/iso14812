@@ -2,6 +2,8 @@
 
 # requirements specification
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 document that specifies the requirements for a system or component
 
 <object type="image/svg+xml" data="../../diagrams/requirements specification.dot.svg">

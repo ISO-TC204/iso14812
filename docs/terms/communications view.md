@@ -2,6 +2,8 @@
 
 # communications view
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [architecture view](architecture view.md) from the [communications viewpoint](communications viewpoint.md)
 
 <object type="image/svg+xml" data="../../diagrams/communications view.dot.svg">

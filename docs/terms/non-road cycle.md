@@ -2,6 +2,8 @@
 
 # non-road cycle
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 human-powered [vehicle](vehicle.md) not meeting the legal requirements to be driven in [cycle lanes](cycle lane.md)
 
 <object type="image/svg+xml" data="../../diagrams/non-road cycle.dot.svg">

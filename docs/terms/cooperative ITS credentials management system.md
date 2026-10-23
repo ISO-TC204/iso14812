@@ -2,6 +2,8 @@
 
 # cooperative ITS credentials management system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [support system](support system.md) that enables trusted communications among [ITS components](ITS component.md) and protects data from unauthorized access
 
 <object type="image/svg+xml" data="../../diagrams/cooperative ITS credentials management system.dot.svg">

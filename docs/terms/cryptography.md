@@ -2,6 +2,8 @@
 
 # cryptography
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 discipline that embodies the principles, means, and methods for the transformation of data in order to hide their semantic content, prevent their unauthorized use, or prevent their undetected modification
 
 <object type="image/svg+xml" data="../../diagrams/cryptography.dot.svg">

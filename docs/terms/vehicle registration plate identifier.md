@@ -2,6 +2,8 @@
 
 # vehicle registration plate identifier
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 numeric or alphanumeric identifier or code, displayed on a registration plate attached to the vehicle, and unique within the issuing authority's region therefore usable for official identification purposes
 
 <object type="image/svg+xml" data="../../diagrams/vehicle registration plate identifier.dot.svg">

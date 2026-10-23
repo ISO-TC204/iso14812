@@ -2,6 +2,8 @@
 
 # ITS-S communication unit
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 physical unit in an [ITS-S unit](ITS-S unit.md) containing part or all of the functionality of the [ITS-S](ITS station.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS-S communication unit.dot.svg">

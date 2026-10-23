@@ -2,6 +2,8 @@
 
 # ITS-SU user need
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [user need](user need.md) for processing within a [bounded, secure, managed domain](bounded secured managed domain.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS-SU user need.dot.svg">

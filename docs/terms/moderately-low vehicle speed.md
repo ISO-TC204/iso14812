@@ -2,6 +2,8 @@
 
 # moderately-low vehicle speed
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [speed](speed.md) of a [vehicle](vehicle.md) that exceeds speeds typical of pedal cycles but can be reached on performance pedal cycles in short bursts or by performance riders
 
 <object type="image/svg+xml" data="../../diagrams/moderately-low vehicle speed.dot.svg">

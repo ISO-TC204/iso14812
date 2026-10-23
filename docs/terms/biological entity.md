@@ -2,6 +2,8 @@
 
 # biological entity
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [material entity](material entity.md) that was or is a living organism
 
 <object type="image/svg+xml" data="../../diagrams/biological entity.dot.svg">

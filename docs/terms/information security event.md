@@ -2,6 +2,8 @@
 
 # information security event
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 occurrence indicating a possible breach of information security or failure of [controls](control.md)
 
 <object type="image/svg+xml" data="../../diagrams/information security event.dot.svg">

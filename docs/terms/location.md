@@ -2,6 +2,8 @@
 
 # location
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 particular place or position
 
 <object type="image/svg+xml" data="../../diagrams/location.dot.svg">

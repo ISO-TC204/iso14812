@@ -2,6 +2,8 @@
 
 # fixed route
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <transport service> [concurrent](concurrent.md) operation where transported items can only be received or delivered at stopping points contained in a pre-defined sequence
 
 <object type="image/svg+xml" data="../../diagrams/fixed route.dot.svg">

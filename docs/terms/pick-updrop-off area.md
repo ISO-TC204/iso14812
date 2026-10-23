@@ -2,6 +2,8 @@
 
 # pick-up/drop-off area
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 area intended to allow passengers to board and/or alight from [vehicles](vehicle.md)
 
 <object type="image/svg+xml" data="../../diagrams/pick-updrop-off area.dot.svg">

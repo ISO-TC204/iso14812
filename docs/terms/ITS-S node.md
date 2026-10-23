@@ -2,6 +2,8 @@
 
 # ITS-S node
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 node comprised of a set of functionalities in an [ITS-S unit](ITS-S unit.md) that is [connected](connected.md) to the [ITS station](ITS station.md)-internal network or comprises an entire ITS-S unit
 
 <object type="image/svg+xml" data="../../diagrams/ITS-S node.dot.svg">

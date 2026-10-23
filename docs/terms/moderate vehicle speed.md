@@ -2,6 +2,8 @@
 
 # moderate vehicle speed
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [speed](speed.md) of a [vehicle](vehicle.md) that exceeds [moderately-low vehicle speeds](moderately-low vehicle speed.md) but does not reach free-flow motorway speeds
 
 <object type="image/svg+xml" data="../../diagrams/moderate vehicle speed.dot.svg">

@@ -2,6 +2,8 @@
 
 # unequipped
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 characteristic of a [material entity](material entity.md) that is not and has never been equipped with communications equipment for sending data to or receiving data from [connected](connected.md) entities
 
 <object type="image/svg+xml" data="../../diagrams/unequipped.dot.svg">

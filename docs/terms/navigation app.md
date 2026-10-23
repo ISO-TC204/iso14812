@@ -2,6 +2,8 @@
 
 # navigation app
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [mobility app](mobility app.md) that assists a [transport user](transport user.md) to determine the best route to a destination
 
 <object type="image/svg+xml" data="../../diagrams/navigation app.dot.svg">

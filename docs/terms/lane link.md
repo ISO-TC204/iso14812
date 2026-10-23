@@ -2,6 +2,8 @@
 
 # lane link
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [link](link.md) that represents a [lane](lane.md) of a [road link](road link.md)
 
 <object type="image/svg+xml" data="../../diagrams/lane link.dot.svg">

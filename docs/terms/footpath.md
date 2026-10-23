@@ -2,6 +2,8 @@
 
 # footpath
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 area designed for the longitudinal movement of pedestrians
 
 <object type="image/svg+xml" data="../../diagrams/footpath.dot.svg">

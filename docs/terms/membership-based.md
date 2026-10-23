@@ -2,6 +2,8 @@
 
 # membership-based
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 characteristic of a [financial model](financial model.md) that requires [users](user.md) to enter into an agreement prior to receiving [services](service.md)
 
 <object type="image/svg+xml" data="../../diagrams/membership-based.dot.svg">

@@ -2,6 +2,8 @@
 
 # ultra-low-speed vehicle
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [vehicle](vehicle.md) with a [design speed](design speed.md) that does not exceed [ultra-low vehicle speeds](ultra-low vehicle speed.md)
 
 <object type="image/svg+xml" data="../../diagrams/ultra-low-speed vehicle.dot.svg">

@@ -2,6 +2,8 @@
 
 # junction
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <object type="image/svg+xml" data="../../diagrams/junction.dot.svg">
     <img alt="junction Diagram" src="../../diagrams/junction.dot.png" /> <!-- Fallback for non-SVG browsers -->
 </object>

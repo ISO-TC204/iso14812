@@ -2,6 +2,8 @@
 
 # payment mode
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 timing and location of remuneration for services including whether the payment is required prior to, at the time of or post access to the service or commodity
 
 <object type="image/svg+xml" data="../../diagrams/payment mode.dot.svg">

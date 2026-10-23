@@ -2,6 +2,8 @@
 
 # roadside unit
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 part of [connected vehicle roadside equipment](connected vehicle roadside equipment.md) that provides wireless connectivity to [vehicle systems](vehicle system.md) and/or [personal systems](personal system.md)
 
 <object type="image/svg+xml" data="../../diagrams/roadside unit.dot.svg">

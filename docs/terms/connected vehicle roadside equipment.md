@@ -2,6 +2,8 @@
 
 # connected vehicle roadside equipment
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [ITS roadside equipment](ITS roadside equipment.md) that perform [ITS services](ITS service.md) by exchanging electronic [messages](message.md) with nearby [connected vehicles](connected vehicle.md) and/or [personal systems](personal system.md) via short-range wireless technologies
 
 <object type="image/svg+xml" data="../../diagrams/connected vehicle roadside equipment.dot.svg">

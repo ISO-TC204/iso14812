@@ -2,6 +2,8 @@
 
 # usable width
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 all [traffic lanes](traffic lane.md) of a [carriageway](carriageway.md)
 
 <object type="image/svg+xml" data="../../diagrams/usable width.dot.svg">

@@ -2,6 +2,8 @@
 
 # vehicle equipment
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 type of equipment in use or on board the vehicle
 
 <object type="image/svg+xml" data="../../diagrams/vehicle equipment.dot.svg">

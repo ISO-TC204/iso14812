@@ -2,6 +2,8 @@
 
 # driving automation system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 hardware and software [system](system.md) that is able to perform part or all of the [dynamic driving task](dynamic driving task.md) on a sustained basis
 
 <object type="image/svg+xml" data="../../diagrams/driving automation system.dot.svg">

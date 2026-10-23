@@ -2,6 +2,8 @@
 
 # road user
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 mobile [material entity](material entity.md) within the [road reservation](road reservation.md)
 
 <object type="image/svg+xml" data="../../diagrams/road user.dot.svg">

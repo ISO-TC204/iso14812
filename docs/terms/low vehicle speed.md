@@ -2,6 +2,8 @@
 
 # low vehicle speed
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [speed](speed.md) of a [vehicle](vehicle.md) that exceeds [pedestrian](pedestrian.md) speeds and is more typical of pedal cycles
 
 <object type="image/svg+xml" data="../../diagrams/low vehicle speed.dot.svg">

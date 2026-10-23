@@ -2,6 +2,8 @@
 
 # payment administration central system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [centre system](central system.md) that allows an [entity](entity.md) to manage financial transactions related to transportation, especially the electronic transfer of funds
 
 <object type="image/svg+xml" data="../../diagrams/payment administration central system.dot.svg">

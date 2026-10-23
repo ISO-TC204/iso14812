@@ -2,6 +2,8 @@
 
 # fractional ownership
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <transport service> [cooperative](cooperative.md) [financial model](financial model.md) where [users](user.md) partner to support the purchase, maintenance and overhead costs associated with a [service](service.md)
 
 <object type="image/svg+xml" data="../../diagrams/fractional ownership.dot.svg">

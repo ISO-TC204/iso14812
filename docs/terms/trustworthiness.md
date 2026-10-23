@@ -2,6 +2,8 @@
 
 # trustworthiness
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 ability to meet stakeholders expectations in a verifiable way
 
 <object type="image/svg+xml" data="../../diagrams/trustworthiness.dot.svg">

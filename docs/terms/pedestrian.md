@@ -2,6 +2,8 @@
 
 # pedestrian
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [person](person.md) who is travelling on foot
 
 <object type="image/svg+xml" data="../../diagrams/pedestrian.dot.svg">

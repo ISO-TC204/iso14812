@@ -2,6 +2,8 @@
 
 # ITS station
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 functional entity that is bounded, secured, and managed; certified by an ITS trust domain; and comprised of an ITS-S facilities layer, ITS-S networking & transport layer, ITS-S access layer, ITS-S management entity, ITS-S security entity and ITS-S application entity providing ITS services
 
 <object type="image/svg+xml" data="../../diagrams/ITS station.dot.svg">

@@ -2,6 +2,8 @@
 
 # digital signature
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 data appended to a message, that allow the recipient of the [message](message.md) to verify the source of the message
 
 <object type="image/svg+xml" data="../../diagrams/digital signature.dot.svg">

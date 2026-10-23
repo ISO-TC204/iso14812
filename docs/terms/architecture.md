@@ -2,6 +2,8 @@
 
 # architecture
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <system> fundamental concepts or properties of a [system](system.md) in its [environment](environment.md) embodied in its [elements](element.md), [relationships](relationship.md) and in the principles of its design and evolution
 
 <object type="image/svg+xml" data="../../diagrams/architecture.dot.svg">

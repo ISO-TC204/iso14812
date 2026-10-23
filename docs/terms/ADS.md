@@ -2,6 +2,8 @@
 
 # ADS
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [driving automation system](driving automation system.md) that is able to perform the entire [dynamic driving task](dynamic driving task.md) on a sustained basis
 
 <object type="image/svg+xml" data="../../diagrams/ADS.dot.svg">

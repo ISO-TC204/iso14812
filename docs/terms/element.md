@@ -2,6 +2,8 @@
 
 # element
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <architecture> component member of an [architecture model](architecture model.md) included in an [architecture view](architecture view.md)
 
 <object type="image/svg+xml" data="../../diagrams/element.dot.svg">

@@ -2,6 +2,8 @@
 
 # mutual benefit
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [cooperative](cooperative.md) [financial model](financial model.md) where [users](user.md) partner on a per-use basis
 
 <object type="image/svg+xml" data="../../diagrams/mutual benefit.dot.svg">

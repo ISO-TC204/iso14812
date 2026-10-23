@@ -2,6 +2,8 @@
 
 # sequential
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [operational model](operational model.md) where [services](service.md) are provided to a single [user](user.md) at any one time
 
 <object type="image/svg+xml" data="../../diagrams/sequential.dot.svg">

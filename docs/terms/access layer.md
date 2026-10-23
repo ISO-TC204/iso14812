@@ -2,6 +2,8 @@
 
 # access layer
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 communications layer that corresponds to the physical and data link layers of the OSI model
 
 <object type="image/svg+xml" data="../../diagrams/access layer.dot.svg">

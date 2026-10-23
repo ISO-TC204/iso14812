@@ -2,6 +2,8 @@
 
 # vehicle input device
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [material entity](material entity.md) that can affect the [vehicle's](vehicle.md) operation
 
 <object type="image/svg+xml" data="../../diagrams/vehicle input device.dot.svg">

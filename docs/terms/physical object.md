@@ -2,6 +2,8 @@
 
 # physical object
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <physical view> abstraction of a [material entity](material entity.md) that interacts with other abstract material entities in the provision of [ITS services](ITS service.md)
 
 <object type="image/svg+xml" data="../../diagrams/physical object.dot.svg">

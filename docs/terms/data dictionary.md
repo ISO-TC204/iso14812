@@ -2,6 +2,8 @@
 
 # data dictionary
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 collection of [data concepts](data concept.md) that allows lookup by [entity](entity.md) identifier
 
 <object type="image/svg+xml" data="../../diagrams/data dictionary.dot.svg">

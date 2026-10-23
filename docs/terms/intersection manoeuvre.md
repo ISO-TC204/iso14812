@@ -2,6 +2,8 @@
 
 # intersection manoeuvre
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <junction> movement from an [ingress lane](ingress lane.md) to an [egress lane](egress lane.md)
 
 <object type="image/svg+xml" data="../../diagrams/intersection manoeuvre.dot.svg">

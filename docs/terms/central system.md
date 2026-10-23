@@ -2,6 +2,8 @@
 
 # central system
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [ITS component](ITS component.md) that provides application, management, and/or administrative functions from a centralized [location](location.md) [i.e. not at the [roadside](roadside.md)]
 
 <object type="image/svg+xml" data="../../diagrams/central system.dot.svg">

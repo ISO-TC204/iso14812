@@ -2,6 +2,8 @@
 
 # road link
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [link](link.md) representing a contiguous length of a [road](road.md) between two [nodes](node.md) of operational or managerial significance
 
 <object type="image/svg+xml" data="../../diagrams/road link.dot.svg">

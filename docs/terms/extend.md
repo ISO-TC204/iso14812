@@ -2,6 +2,8 @@
 
 # extend
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <enterprise view> [relationship](relationship.md) where one [resource](resource.md) supplements another [resource](resource.md)
 
 <object type="image/svg+xml" data="../../diagrams/extend.dot.svg">

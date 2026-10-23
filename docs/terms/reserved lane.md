@@ -2,6 +2,8 @@
 
 # reserved lane
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [traffic lane](traffic lane.md) restricted to a specific subset of [road vehicles](road vehicle.md) or [user](user.md) categories
 
 <object type="image/svg+xml" data="../../diagrams/reserved lane.dot.svg">

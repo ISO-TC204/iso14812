@@ -2,6 +2,8 @@
 
 # ITS-SU service
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 functionality to fulfil an [ITS-SU user need](ITS-SU user need.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS-SU service.dot.svg">

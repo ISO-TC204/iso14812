@@ -2,6 +2,8 @@
 
 # functional viewpoint
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [architecture viewpoint](architecture viewpoint.md) used to frame [concerns](concern.md) related to the definition of [processes](process.md) that perform surface transport functions and [data flows](data flow.md) shared between these processes
 
 <object type="image/svg+xml" data="../../diagrams/functional viewpoint.dot.svg">

@@ -2,6 +2,8 @@
 
 # functional view
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [architecture view](architecture view.md) from the [functional viewpoint](functional viewpoint.md)
 
 <object type="image/svg+xml" data="../../diagrams/functional view.dot.svg">

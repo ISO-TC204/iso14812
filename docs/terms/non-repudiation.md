@@ -2,6 +2,8 @@
 
 # non-repudiation
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 ability to prove the occurrence of a claimed event or action and its originating entities
 
 <object type="image/svg+xml" data="../../diagrams/non-repudiation.dot.svg">

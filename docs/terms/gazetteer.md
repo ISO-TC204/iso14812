@@ -2,6 +2,8 @@
 
 # gazetteer
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 register of [spatial references](spatial reference.md) of one or more [spatial location](spatial location.md) sub-types containing some information regarding position
 
 <object type="image/svg+xml" data="../../diagrams/gazetteer.dot.svg">

@@ -2,6 +2,8 @@
 
 # stakeholder
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <system> individual, team, organization, or [classes](class.md) thereof, having an interest in a [system](system.md)
 
 <object type="image/svg+xml" data="../../diagrams/stakeholder.dot.svg">

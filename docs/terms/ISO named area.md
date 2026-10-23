@@ -2,6 +2,8 @@
 
 # ISO named area
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 Note 1 to entry: ISO 3166-2 includes codes for major subdivisions of countries and states.
 
 <object type="image/svg+xml" data="../../diagrams/ISO named area.dot.svg">

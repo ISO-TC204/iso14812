@@ -2,6 +2,8 @@
 
 # application template
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 defined annotated outline for an [ITS application specification](ITS application specification.md)
 
 <object type="image/svg+xml" data="../../diagrams/application template.dot.svg">

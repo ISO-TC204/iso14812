@@ -2,6 +2,8 @@
 
 # entity
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 concrete or abstract thing that exists, did exist, or can possibly exist, including associations among these things
 
 <object type="image/svg+xml" data="../../diagrams/entity.dot.svg">

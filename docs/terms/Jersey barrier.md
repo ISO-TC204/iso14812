@@ -2,6 +2,8 @@
 
 # Jersey barrier
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [physical traffic separator](physical traffic separator.md) that consists of a wall with a wide, sloped base designed to divert [vehicles](vehicle.md) back into their [traffic lane](traffic lane.md)
 
 <object type="image/svg+xml" data="../../diagrams/Jersey barrier.dot.svg">

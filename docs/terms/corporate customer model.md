@@ -2,6 +2,8 @@
 
 # corporate customer model
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [contractual model](contractual model.md) where the [user](user.md) is a [commercial](commercial.md) [entity](entity.md)
 
 <object type="image/svg+xml" data="../../diagrams/corporate customer model.dot.svg">

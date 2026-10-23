@@ -2,6 +2,8 @@
 
 # jurisdictional entity
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [person](person.md) or organization who has [jurisdiction](jurisdiction.md)
 
 <object type="image/svg+xml" data="../../diagrams/jurisdictional entity.dot.svg">

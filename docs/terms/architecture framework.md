@@ -2,6 +2,8 @@
 
 # architecture framework
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 conventions, principles and practices for the description of [architectures](architecture.md) established within a specific domain of application and/or community of [stakeholders](stakeholder.md)
 
 <object type="image/svg+xml" data="../../diagrams/architecture framework.dot.svg">

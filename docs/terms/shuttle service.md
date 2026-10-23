@@ -2,6 +2,8 @@
 
 # shuttle service
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [shared transport service](shared transport service.md) that transports [passengers](passenger.md) between two specified [spatial locations](spatial location.md)
 
 <object type="image/svg+xml" data="../../diagrams/shuttle service.dot.svg">

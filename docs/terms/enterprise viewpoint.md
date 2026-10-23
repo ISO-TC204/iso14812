@@ -2,6 +2,8 @@
 
 # enterprise viewpoint
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [architecture viewpoint](architecture viewpoint.md) used to frame the policies, funding incentives, working arrangements and jurisdictional structure that support the technical layers of the [architecture](architecture.md)
 
 <object type="image/svg+xml" data="../../diagrams/enterprise viewpoint.dot.svg">

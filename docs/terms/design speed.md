@@ -2,6 +2,8 @@
 
 # design speed
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <vehicle> maximum [speed](speed.md) at which a [vehicle](vehicle.md) is intended to operate for a sustained period of time
 
 <object type="image/svg+xml" data="../../diagrams/design speed.dot.svg">

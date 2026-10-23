@@ -2,6 +2,8 @@
 
 # verge
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 unpaved part of the [roadside](roadside.md) designed for travel safety purposes
 
 <object type="image/svg+xml" data="../../diagrams/verge.dot.svg">

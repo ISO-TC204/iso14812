@@ -2,6 +2,8 @@
 
 # ITS application
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 functionality that implements an [ITS service](ITS service.md) that involves an association of two or more complementary [ITS-S application processes](ITS-S application process.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS application.dot.svg">

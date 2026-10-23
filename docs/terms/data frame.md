@@ -2,6 +2,8 @@
 
 # data frame
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 specific grouping of [data elements](data element.md) that describes information of interest through a useful grouping of more atomic properties about one or more [classes](class.md)
 
 <object type="image/svg+xml" data="../../diagrams/data frame.dot.svg">

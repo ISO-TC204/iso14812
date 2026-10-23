@@ -2,6 +2,8 @@
 
 # ITS on-board unit
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 part of [ITS on-board equipment](ITS on-board equipment.md) that provides wireless connectivity to other [ITS components](ITS component.md) external to the [vehicle](vehicle.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS on-board unit.dot.svg">

@@ -2,6 +2,8 @@
 
 # dynamic spatial reference
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [spatial reference](spatial reference.md) generated on-the-fly based on geographic properties in a digital map database
 
 <object type="image/svg+xml" data="../../diagrams/dynamic spatial reference.dot.svg">

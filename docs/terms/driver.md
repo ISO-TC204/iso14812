@@ -2,6 +2,8 @@
 
 # driver
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [person](person.md) that is currently responsible for the [dynamic driving task](dynamic driving task.md) for the [vehicle](vehicle.md)
 
 <object type="image/svg+xml" data="../../diagrams/driver.dot.svg">

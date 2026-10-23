@@ -2,6 +2,8 @@
 
 # sensor
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 device with the capability of observing one or more properties of a [material entity](material entity.md) and converting those properties into meaningful signals
 
 <object type="image/svg+xml" data="../../diagrams/sensor.dot.svg">

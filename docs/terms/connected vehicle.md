@@ -2,6 +2,8 @@
 
 # connected vehicle
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [vehicle](vehicle.md) that is [connected](connected.md) using one or more communication media
 
 <object type="image/svg+xml" data="../../diagrams/connected vehicle.dot.svg">

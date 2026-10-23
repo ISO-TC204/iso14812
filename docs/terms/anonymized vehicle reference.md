@@ -2,6 +2,8 @@
 
 # anonymized vehicle reference
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 reference for a vehicle derived from vehicle properties such as registration number but encoded so that it does not allow a human to identify the vehicle directly from the encoded value
 
 <object type="image/svg+xml" data="../../diagrams/anonymized vehicle reference.dot.svg">

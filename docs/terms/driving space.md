@@ -2,6 +2,8 @@
 
 # driving space
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 area above the [roadway](roadway.md) that is primarily designed for the movement of [vehicles](vehicle.md)
 
 <object type="image/svg+xml" data="../../diagrams/driving space.dot.svg">

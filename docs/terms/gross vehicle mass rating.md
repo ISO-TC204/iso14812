@@ -2,6 +2,8 @@
 
 # gross vehicle mass rating
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 maximum operating mass (weight) of the vehicle, as determined by the vehicle manufacturer, at which the vehicle can be safely and reliably operated for its intended purpose
 
 <object type="image/svg+xml" data="../../diagrams/gross vehicle mass rating.dot.svg">

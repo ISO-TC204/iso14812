@@ -2,6 +2,8 @@
 
 # government customer model
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [contractual model](contractual model.md) where the [user](user.md) is a governmental [entity](entity.md)
 
 <object type="image/svg+xml" data="../../diagrams/government customer model.dot.svg">

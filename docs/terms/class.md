@@ -2,6 +2,8 @@
 
 # class
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 set of ideas, abstractions or things in the real world that are identified with explicit boundaries and meaning and whose properties and behaviour follow the same rules
 
 <object type="image/svg+xml" data="../../diagrams/class.dot.svg">

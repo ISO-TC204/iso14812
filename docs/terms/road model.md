@@ -2,6 +2,8 @@
 
 # road model
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 representation of a [road network](road network.md)
 
 <object type="image/svg+xml" data="../../diagrams/road model.dot.svg">

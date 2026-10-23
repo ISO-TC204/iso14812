@@ -2,6 +2,8 @@
 
 # alley
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [road](road.md) that has buildings, walls or fences on each side
 
 <object type="image/svg+xml" data="../../diagrams/alley.dot.svg">

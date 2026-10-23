@@ -2,6 +2,8 @@
 
 # motor vehicle
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [motorized](motorized vehicle.md) [road vehicle](road vehicle.md) allowed to operate in the same [driving spaces](driving space.md) as motorized [passenger](passenger.md) cars
 
 <object type="image/svg+xml" data="../../diagrams/motor vehicle.dot.svg">

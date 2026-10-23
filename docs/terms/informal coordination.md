@@ -2,6 +2,8 @@
 
 # informal coordination
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <enterprise view> [interaction](interaction.md) between two [enterprise objects](enterprise object.md) governed by an understanding that is not documented in a formal agreement between the two parties
 
 <object type="image/svg+xml" data="../../diagrams/informal coordination.dot.svg">

@@ -2,6 +2,8 @@
 
 # meta-attribute
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 documenting characteristic of a [data concept](data concept.md) that is stored in a [data dictionary](data dictionary.md)
 
 <object type="image/svg+xml" data="../../diagrams/meta-attribute.dot.svg">

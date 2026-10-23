@@ -2,6 +2,8 @@
 
 # service
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 one or more capabilities, functionalities or facilities to fulfil or enable the fulfilment of a [user need](user need.md)
 
 <object type="image/svg+xml" data="../../diagrams/service.dot.svg">

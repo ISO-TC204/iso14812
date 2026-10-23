@@ -2,6 +2,8 @@
 
 # transport sharing
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 using a [shared transport service](shared transport service.md)
 
 <object type="image/svg+xml" data="../../diagrams/transport sharing.dot.svg">

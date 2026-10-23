@@ -2,6 +2,8 @@
 
 # ITS trust domain
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 set of [bounded secured managed domains](bounded secured managed domain.md) that meet a defined set of ITS industry security requirements
 
 <object type="image/svg+xml" data="../../diagrams/ITS trust domain.dot.svg">

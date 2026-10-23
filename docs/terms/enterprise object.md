@@ -2,6 +2,8 @@
 
 # enterprise object
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [element](element.md) within an [enterprise view](enterprise view.md) that represents an organization or individual
 
 <object type="image/svg+xml" data="../../diagrams/enterprise object.dot.svg">

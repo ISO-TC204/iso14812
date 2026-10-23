@@ -2,6 +2,8 @@
 
 # hard shoulder running
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 operating mode of a [hard shoulder](hard shoulder.md) that allows operation of general-purpose [motor vehicles](motor vehicle.md) as an extra lane [lane.md]
 
 <object type="image/svg+xml" data="../../diagrams/hard shoulder running.dot.svg">

@@ -2,6 +2,8 @@
 
 # fallback
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 <driving automation> response by a [person](person.md) to perform the [dynamic driving task](dynamic driving task.md) or by an [ADS](ADS.md) to achieve a minimal risk condition when the response is triggered upon violation of the defined [operational design domain](operational design domain.md) constraints or in response to a [dynamic driving task](dynamic driving task.md) performance-relevant [driving automation system](driving automation system.md) failure
 
 <object type="image/svg+xml" data="../../diagrams/fallback.dot.svg">

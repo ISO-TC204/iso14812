@@ -2,6 +2,8 @@
 
 # motorized vehicle
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 self-propelled [vehicle](vehicle.md)
 
 <object type="image/svg+xml" data="../../diagrams/motorized vehicle.dot.svg">

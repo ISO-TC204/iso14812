@@ -2,6 +2,8 @@
 
 # module
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [functional object](functional object.md) that can be replaced and has defined interfaces
 
 <object type="image/svg+xml" data="../../diagrams/module.dot.svg">

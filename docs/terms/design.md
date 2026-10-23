@@ -2,6 +2,8 @@
 
 # design
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 the process or the result of the process to define the architecture, system elements, interfaces, and other characteristics of a system or system element
 
 <object type="image/svg+xml" data="../../diagrams/design.dot.svg">

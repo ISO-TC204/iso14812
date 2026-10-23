@@ -2,6 +2,8 @@
 
 # transport service
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [service](service.md) that transports one or more [material entities](material entity.md) from one [spatial location](spatial location.md) to another
 
 <object type="image/svg+xml" data="../../diagrams/transport service.dot.svg">

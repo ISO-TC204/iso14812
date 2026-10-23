@@ -2,6 +2,8 @@
 
 # rideshare service
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [cooperative](cooperative.md) [shared transport service](shared transport service.md) that transports [passengers](passenger.md) [concurrently](concurrent.md)
 
 <object type="image/svg+xml" data="../../diagrams/rideshare service.dot.svg">

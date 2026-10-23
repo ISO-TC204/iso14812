@@ -2,6 +2,8 @@
 
 # road vehicle
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [vehicle](vehicle.md) meeting the requirements to operate within the [driving space](driving space.md) of a [road](road.md)
 
 <object type="image/svg+xml" data="../../diagrams/road vehicle.dot.svg">

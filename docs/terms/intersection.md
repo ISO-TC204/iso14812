@@ -2,6 +2,8 @@
 
 # intersection
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 space where two or more [roads](road.md) meet or cross
 
 <object type="image/svg+xml" data="../../diagrams/intersection.dot.svg">

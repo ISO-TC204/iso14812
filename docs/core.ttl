@@ -17,6 +17,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :aggregates a owl:ObjectProperty .
 
+:alt a owl:AnnotationProperty ;
+    rdfs:label "image alternative text"@en ;
+    rdfs:comment "Alternative text for an example image referenced from a term."@en ;
+    rdfs:range xsd:string .
+
 :altPrefLabel a owl:AnnotationProperty ;
     rdfs:label "alternative preferred label"@en ;
     rdfs:comment "This property is used to identify an alternative preferred label for a concept."@en ;
@@ -67,6 +72,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:label "is a"@en .
 
 :represents a owl:ObjectProperty .
+
+:src a owl:AnnotationProperty ;
+    rdfs:label "image source"@en ;
+    rdfs:comment "Path or URL of an example image referenced from a term."@en ;
+    rdfs:range xsd:string .
 
 :startsAt a owl:ObjectProperty ;
     rdfs:label "starts at"@en .

@@ -2,6 +2,8 @@
 
 # transport provider
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [entity](entity.md) that delivers one or more [transport services](transport service.md)
 
 <object type="image/svg+xml" data="../../diagrams/transport provider.dot.svg">

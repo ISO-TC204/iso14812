@@ -2,6 +2,8 @@
 
 # authenticator
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 a network entity that executes an [authentication](authentication.md) process on a [message](message.md)
 
 <object type="image/svg+xml" data="../../diagrams/authenticator.dot.svg">

@@ -2,6 +2,8 @@
 
 # trip aggregator app
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [mobility app](mobility app.md) that assists a [transport user](transport user.md) in planning trips that may span multiple vehicle modes or [transport providers](transport provider.md)
 
 <object type="image/svg+xml" data="../../diagrams/trip aggregator app.dot.svg">

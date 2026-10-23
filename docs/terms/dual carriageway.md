@@ -2,6 +2,8 @@
 
 # dual carriageway
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 having exactly two [carriageways](carriageway.md)
 
 <object type="image/svg+xml" data="../../diagrams/dual carriageway.dot.svg">

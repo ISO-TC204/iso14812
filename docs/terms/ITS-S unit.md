@@ -2,6 +2,8 @@
 
 # ITS-S unit
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [instance](instance.md) of an physical unit produced by an [ITS station](ITS station.md) [implementation](implementation.md)
 
 <object type="image/svg+xml" data="../../diagrams/ITS-S unit.dot.svg">

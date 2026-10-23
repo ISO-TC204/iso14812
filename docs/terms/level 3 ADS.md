@@ -2,6 +2,8 @@
 
 # level 3 ADS
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 [ADS](ADS.md) designed with the expectation that the [fallback-ready user](fallback-ready user.md) is available to intervene
 
 <object type="image/svg+xml" data="../../diagrams/level 3 ADS.dot.svg">

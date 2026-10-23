@@ -2,6 +2,8 @@
 
 # bounded secured managed domain
 
+<div class="draft4-watermark" aria-hidden="true"></div>
+
 abstract [entity](entity.md) representing a managed processing and memory [environment](environment.md) that provides protection from code and data that has not been determined to meet established security requirements
 
 <object type="image/svg+xml" data="../../diagrams/bounded secured managed domain.dot.svg">
